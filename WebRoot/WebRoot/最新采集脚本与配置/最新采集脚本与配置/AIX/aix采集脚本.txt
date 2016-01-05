@@ -1,0 +1,139 @@
+#!/bin/sh
+today=`date +"%Y-%m-%d %H:%M:%S"`
+IP=10.0.9.23
+FNAME=$IP.log
+echo $FNAME
+rm $FNAME
+echo cmdbegin:collecttime >> $FNAME
+echo "$today" >> $FNAME
+echo cmdbegin:version >> $FNAME
+oslevel -s >> $FNAME
+echo cmdbegin:vmstat >> $FNAME
+vmstat >> $FNAME
+echo cmdbegin:lsps >> $FNAME
+lsps -s >> $FNAME
+echo cmdbegin:swap >> $FNAME
+swap -s >> $FNAME
+echo cmdbegin:process >> $FNAME
+ps guc | head -n 1 >> $FNAME
+ps guc | egrep -v "RSS" | sort +6b -7 -n -r >> $FNAME
+echo cmdbegin:cpu >> $FNAME
+sar -u 1 3 >> $FNAME
+echo cmdbegin:allconfig >> $FNAME
+prtconf  >> $FNAME
+echo cmdbegin:disk >> $FNAME
+df -m >> $FNAME
+echo cmdbegin:diskperf >> $FNAME
+sar -d 1 2 >> $FNAME
+echo cmdbegin:diskiostat >> $FNAME
+iostat >> $FNAME
+echo cmdbegin:netperf >> $FNAME
+netstat -ian >> $FNAME
+echo cmdbegin:netallperf >> $FNAME
+echo start-en0 >> $FNAME
+entstat -d en0 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en0 >> $FNAME
+echo start-en1 >> $FNAME
+entstat -d en1 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en1 >> $FNAME
+echo start-en2 >> $FNAME
+entstat -d en2 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en2 >> $FNAME
+echo start-en3 >> $FNAME
+entstat -d en3 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en3 >> $FNAME
+echo start-en4 >> $FNAME
+entstat -d en4 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en4 >> $FNAME
+echo start-en5 >> $FNAME
+entstat -d en5 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en5 >> $FNAME
+echo start-en6 >> $FNAME
+entstat -d en6 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en6 >> $FNAME
+echo start-en7 >> $FNAME
+entstat -d en7 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en7 >> $FNAME
+echo start-en8 >> $FNAME
+entstat -d en8 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en8 >> $FNAME
+echo start-en9 >> $FNAME
+entstat -d en9 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en9 >> $FNAME
+echo start-en10 >> $FNAME
+entstat -d en10 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en10 >> $FNAME
+echo start-en11 >> $FNAME
+entstat -d en11 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en11 >> $FNAME
+echo start-en12 >> $FNAME
+entstat -d en12 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en12 >> $FNAME
+echo start-en13 >> $FNAME
+entstat -d en13 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en13 >> $FNAME
+echo start-en14 >> $FNAME
+entstat -d en14 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en14 >> $FNAME
+echo start-en15 >> $FNAME
+entstat -d en15 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en15 >> $FNAME
+echo start-en16 >> $FNAME
+entstat -d en16 |egrep 'Bytes|Hardware Address|Link Status|Media Speed Running|Packets|Bytes|Interrupts' |egrep -v 'XOFF|XON'>> $FNAME
+echo end-en16 >> $FNAME
+echo cmdbegin:uname >> $FNAME
+uname -sn >> $FNAME
+echo cmdbegin:service >> $FNAME
+lssrc -a >> $FNAME
+echo cmdbegin:usergroup >> $FNAME
+cat /etc/group >> $FNAME
+echo cmdbegin:user >> $FNAME
+lsuser ALL >> $FNAME
+echo cmdbegin:date >> $FNAME
+date >> $FNAME
+echo cmdbegin:uptime >> $FNAME
+uptime >> $FNAME
+echo cmdbegin:errpt >> $FNAME
+Change_time=${1:-5} #默认5分钟之前
+V_Day=`date +%m%d`
+V_Year=`date +%y`
+V_Hour=`date +%H`
+V_Min=`date +%M`
+V_Time=`expr $V_Hour \* 60 + $V_Min `
+if [ $V_Time -lt $Change_time ];
+then
+   V_Time=` expr 24 \* 60 + $V_Time `
+   OS=`uname`                                                                      
+   if [ $OS = AIX ];                                                                   
+   then                                                                                
+       V_TZ=`echo $TZ|sed 's/.*\(..\)/\1/'`                                            
+       V_TZ=`expr $V_TZ + 24`                                                          
+       eval V_TZ=`echo $TZ|sed 's/..$/+$V_TZ/'`                                        
+       TZ=$V_TZ                                                                        
+       export TZ                                                                       
+   elif [ $OS = SunOS ];                                                               
+   then                                                                                
+      TZ="GMT+16"                                                                      
+      export TZ                                                                        
+   fi                                                                                  
+   V_Day=`date +%m%d`
+   V_Year=`date +%y`                            
+fi
+V_Time=`expr $V_Time - $Change_time `
+N_Hour=`expr $V_Time / 60 `
+N_Min=`expr $V_Time % 60 `
+echo "the $Change_time minute ago is $V_Day$N_Hour$N_Min$V_Year"
+tt=$V_Day$N_Hour$N_Min$V_Year
+errpt -a -s $tt >> $FNAME
+echo cmdbegin:volume >> $FNAME
+lspv >> $FNAME
+echo cmdbegin:route >> $FNAME
+netstat -rn
+echo cmdbegin:end >> $FNAME
+ftp -n <<!
+open 10.0.6.123
+user nms webnms
+put 10.0.6.23.log
+bye
+!
+rm $FNAME

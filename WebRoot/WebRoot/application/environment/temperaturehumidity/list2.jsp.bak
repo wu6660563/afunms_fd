@@ -1,0 +1,330 @@
+<%@page language="java" contentType="text/html;charset=GB2312"%>
+<%@page import="com.afunms.common.base.JspPage"%>
+<%@page import="java.util.List"%>
+<%@page import="com.afunms.application.model.SerialNode"%>
+<%@page import="java.util.Hashtable"%>
+<%@page import="com.afunms.application.model.TemperatureHumidityConfig"%>
+<%@page import="com.afunms.application.model.TemperatureHumidityThresholdConfig"%>
+<%@page import="com.afunms.report.jfree.ChartCreator"%>
+<%@page import="org.jfree.data.category.CategoryDataset"%>
+<%@page import="org.jfree.data.category.DefaultCategoryDataset"%>
+<%@ include file="/include/globe.inc"%>
+
+<%
+	String rootPath = request.getContextPath();
+	List list = (List) request.getAttribute("list");
+	String selcetId = (String) request.getAttribute("selcetId");
+	SerialNode selectSerialNode = (SerialNode) request
+			.getAttribute("selectSerialNode");
+	TemperatureHumidityThresholdConfig temperatureHumidityThresholdConfig = (TemperatureHumidityThresholdConfig) request
+			.getAttribute("temperatureHumidityThresholdConfig");
+	Hashtable temperatureHumidityHashtable = (Hashtable) request
+			.getAttribute("temperatureHumidityHashtable");
+	Hashtable imageHashtable = (Hashtable) request
+			.getAttribute("imageHashtable");
+	Hashtable temperatureHumidityStatisticsHashtable = (Hashtable) request
+			.getAttribute("temperatureHumidityStatisticsHashtable");
+	Hashtable queryImageHashtable = (Hashtable) request
+			.getAttribute("queryImageHashtable");
+	String path = rootPath + "/resource/image/jfreechart/";
+	request.getAttribute("queryImageHashtable");
+%>
+<%
+	String menuTable = (String) request.getAttribute("menuTable");
+%>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<script language="JavaScript" type="text/javascript"
+			src="<%=rootPath%>/include/navbar.js"></script>
+		<link href="<%=rootPath%>/include/navbar.css" rel="stylesheet"
+			type="text/css" />
+		<LINK href="<%=rootPath%>/resource/css/style.css" type="text/css"
+			rel="stylesheet">
+		<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script>
+		<LINK href="<%=rootPath%>/resource/css/itsm_style.css" type="text/css"
+			rel="stylesheet">
+		<link href="<%=rootPath%>/resource/css/detail.css" rel="stylesheet"
+			type="text/css">
+		<link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css"
+			type="text/css">
+		<link href="<%=rootPath%>/include/mainstyle.css" rel="stylesheet"
+			type="text/css">
+
+		<link rel="stylesheet" type="text/css"
+			href="<%=rootPath%>/resource/css/examples.css" />
+		<link rel="stylesheet" type="text/css"
+			href="<%=rootPath%>/resource/css/chooserSerial.css" />
+		<link rel="stylesheet" type="text/css"
+			href="<%=rootPath%>/resource/css/temperature_humidity.css" />
+
+
+		<link rel="stylesheet" type="text/css"
+			href="<%=rootPath%>/application/environment/resource/ext3.1/resources/css/ext-all.css" />
+		<script type="text/javascript"
+			src="<%=rootPath%>/application/environment/resource/ext3.1/adapter/ext/ext-base.js"></script>
+		<script type="text/javascript"
+			src="<%=rootPath%>/application/environment/resource/ext3.1/ext-all.js"></script>
+		<script type="text/javascript"
+			src="<%=rootPath%>/application/environment/resource/ext3.1/ext-all-debug.js"></script>
+		<!--  
+<link rel="stylesheet" type="text/css" 	href="<%=rootPath%>/js/ext/lib/resources/css/ext-all.css" charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="<%=rootPath%>/js/ext/css/common.css" charset="utf-8"/>
+<script type="text/javascript" 	src="<%=rootPath%>/js/ext/lib/adapter/ext/ext-base.js" charset="utf-8"></script>
+<script type="text/javascript" src="<%=rootPath%>/js/ext/lib/ext-all.js" charset="utf-8"></script>
+
+<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
+<link href="<%=rootPath%>/include/navbar.css" rel="stylesheet" type="text/css" />
+<LINK href="<%=rootPath%>/resource/css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="<%=rootPath%>/resource/css/itsm_style.css" type="text/css" rel="stylesheet">
+<link href="<%=rootPath%>/resource/css/detail.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
+<link href="<%=rootPath%>/include/mainstyle.css" rel="stylesheet" type="text/css">
+
+-->
+
+		<script language="JavaScript" type="text/javascript">
+  var listAction = "<%=rootPath%>/db.do?action=list";
+</script>
+		<script language="JavaScript">
+</script>
+		<script language="JavaScript" type="text/JavaScript">
+var show = true;
+var hide = false;
+//修改菜单的上下箭头符号
+function my_on(head,body)
+{
+
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="on";
+}
+function my_off(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="off";
+}
+//添加菜单	
+function initmenu()
+{
+	var idpattern=new RegExp("^menu");
+	var menupattern=new RegExp("child$");
+	var tds = document.getElementsByTagName("div");
+	for(var i=0,j=tds.length;i<j;i++){
+		var td = tds[i];
+		if(idpattern.test(td.id)&&!menupattern.test(td.id)){					
+			menu =new Menu(td.id,td.id+"child",'dtu','100',show,my_on,my_off);
+			menu.init();		
+		}
+	}
+}
+</script>
+
+		<script type="text/javascript">
+		Ext.onReady(function(){
+			var serialNode = new Array();
+			<%
+				if(list != null && list.size() > 0){
+					for(int i = 0 ; i < list.size(); i++ ){
+						SerialNode serialNode = (SerialNode)list.get(i);
+		        		Hashtable statisticsHashtable= (Hashtable)temperatureHumidityStatisticsHashtable.get(String.valueOf(serialNode.getId()));
+		        		Hashtable itemImage = (Hashtable)imageHashtable.get(String.valueOf(serialNode.getId()));
+						%>
+						serialNode[<%=i%>]=[
+			                "<%=serialNode.getId()%>",
+			                "<%=serialNode.getName()%>",
+			               
+			                "<%=statisticsHashtable.get("maxTemperature")%>",
+			                "<%=statisticsHashtable.get("avgTemperature")%>",
+			                "<%=statisticsHashtable.get("minTemperature")%>",
+			                
+			                "<%=statisticsHashtable.get("maxHumidity")%>",
+			                "<%=statisticsHashtable.get("avgHumidity")%>",
+			                "<%=statisticsHashtable.get("minHumidity")%>",
+			                
+			                "<%=itemImage.get("imageName")%>",
+			                "<%=itemImage.get("timeType")%>",
+			                "<%=itemImage.get("startDate")%>",
+			                "<%=itemImage.get("endDate")%>"
+			               
+			            ];
+			           <%
+					}
+				}  
+				%>
+		
+		
+				var path = '<%=path%>';
+				
+				var panel = new Ext.Panel({
+                id:'main-panel',
+                renderTo: 'panel',
+                layout:'table',
+                title:'应用 >> 环境监控 >> 温湿度传感器列表',
+                layoutConfig: {columns:2},
+                // applied to child components
+                defaults: {frame:true,height: 300}
+                
+            });
+            for(var i = 0 ; i < serialNode.length; i++){
+				panel.add({
+           			title:serialNode[i][1],
+	                buttons:[{
+	                	id:i+'',
+		                text:'查询',
+		                handler:function(){
+		                	showCurveWindow(serialNode[this.id]);
+		                }
+	                }],
+	                html:'<div><div><b>温度</b>  最大值：' + serialNode[i][2] + ' 最小值：' + serialNode[i][4] + '  平均值： ' + serialNode[i][3] + '<div></div>'  
+	                	+ '<b>温度</b>  最大值：' + serialNode[i][5] + ' 最小值：' + serialNode[i][7] + '  平均值： ' + serialNode[i][6] + '</div>'
+	                	+ '<div><img src ="' + path + serialNode[i][8] +'"></div></div>'
+           	
+	           	});
+				panel.doLayout();
+				panel.render();
+            }
+           	
+			
+			
+			<%if(queryImageHashtable!=null){
+			%>
+				var queryImage = new Array();
+				queryImage[0] = '<%=queryImageHashtable.get("serialNodeId")%>';
+				queryImage[8] = '<%=queryImageHashtable.get("imageName")%>';
+				queryImage[9] = '<%=queryImageHashtable.get("timeType")%>';
+				queryImage[10] = '<%=queryImageHashtable.get("startDate")%>';
+				queryImage[11] = '<%=queryImageHashtable.get("endDate")%>';
+				showCurveWindow(queryImage);
+			<%
+			}
+			
+			%>
+			
+		});
+		
+		
+		function showCurveWindow(store){
+		var imageName = "<%=rootPath%>/resource/image/jfreechart/" + store[8];
+		var tb = new Ext.Toolbar({
+			items: [
+				'开始时间',
+		        {
+		        	id			:	'startDate',
+					name		:	'startDate',
+		            xtype		:	'datefield', // default for Toolbars, same as 'tbbutton'
+		            format		:	'Y-m-d',
+		            width		:	150,
+					endDateField:	'endDate'
+		        },
+		        '结束时间',
+		        {
+		        	id			:	'endDate',
+					name		:	'endDate',
+		            xtype		:	'datefield', // same as 'tbsplitbutton'
+		            format		:	'Y-m-d',
+		            width		:	150,
+		            startDateField: 'startDate'
+		        },
+		        '时间粒度',
+		        {
+					name		:	'timeType',
+					id			:	'timeType',
+					xtype 		: 	'combo',
+					store		: 	[['minute','分钟'],['hour','小时'],['day','天'],['month','月']],
+					fieldLabel	:	'时间粒度',
+					mode		:	'local',
+					typeAhead	:	true,
+					selectOnFocus : true,
+					emptyText	:	'--请选择开始时间--',
+					width		:	130,
+					triggerAction	: 'all',
+					forceSelection	:	true
+				},
+				'-',
+				{
+					xtype		:	'button',
+					text		:	'提交查看曲线图',
+					handler		:	function(){
+										var startDate = Ext.getCmp('startDate').getValue().format('Y-m-d');
+										var endDate = Ext.getCmp('endDate').getValue().format('Y-m-d');
+										var timeType = Ext.getCmp('timeType').getValue();
+										mainForm.action = '<%=rootPath%>/temperatureHumidity.do?action=showCurvGraph'
+														+ '&serialNodeId=' + store[0] + '&timeType=' + timeType
+														+ '&startDate=' + startDate + '&endDate=' + endDate;
+										mainForm.submit();
+									}
+				}]
+		});
+		
+		var win = new Ext.Window({
+			tbar	:	tb,
+			title	:	"温湿度曲线图",
+			modal	:	true,
+			width	:	750,
+			html	:	'<div align="center"><image src=' +imageName + '></div>',
+			layout	:	'fit',
+			frame	:	true,
+			maximizable:true
+		});
+		Ext.getCmp('startDate').setValue(store[10]);
+		Ext.getCmp('endDate').setValue(store[11]);
+		Ext.getCmp('timeType').setValue(store[9]);
+		win.show();
+	}
+		
+		</script>
+
+
+	</head>
+	<BODY leftmargin="0" topmargin="0" bgcolor="#cedefa"
+		onload="initmenu();">
+		<form method="post" name="mainForm">
+			<input type="hidden" id="name" name="name">
+			<input type="hidden" id="address" name="address">
+			<input type="hidden" id="description" name="description">
+			<input type="hidden" id="monflag" name="monflag">
+			<input type="hidden" id="serialPortId" name="serialPortId">
+			<input type="hidden" id="minTemperature" name="minTemperature">
+			<input type="hidden" id="maxTemperature" name="maxTemperature">
+			<input type="hidden" id="minHumidity" name="minHumidity">
+			<input type="hidden" id="maxHumidity" name="maxHumidity">
+			<table border="0" id="table1" cellpadding="0" cellspacing="0"
+				width=100%>
+				<tr>
+					<td width="200" valign=top align=center><%=menuTable%></td>
+					<td bgcolor="#ffffff" align="center" valign=top>
+						<table width="100%" style="BORDER-COLLAPSE: collapse"
+							borderColor=#397DBD cellPadding=0 rules=none align=center
+							border=1 algin="center">
+							<tr>
+								<td>
+									<div id="panel">
+
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</BODY>
+</HTML>

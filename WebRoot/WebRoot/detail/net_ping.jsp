@@ -1,0 +1,828 @@
+<%@page language="java" contentType="text/html;charset=GB2312"%>
+<%@page import="com.afunms.topology.model.HostNode"%>
+<%@page import="com.afunms.common.base.JspPage"%>
+<%@page import="com.afunms.common.util.SysUtil"%>
+<%@ include file="/include/globe.inc"%>
+<%@page import="com.afunms.common.util.*" %>
+<%@page import="com.afunms.monitor.item.*"%>
+<%@page import="com.afunms.polling.node.*"%>
+<%@page import="com.afunms.polling.*"%>
+<%@page import="com.afunms.polling.impl.*"%>
+<%@page import="com.afunms.polling.api.*"%>
+<%@page import="com.afunms.topology.util.NodeHelper"%>
+<%@page import="com.afunms.topology.dao.*"%>
+<%@page import="com.afunms.monitor.item.base.MoidConstants"%>
+<%@page import="org.jfree.data.general.DefaultPieDataset"%>
+<%@ page import="com.afunms.polling.api.I_Portconfig"%>
+<%@ page import="com.afunms.polling.om.Portconfig"%>
+<%@ page import="com.afunms.polling.om.*"%>
+<%@ page import="com.afunms.polling.impl.PortconfigManager"%>
+<%@page import="com.afunms.report.jfree.ChartCreator"%>
+<%@ page import="com.afunms.polling.om.IpMac"%>
+
+<%@page import="java.util.*"%>
+<%@page import="java.text.*"%>
+<%@page import="java.lang.*"%>
+<%@page import="com.afunms.monitor.item.base.*"%>
+<%@page import="com.afunms.monitor.executor.base.*"%>
+<%
+  //String rootPath = request.getContextPath();;
+  String menuTable = (String)request.getAttribute("menuTable");
+  String tmp = request.getParameter("id"); 
+    List cpuList = new ArrayList();
+  Vector memoryVector = new Vector();
+  List memoryList = new ArrayList();
+  List temperatureList = new ArrayList();
+  Vector temperatureVector = new Vector();
+SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+		double cpuvalue = 0;
+		String pingconavg ="0";
+		String collecttime = null;
+		String sysuptime = null;
+		String sysservices = null;
+		String sysdescr = null;
+		
+    	HostNodeDao hostdao = new HostNodeDao();
+    	List hostlist = hostdao.loadHost();
+    	
+    	Host host = (Host)PollingEngine.getInstance().getNodeByID(Integer.parseInt(tmp)); 
+    	String ipaddress = host.getIpAddress();
+    	String orderflag = request.getParameter("orderflag");
+    	if(orderflag == null || orderflag.trim().length()==0)
+    		orderflag="index";
+        String[] time = {"",""};
+        DateE datemanager = new DateE();
+        Calendar current = new GregorianCalendar();
+        current.set(Calendar.MINUTE,59);
+        current.set(Calendar.SECOND,59);
+        time[1] = datemanager.getDateDetail(current);
+        current.add(Calendar.HOUR_OF_DAY,-1);
+        current.set(Calendar.MINUTE,0);
+        current.set(Calendar.SECOND,0);
+        time[0] = datemanager.getDateDetail(current);
+        String starttime = time[0];
+        String endtime = time[1];
+        
+        I_HostLastCollectData hostlastmanager=new HostLastCollectDataManager();
+        
+        Vector vector = new Vector();
+        String[] netInterfaceItem={"index","ifDescr","ifSpeed","ifOperStatus","OutBandwidthUtilHdx","InBandwidthUtilHdx"};
+        try{
+        	vector = hostlastmanager.getInterface_share(host.getIpAddress(),netInterfaceItem,orderflag,starttime,endtime); 
+        }catch(Exception e){
+        	e.printStackTrace();
+        }
+        
+		Hashtable ipAllData = (Hashtable)ShareData.getSharedata().get(host.getIpAddress());
+		if(ipAllData != null){
+			Vector cpuV = (Vector)ipAllData.get("cpu");
+			if(cpuV != null && cpuV.size()>0){
+				
+				CPUcollectdata cpu = (CPUcollectdata)cpuV.get(0);
+				cpuvalue = new Double(cpu.getThevalue());
+				if(cpuV.size()>1)
+				cpuList = (List)cpuV.get(1);
+				if(cpuV.size()>2)
+				memoryList = (List)cpuV.get(2);
+				if(cpuV.size()>3)
+				temperatureList = (List)cpuV.get(3);
+			}
+			memoryVector = (Vector)ipAllData.get("memory");
+			temperatureVector = (Vector)ipAllData.get("temperature");
+			//得到系统启动时间
+			Vector systemV = (Vector)ipAllData.get("system");
+			if(systemV != null && systemV.size()>0){
+				for(int i=0;i<systemV.size();i++){
+					Systemcollectdata systemdata=(Systemcollectdata)systemV.get(i);
+					if(systemdata.getSubentity().equalsIgnoreCase("sysUpTime")){
+						sysuptime = systemdata.getThevalue();
+					}
+					if(systemdata.getSubentity().equalsIgnoreCase("sysServices")){
+						sysservices = systemdata.getThevalue();
+					}
+					if(systemdata.getSubentity().equalsIgnoreCase("sysDescr")){
+						sysdescr = systemdata.getThevalue();
+					}
+				}
+			}
+		}
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		String time1 = sdf.format(new Date());
+								
+	
+		String starttime1 = time1 + " 00:00:00";
+		String totime1 = time1 + " 23:59:59";
+		
+		Hashtable ConnectUtilizationhash = new Hashtable();
+		I_HostCollectData hostmanager=new HostCollectDataManager();
+		try{
+			ConnectUtilizationhash = hostmanager.getCategory(host.getIpAddress(),"Ping","ConnectUtilization",starttime1,totime1);
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+		
+		if (ConnectUtilizationhash.get("avgpingcon")!=null){
+			pingconavg = (String)ConnectUtilizationhash.get("avgpingcon");
+			pingconavg = pingconavg.replace("%", "");
+		}
+		
+		
+		Vector pingData = (Vector)ShareData.getPingdata().get(host.getIpAddress());
+		if(pingData != null && pingData.size()>0){
+			Pingcollectdata pingdata = (Pingcollectdata)pingData.get(0);
+			Calendar tempCal = (Calendar)pingdata.getCollecttime();							
+			Date cc = tempCal.getTime();
+			collecttime = sdf1.format(cc);
+		}
+		
+        //request.setAttribute("vector", vector);
+        request.setAttribute("id", tmp);
+        request.setAttribute("ipaddress", host.getIpAddress());
+		request.setAttribute("cpuvalue", cpuvalue);
+		request.setAttribute("collecttime", collecttime);
+		request.setAttribute("sysuptime", sysuptime);
+		request.setAttribute("sysservices", sysservices);
+		request.setAttribute("sysdescr", sysdescr);
+		request.setAttribute("pingconavg", new Double(pingconavg));
+
+
+
+
+  
+String[] memoryItem={"AllSize","UsedSize","Utilization"};
+String[] memoryItemch={"总容量","已用容量","当前利用率","最大利用率"};
+String[] sysItem={"sysName","sysUpTime","sysContact","sysLocation","sysServices","sysDescr"};
+String[] sysItemch={"设备名","设备启动时间","设备联系","设备位置","设备服务","设备描述"};
+Hashtable hash = (Hashtable)request.getAttribute("hash");
+Hashtable hash1 = (Hashtable)request.getAttribute("hash1");
+Hashtable max = (Hashtable) request.getAttribute("max");
+Hashtable cpumaxhash = (Hashtable) request.getAttribute("cpumax");
+Hashtable imgurl = (Hashtable)request.getAttribute("imgurl");
+
+double avgpingcon = (Double)request.getAttribute("pingconavg");
+
+  String rootPath = request.getContextPath();  
+  
+  //ResponseTimeItem item1 = (ResponseTimeItem)host.getMoidList().get(0); 
+  String chart1 = null,chart2 = null,chart3 = null,responseTime = null;
+  DefaultPieDataset dpd = new DefaultPieDataset();
+  dpd.setValue("可用率",avgpingcon);
+  dpd.setValue("不可用率",100 - avgpingcon);
+  chart1 = ChartCreator.createPieChart(dpd,"",130,130);  
+  
+  //if(item1.getSingleResult()!=-1)
+  //{
+     //responseTime = item1.getSingleResult() + " ms";
+  
+     //SnmpItem item2 = (SnmpItem)host.getItemByMoid(MoidConstants.CISCO_CPU);
+     //if(item2!=null&&item2.getSingleResult()!=-1)
+         //chart2 = ChartCreator.createMeterChart(item2.getSingleResult(),"",150,150); 
+         chart2 = ChartCreator.createMeterChart(cpuvalue,"",120,120);   
+  
+     //SnmpItem item3 = (SnmpItem)host.getItemByMoid(MoidConstants.CISCO_MEMORY);
+     //if(item3!=null&&item3.getSingleResult()!=-1)
+        chart3 = ChartCreator.createMeterChart(40.0,"",120,120);       
+  //}
+  //else
+     //responseTime = "无响应"; 
+     
+String[] iproutertype={"","","","direct(3)","indirect(4)"};
+String[] iprouterproto={"","other(1)","local(2)","netmgmt(3)","icmp(4)","egp(5)","ggp(6)","hello(7)","rip(8)","is-is(9)","es-is(10)","ciscoIgrp(11)","bbnSpfIgp(12)","ospf(13)","bgp(14)"};
+Vector iproutervector = (Vector)request.getAttribute("vector");	
+	String chartstr = null;
+	chartstr = (String)request.getAttribute("chartstr");
+	System.out.println(chartstr+"----");
+	String chartstr1 = null;
+	chartstr1 = (String)request.getAttribute("chartstr1");
+	System.out.println(chartstr1+"----");	
+	String allutilStr = null;
+	allutilStr = (String)request.getAttribute("allutilStr");
+	System.out.println(allutilStr+"----");	
+	String memoryStr = null;
+	memoryStr = (String)request.getAttribute("memoryStr");
+	System.out.println(memoryStr+"----");
+         			  	   
+%>
+<html>
+<head>
+<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
+<link href="<%=rootPath%>/include/navbar.css" rel="stylesheet" type="text/css" />
+<LINK href="<%=rootPath%>/resource/css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="<%=rootPath%>/resource/css/itsm_style.css" type="text/css" rel="stylesheet">
+<link href="<%=rootPath%>/resource/css/detail.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
+<link href="<%=rootPath%>/include/mainstyle.css" rel="stylesheet" type="text/css">
+<script language="javascript">	
+  function pingReportByMinute(){
+	window.open("<%=rootPath%>/monitor.do?action=netping_report&id=<%=tmp%>&timeType=minute","newWindow","height=300, width=800, top=0, left= 200,screenX=0,screenY=0");
+  }
+  
+  function responseTimeReportByMinute(){
+	window.open("<%=rootPath%>/monitor.do?action=netresponsetime_report&id=<%=tmp%>&timeType=minute","newWindow","height=300, width=800, top=0, left= 200,screenX=0,screenY=0");
+  }
+  
+  
+  function doQuery()
+  {  
+     if(mainForm.key.value=="")
+     {
+     	alert("请输入查询条件");
+     	return false;
+     }
+     mainForm.action = "<%=rootPath%>/network.do?action=find";
+     mainForm.submit();
+  }
+  
+  function doChange()
+  {
+     if(mainForm.view_type.value==1)
+        window.location = "<%=rootPath%>/topology/network/index.jsp";
+     else
+        window.location = "<%=rootPath%>/topology/network/port.jsp";
+  }
+
+  function toAdd()
+  {
+      mainForm.action = "<%=rootPath%>/network.do?action=ready_add";
+      mainForm.submit();
+  }
+  
+function changeOrder(para){
+  	location.href="<%=rootPath%>/topology/network/networkview.jsp?id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>&orderflag="+para;
+}  
+  function toOpen(){
+ 
+	    window.open ("<%=rootPath%>/monitor.do?action=netcpu_report&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>","newWindow","height=300, width=800, top=0, left= 200,screenX=0,screenY=0");
+		
+}
+  
+// 全屏观看
+function gotoFullScreen() {
+	parent.mainFrame.resetProcDlg();
+	var status = "toolbar=no,height="+ window.screen.height + ",";
+	status += "width=" + (window.screen.width-8) + ",scrollbars=no";
+	status += "screenX=0,screenY=0";
+	window.open("topology/network/index.jsp", "fullScreenWindow", status);
+	parent.mainFrame.zoomProcDlg("out");
+}
+
+</script>
+<script language="JavaScript" type="text/JavaScript">
+var show = true;
+var hide = false;
+//修改菜单的上下箭头符号
+function my_on(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="on";
+}
+function my_off(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="off";
+}
+//添加菜单	
+function initmenu()
+{
+	var idpattern=new RegExp("^menu");
+	var menupattern=new RegExp("child$");
+	var tds = document.getElementsByTagName("div");
+	for(var i=0,j=tds.length;i<j;i++){
+		var td = tds[i];
+		if(idpattern.test(td.id)&&!menupattern.test(td.id)){					
+			menu =new Menu(td.id,td.id+"child",'dtu','100',show,my_on,my_off);
+			menu.init();		
+		}
+	}
+
+}
+</script>
+</head>
+<BODY leftmargin="0" topmargin="0" bgcolor="#cedefa"  onload="initmenu();">
+<form method="post" name="mainForm">
+<input type=hidden name="orderflag">
+<input type=hidden name="id">
+<table border="0" id="table1" cellpadding="0" cellspacing="0" width=950>
+	<tr>
+		<td width="200" valign=top align=center>
+			<%=menuTable %>
+            				
+	</td>
+		<td bgcolor="#cedefa" align="center" valign="top">
+<table border="0" id="table1" cellpadding="0" cellspacing="0" width=100%>
+	<tr>
+		<td width="0"></td>
+		<td align="center">
+		<table width="100%" border=0 cellpadding=0 cellspacing=0>
+			<tr>
+			  	<td height=385 bgcolor="#FFFFFF" valign="top">
+			  	
+					<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none align=center border=1 algin="center">
+                  				<tr>
+                    					<td>
+								<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none w align=center border=1 algin="center">
+                        					<tbody>
+                          						<tr>
+                								<td width="426" align="left" valign="top" class=dashLeft>
+                									<table style="BORDER-COLLAPSE: collapse" bordercolor=#cedefa  cellpadding=0 rules=none width=100% align=center border=1 algin="center">
+                    										<tr bgcolor="#D1DDF5">
+                      											<td height="28" colspan="2" valign=center nowrap class=txtGlobal><div align="center" class="txtGlobalBigBold">设备信息</div></td>
+                    										</tr>
+                    										<tr bgcolor="#F1F1F1">
+                      											<td width="30%" height="26" align="left" nowrap bgcolor="#EBF4F7" class=txtGlobal>&nbsp;设备标签:</td>
+                      											<td width="70%"><%=host.getAlias()%> [<a href="<%=rootPath%>/network.do?action=ready_editalias&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><img src="<%=rootPath%>/resource/image/editicon.gif" border=0>修改</a>]</td>
+                    										</tr>
+                    										<tr>
+                      											<td width="30%" height="26" align="left" nowrap class=txtGlobal>&nbsp;系统名称:</td>
+                      											<td width="70%"><%=host.getSysName()%> [<a href="<%=rootPath%>/network.do?action=ready_editsysgroup&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><img src="<%=rootPath%>/resource/image/editicon.gif" border=0>修改</a>]</td>
+                    										</tr>                    										
+                    										<tr bgcolor="#F1F1F1">
+                      											<td height="29" class=txtGlobal align="left" nowrap bgcolor="#EBF4F7" >&nbsp;状态:</td>
+                      											<td><img src="<%=rootPath%>/resource/<%=NodeHelper.getCurrentStatusImage(host.getStatus())%>">&nbsp;<%=NodeHelper.getStatusDescr(host.getStatus())%></td>
+                    										</tr>
+                    										<tr>
+                      											<td width="30%" height="26" align=left valign=left nowrap class=txtGlobal>&nbsp;IP地址:</td>
+                      											<td width="70%"><%=host.getIpAddress()%></td>
+                    										</tr>
+                    										<tr bgcolor="#F1F1F1">
+                      											<td height="29" class=txtGlobal align="left" nowrap bgcolor="#EBF4F7" >&nbsp;子网掩码:</td>
+                      											<td><%=host.getNetMask()%></td>
+                    										</tr>
+                    										<tr>
+                      											<td width="30%" height="26" align=left valign=left nowrap class=txtGlobal>&nbsp;类别:</td>
+                      											<td width="70%"><%=NodeHelper.getNodeCategory(host.getCategory())%></td>
+                    										</tr>
+                    										<tr bgcolor="#F1F1F1">
+                      											<td width="30%" height="26" align=left valign=left nowrap bgcolor="#EBF4F7" class=txtGlobal>&nbsp;类型:</td>
+                      											<td width="70%"><%=host.getType()%></td>
+                    										</tr>
+                    										<tr>
+                      											<td width="30%" height="26" align=left valign=left nowrap class=txtGlobal>&nbsp;系统描述:</td>
+                      											<td width="70%"><%=sysdescr%></td>
+                    										</tr>
+                    										<tr bgcolor="#F1F1F1">
+                      											<td height="29" class=txtGlobal valign=center nowrap bgcolor="#EBF4F7" >&nbsp;设备启动时间:</td>
+                      											<td><%=sysuptime%></td>
+                    										</tr>
+                    										<tr>
+                      											<td width="30%" height="26" align=left valign=center nowrap class=txtGlobal>&nbsp;数据采集时间:</td>
+                      											<td width="70%"><%=collecttime%></td>
+                    										</tr>
+                    										<tr bgcolor="#F1F1F1">
+                      											<td height="29" class=txtGlobal valign=center nowrap bgcolor="#EBF4F7" >&nbsp;设备启动服务数:</td>
+                      											<td><%=sysservices%></td>
+                    										</tr>
+                    										<tr>
+                      											<td height="29" class=txtGlobal valign=center nowrap>&nbsp;设备MAC:</td>
+                      											<td><%=host.getMac()%></td>
+                    										</tr>    
+                    										<tr bgcolor="#F1F1F1">
+                      											<td height="29" class=txtGlobal valign=center nowrap bgcolor="#EBF4F7" >&nbsp;系统OID:</td>
+                      											<td><%=host.getSysOid()%></td>
+                    										</tr>  						
+                									</table>
+										</td>																					
+                								<td width="200" align="center" valign="middle" class=dashLeft>
+
+											<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none w align=center border=1 algin="center">
+                        								<tbody>
+                          									<tr>
+                											<td width="400" align="left" valign="middle" class=dashLeft>
+                												<table  style="BORDER-COLLAPSE: collapse" bordercolor=#cedefa  cellpadding=0 rules=none width=80% align=center border=1 algin="center" >
+                    													<tr class="topNameRight">
+                      														<td height="11" rowspan="2">&nbsp;</td>
+                      														<td height="11" align="center" bordercolor="#9FB0C4" bgcolor="#FFFFFF" class="txtGlobalBold">今天的可用率</td>
+                      														<td height="11" rowspan="2">&nbsp;</td>
+                    													</tr>
+                    													<tr class="topNameRight">
+                      														<td height="124" align="center"><img src="<%=rootPath%>/artist?series_key=<%=chart1%>"></td>
+                    													</tr>
+                    													<tr class="topNameRight">
+                      														<td height="7">&nbsp;</td>
+                      														<td height="7">&nbsp;</td>
+                      														<td height="7">&nbsp;</td>
+                    													</tr>
+                												</table>				
+														<br>
+														<table style="BORDER-COLLAPSE: collapse" bordercolor=#cedefa  cellpadding=0 rules=none width=80% align=center border=1 algin="center">
+                    													<tr class="topNameRight">
+                      														<td height="11" rowspan="2">&nbsp;</td>
+                      														<td height="11" align="center" bordercolor="#9FB0C4" bgcolor="#FFFFFF" class="txtGlobalBold">CPU利用率</td>
+                      														<td height="11" rowspan="2">&nbsp;</td>
+                    													</tr>
+                  													<tr>
+                    														<td height="44">
+                    															<div align="center" class="txtResponseTime">
+																	<table style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none width=90% align=center border=1 algin="center" height=95%>
+                      																<tr>
+                        																<td align="center" valign="middle" height='30'>
+																				<%if(chart2!=null){%>                        
+                        																		<img src="<%=rootPath%>/artist?series_key=<%=chart2%>">
+																				<%} else out.print("无数据111!");%>                        
+                        																</td>
+                      																</tr>
+                    															</table>                    
+                    		    													</div>
+                    		    												</td>
+                    														<td> </td>
+                  													</tr>
+                												</table>											  
+                											</td>
+              											</tr>
+            										</tbody>
+            										</table>
+            									</td>
+                								<td width="200" align="left" valign="top" class=dashLeft>
+
+											<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none w align=center border=1 algin="center">
+                        								<tbody>                     										                        								
+                    										<tr algin="left" valign="center">                      														
+                      											<td height="28" align="left" bordercolor="#9FB0C4" bgcolor="#D1DDF5" class="txtGlobalBold">&nbsp;工具</td>
+                    										</tr>
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/cancelMng.gif">&nbsp;<a href="<%=rootPath%>/tool/ping.jsp?ipaddress=<%=host.getIpAddress()%>" target=_blank>取消管理</td>
+                    										</tr> 
+                    										<!--<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/delete2.gif">&nbsp;<a href="javascript:void(null)" onClick='window.open("<%=rootPath%>/network.do?action=telnet&ipaddress=<%=host.getIpAddress()%>","onetelnet", "height=0, width= 0, top=0, left= 0")'>SSH</td>
+                    										</tr>-->                    										
+                    										<tr align="left" valign="center">
+                      											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/nodelist.png">&nbsp;<a href="javascript:void(null)" onClick='window.open("<%=rootPath%>/network.do?action=telnet&ipaddress=<%=host.getIpAddress()%>","onetelnet", "height=0, width= 0, top=0, left= 0")'>Telnet</td>
+                    										</tr>
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left"><img src="<%=rootPath%>/resource/image/topo/icon_ping.gif">&nbsp;<a href="javascript:void(null)" onClick='window.open("<%=rootPath%>/tool/ping.jsp?ipaddress=<%=host.getIpAddress()%>","oneping", "height=400, width= 500, top=300, left=100")'>Ping</td>
+                    										</tr> 
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/topo/traceroute.gif">&nbsp;<a href="javascript:void(null)" onClick='window.open("<%=rootPath%>/tool/tracerouter.jsp?ipaddress=<%=host.getIpAddress()%>","newtracerouter", "height=400, width= 500, top=300, left=100")'>路由跟踪</td>
+                    										</tr>                     										                      								
+            										</tbody>
+            										</table>
+            										
+											<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none w align=center border=1 algin="center">
+                        								<tbody>                     										                        								
+                    										<tr algin="left" valign="center">                      														
+                      											<td height="28" align="left" bordercolor="#9FB0C4" bgcolor="#D1DDF5" class="txtGlobalBold">&nbsp;配置</td>
+                    										</tr>
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;<a href="<%=rootPath%>/network.do?action=ready_editalias&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>">修改设备标签</td>
+                    										</tr> 
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/manageDev.gif" border=0>&nbsp;<a href="<%=rootPath%>/network.do?action=ready_editsysgroup&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>">修改系统组属性</td>
+                    										</tr>                    										
+                    										<tr align="left" valign="center">
+                      											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/modifySnmp32.gif" width=16>&nbsp;<a href="<%=rootPath%>/network.do?action=ready_editsnmp&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>">修改SNMP参数</td>
+                    										</tr>                    										                      								
+            										</tbody>
+            										</table> 
+            										
+											<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none w align=center border=1 algin="center">
+                        								<tbody>                     										                        								
+                    										<tr algin="left" valign="center">                      														
+                      											<td height="28" align="left" bordercolor="#9FB0C4" bgcolor="#D1DDF5" class="txtGlobalBold">&nbsp;性能监视配置</td>
+                    										</tr>
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;<a href="<%=rootPath%>/moid.do?action=ready_editmoids&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>">配置性能监视项</td>
+                    										</tr> 
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/manageDev.gif" border=0>&nbsp;<a href="<%=rootPath%>/moid.do?action=showallmoids&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>">监视指标阀值配置</td>
+                    										</tr>                    										                 										                      								
+            										</tbody>
+            										</table> 
+            										
+            										<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none w align=center border=1 algin="center">
+                        								<tbody>                     										                        								
+                    										<tr algin="left" valign="center">                      														
+                      											<td height="28" align="left" bordercolor="#9FB0C4" bgcolor="#D1DDF5" class="txtGlobalBold">&nbsp;配置文件管理</td>
+                    										</tr>
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/edit.gif" border=0>&nbsp;<a href="#" id="process" onclick="#">备份配置文件</td>
+                    										</tr> 
+                    										<tr align="left" valign="center"> 
+                    											<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/ico/11.gif" border=0>&nbsp;<a href="#" id="process2" onclick="#">配置文件列表</td>
+                    										</tr>                 										                 										                      								
+            										</tbody>
+            										</table>            										           										
+            									</td>            									
+            								</tr>
+                						</tbody>
+                						</table>
+                					</td>
+                				</tr>
+                				<tr>
+                					<td>
+
+					<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#cedefa cellPadding=0 rules=none align=center border=1 algin="center">
+
+                  				<tr>
+                    					<td>
+            							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+              								<tr> 
+                								<td width="30" height="22">&nbsp;</td>
+                								<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/detail/dispatcher.jsp?id=net<%=tmp%>"><font color="#397dbd">流速信息</font></a></div></td>
+                								<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netcpu&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">性能信息</font></a></div></td>
+										<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netenv&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">环境信息</font></a></div></td>	
+                								<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netarp&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">ARP信息</font></a></div></td>
+										<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netfdb&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">FDB信息</font></a></div></td>
+                								<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netroute&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">路由表信息</font></a></div></td>	
+										<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netiplist&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">IP列表</font></a></div></td>
+                								<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netping&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#FFFFFF">连通率</font></a></div></td>	
+                								<td width="80" height="22" background="<%=rootPath%>/resource/image/anjian_1.gif">
+											<div align="center"><a href="<%=rootPath%>/monitor.do?action=netevent&id=<%=tmp%>&ipaddress=<%=host.getIpAddress()%>"><font color="#397dbd">告警信息</font></a></div></td>															
+                								<td align=right>&nbsp;&nbsp;</td>
+              								</tr>
+            							</table>
+            							
+                  <% String str1 = "",str2="";
+                  if(max.get("avgpingcon")!=null){
+                          str1 = (String)max.get("avgpingcon");
+                  }
+                  if(max.get("avgrespcon")!=null){
+                          str2 = (String)max.get("avgrespcon");
+                  }
+                  %>
+                  <%String cpucur="",cpumax="",cpuavg="";
+                  if(cpumaxhash.get("cpu")!=null){
+                          cpumax = (String)cpumaxhash.get("cpu");
+                  }
+                  if(cpumaxhash.get("cpuavg")!=null){
+                          cpuavg = (String)cpumaxhash.get("cpuavg");
+                  }
+                  %>
+                <table>
+                <tr>
+                <td align=center>                 
+                <table width="1" height="1" border="1" cellpadding="0" cellspacing="0" bordercolor="397DBD">
+                    <tr align="left" bgcolor="397dbd"> 
+                      <td width="100%" height="23">&nbsp;<b><font color="#FFFFFF">连通率 
+                        &gt;&gt;<a style="cursor:hand"  onclick="pingReportByMinute();"><font color="#FFFFFF">查看日报表</font></a>
+                        &gt;&gt;<a style="cursor:hand"  onclick="pingReportByMinute();"><font color="#FFFFFF">查看月报表</font></a></font></b>
+                        </td>                        
+                    </tr>
+                    <tr height="23">
+                    <td align=center>
+                    &nbsp;&nbsp;平均连通率:<%=str1%></font>
+                    &nbsp;&nbsp;平均响应时间:<%=str2%></font>&nbsp;&nbsp;
+                    </td>
+                    </tr>
+                    <tr> 
+                      <td><i> 
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <tr> 
+                            <td bgcolor="#FFFFCC" align=center>
+                            <img src="<%=rootPath%>/artist?series_key=<%=chartstr%>">
+                            <!--<img src='<%=rootPath%>/<%=imgurl.get("ConnectUtilization").toString()%>?temp=<%=Math.random()%>'>-->
+                            
+                            </td>
+                          </tr>
+                        </table>
+                        </i></td>
+                    </tr>
+                  </table> 
+                  </td>
+                  <td align=right>                                					
+                  <table width="1" height="1" border="1" cellpadding="0" cellspacing="0" bordercolor="397DBD">
+                    <tr align="left" bgcolor="397dbd"> 
+                      <td width="100%" height="23">&nbsp;<b><font color="#FFFFFF">CPU利用率 
+                        &gt;&gt;<a style="cursor:hand"  onclick="toOpen();"><font color="#FFFFFF">查看日报表</font></a>
+                        &gt;&gt;<a style="cursor:hand"  onclick="toOpen();"><font color="#FFFFFF">查看月报表</font></a></font></b>
+                        
+                        </td>                       
+                    </tr>
+                    <tr>
+                    <td height="23" align=center>
+                     平均:<%=cpuavg%>  &nbsp;&nbsp;最大:<%=cpumax%>&nbsp;
+                    </td>
+                    </tr>
+                    <tr> 
+                      <td><i> 
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <tr> 
+                            <td bgcolor="#FFFFCC" align=center>
+                            <!--<img src="<%=rootPath%>/<%=imgurl.get("ResponseTime").toString()%>">-->
+                            <img src="<%=rootPath%>/artist?series_key=<%=chartstr1%>">
+                            </td>
+                          </tr>
+                   
+                        </table>
+                        </i></td>
+                    </tr>
+                  </table> 
+                  </td>
+                  </tr>
+                  
+                <tr>
+                <td align=center>  
+                <!--开始显示综合流速-->               
+                <table width="1" height="1" border="1" cellpadding="0" cellspacing="0" bordercolor="397DBD">
+                    <tr align="left" bgcolor="397dbd"> 
+                      <td width="100%" height="23">&nbsp;<b><font color="#FFFFFF">综合流速
+                        &gt;&gt;<a style="cursor:hand"  onclick="pingReportByMinute();"><font color="#FFFFFF">查看日报表</font></a>
+                        &gt;&gt;<a style="cursor:hand"  onclick="pingReportByMinute();"><font color="#FFFFFF">查看月报表</font></a></font></b>
+                        </td>                        
+                    </tr>
+                    <tr height="23">
+                    <td align=center>
+                    &nbsp;&nbsp;平均流速:<%=str1%></font>
+                    &nbsp;&nbsp;最大流速:<%=str2%></font>&nbsp;&nbsp;
+                    </td>
+                    </tr>
+                    <tr> 
+                      <td><i> 
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <tr> 
+                            <td bgcolor="#FFFFCC" align=center>
+                            	<img src="<%=rootPath%>/artist?series_key=<%=allutilStr%>">
+                            </td>
+                          </tr>
+                        </table>
+                        </i></td>
+                    </tr>
+                  </table> 
+                  </td>
+                  <td align=right>                                					
+                  <table width="1" height="1" border="1" cellpadding="0" cellspacing="0" bordercolor="397DBD">
+                    <tr align="left" bgcolor="397dbd"> 
+                      <td width="100%" height="23">&nbsp;<b><font color="#FFFFFF">内存利用率 
+                        &gt;&gt;<a style="cursor:hand"  onclick="toOpen();"><font color="#FFFFFF">查看日报表</font></a>
+                        &gt;&gt;<a style="cursor:hand"  onclick="toOpen();"><font color="#FFFFFF">查看月报表</font></a></font></b>
+                        
+                        </td>                       
+                    </tr>
+                    <tr>
+                    <td height="23" align=center>
+                     平均:<%=cpuavg%>  &nbsp;&nbsp;最大:<%=cpumax%>&nbsp;
+                    </td>
+                    </tr>
+                    <tr> 
+                      <td><i> 
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                          <tr> 
+                            <td bgcolor="#FFFFCC" align=center>
+                            	<img src="<%=rootPath%>/artist?series_key=<%=memoryStr%>">
+                            </td>
+                          </tr>
+                   
+                        </table>
+                        </i></td>
+                    </tr>
+                  </table> 
+                  </td>
+                  </tr>                  
+                  
+                  
+                    <tr> 
+                      <td align=center>
+                    <!--温度开始-->
+                    
+                    <%
+                    	if(temperatureVector != null && temperatureVector.size()>0){
+                    %> 
+			<table width="98%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none w align=center border=1 height=100%>
+                        <tbody>
+                    		<tr algin="left" valign="center">                      														
+                      			<td height="28" colspan=3 align="left" bordercolor="#D1DDF5" bgcolor="#D1DDF5" class="txtGlobalBold">&nbsp;温度监视</td>
+                    		</tr>                          
+                    <%
+                    		for(int k=0;k<temperatureVector.size();k++){
+                    			Interfacecollectdata interfacedata = (Interfacecollectdata)temperatureVector.get(k);
+                    				//System.out.println((k%2)+"----");
+                    			if(k%2 == 0){	
+                    %>                                           										                        								
+                    		<tr height=25 align="left" valign="center" bgcolor="#F1F1F1"> 
+                      			<td width=60% valign="center">&nbsp;&nbsp;温度当前值-[温度:<%=(String)interfacedata.getEntity()%>]</td>
+                      			<td width=20% align=right valign="center">&nbsp;&nbsp;<%=(String)interfacedata.getThevalue()%> 摄氏度</td>
+                      			<td width=20% valign="center" align="left" >
+                      			</td>                    		
+                    			
+                    		</tr>   
+                   <%
+                   			}else{
+                   %>
+                    		<tr height=25 align="left" valign="center"> 
+                      			<td width=60% valign="center">&nbsp;&nbsp;温度当前值-[温度:<%=(String)interfacedata.getEntity()%>]</td>
+                      			<td width=20% align=right valign="center">&nbsp;&nbsp;<%=(String)interfacedata.getThevalue()%> 摄氏度</td>
+                      			<td width=20% valign="center" align="left">
+                      			</td>                    		
+                    			
+                    		</tr>                    
+                   <%
+                   			}
+                   		}
+                   	
+                   %>                     		                   										                 										                      								
+            		</tbody>
+            		</table> 
+            	<%
+                   	}
+                   %>                       
+                    
+                    
+                    <!--温度结束-->
+            		</td>
+            		<td>
+   			<!--开始显示CPU-->
+   			<%
+                    		if(cpuList != null && cpuList.size()>0){
+                    	%>
+			<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none w align=center border=1 algin="center">
+                        <tbody>
+                    		<tr algin="left" valign="center">                      														
+                      			<td height="28" colspan=3 align="left" bordercolor="#D1DDF5" bgcolor="#D1DDF5" class="txtGlobalBold">&nbsp;CPU模块性能监视</td>
+                    		</tr>                          
+                    <%
+                    	if(cpuList != null && cpuList.size()>0){
+                    		for(int k=0;k<cpuList.size();k++){
+                    			List acpu = (List)cpuList.get(k);
+                    			//System.out.println((k%2)+"----");
+                    			if(k%2 == 0){	
+                    %>                                           										                        								
+                    		<tr height=25 align="left" valign="center" bgcolor="#F1F1F1"> 
+                      			<td width=60% valign="center">&nbsp;&nbsp;CPU当前利用率-[CPU:<%=(String)acpu.get(0)%>]</td>
+                      			<td width=20% align=right valign="center">&nbsp;&nbsp;<%=(String)acpu.get(1)%>%</td>
+                      			<td width=20% valign="center" align="left" >
+                      				<table border=1 height=15 width=150 bgcolor=#ffffff>
+                      				<tr>
+                      					<td width="<%=(String)acpu.get(1)%>%" bgcolor="#87cefa"></td>
+                      					<td width="<%=100-(Integer.parseInt((String)acpu.get(1)))%>%" bgcolor=#ffffff></td>
+                      				</tr>
+                      				</table>
+                      			</td>                    		
+                    			
+                    		</tr>   
+                   <%
+                   			}else{
+                   %>
+                    		<tr height=25 align="left" valign="center"> 
+                      			<td width=60% valign="center">&nbsp;&nbsp;CPU当前利用率-[CPU:<%=(String)acpu.get(0)%>]</td>
+                      			<td width=20% align=right valign="center">&nbsp;&nbsp;<%=(String)acpu.get(1)%>%</td>
+                      			<td width=20% valign="center" align="left">
+                      				<table border=1 height=15 width=150>
+                      				<tr>
+                      					<td width="<%=(String)acpu.get(1)%>%" bgcolor="#87cefa"></td>
+                      					<td width="<%=100-(Integer.parseInt((String)acpu.get(1)))%>%" bgcolor=#ffffff></td>
+                      				</tr>
+                      				</table>
+                      			</td>                    		
+                    			
+                    		</tr>                    
+                   <%
+                   			}
+                   		}
+                   	}
+                   %>                     		                   										                 										                      								
+            		</tbody>
+            		</table>                   
+            	   <%
+                   	}
+                   %>                    
+                   
+                   
+                       <!--结束显示CPU-->      		          		                     
+                      </td>
+                    </tr>                  
+                  </table>               
+                  					</td>
+                  				</tr>
+                  			</table>			  	
+			  	
+			  	</td>
+                  	</tr>
+		</table> 
+	</td>
+	
+	</tr>
+	</table> 
+		</td>
+	</tr>
+</table>
+</form>
+</BODY>
+</HTML>	                                                                            	

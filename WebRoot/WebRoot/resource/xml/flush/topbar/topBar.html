@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>amcolumn</title>
+</head>
+
+<body>
+<!-- saved from url=(0013)about:internet -->
+<!-- amcolumn script-->
+<script type="text/javascript" src="../script/swfobject.js"></script>
+	<div id="flashcontent">
+	<strong>You need to upgrade your Flash Player</strong></div>
+
+<script type="text/javascript">
+		// <![CDATA[		
+		var grid="<settings><graphs><graph gid='0'><title>用户1</title></graph><graph gid='1'><title>用户2</title></graph><graph gid='2'><title>用户3</title></graph><graph gid='3'><title>用户4</title></graph><graph gid='4'><title>用户5</title></graph></graphs></settings>";
+		var data=";5.5;4.3;4.0;3.7;2.6";
+		
+		var so = new SWFObject("amcolumn.swf", "amcolumn", "370", "230", "8", "#FFFFFF");
+		so.addVariable("path", "topBar2/");
+		so.addVariable("settings_file", escape("topBar_settings.xml"));
+	    	//so.addVariable("additional_chart_settings", grid);
+		//so.addVariable("chart_data", data);
+		so.addVariable("data_file", escape("amcolumn_data.xml"));
+		so.addVariable("preloader_color", "#999999");
+		so.write("flashcontent");
+		// ]]>
+	</script>
+<!-- end of amcolumn script -->
+</body>
+</html>

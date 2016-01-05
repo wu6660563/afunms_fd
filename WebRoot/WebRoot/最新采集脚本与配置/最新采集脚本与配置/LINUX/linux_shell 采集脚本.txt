@@ -1,0 +1,46 @@
+#!/bin/sh
+today=`date +"%Y-%m-%d %H:%M:%S"`
+IP=10.204.24.148
+FNAME=$IP.log
+echo $FNAME
+rm $FNAME
+echo cmdbegin:collecttime >> $FNAME
+echo "$today" >> $FNAME
+echo cmdbegin:version >> $FNAME
+cat /proc/version >> $FNAME
+echo cmdbegin:cpuconfig >> $FNAME
+cat /proc/cpuinfo | egrep "model name|processor|cpu MHz|cache size" >> $FNAME
+echo cmdbegin:disk >> $FNAME
+df -k >> $FNAME
+echo cmdbegin:diskperf >> $FNAME
+sar -d 1 3 >> $FNAME
+echo cmdbegin:cpu >> $FNAME
+sar -u 1 3 >> $FNAME
+echo cmdbegin:memory >> $FNAME
+free >> $FNAME
+echo cmdbegin:process >> $FNAME
+ps -aux >> $FNAME
+echo cmdbegin:mac >> $FNAME
+/sbin/ip addr >> $FNAME
+echo cmdbegin:interface >> $FNAME
+sar -n DEV 1 3 >> $FNAME
+echo cmdbegin:uname >> $FNAME
+uname -sn >> $FNAME
+echo cmdbegin:usergroup >> $FNAME
+cat /etc/group >> $FNAME
+echo cmdbegin:user >> $FNAME
+cat /etc/passwd >> $FNAME
+echo cmdbegin:date >> $FNAME
+date >> $FNAME
+echo cmdbegin:uptime >> $FNAME
+uptime >> $FNAME
+echo cmdbegin:service >> $FNAME
+chkconfig --list >> $FNAME
+echo cmdbegin:end >> $FNAME
+ftp -n <<!
+open 10.204.23.161
+user nms webnms
+put 10.204.24.148.log
+bye
+!
+rm $FNAME

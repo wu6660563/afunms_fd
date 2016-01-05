@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+   <product productId="2">
+      <name>6509-1</name>
+      <description>设备名称:14B_S3652P&lt;br/&gt;设备类型:交换机&lt;br/&gt;设备描述:H3C Comware Platform Software Comware softwa&lt;br/&gt;子网掩码:255.255.255.0&lt;br/&gt;系统OID:1.3.6.1.4.1.25506.1.38</description>
+      <price>2</price>
+      <image>../resource/equip/image/topo/switch.png</image>
+      <isManage>已监视</isManage>
+      <series>交换机</series>
+      <host />
+      <switchs>true</switchs>
+      <router />
+      <printer />
+      <highlight1>IP 10.10.1.4</highlight1>
+      <highlight2>MAC 00:0f:e2:49:fd:f9</highlight2>
+      <qty />
+      <ip>10.10.1.4</ip>
+   </product>
+   <product productId="3">
+      <name>6509-2</name>
+      <description>设备名称:15A_S3652P_1&lt;br/&gt;设备类型:交换机&lt;br/&gt;设备描述:H3C Comware Platform Software Comware softwa&lt;br/&gt;子网掩码:255.255.255.0&lt;br/&gt;系统OID:1.3.6.1.4.1.25506.1.40</description>
+      <price>3</price>
+      <image>../resource/equip/image/topo/switch.png</image>
+      <isManage>已监视</isManage>
+      <series>交换机</series>
+      <host />
+      <switchs>true</switchs>
+      <router />
+      <printer />
+      <highlight1>IP 10.10.1.5</highlight1>
+      <highlight2>MAC 00:0f:e2:5c:06:9f</highlight2>
+      <qty />
+      <ip>10.10.1.5</ip>
+   </product>
+</catalog>
+

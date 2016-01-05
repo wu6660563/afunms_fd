@@ -1,0 +1,24 @@
+#!/bin/sh
+today=`date +"%Y-%m-%d %H:%M:%S"`
+IP=10.0.9.23
+FNAME=$IP_informix.log
+echo $FNAME
+rm $FNAME
+echo cmdbegin:collectiontime >> $FNAME
+echo "$today" >> $FNAME
+echo cmdbegin:onstat-f >> $FNAME
+onstat -F >> $FNAME
+echo cmdbegin:onstat-g >> $FNAME
+onstat -g wai >> $FNAME
+echo cmdbegin:onstat-p >> $FNAME
+onstat -p >> $FNAME
+echo cmdbegin:onstat-d >> $FNAME
+onstat -d >> $FNAME
+echo cmdbegin:end >> $FNAME
+ftp -n <<!
+open 10.0.6.123
+user nms webnms
+put 10.0.6.23_informix.log
+bye
+!
+rm $FNAME

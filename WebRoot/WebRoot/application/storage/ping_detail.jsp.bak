@@ -1,0 +1,317 @@
+<%@page language="java" contentType="text/html;charset=gb2312" %>
+<%@page import="java.util.List"%>
+<%@page import="java.util.Hashtable"%>
+<%@page import="com.afunms.application.model.TuxedoConfig"%>
+<%@page import="com.afunms.application.model.Storage"%>
+<%@page import="com.afunms.application.model.StorageTypeVo"%>
+<%@page import="com.afunms.sysset.model.Producer"%>
+<%@ include file="/include/globe.inc"%>
+<%@ include file="/include/globeChinese.inc"%>
+
+<%
+	String rootPath = request.getContextPath();
+	String menuTable = (String)request.getAttribute("menuTable");
+	Storage storage = (Storage)request.getAttribute("storage");
+	if(storage == null){
+	    storage = new Storage();
+	}
+	 
+	String chart1 = (String)request.getAttribute("chart1");
+	
+	String percent1 = (String)request.getAttribute("percent1");
+	String percent2 = (String)request.getAttribute("percent2");
+		
+	List storageTypeList = (List)request.getAttribute("storageTypeList");
+	List producerList = (List)request.getAttribute("producerList");
+	
+	String producerStr = "";
+	if(storageTypeList!=null){
+		for(int i = 0 ; i <storageTypeList.size(); i++){
+			StorageTypeVo storageTypeVo = (StorageTypeVo)storageTypeList.get(i);
+			if(producerList != null){
+				for(int j = 0 ; j < producerList.size() ; j++){
+					Producer producer = (Producer)producerList.get(j);
+					if( producer.getId() == storageTypeVo.getProducer()){
+						producerStr = producer.getProducer()+"("+storageTypeVo.getModel()+")";
+					}
+				}
+			}
+	 	}
+ 	}
+%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script type="text/javascript" src="<%=rootPath%>/include/swfobject.js"></script>
+<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
+
+<link href="<%=rootPath%>/resource/css/global/global.css" rel="stylesheet" type="text/css"/>
+
+
+<link rel="stylesheet" type="text/css" 	href="<%=rootPath%>/js/ext/lib/resources/css/ext-all.css" charset="gb2312" />
+<link rel="stylesheet" type="text/css" href="<%=rootPath%>/js/ext/css/common.css" charset="gb2312"/>
+<script type="text/javascript" 	src="<%=rootPath%>/js/ext/lib/adapter/ext/ext-base.js" charset="gb2312"></script>
+<script type="text/javascript" src="<%=rootPath%>/js/ext/lib/ext-all.js" charset="gb2312"></script>
+<script type="text/javascript" src="<%=rootPath%>/js/ext/lib/locale/ext-lang-zh_CN.js" charset="gb2312"></script>
+<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script> 
+
+<script language="javascript">	
+
+  Ext.onReady(function()
+{  
+
+setTimeout(function(){
+	        Ext.get('loading').remove();
+	        Ext.get('loading-mask').fadeOut({remove:true});
+	    }, 250);
+	
+      
+	
+});
+  
+// 全屏观看
+function gotoFullScreen() {
+	parent.mainFrame.resetProcDlg();
+	var status = "toolbar=no,height="+ window.screen.height + ",";
+	status += "width=" + (window.screen.width-8) + ",scrollbars=no";
+	status += "screenX=0,screenY=0";
+	window.open("topology/network/index.jsp", "fullScreenWindow", status);
+	parent.mainFrame.zoomProcDlg("out");
+}
+var show = true;
+var hide = false;
+//修改菜单的上下箭头符号
+function my_on(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="on";
+}
+function my_off(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="off";
+}
+
+//添加菜单	
+function initmenu()
+{
+	var idpattern=new RegExp("^menu");
+	var menupattern=new RegExp("child$");
+	var tds = document.getElementsByTagName("div");
+	for(var i=0,j=tds.length;i<j;i++){
+		var td = tds[i];
+		if(idpattern.test(td.id)&&!menupattern.test(td.id)){					
+			menu =new Menu(td.id,td.id+"child",'dtu','100',show,my_on,my_off);
+			menu.init();		
+		}
+	}
+	setClass();
+}
+
+function setClass(){
+	document.getElementById('storageDetailTitle-8').className='detail-data-title';
+	document.getElementById('storageDetailTitle-8').onmouseover="this.className='detail-data-title'";
+	document.getElementById('storageDetailTitle-8').onmouseout="this.className='detail-data-title'";
+}
+
+function refer(action){
+		document.getElementById("id").value="<%=storage.getId()%>";
+		var mainForm = document.getElementById("mainForm");
+		mainForm.action = '<%=rootPath%>' + action;
+		mainForm.submit();
+}
+
+</script>
+</head>
+<body id="body" class="body" onload="initmenu();">
+<form method="post" name="mainForm">
+<input type=hidden name="id">
+<div id="loading">
+	<div class="loading-indicator">
+	<img src="<%=rootPath%>/js/ext/lib/resources/extanim64.gif" width="32" height="32" style="margin-right: 8px;" align="middle" />Loading...</div>
+</div>
+<div id="loading-mask" style=""></div>
+<table border="0" id="table1" cellpadding="0" cellspacing="0" width=960>
+	<tr>
+		<td class="td-container-menu-bar">
+					<table id="container-menu-bar" class="container-menu-bar">
+						<tr>
+							<td>
+								<%=menuTable%>
+							</td>	
+						</tr>
+					</table>
+				</td>
+				<td class="td-container-main">
+					<table id="container-main" class="container-main">
+						<tr>
+							<td class="td-container-main-application-detail">
+								<table id="container-main-application-detail" class="container-main-application-detail">
+									<tr>
+										<td>
+											<table id="application-detail-content" class="application-detail-content">
+												<tr>
+													<td>
+														<table id="application-detail-content-header" class="application-detail-content-header">
+										                	<tr>
+											                	<td align="left" width="5"><img src="<%=rootPath%>/common/images/right_t_01.jpg" width="5" height="29" /></td>
+											                	<td class="application-detail-content-title">存储详细信息</td>
+											                    <td align="right"><img src="<%=rootPath%>/common/images/right_t_03.jpg" width="5" height="29" /></td>
+											       			</tr>
+											        	</table>
+				        							</td>
+				        						</tr>
+				        						<tr>
+				        							<td>
+				        								<table id="application-detail-content-body" class="application-detail-content-body">
+				        									<tr>
+				        										<td>
+				        										
+				        											<table>
+										               					<tr>
+										     								<td width="80%" align="left" valign="top">
+			        															<table>
+						                    										<tr bgcolor="#F1F1F1">
+						                    											<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;名称:</td>
+						                      											<td width="35%"><%=storage.getName()%> </td>   
+						                      											<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;IP地址:</td>
+						                      											<td width="35%"><%=storage.getIpaddress()%> </td>
+						                    										</tr>
+						                    										<tr>
+						                    											<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;管理状态:</td>
+																						<%if("1".equals(storage.getMon_flag())){%>
+																						<td width="35%">管理中
+																						</td>
+																						<%}else {%>
+																						<td width="35%">未管理
+																						</td>
+																						<%}%>
+						                      											<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;运行状态:</td>
+																						<%if("1".equals(storage.getStatus())){%>
+																						<td width="35%">正常
+																						</td>
+																						<%}else {%>
+																						<td width="35%">不连通
+																						</td>
+																						<%}%>
+						                    										</tr> 
+						                    										<tr bgcolor="#F1F1F1">
+						                    											<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;型号:</td>
+						                      											<td width="35%"><%=producerStr%> </td>   
+						                      											<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;序列号:</td>
+						                      											<td width="35%"><%=storage.getSerialNumber()%> </td>
+						                    										</tr>  
+						                    										<!-- 
+																					<tr bgcolor="#F1F1F1">
+																						<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;上一次轮询:</td>
+						                      											<td width="35%"><%=1%> </td>                  							
+																						<td width="15%" height="26" align="left" nowrap class=txtGlobal>&nbsp;下一次轮询:</td>
+						                      											<td width="35%"><%=1%> </td>
+						                    										</tr>  
+						                    										
+						                    										 -->  
+						                										</table>
+																			</td>
+																			<td>
+																				<table>
+																					<tr>
+																						<td>
+																							<table align="center">
+																			                    <tr>
+																			                      <td align="center">
+																			                      <div id="flashcontent00">
+																						<strong>You need to upgrade your Flash Player</strong>																							<strong>You need to upgrade your Flash Player</strong>
+																							</div>
+																							<script type="text/javascript">
+																							var so = new SWFObject("<%=rootPath%>/flex/Pie_Component.swf?percent1=80&percentStr1=可用&percent2=20&percentStr2=不可用", "Pie_Component", "250", "200", "8", "#ffffff");
+																							so.write("flashcontent00");
+																							</script>
+																			                      <!--<img src="<%=rootPath%>/artist?series_key=<%=chart1%>">-->
+																			                      
+																			                      </td>
+																			                    </tr>
+																			                </table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>																				
+								                						
+				        										</td>
+				        									</tr>
+				        								</table>
+				        							</td>
+				        						</tr>
+                				                <tr>
+				        							<td>
+				        								<table id="application-detail-content-footer" class="application-detail-content-footer">
+				        									<tr>
+				        										<td>
+				        											<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											                  			<tr>
+											                    			<td align="left" valign="bottom"><img src="<%=rootPath%>/common/images/right_b_01.jpg" width="5" height="12" /></td>
+											                    			<td></td>
+											                    			<td align="right" valign="bottom"><img src="<%=rootPath%>/common/images/right_b_03.jpg" width="5" height="12" /></td>
+											                  			</tr>
+											              			</table>
+				        										</td>
+				        									</tr>
+				        								</table>
+				        							</td>
+				        						</tr>
+				        					</table>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table id="application-detail-data" class="application-detail-data">
+												<tr>
+											    	<td class="detail-data-header">
+											    		<%=storageDetailTitleTable%>
+											    	</td>
+											   	</tr>
+		                                       	<tr>
+											    	<td>
+											    		<table class="application-detail-data-body">
+											    			<tr>
+											    				<td>
+											    					<table>
+														                  
+											    					</table>
+											    				</td>
+											    			</tr>
+											    		</table>
+											    		
+											    	</td>
+											  	</tr>
+											</table>
+											
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+</form>
+</BODY>
+</HTML>

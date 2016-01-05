@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+   <item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+   <item eventtype="扫描探测" eventname="应用程序查询" level="低" resource="192.168.9.254" target="200.0.1.148" type="天清入侵防御系统" location="192.168.9.223" alertime="2011-05-15 09:01:20" accepttime="2011-05-15 12:51:20" num="1"/>
+   <item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.118" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.254" alertime="2011-05-15 09:07:29" accepttime="2011-05-15 13:51:20" num="3"/>
+   <item eventtype="系统状态" eventname="用户配置" level="中高" resource="192.168.10.117" target="200.0.1.148" type="Windows操作系统" location="192.168.9.223" alertime="2011-05-15 09:11:50" accepttime="2011-05-15 12:51:20" num="2"/>
+   <item eventtype="认证授权事件" eventname="WEB访问" level="低" resource="192.168.10.111" target="200.0.1.148" type="天玥网络安全审计" location="192.168.9.213" alertime="2011-05-15 09:18:30" accepttime="2011-05-15 14:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="数据库访问" level="低" resource="192.168.9.112" target="200.0.1.148" type="indows操作系统" location="192.168.9.3" alertime="2011-05-15 09:23:44" accepttime="2011-05-15 14:51:20" num="2"/>
+   <item eventtype="认证授权事件" eventname="SNMP访问" level="低" resource="192.168.9.254" target="200.0.1.148" type="天玥网络安全审计" location="192.168.9.223" alertime="2011-05-15 09:29:32" accepttime="2011-05-15 13:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="安全策略变更" level="中高" resource="192.168.10.7" target="200.0.1.148" type="天玥网络安全审计" location="192.168.10.10" alertime="2011-05-15 09:31:12" accepttime="2011-05-15 12:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.1.20" target="200.0.1.148" type="天清入侵防御系统" location="192.168.1.22" alertime="2011-05-15 09:45:28" accepttime="2011-05-15 11:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+<item eventtype="系统状态" eventname="设备中断事件" level="中" resource="192.168.9.223" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.112" alertime="2011-05-15 08:51:20" accepttime="2011-05-15 09:51:20" num="1"/>
+   <item eventtype="认证授权事件" eventname="认证授权成功" level="中高" resource="192.168.9.221" target="200.0.1.148" type="泰合网管引擎" location="192.168.9.118" alertime="2011-05-15 08:56:10" accepttime="2011-05-15 10:51:20" num="2"/>
+</data>

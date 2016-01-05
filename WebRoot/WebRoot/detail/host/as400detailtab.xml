@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tab-config>
+	<tab id="SystemStatusInfo" title="系统状态" action="getSystemStatusInfo"></tab> 
+	<tab id="PerformaceInfo" title="性能信息" action="getPerformaceInfo"></tab> 
+	<tab id="SystemPoolInfo" title="池信息" action="getSystemPoolInfo">
+		<title-tr>
+			<title id="systemPool">系统池</title>
+			<title id="name">池名称</title>
+			<title id="size">池大小</title>
+			<title id="reservedSize">保留池大小</title>
+			<title id="maximumActiveThreads">最大活动数</title>
+		</title-tr>
+	</tab> 
+	<tab id="DiskInfo" title="磁盘" action="getDiskInfo">
+		<title-tr>
+			<title id="unit">单元</title>
+			<title id="type">类型</title>
+		 	<title id="size">大小</title>
+			<title id="used">磁盘利用百分比</title>
+			<title id="ioRqs">IO Rqs</title>
+			<title id="requestSize">被请求的大小</title>
+			<title id="readRqs">读 Rqs</title>
+			<title id="writeRqs">写 Rqs</title>
+			<title id="read">读(K)</title>
+			<title id="write">写(K)</title>
+			<title id="busy">忙碌</title>
+		</title-tr>
+	</tab> 
+	<tab id="JobInfo" title="作业信息" action="getJobInfo">
+		<title-tr>
+			<title cols="7">
+			<![CDATA[
+				<table height="30">
+   					<tr>
+   						<td class="detail-data-body-title" style="text-align: left;">
+   							&nbsp;&nbsp;&nbsp;类型：
+   							<select name="jobType" id="jobType" style="width: 150px">
+   							</select>
+   							&nbsp;&nbsp;&nbsp;子类型：
+   							<select name="jobSubtype" id="jobSubtype" style="width: 150px">
+   							</select>
+   							&nbsp;&nbsp;&nbsp;状态：
+   							<select name="jobActivestatus" id="jobActivestatus" style="width: 150px">
+   							</select>
+   							<input name="searchJobInfo" id="searchJobInfo" type="button" value="查  询">
+   						</td>
+   					</tr>
+				</table>
+			]]>
+			</title>
+		</title-tr>
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">子系统/任务</title>
+			<title id="user">用户</title>
+			<title id="type">类型</title>
+			<title id="subtype">子类型</title>
+			<title id="CPUUsedTime">占用CPU时间(毫秒)</title>
+			<title id="activeStatus">活动状态</title>
+		</title-tr>
+	</tab>
+	<tab id="SubsystemInfo" title="子系统信息" action="getSubsystemInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">名称</title>
+			<title id="jobNum">作业数</title>
+			<title id="path">路径</title>
+		</title-tr>
+	</tab> 
+	<tab id="AlarmInfo" title="告警信息" action="getAlarmInfo">
+		<title-tr>
+			<title cols="6">
+			<![CDATA[
+				<table>
+					<tr>
+						<td style="text-align:left;" class="detail-data-body-title">
+							&nbsp;&nbsp;
+							开始日期
+							<input type="text" id="startdate" name="startdate" size="10">
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar1,document.forms[0].startdate,null,0,330)">
+							<img id=imageCalendar1 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							截止日期
+							<input type="text" id="todate" name="todate" size="10"/>
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar2,document.forms[0].todate,null,0,330)">
+							<img id=imageCalendar2 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							事件等级
+							<select id="level1" name="level1">
+							<option value="-1">不限</option>
+							<option value="1">普通事件</option>
+							<option value="2">严重事件</option>
+							<option value="3">紧急事件</option>
+							</select>
+							处理状态
+							<select id="event_status" name="event_status">
+							<option value="-1">不限</option>
+							<option value="0">未处理</option>
+							<option value="1">正在处理</option>
+							<option value="2">已处理</option>
+							</select>
+							<input type="button" id="searchAlarmInfo" value="查  询">
+					</td>
+				</tr>
+			</table>
+	    	]]>
+	    	</title>
+	    </title-tr>
+	    <title-tr>
+		   	<title id="index">序号</title>
+	        <title id="level1">事件等级</title>
+	    	<title id="content">事件描述</title>
+			<!--
+			<title id="recordtime">登记日期</title>
+	    	<title id="eventtype">登记人</title>
+	    	<title id="managesign">处理状态</title> 
+	    	 -->
+	    	<title id="maxtime">最新时间</title>
+	    	<title id="count">告警次数</title> 
+	    	<title id="operation">操作</title>
+	    </title-tr>
+	</tab>
+</tab-config> 

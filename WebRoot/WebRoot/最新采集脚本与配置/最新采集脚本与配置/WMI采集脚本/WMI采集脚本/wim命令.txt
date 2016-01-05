@@ -1,0 +1,2 @@
+Wbemtest
+\root\cimv2

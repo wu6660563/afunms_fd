@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table-names>
+    <!-- 单个端口流速 -->
+    <table-name>ping</table-name>
+    <table-name>cpu</table-name>
+    <table-name>memory</table-name>
+    <table-name>flash</table-name>
+    <table-name>buffer</table-name>
+    <table-name>temper</table-name>
+    <table-name>fan</table-name>
+    <table-name>power</table-name>
+    <table-name>vol</table-name>
+    <table-name>utilhdx</table-name>
+    <table-name>allutilhdx</table-name>
+    <table-name>utilhdxperc</table-name>
+    <table-name>discardsperc</table-name>
+    <table-name>errorsperc</table-name>
+    <table-name>packs</table-name>
+    <table-name>inpacks</table-name>
+    <table-name>outpacks</table-name>
+    <table-name>pro</table-name>
+    <table-name>cpudtl</table-name>
+    <table-name>disk</table-name>
+    <table-name>diskincre</table-name>
+    <table-name>pgused</table-name>
+</table-names>

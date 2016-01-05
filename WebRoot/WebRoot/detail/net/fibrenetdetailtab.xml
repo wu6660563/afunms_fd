@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tab-config>
+	<tab id="InterfaceInfo" title="流速信息" action="getInterfaceInfo">
+		<title-tr>
+			<title id="index">索引</title>
+			<title id="ifDescr">描述</title>
+			<!-- <title id="LinkUse">关联应用</title> -->
+			<title id="ifSpeed">每秒字节数(M)</title>
+			<title id="ifOperStatus">状态</title>
+			<title id="ifOutBroadcastPkts">出口广播数据包</title>
+			<title id="ifInBroadcastPkts">入口广播数据包</title>
+			<title id="ifOutMulticastPkts">出口多播数据包</title>
+			<title id="ifInMulticastPkts">入口多播数据包</title>
+			<title id="OutBandwidthUtilHdx">出口流速</title>
+			<title id="InBandwidthUtilHdx">入口流速</title>
+			<title id="showDetail">查看详情</title>
+		</title-tr>
+	</tab> 
+	<tab id="PerformaceInfo" title="性能信息" action="getPerformaceInfo"></tab> 
+	<tab id="RouterInfo" title="路由表" action="getRouterInfo">
+		<title-tr>
+		    <title id="ifindex">端口索引</title>
+		    <title id="dest">目标地址</title>
+		    <title id="nexthop">下一跳</title>
+		    <title id="rtype">路由类型</title>
+		    <title id="proto">路由协议</title>
+		    <title id="mask">子网掩码</title>
+		</title-tr>
+	</tab>
+	<tab id="ProcessInfo" title="进程信息" action="getProcessInfo">
+		<title-tr>
+			<title id="pid">进程ID</title>
+		    <title id="name">进程名称</title>
+		    <title id="averageUSecs">平均消耗CPU时间</title>
+		    <title id="extPriorityRev">优先级</title>
+		    <title id="runtime">运行时间</title>
+		</title-tr>
+	</tab>
+	<tab id="FibreConfigInfo" title="光口配置" action="getFibreConfigInfo">
+		<title-tr>
+		    <title id="fabricName">描述</title>
+		    <title id="elementName">元素名称</title>
+		    <title id="moduleName">模块名称</title>
+		    <title id="moduleCapacity">模块数量</title>
+		    <title id="moduleDescr">模块描述</title>
+		    <title id="feModuleObjectID">模块OID</title>
+		    <title id="moduleOperStatus">模块状态</title>
+		    <title id="upTime">启动时间</title>
+		    <title id="moduleFxPortCapacity">端口数</title>
+		</title-tr>
+	</tab>
+	<tab id="FibreCapabilityInfo" title="光口性能" action="getFibreCapabilityInfo">
+		<title-tr>
+			<title id="portName">光口名称</title>
+			<title id="portPhysOperStatus">当前状态</title>
+			<title id="portC3InFrames">入口帧数</title>
+			<title id="portC3OutFrames">出口帧数</title>
+			<title id="portC3InOctets">入口帧字节数</title>
+			<title id="portC3OutOctets">出口帧字节数</title>
+			<title id="portC3Discards">丢包数</title>
+		</title-tr>
+	</tab>
+	<tab id="LightInfo" title="信号灯" action="getLightInfo">
+		<title-tr>
+			<title id="descr">名称</title>
+		    <title id="color">信号灯颜色</title>
+		    <title id="type">类型</title>
+		    <title id="state">状态</title>
+		    <title id="displycolor">信号灯显示颜色</title>
+		</title-tr>
+	</tab>
+	<tab id="AlarmInfo" title="告警信息" action="getAlarmInfo">
+		<title-tr>
+			<title cols="6">
+			<![CDATA[
+				<table>
+					<tr>
+						<td style="text-align:left;" class="detail-data-body-title">
+							&nbsp;&nbsp;
+							开始日期
+							<input type="text" id="startdate" name="startdate" size="10">
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar1,document.forms[0].startdate,null,0,330)">
+							<img id=imageCalendar1 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							截止日期
+							<input type="text" id="todate" name="todate" size="10"/>
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar2,document.forms[0].todate,null,0,330)">
+							<img id=imageCalendar2 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							事件等级
+							<select id="level1" name="level1">
+							<option value="-1">不限</option>
+							<option value="1">普通事件</option>
+							<option value="2">严重事件</option>
+							<option value="3">紧急事件</option>
+							</select>
+							处理状态
+							<select id="event_status" name="event_status">
+							<option value="-1">不限</option>
+							<option value="0">未处理</option>
+							<option value="1">正在处理</option>
+							<option value="2">已处理</option>
+							</select>
+							<input type="button" id="searchAlarmInfo" value="查  询">
+					</td>
+				</tr>
+			</table>
+	    	]]>
+	    	</title>
+	    </title-tr>
+	    <title-tr>
+		   	<title id="index">序号</title>
+	        <title id="level1">事件等级</title>
+	    	<title id="content">事件描述</title>
+			<!--
+			<title id="recordtime">登记日期</title>
+	    	<title id="eventtype">登记人</title>
+	    	<title id="managesign">处理状态</title> 
+	    	 -->
+	    	<title id="maxtime">最新时间</title>
+	    	<title id="count">告警次数</title> 
+	    	<title id="operation">操作</title>
+	    </title-tr>
+	</tab>
+</tab-config> 

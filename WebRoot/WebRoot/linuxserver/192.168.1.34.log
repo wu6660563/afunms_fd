@@ -1,0 +1,661 @@
+cmdbegin:version
+Linux version 2.6.18-194.el5 (mockbuild@x86-005.build.bos.redhat.com) (gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)) #1 SMP Tue Mar 16 21:52:39 EDT 2010
+cmdbegin:cpuconfig
+processor	: 0
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 1
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 2
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 3
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 4
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 5
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 6
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 7
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 8
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 9
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 10
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 11
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 12
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 13
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 14
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+processor	: 15
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 2400.150
+cache size	: 12288 KB
+cmdbegin:disk
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/cciss/c0d0p1     20315812   1680204  17586968   9% /
+/dev/cciss/c0d0p5     57578808  47208280   7398508  87% /df8003
+/dev/cciss/c0d0p2     40631988   7171868  31362836  19% /usr
+tmpfs                  4080312         0   4080312   0% /dev/shm
+cmdbegin:diskperf
+Linux 2.6.18-194.el5 (dwdd5) 	09/13/13
+
+16:55:01          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:02     dev104-0      9.00      0.00    320.00     35.56      0.08      9.89      6.89      6.20
+16:55:02     dev104-1      9.00      0.00    320.00     35.56      0.08      9.89      6.89      6.20
+16:55:02     dev104-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev104-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev104-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev104-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+16:55:02          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:03     dev104-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev104-1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev104-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev104-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev104-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev104-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+16:55:03          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:04     dev104-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev104-1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev104-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev104-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev104-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev104-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:     dev104-0      2.99      0.00    106.31     35.56      0.03      9.89      6.89      2.06
+Average:     dev104-1      2.99      0.00    106.31     35.56      0.03      9.89      6.89      2.06
+Average:     dev104-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev104-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev104-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev104-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+cmdbegin:cpu
+Linux 2.6.18-194.el5 (dwdd5) 	09/13/13
+
+16:55:04          CPU     %user     %nice   %system   %iowait    %steal     %idle
+16:55:05          all      0.00      0.06      0.06      0.00      0.00     99.88
+16:55:06          all      0.06      0.12      0.12      0.50      0.00     99.19
+16:55:07          all      0.00      0.19      0.06      0.12      0.00     99.63
+Average:          all      0.02      0.12      0.08      0.21      0.00     99.56
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:       8160624    4572736    3587888          0     403436    2410440
+-/+ buffers/cache:    1758860    6401764
+Swap:     20972848     477772   20495076
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  10348   452 ?        Ss    2011   0:29 init [5]                             
+root         2  0.0  0.0      0     0 ?        S<    2011   0:08 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/0]
+root         5  0.0  0.0      0     0 ?        S<    2011   0:08 [migration/1]
+root         6  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/1]
+root         7  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/1]
+root         8  0.0  0.0      0     0 ?        S<    2011   0:00 [migration/2]
+root         9  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/2]
+root        10  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/2]
+root        11  0.0  0.0      0     0 ?        S<    2011   0:01 [migration/3]
+root        12  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/3]
+root        13  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/3]
+root        14  0.0  0.0      0     0 ?        S<    2011   0:00 [migration/4]
+root        15  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/4]
+root        16  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/4]
+root        17  0.0  0.0      0     0 ?        S<    2011   0:01 [migration/5]
+root        18  0.0  0.0      0     0 ?        SN    2011   0:01 [ksoftirqd/5]
+root        19  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/5]
+root        20  0.0  0.0      0     0 ?        S<    2011   0:00 [migration/6]
+root        21  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/6]
+root        22  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/6]
+root        23  0.0  0.0      0     0 ?        S<    2011   0:06 [migration/7]
+root        24  0.0  0.0      0     0 ?        SN    2011   0:01 [ksoftirqd/7]
+root        25  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/7]
+root        26  0.0  0.0      0     0 ?        S<    2011   0:00 [migration/8]
+root        27  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/8]
+root        28  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/8]
+root        29  0.0  0.0      0     0 ?        S<    2011   0:13 [migration/9]
+root        30  0.0  0.0      0     0 ?        SN    2011   0:12 [ksoftirqd/9]
+root        31  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/9]
+root        32  0.0  0.0      0     0 ?        S<    2011   0:10 [migration/10]
+root        33  0.0  0.0      0     0 ?        SN    2011   0:10 [ksoftirqd/10]
+root        34  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/10]
+root        35  0.0  0.0      0     0 ?        S<    2011   0:03 [migration/11]
+root        36  0.0  0.0      0     0 ?        SN    2011   0:01 [ksoftirqd/11]
+root        37  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/11]
+root        38  0.0  0.0      0     0 ?        S<    2011   0:01 [migration/12]
+root        39  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/12]
+root        40  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/12]
+root        41  0.0  0.0      0     0 ?        S<    2011   0:16 [migration/13]
+root        42  0.0  0.0      0     0 ?        SN    2011   0:13 [ksoftirqd/13]
+root        43  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/13]
+root        44  0.0  0.0      0     0 ?        S<    2011   0:00 [migration/14]
+root        45  0.0  0.0      0     0 ?        SN    2011   0:00 [ksoftirqd/14]
+root        46  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/14]
+root        47  0.0  0.0      0     0 ?        S<    2011   0:13 [migration/15]
+root        48  0.0  0.0      0     0 ?        SN    2011   0:13 [ksoftirqd/15]
+root        49  0.0  0.0      0     0 ?        S<    2011   0:00 [watchdog/15]
+root        50  0.0  0.0      0     0 ?        S<    2011   0:00 [events/0]
+root        51  0.0  0.0      0     0 ?        S<    2011  25:53 [events/1]
+root        52  0.0  0.0      0     0 ?        S<    2011  25:43 [events/2]
+root        53  0.0  0.0      0     0 ?        S<    2011   0:35 [events/3]
+root        54  0.0  0.0      0     0 ?        S<    2011   0:39 [events/4]
+root        55  0.0  0.0      0     0 ?        S<    2011  22:51 [events/5]
+root        56  0.0  0.0      0     0 ?        S<    2011   0:25 [events/6]
+root        57  0.0  0.0      0     0 ?        S<    2011  24:05 [events/7]
+root        58  0.0  0.0      0     0 ?        S<    2011   0:00 [events/8]
+root        59  0.0  0.0      0     0 ?        S<    2011   0:00 [events/9]
+root        60  0.0  0.0      0     0 ?        S<    2011   0:00 [events/10]
+root        61  0.0  0.0      0     0 ?        S<    2011   0:00 [events/11]
+root        62  0.0  0.0      0     0 ?        S<    2011   0:00 [events/12]
+root        63  0.0  0.0      0     0 ?        S<    2011   0:00 [events/13]
+root        64  0.0  0.0      0     0 ?        S<    2011   0:00 [events/14]
+root        65  0.0  0.0      0     0 ?        S<    2011   0:00 [events/15]
+root        66  0.0  0.0      0     0 ?        S<    2011   0:00 [khelper]
+root       141  0.0  0.0      0     0 ?        S<    2011   0:00 [kthread]
+root       161  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/0]
+root       162  0.0  0.0      0     0 ?        S<    2011   0:04 [kblockd/1]
+root       163  0.0  0.0      0     0 ?        S<    2011   0:04 [kblockd/2]
+root       164  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/3]
+root       165  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/4]
+root       166  0.0  0.0      0     0 ?        S<    2011   0:08 [kblockd/5]
+root       167  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/6]
+root       168  0.0  0.0      0     0 ?        S<    2011   0:02 [kblockd/7]
+root       169  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/8]
+root       170  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/9]
+root       171  0.0  0.0      0     0 ?        S<    2011   0:01 [kblockd/10]
+root       172  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/11]
+root       173  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/12]
+root       174  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/13]
+root       175  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/14]
+root       176  0.0  0.0      0     0 ?        S<    2011   0:00 [kblockd/15]
+root       177  0.0  0.0      0     0 ?        S<    2011   0:00 [kacpid]
+root       329  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/0]
+root       330  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/1]
+root       331  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/2]
+root       332  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/3]
+root       333  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/4]
+root       334  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/5]
+root       335  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/6]
+root       336  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/7]
+root       337  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/8]
+root       338  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/9]
+root       339  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/10]
+root       340  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/11]
+root       341  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/12]
+root       342  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/13]
+root       343  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/14]
+root       344  0.0  0.0      0     0 ?        S<    2011   0:00 [cqueue/15]
+root       347  0.0  0.0      0     0 ?        S<    2011   0:00 [khubd]
+root       349  0.0  0.0      0     0 ?        S<    2011   0:00 [kseriod]
+root       538  0.0  0.0      0     0 ?        S     2011   0:00 [khungtaskd]
+root       541  0.0  0.0      0     0 ?        S<    2011   2:47 [kswapd0]
+root       542  0.0  0.0      0     0 ?        S<    2011   1:47 [kswapd1]
+root       543  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/0]
+root       544  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/1]
+root       545  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/2]
+root       546  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/3]
+root       547  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/4]
+root       548  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/5]
+root       549  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/6]
+root       550  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/7]
+root       551  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/8]
+root       552  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/9]
+root       553  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/10]
+root       554  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/11]
+root       555  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/12]
+root       556  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/13]
+root       557  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/14]
+root       558  0.0  0.0      0     0 ?        S<    2011   0:00 [aio/15]
+root       712  0.0  0.0      0     0 ?        S<    2011   0:00 [kpsmoused]
+root       856  0.0  0.0      0     0 ?        S<    2011   0:00 [cciss_scan00]
+root       925  0.0  0.0      0     0 ?        S<    2011   0:00 [kstriped]
+root       994  0.0  0.0      0     0 ?        S<    2011  16:58 [kjournald]
+root      1019  0.0  0.0      0     0 ?        S<    2011   0:13 [kauditd]
+root      1056  0.0  0.0  13040   252 ?        S<s   2011   0:00 /sbin/udevd -d
+ems       1259  0.0  0.0 321120  7080 ?        Sl   Jun19   5:22 gnome-terminal
+ems       1261  0.0  0.0  90440  1488 ?        S    Jun19   0:00 /usr/libexec/gconfd-2 12
+ems       1263  0.0  0.0 121396  1236 ?        Ssl  Jun19   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems       1267  0.0  0.0  14868   540 ?        S    Jun19   0:00 gnome-pty-helper
+ems       1268  0.0  0.0  72668  1356 pts/2    Ss+  Jun19   0:00 bash
+root      1730  0.0  0.0      0     0 ?        S<    2011   0:12 [bnx2x]
+root      2114  0.0  0.0      0     0 ?        S    Sep04   0:41 [pdflush]
+ems       2640  0.0  0.0  46784   664 ?        SN    2011   0:02 cvs up
+ems       2661  0.0  0.0  45796   652 ?        SN    2011   0:00 cvs up
+ems       2676  0.0  0.0  45804   652 ?        SN    2011   0:00 cvs up
+ems       2738  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems       2753  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+root      3069  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/0]
+root      3070  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/1]
+root      3071  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/2]
+root      3072  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/3]
+root      3073  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/4]
+root      3074  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/5]
+root      3075  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/6]
+root      3076  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/7]
+root      3077  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/8]
+root      3078  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/9]
+root      3079  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/10]
+root      3080  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/11]
+root      3081  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/12]
+root      3082  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/13]
+root      3083  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/14]
+root      3084  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpathd/15]
+root      3085  0.0  0.0      0     0 ?        S<    2011   0:00 [kmpath_handlerd]
+root      3178  0.0  0.0      0     0 ?        S<    2011  65:22 [kjournald]
+root      3180  0.0  0.0      0     0 ?        S<    2011   1:10 [kjournald]
+root      3207  0.0  0.0  57872  1400 ?        S     2011   0:03 /usr/sbin/nm-system-settings --config /etc/NetworkManager/nm-system-settings.conf
+root      3567  0.0  0.0      0     0 ?        S<    2011   0:00 [iscsi_eh]
+root      3674  0.0  0.0      0     0 ?        S<    2011   0:00 [iw_cxgb3]
+root      3747  0.0  0.0      0     0 ?        S<    2011   0:00 [scsi_eh_0]
+root      3749  0.0  0.0      0     0 ?        S<    2011   0:00 [scsi_wq_0]
+root      3750  0.0  0.0      0     0 ?        S<    2011   0:00 [scsi_eh_1]
+root      3755  0.0  0.0      0     0 ?        S<    2011   0:00 [scsi_wq_1]
+root      3799  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_addr]
+root      3834  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_mcast]
+root      3835  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_inform]
+root      3836  0.0  0.0      0     0 ?        S<    2011   0:00 [local_sa]
+root      3855  0.0  0.0      0     0 ?        S<    2011   0:00 [iw_cm_wq]
+root      3877  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/0]
+root      3878  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/1]
+root      3879  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/2]
+root      3880  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/3]
+root      3881  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/4]
+root      3882  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/5]
+root      3883  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/6]
+root      3884  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/7]
+root      3885  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/8]
+root      3886  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/9]
+root      3887  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/10]
+root      3888  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/11]
+root      3889  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/12]
+root      3890  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/13]
+root      3891  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/14]
+root      3892  0.0  0.0      0     0 ?        S<    2011   0:00 [ib_cm/15]
+root      3911  0.0  0.0      0     0 ?        S<    2011   0:00 [rdma_cm]
+root      3954  0.0  0.0  59320   400 ?        Ssl   2011   0:02 brcm_iscsiuio
+root      3960  0.0  0.0   3984   360 ?        Ss    2011   0:01 iscsid
+root      3961  0.0  0.0   4476  2432 ?        S<Ls  2011   0:01 iscsid
+root      4125  0.0  0.0      0     0 ?        S<    2011   0:01 [bond0]
+root      4253  0.0  0.0  92860   732 ?        S<sl  2011   2:08 auditd
+root      4255  0.0  0.0 147336   852 ?        S<sl  2011   0:49 /sbin/audispd
+root      4277  0.0  0.0   5908   608 ?        Ss    2011   1:15 syslogd -m 0
+root      4280  0.0  0.0   3804   336 ?        Ss    2011   0:00 klogd -x
+root      4482  0.0  0.0  10760   340 ?        Ss    2011  18:52 irqbalance
+rpc       4500  0.0  0.0   8052   420 ?        Ss    2011   0:00 portmap
+root      4541  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/0]
+root      4542  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/1]
+root      4543  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/2]
+root      4544  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/3]
+root      4545  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/4]
+root      4546  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/5]
+root      4547  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/6]
+root      4548  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/7]
+root      4549  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/8]
+root      4550  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/9]
+root      4551  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/10]
+root      4552  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/11]
+root      4553  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/12]
+root      4554  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/13]
+root      4555  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/14]
+root      4556  0.0  0.0      0     0 ?        S<    2011   0:00 [rpciod/15]
+root      4577  0.0  0.0  10160   588 ?        Ss    2011   0:00 rpc.statd
+root      4601  0.0  0.0  55180   232 ?        Ss    2011   0:00 rpc.idmapd
+dbus      4616  0.0  0.0  21604  1020 ?        Ss    2011  26:59 dbus-daemon --system
+root      4631  0.0  0.0  10432   536 ?        Ss    2011   0:00 /usr/sbin/hcid
+root      4635  0.0  0.0   5936   384 ?        Ss    2011   0:00 /usr/sbin/sdpd
+root      4703  0.0  0.0      0     0 ?        S<    2011   0:00 [krfcommd]
+root      4741  0.0  0.0  54008   808 ?        Ssl   2011   0:46 pcscd
+root      4751  0.0  0.0   3800   460 ?        Ss    2011   0:00 /usr/sbin/acpid
+68        4760  0.0  0.0  31652  1824 ?        Ss    2011   5:59 hald
+root      4761  0.0  0.0  21692   752 ?        S     2011   0:00 hald-runner
+68        4769  0.0  0.0  12324   664 ?        S     2011   0:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+ems       4772  0.0  0.0  90440  1452 ?        S     2011   0:02 /usr/libexec/gconfd-2 12
+68        4774  0.0  0.0  12324   704 ?        S     2011   0:00 hald-addon-keyboard: listening on /dev/input/event0
+ems       4797  0.0  0.0  90428  1468 ?        S    Feb13   0:01 /usr/libexec/gconfd-2 5
+root      4815  0.0  0.0   8516   356 ?        Ss    2011   0:00 /usr/bin/hidd --server
+root      4854  0.0  0.0 121988   816 ?        Ssl   2011   0:04 automount
+root      4871  0.0  0.0  26324   280 ?        Ss    2011   0:00 ./hpiod
+root      4876  0.0  0.0 159348   908 ?        S     2011   0:13 python ./hpssd.py
+root      4889  0.0  0.0  62608   432 ?        Ss    2011   0:00 /usr/sbin/sshd
+root      4898  0.0  0.0 133532   672 ?        Ss    2011   0:00 cupsd
+root      4912  0.0  0.0  21644   540 ?        Ss    2011   0:00 xinetd -stayalive -pidfile /var/run/xinetd.pid
+ntp       4929  0.0  0.0  19188  4888 ?        SLs   2011   2:07 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+uuidd     4966  0.0  0.0  60952    60 ?        Ss    2011   0:00 /usr/sbin/uuidd
+root      4986  0.0  0.0  66936   888 ?        Ss    2011   0:32 sendmail: accepting connections
+smmsp     4995  0.0  0.0  57688   636 ?        Ss    2011   0:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      5005  0.0  0.0   6452   276 ?        Ss    2011   0:14 gpm -m /dev/input/mice -t exps2
+root      5014  0.0  0.0  74808   568 ?        Ss    2011   0:16 crond
+xfs       5047  0.0  0.0  21152   644 ?        Ss    2011   0:00 xfs -droppriv -daemon
+root      5064  0.0  0.0  19624   344 ?        Ss    2011   0:00 /usr/sbin/atd
+avahi     5094  0.0  0.0  23280  1092 ?        Ss    2011   0:05 avahi-daemon: running [dwdd5.local]
+avahi     5095  0.0  0.0  23148   132 ?        Ss    2011   0:00 avahi-daemon: chroot helper
+root      5106  0.0  0.0 150744  1304 ?        Ssl   2011   0:00 /usr/sbin/cimserver
+root      5174  0.0  0.0  18416   256 ?        S     2011   0:00 /usr/sbin/smartd -q never
+root      5179  0.0  0.0   3792   400 tty1     Ss+   2011   0:00 /sbin/mingetty tty1
+root      5180  0.0  0.0   3792   400 tty2     Ss+   2011   0:00 /sbin/mingetty tty2
+root      5181  0.0  0.0   3792   400 tty3     Ss+   2011   0:00 /sbin/mingetty tty3
+root      5182  0.0  0.0   3792   400 tty4     Ss+   2011   0:00 /sbin/mingetty tty4
+root      5183  0.0  0.0   3792   400 tty5     Ss+   2011   0:00 /sbin/mingetty tty5
+root      5190  0.0  0.0   3792   400 tty6     Ss+   2011   0:00 /sbin/mingetty tty6
+root      5191  0.0  0.0 167688  1160 ?        Ss    2011   0:00 /usr/sbin/gdm-binary -nodaemon
+root      5287  0.0  0.0 201132  1396 ?        S     2011   0:00 /usr/sbin/gdm-binary -nodaemon
+root      5289  0.0  0.0 255348  1400 ?        Sl    2011   0:22 /usr/libexec/gdm-rh-security-token-helper
+root      5314  0.0  0.0 274264  5416 ?        SN    2011   0:45 /usr/bin/python -tt /usr/sbin/yum-updatesd
+root      5326  0.0  0.0  13040   848 ?        SN    2011   0:06 /usr/libexec/gam_server
+ems       5609  0.0  0.0  90440  1464 ?        S     2012   0:00 /usr/libexec/gconfd-2 12
+ems       6182  0.0  0.0  94792  1468 ?        S     2012   0:03 /usr/libexec/gconfd-2 12
+ems       7665  0.0  0.0 187060  1164 ?        Ssl   2012   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems       8428  0.0  0.0  90368  1460 ?        S     2012   0:02 /usr/libexec/gconfd-2 4
+ems       8911  0.0  0.0  90432  1468 ?        S     2012   0:02 /usr/libexec/gconfd-2 5
+ems      10075  0.0  0.0 187056  1164 ?        Ssl   2012   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      10155  0.0  0.0  90424  1800 ?        S    Aug25   0:00 /usr/libexec/gconfd-2 5
+ems      10774  0.0  0.0 186928  1236 ?        Ssl  Mar19   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      11241  0.0  0.0  90440  1468 ?        S     2012   0:01 /usr/libexec/gconfd-2 5
+ems      11335  0.0  0.0 186928  1164 ?        Ssl   2012   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      11506  0.0  0.1 317620 10800 ?        Sl   Aug25   0:40 gnome-terminal
+ems      11508  0.0  0.0 186924  1240 ?        Ssl  Aug25   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      11512  0.0  0.0  14868   540 ?        S    Aug25   0:00 gnome-pty-helper
+ems      11513  0.0  0.0  68416  1440 pts/3    Ss   Aug25   0:00 bash
+ems      15068  0.0  0.0  80996   880 ?        SN   Mar23   0:00 python /df8003/bat/gupdate
+ems      15075  0.0  0.0  66064   792 ?        SN   Mar23   0:00 sh -c { cd /df8003/uif/netres/; cvs -q up ; } 2>&1
+ems      15076  0.0  0.0  43556   628 ?        SN   Mar23   0:00 cvs -q up
+ems      16438  0.0  0.0  45468   664 ?        SN    2011   0:00 cvs up
+ems      16450  0.0  0.0  43964   652 ?        SN    2011   0:00 cvs up
+ems      16735  0.0  0.0  45804   652 ?        SN    2011   0:00 cvs up
+ems      16756  0.0  0.0  45804   652 ?        SN    2011   0:00 cvs up
+ems      16923  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems      16944  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems      16959  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems      16980  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+root     18511  0.0  0.0      0     0 ?        S    Aug12   0:27 [pdflush]
+root     18686  0.3  0.7 205828 61304 tty7     SLs+  2011 3751:19 /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+root     18697  0.0  0.4 536820 38176 tty7     Sl+   2011 706:46 ./rgsender -daemon -display 0 -l /etc/opt/hpremote/rgsender/logSetup
+ems      18726  0.0  0.0  45804   652 ?        SN    2011   0:00 cvs up
+ems      18730  0.0  0.0  90368  1476 ?        S    Jul18   0:00 /usr/libexec/gconfd-2 5
+ems      18741  0.0  0.0  45804   652 ?        SN    2011   0:00 cvs up
+ems      18752  0.0  0.0 325116  4048 ?        Ss    2011   0:00 /usr/bin/gnome-session
+ems      18784  0.0  0.0      0     0 ?        Z     2011   0:00 [Xsession] <defunct>
+ems      18791  0.0  0.0  53852   272 ?        Ss    2011   0:02 /usr/bin/ssh-agent /bin/sh -c exec -l /bin/bash -c "/usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients"
+ems      18849  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems      18867  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems      18884  0.0  0.0  15180   364 ?        S     2011   0:00 /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients
+ems      18885  0.0  0.0  43456   596 ?        SN    2011   0:00 cvs up
+ems      18886  0.0  0.0  21364   848 ?        Ss    2011   0:00 /bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
+ems      18892  0.0  0.0  90480  1896 ?        S     2011   0:11 /usr/libexec/gconfd-2 5
+ems      18895  0.0  0.0  12900   372 ?        S     2011   0:00 /usr/bin/gnome-keyring-daemon
+ems      18897  0.0  0.0 264864  3376 ?        Sl    2011   8:33 /usr/libexec/gnome-settings-daemon
+ems      18901  0.0  0.0 109516  1692 ?        Ss    2011   0:03 /usr/lib64/scim-1.0/scim-launcher -d -c simple -e all -f socket --no-stay
+ems      18910  0.0  0.0  20144   632 ?        Ss    2011   0:00 /usr/bin/esd -terminate -nobeeps -as 2 -spawnfd 22
+ems      18913  0.0  0.0  82408   204 ?        Ss    2011   0:00 /usr/lib64/scim-1.0/scim-helper-manager
+ems      18914  0.0  0.0 262300  4276 ?        Ssl   2011   1:19 /usr/lib64/scim-1.0/scim-panel-gtk --display :0.0 -c socket -d --no-stay
+ems      18916  0.0  0.0  90056   484 ?        Ss    2011   0:10 /usr/lib64/scim-1.0/scim-launcher -d -c socket -e socket -f x11
+ems      18927  0.0  0.1 186796  8408 ?        Ss    2011  13:52 metacity --sm-client-id=default1
+ems      18931  0.0  0.0 352572  7920 ?        Ss    2011   1:56 gnome-panel --sm-client-id default2
+ems      18933  0.0  0.0 505156  7660 ?        Ss    2011   1:58 nautilus --no-default-window --sm-client-id default3
+ems      18937  0.0  0.0 263092  1184 ?        Ssl   2011   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      18939  0.0  0.0 263424  2960 ?        Ss    2011   0:08 eggcups --sm-client-id default4
+ems      18942  0.0  0.0 230432  2212 ?        Ss    2011   0:00 gnome-volume-manager --sm-client-id default5
+ems      18948  0.0  0.0 147232  1692 ?        S     2011   0:00 /usr/libexec/gnome-vfs-daemon
+ems      18949  0.0  0.0 154200  2552 ?        Ss    2011   0:04 bt-applet --sm-disable
+ems      18957  0.0  0.0 291648  2876 ?        Ss    2011   0:06 nm-applet --sm-disable
+ems      18961  0.0  0.0 364884  6860 ?        Ss    2011   0:17 /usr/bin/python -tt /usr/bin/puplet
+ems      18964  0.0  0.0 155388  2420 ?        Ss    2011   0:06 pam-panel-icon --sm-client-id default0
+ems      18972  0.0  0.0  72372   848 ?        Sl    2011   0:24 ./escd --key_Inserted="/usr/bin/esc" --on_Signal="/usr/bin/esc"
+ems      18976  0.0  0.0 296804  3088 ?        Ss    2011  17:33 gnome-power-manager
+root     18979  0.0  0.0  12188   600 ?        S     2011   0:18 /sbin/pam_timestamp_check -d root
+ems      18989  0.0  0.0  13052   980 ?        S     2011   0:58 /usr/libexec/gam_server
+ems      18991  0.0  0.1 331156  8268 ?        S     2011   8:47 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=19
+ems      18993  0.0  0.0 460936  3568 ?        S     2011   0:00 /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=25
+ems      19005  0.0  0.0 241180  3056 ?        S     2011   0:00 /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=20
+ems      19007  0.0  0.0 413132  4392 ?        Sl    2011   3:06 /usr/libexec/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=29
+ems      19011  0.0  0.0 299012  4040 ?        S     2011   0:12 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=26
+ems      19015  0.0  0.0  12824   696 ?        S     2011   0:01 /usr/libexec/mapping-daemon
+ems      19019  0.0  0.0  78668   824 ?        S     2011  13:36 scim-bridge
+root     19033  0.2  0.0 135276  1312 ?        S    Aug12 126:06 /df8003/bin/netmd
+root     19034  0.0  0.0 140120  1076 ?        SN   Aug12   0:00 /df8003/bin/dbmd
+root     19035  0.3  0.0 139624  1452 ?        SN   Aug12 148:23 /df8003/bin/applogd
+root     19036  0.3  0.0 159036  7312 ?        S    Aug12 161:33 /df8003/bin/sysmd
+ems      19093  0.0  0.0 184104  3584 ?        Ss    2011  13:15 gnome-screensaver
+root     19108  0.0  0.0 208584  2052 ?        SN   Aug12   0:06 /df8003/bin/procmd
+root     19109  0.0  0.0 208088  1688 ?        SN   Aug12   0:00 proc_watchd
+root     19110  0.1  0.0 217484  2272 ?        SN   Aug12  90:38 netmond -s 3600
+ems      19111  0.0  0.0 290280  2396 ?        SN   Aug12  20:31 almd_server_rep
+ems      19112  0.0  0.2 1816608 18072 ?       SN   Aug12  14:14 alm_replica -mode r
+ems      19113  0.8  3.0 1802336 246772 ?      SN   Aug12 413:39 SCADA_Rep -mode r
+ems      19114  0.0  0.0 541316  4296 ?        SN   Aug12  20:47 comServer
+ems      19115  0.0  1.0 1705416 83292 ?       SN   Aug12   0:30 SCADA_Server -mode s1 -ref
+ems      19116  0.0  0.0 1808120 2748 ?        SN   Aug12   0:01 SSM_Server -dts
+ems      19118  0.0  0.0 141660  2084 ?        SN   Aug12   0:08 grsd
+root     19119  0.0  0.2 1890460 20552 ?       SN   Aug12   0:06 ssrd
+ems      19176  0.0  0.0 187052  1168 ?        Ssl   2012   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      19666  0.0  0.0  90440  1468 ?        S     2012   0:00 /usr/libexec/gconfd-2 12
+ems      19699  0.0  0.0  90428  1468 ?        S     2012   0:01 /usr/libexec/gconfd-2 12
+ems      21038  0.0  0.0  90428  1472 ?        S     2012   0:01 /usr/libexec/gconfd-2 5
+ems      24238  0.0  0.0  90468  1456 ?        S     2012   0:02 /usr/libexec/gconfd-2 12
+ems      26047  0.0  0.0  90456  1464 ?        S     2012   0:03 /usr/libexec/gconfd-2 5
+ems      26117  0.0  0.0 186924  1164 ?        Ssl   2011   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      27549  0.0  0.0 102012  1168 ?        S    16:55   0:00 crond
+ems      27551  0.0  0.0   8700   944 ?        Ss   16:55   0:00 /bin/sh -c /df8003/home/nms/collection.sh >/dev/null
+ems      27552  0.0  0.0   8704  1000 ?        S    16:55   0:00 /bin/sh /df8003/home/nms/collection.sh
+ems      27562  0.0  0.0  10460   860 ?        R    16:55   0:00 ps aux
+ems      28008  0.0  0.0  90360  1468 ?        S    Jun06   0:00 /usr/libexec/gconfd-2 5
+ems      28055  5.4 10.4 2804816 851700 pts/3  SNl+ Sep06 576:12 qtmmi
+ems      28331  0.0  0.0  90440  1452 ?        S     2012   0:02 /usr/libexec/gconfd-2 12
+ems      28926  0.0  0.0  90428  1468 ?        S     2012   0:01 /usr/libexec/gconfd-2 12
+ems      30178  0.0  0.0  90468  1468 ?        S    Mar17   0:01 /usr/libexec/gconfd-2 12
+ems      32513  0.0  0.0  90380  1460 ?        S     2012   0:02 /usr/libexec/gconfd-2 12
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 3c:4a:92:ec:73:40 brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 3c:4a:92:ec:73:40 brd ff:ff:ff:ff:ff:ff
+4: sit0: <NOARP> mtu 1480 qdisc noop 
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue 
+    link/ether 3c:4a:92:ec:73:40 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.34/24 brd 192.168.1.255 scope global bond0
+    inet6 fe80::3e4a:92ff:feec:7340/64 scope link 
+       valid_lft forever preferred_lft forever
+cmdbegin:interface
+Linux 2.6.18-194.el5 (dwdd5) 	09/13/13
+
+16:55:07        IFACE   rxpck/s   txpck/s   rxbyt/s   txbyt/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:08           lo    219.00    219.00  16541.00  16541.00      0.00      0.00      0.00
+16:55:08         eth0    154.00      5.00 151946.00    692.00      0.00      0.00      8.00
+16:55:08         eth1    167.00      0.00 171694.00      0.00      0.00      0.00      0.00
+16:55:08         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08        bond0    321.00      5.00 323640.00    692.00      0.00      0.00      8.00
+
+16:55:08        IFACE   rxpck/s   txpck/s   rxbyt/s   txbyt/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:09           lo    255.45    255.45  22233.66  22233.66      0.00      0.00      0.00
+16:55:09         eth0    177.23      1.98 196273.27    275.25      0.00      0.00      9.90
+16:55:09         eth1    146.53      0.00 174942.57      0.00      0.00      0.00      0.00
+16:55:09         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09        bond0    323.76      1.98 371215.84    275.25      0.00      0.00      9.90
+
+16:55:09        IFACE   rxpck/s   txpck/s   rxbyt/s   txbyt/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:10           lo    327.00    327.00  26340.00  26340.00      0.00      0.00      0.00
+16:55:10         eth0     54.00      7.00  29126.00   1176.00      0.00      0.00      5.00
+16:55:10         eth1     56.00      0.00  39508.00      0.00      0.00      0.00      0.00
+16:55:10         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10        bond0    110.00      7.00  68634.00   1176.00      0.00      0.00      5.00
+
+Average:        IFACE   rxpck/s   txpck/s   rxbyt/s   txbyt/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo    267.11    267.11  21706.64  21706.64      0.00      0.00      0.00
+Average:         eth0    128.57      4.65 126015.95    712.96      0.00      0.00      7.64
+Average:         eth1    123.26      0.00 128868.44      0.00      0.00      0.00      0.00
+Average:         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:        bond0    251.83      4.65 254884.39    712.96      0.00      0.00      7.64
+cmdbegin:uname
+Linux dwdd5
+cmdbegin:usergroup
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+games:x:20:
+gopher:x:30:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+nobody:x:99:
+users:x:100:ems,oracle
+nscd:x:28:
+floppy:x:19:
+vcsa:x:69:
+audio:x:63:gdm
+utmp:x:22:
+rpc:x:32:
+mailnull:x:47:
+smmsp:x:51:
+pcap:x:77:
+utempter:x:35:
+slocate:x:21:
+ntp:x:38:
+sshd:x:74:
+rpcuser:x:29:
+nfsnobody:x:4294967294:
+dbus:x:81:
+avahi:x:70:
+haldaemon:x:68:
+avahi-autoipd:x:101:
+distcache:x:94:
+mysql:x:27:
+apache:x:48:
+postgres:x:26:
+webalizer:x:67:
+oprofile:x:16:
+squid:x:23:
+named:x:25:
+xfs:x:43:
+gdm:x:42:
+sabayon:x:86:
+stapdev:x:102:
+stapusr:x:103:
+ldap:x:55:
+uuidd:x:104:
+pkcs11:x:105:root
+screen:x:84:
+ident:x:98:
+pvm:x:24:
+privoxy:x:73:
+quaggavt:x:85:
+quagga:x:92:
+radvd:x:75:
+radiusd:x:95:
+tomcat:x:91:
+pegasus:x:65:
+fuse:x:106:
+dfdz:x:500:ems
+dba:x:501:oracle
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/etc/news:
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rpc:x:32:32:Portmapper RPC user:/:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+pcap:x:77:77::/var/arpwatch:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:4294967294:4294967294:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+avahi:x:70:70:Avahi daemon:/:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+avahi-autoipd:x:100:101:avahi-autoipd:/var/lib/avahi-autoipd:/sbin/nologin
+distcache:x:94:94:Distcache:/:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/bin/bash
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+postgres:x:26:26:PostgreSQL Server:/var/lib/pgsql:/bin/bash
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+xfs:x:43:43:X Font Server:/etc/X11/fs:/sbin/nologin
+gdm:x:42:42::/var/gdm:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+ldap:x:55:55:LDAP User:/var/lib/ldap:/bin/false
+uuidd:x:101:104:UUID generator helper daemon:/var/lib/libuuid:/sbin/nologin
+amanda:x:33:6:Amanda user:/var/lib/amanda:/bin/bash
+ident:x:98:98::/:/sbin/nologin
+pvm:x:24:24::/usr/share/pvm3:/bin/bash
+privoxy:x:73:73::/etc/privoxy:/sbin/nologin
+quagga:x:92:92:Quagga routing suite:/var/run/quagga:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+radiusd:x:95:95:radiusd user:/home/radiusd:/sbin/nologin
+tomcat:x:91:91:Tomcat:/usr/share/tomcat5:/bin/sh
+pegasus:x:66:65:tog-pegasus OpenPegasus WBEM/CIM services:/var/lib/Pegasus:/sbin/nologin
+ems:x:115:500::/df8003/home:/bin/bash
+oracle:x:502:501::/usr/local/oracle:/bin/bash
+cmdbegin:date
+Fri Sep 13 16:55:10 CST 2013
+cmdbegin:uptime
+ 16:55:10 up 819 days,  1:35,  3 users,  load average: 0.07, 0.10, 0.13
+cmdbegin:end

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GBK"?>
+<graph caption="磁盘利用率" xAxisName="" yAxisName="%" decimalPrecision="0" formatNumberScale="0">
+   <set name="10.10.152.30" value="98" color="FF0F00" />
+   <set name="10.22.8.27" value="86.0" color="FF6600" />
+   <set name="10.22.8.71" value="56.0" color="FF9E01" />
+   <set name="10.22.8.72" value="56.0" color="FCD202" />
+   <set name="10.10.152.30" value="50" color="F8FF01" />
+   <set name="10.10.152.30" value="43" color="B0DE09" />
+   <set name="10.22.8.71" value="36.0" color="04D215" />
+   <set name="10.22.8.27" value="24.0" color="0D8ECF" />
+   <set name="10.10.152.30" value="23" color="0D52D1" />
+   <set name="10.22.8.72" value="20.0" color="2A0CD0" />
+</graph>
+

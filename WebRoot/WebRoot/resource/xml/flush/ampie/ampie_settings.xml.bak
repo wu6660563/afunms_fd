@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+<data_type>xml</data_type>
+<text_size>11</text_size>
+<preloader_on_reload>true</preloader_on_reload>
+<add_time_stamp>true</add_time_stamp>
+
+<pie>
+	<x>130</x>
+	<y>120</y>
+	<radius>70</radius>
+	<inner_radius>0</inner_radius>
+	<height>15</height>
+	<angle>35</angle>
+	<colors>0x0E8FCF,0xFF0F00,0xF3FA00,0xB0DE09,0x04D215,0xAE8FCF</colors>
+</pie>
+
+<animation>
+	<start_time>2</start_time>
+	<start_effect>strong</start_effect>
+	<pull_out_time>1.5</pull_out_time>
+	<pull_out_effect>bounce</pull_out_effect>
+	<pull_out_radius>15</pull_out_radius>
+	<pull_out_only_one>true</pull_out_only_one>
+</animation>
+
+<balloon>
+	<show><![CDATA[{title}:{value}({percents}%)]]></show>
+</balloon>
+
+<data_labels>
+	<radius>20</radius>
+	<show><![CDATA[{percents}%]]></show>
+</data_labels>
+
+<legend>
+	<enabled>true</enabled>
+	<x>255</x>
+	<y>35</y>
+	<width>200</width>
+	<max_columns>1</max_columns>
+	<spacing>2</spacing>
+	<margins>2</margins>
+	<values>
+		<text><![CDATA[]]></text>
+	</values>
+</legend>	
+
+<labels>
+	<label>
+		<x>0</x>
+		<y>10</y>
+		<rotate>false</rotate>
+		<align>center</align>
+		<text_color></text_color>
+		<text_size>12</text_size>
+	</label>
+</labels>
+
+</settings>

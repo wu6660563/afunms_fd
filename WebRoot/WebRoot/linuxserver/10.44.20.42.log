@@ -1,0 +1,1697 @@
+cmdbegin:version
+Linux version 2.6.32-220.el6.x86_64 (mockbuild@x86-004.build.bos.redhat.com) (gcc version 4.4.5 20110214 (Red Hat 4.4.5-6) (GCC) ) #1 SMP Wed Nov 9 08:03:13 EST 2011
+cmdbegin:cpuconfig
+processor	: 0
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 1
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 2
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 3
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 4
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 5
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1330.000
+cache size	: 18432 KB
+processor	: 6
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 7
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 8
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 9
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 10
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 11
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1729.000
+cache size	: 18432 KB
+processor	: 12
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 13
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 14
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1330.000
+cache size	: 18432 KB
+processor	: 15
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 16
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1463.000
+cache size	: 18432 KB
+processor	: 17
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 18
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1596.000
+cache size	: 18432 KB
+processor	: 19
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1596.000
+cache size	: 18432 KB
+processor	: 20
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1729.000
+cache size	: 18432 KB
+processor	: 21
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 22
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 23
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 24
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 25
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1330.000
+cache size	: 18432 KB
+processor	: 26
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1330.000
+cache size	: 18432 KB
+processor	: 27
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 28
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 29
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1596.000
+cache size	: 18432 KB
+processor	: 30
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 31
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1330.000
+cache size	: 18432 KB
+processor	: 32
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1330.000
+cache size	: 18432 KB
+processor	: 33
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 34
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 35
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 36
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 37
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1463.000
+cache size	: 18432 KB
+processor	: 38
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 39
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 40
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 41
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+processor	: 42
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 43
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 44
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 45
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1197.000
+cache size	: 18432 KB
+processor	: 46
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1862.000
+cache size	: 18432 KB
+processor	: 47
+model name	: Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1064.000
+cache size	: 18432 KB
+cmdbegin:disk
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda3            106548304  21278100  79857852  22% /
+tmpfs                 16427724        24  16427700   1% /dev/shm
+/dev/sda2              1032088     60004    919656   7% /boot
+/dev/sda1               511720       272    511448   1% /boot/efi
+/dev/sr0               3505504   3505504         0 100% /media/RHEL_6.2 x86_64 Disc 1
+cmdbegin:diskperf
+Linux 2.6.32-220.el6.x86_64 (SVR-YTHAP-03) 	03/20/13 	_x86_64_	(48 CPU)
+
+18:00:01          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+18:00:02       dev8-0      4.21      0.00    665.26    158.00      0.00      0.50      0.50      0.21
+18:00:02      dev11-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+18:00:02          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+18:00:03       dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:03      dev11-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+18:00:03          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+18:00:04       dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:04      dev11-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:       dev8-0      1.36      0.00    214.24    158.00      0.00      0.50      0.50      0.07
+Average:      dev11-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+cmdbegin:cpu
+Linux 2.6.32-220.el6.x86_64 (SVR-YTHAP-03) 	03/20/13 	_x86_64_	(48 CPU)
+
+18:00:04        CPU     %user     %nice   %system   %iowait    %steal     %idle
+18:00:05        all      1.63      0.00      0.08      0.00      0.00     98.29
+18:00:06        all      2.00      0.00      0.12      0.00      0.00     97.88
+18:00:07        all      1.56      0.00      0.04      0.00      0.00     98.40
+Average:        all      1.71      0.00      0.07      0.00      0.00     98.22
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:      32855452   14658036   18197416          0     436460    9136488
+-/+ buffers/cache:    5085088   27770364
+Swap:     32767992          0   32767992
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  19396  1568 ?        Ss    2012   1:53 /sbin/init
+root         2  0.0  0.0      0     0 ?        S     2012   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S     2012   0:00 [migration/0]
+root         4  0.0  0.0      0     0 ?        S     2012   0:52 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S     2012   0:00 [migration/0]
+root         6  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/0]
+root         7  0.0  0.0      0     0 ?        S     2012   0:00 [migration/1]
+root         8  0.0  0.0      0     0 ?        S     2012   0:00 [migration/1]
+root         9  0.0  0.0      0     0 ?        S     2012   0:01 [ksoftirqd/1]
+root        10  0.0  0.0      0     0 ?        S     2012   0:02 [watchdog/1]
+root        11  0.0  0.0      0     0 ?        S     2012   0:00 [migration/2]
+root        12  0.0  0.0      0     0 ?        S     2012   0:00 [migration/2]
+root        13  0.0  0.0      0     0 ?        S     2012   0:01 [ksoftirqd/2]
+root        14  0.0  0.0      0     0 ?        S     2012   0:03 [watchdog/2]
+root        15  0.0  0.0      0     0 ?        S     2012   0:00 [migration/3]
+root        16  0.0  0.0      0     0 ?        S     2012   0:00 [migration/3]
+root        17  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/3]
+root        18  0.0  0.0      0     0 ?        S     2012   0:02 [watchdog/3]
+root        19  0.0  0.0      0     0 ?        S     2012   0:00 [migration/4]
+root        20  0.0  0.0      0     0 ?        S     2012   0:00 [migration/4]
+root        21  0.0  0.0      0     0 ?        S     2012   0:01 [ksoftirqd/4]
+root        22  0.0  0.0      0     0 ?        S     2012   0:32 [watchdog/4]
+root        23  0.0  0.0      0     0 ?        S     2012   0:00 [migration/5]
+root        24  0.0  0.0      0     0 ?        S     2012   0:00 [migration/5]
+root        25  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/5]
+root        26  0.0  0.0      0     0 ?        S     2012   0:01 [watchdog/5]
+root        27  0.0  0.0      0     0 ?        S     2012   0:00 [migration/6]
+root        28  0.0  0.0      0     0 ?        S     2012   0:00 [migration/6]
+root        29  0.0  0.0      0     0 ?        S     2012   0:47 [ksoftirqd/6]
+root        30  0.0  0.0      0     0 ?        S     2012   0:03 [watchdog/6]
+root        31  0.0  0.0      0     0 ?        S     2012   0:00 [migration/7]
+root        32  0.0  0.0      0     0 ?        S     2012   0:00 [migration/7]
+root        33  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/7]
+root        34  0.0  0.0      0     0 ?        S     2012   0:03 [watchdog/7]
+root        35  0.0  0.0      0     0 ?        S     2012   0:00 [migration/8]
+root        36  0.0  0.0      0     0 ?        S     2012   0:00 [migration/8]
+root        37  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/8]
+root        38  0.0  0.0      0     0 ?        S     2012   0:01 [watchdog/8]
+root        39  0.0  0.0      0     0 ?        S     2012   0:00 [migration/9]
+root        40  0.0  0.0      0     0 ?        S     2012   0:00 [migration/9]
+root        41  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/9]
+root        42  0.0  0.0      0     0 ?        S     2012   0:01 [watchdog/9]
+root        43  0.0  0.0      0     0 ?        S     2012   0:00 [migration/10]
+root        44  0.0  0.0      0     0 ?        S     2012   0:00 [migration/10]
+root        45  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/10]
+root        46  0.0  0.0      0     0 ?        S     2012   0:01 [watchdog/10]
+root        47  0.0  0.0      0     0 ?        S     2012   0:00 [migration/11]
+root        48  0.0  0.0      0     0 ?        S     2012   0:00 [migration/11]
+root        49  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/11]
+root        50  0.0  0.0      0     0 ?        S     2012   0:25 [watchdog/11]
+root        51  0.0  0.0      0     0 ?        S     2012   0:01 [migration/12]
+root        52  0.0  0.0      0     0 ?        S     2012   0:00 [migration/12]
+root        53  0.0  0.0      0     0 ?        S     2012   0:15 [ksoftirqd/12]
+root        54  0.0  0.0      0     0 ?        S     2012   0:43 [watchdog/12]
+root        55  0.0  0.0      0     0 ?        S     2012   0:00 [migration/13]
+root        56  0.0  0.0      0     0 ?        S     2012   0:00 [migration/13]
+root        57  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/13]
+root        58  0.0  0.0      0     0 ?        S     2012   0:42 [watchdog/13]
+root        59  0.0  0.0      0     0 ?        S     2012   0:00 [migration/14]
+root        60  0.0  0.0      0     0 ?        S     2012   0:00 [migration/14]
+root        61  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/14]
+root        62  0.0  0.0      0     0 ?        S     2012   0:30 [watchdog/14]
+root        63  0.0  0.0      0     0 ?        S     2012   0:00 [migration/15]
+root        64  0.0  0.0      0     0 ?        S     2012   0:00 [migration/15]
+root        65  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/15]
+root        66  0.0  0.0      0     0 ?        S     2012   0:26 [watchdog/15]
+root        67  0.0  0.0      0     0 ?        S     2012   0:00 [migration/16]
+root        68  0.0  0.0      0     0 ?        S     2012   0:00 [migration/16]
+root        69  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/16]
+root        70  0.0  0.0      0     0 ?        S     2012   0:22 [watchdog/16]
+root        71  0.0  0.0      0     0 ?        S     2012   0:00 [migration/17]
+root        72  0.0  0.0      0     0 ?        S     2012   0:00 [migration/17]
+root        73  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/17]
+root        74  0.0  0.0      0     0 ?        S     2012   0:19 [watchdog/17]
+root        75  0.0  0.0      0     0 ?        S     2012   0:00 [migration/18]
+root        76  0.0  0.0      0     0 ?        S     2012   0:00 [migration/18]
+root        77  0.0  0.0      0     0 ?        S     2012   0:18 [ksoftirqd/18]
+root        78  0.0  0.0      0     0 ?        S     2012   0:12 [watchdog/18]
+root        79  0.0  0.0      0     0 ?        S     2012   0:00 [migration/19]
+root        80  0.0  0.0      0     0 ?        S     2012   0:00 [migration/19]
+root        81  0.0  0.0      0     0 ?        S     2012   0:01 [ksoftirqd/19]
+root        82  0.0  0.0      0     0 ?        S     2012   0:10 [watchdog/19]
+root        83  0.0  0.0      0     0 ?        S     2012   0:00 [migration/20]
+root        84  0.0  0.0      0     0 ?        S     2012   0:00 [migration/20]
+root        85  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/20]
+root        86  0.0  0.0      0     0 ?        S     2012   0:10 [watchdog/20]
+root        87  0.0  0.0      0     0 ?        S     2012   0:00 [migration/21]
+root        88  0.0  0.0      0     0 ?        S     2012   0:00 [migration/21]
+root        89  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/21]
+root        90  0.0  0.0      0     0 ?        S     2012   0:07 [watchdog/21]
+root        91  0.0  0.0      0     0 ?        S     2012   0:00 [migration/22]
+root        92  0.0  0.0      0     0 ?        S     2012   0:00 [migration/22]
+root        93  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/22]
+root        94  0.0  0.0      0     0 ?        S     2012   0:06 [watchdog/22]
+root        95  0.0  0.0      0     0 ?        S     2012   0:00 [migration/23]
+root        96  0.0  0.0      0     0 ?        S     2012   0:00 [migration/23]
+root        97  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/23]
+root        98  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/23]
+root        99  0.0  0.0      0     0 ?        S     2012   0:00 [migration/24]
+root       100  0.0  0.0      0     0 ?        S     2012   0:00 [migration/24]
+root       101  0.0  0.0      0     0 ?        S     2012   0:01 [ksoftirqd/24]
+root       102  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/24]
+root       103  0.0  0.0      0     0 ?        S     2012   0:00 [migration/25]
+root       104  0.0  0.0      0     0 ?        S     2012   0:00 [migration/25]
+root       105  0.0  0.0      0     0 ?        S     2012   0:08 [ksoftirqd/25]
+root       106  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/25]
+root       107  0.0  0.0      0     0 ?        S     2012   0:00 [migration/26]
+root       108  0.0  0.0      0     0 ?        S     2012   0:00 [migration/26]
+root       109  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/26]
+root       110  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/26]
+root       111  0.0  0.0      0     0 ?        S     2012   0:00 [migration/27]
+root       112  0.0  0.0      0     0 ?        S     2012   0:00 [migration/27]
+root       113  0.0  0.0      0     0 ?        S     2012   0:04 [ksoftirqd/27]
+root       114  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/27]
+root       115  0.0  0.0      0     0 ?        S     2012   0:00 [migration/28]
+root       116  0.0  0.0      0     0 ?        S     2012   0:00 [migration/28]
+root       117  0.0  0.0      0     0 ?        S     2012   0:24 [ksoftirqd/28]
+root       118  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/28]
+root       119  0.0  0.0      0     0 ?        S     2012   0:00 [migration/29]
+root       120  0.0  0.0      0     0 ?        S     2012   0:00 [migration/29]
+root       121  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/29]
+root       122  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/29]
+root       123  0.0  0.0      0     0 ?        S     2012   0:00 [migration/30]
+root       124  0.0  0.0      0     0 ?        S     2012   0:00 [migration/30]
+root       125  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/30]
+root       126  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/30]
+root       127  0.0  0.0      0     0 ?        S     2012   0:02 [migration/31]
+root       128  0.0  0.0      0     0 ?        S     2012   0:00 [migration/31]
+root       129  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/31]
+root       130  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/31]
+root       131  0.0  0.0      0     0 ?        S     2012   0:00 [migration/32]
+root       132  0.0  0.0      0     0 ?        S     2012   0:00 [migration/32]
+root       133  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/32]
+root       134  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/32]
+root       135  0.0  0.0      0     0 ?        S     2012   0:00 [migration/33]
+root       136  0.0  0.0      0     0 ?        S     2012   0:00 [migration/33]
+root       137  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/33]
+root       138  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/33]
+root       139  0.0  0.0      0     0 ?        S     2012   0:00 [migration/34]
+root       140  0.0  0.0      0     0 ?        S     2012   0:00 [migration/34]
+root       141  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/34]
+root       142  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/34]
+root       143  0.0  0.0      0     0 ?        S     2012   0:00 [migration/35]
+root       144  0.0  0.0      0     0 ?        S     2012   0:00 [migration/35]
+root       145  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/35]
+root       146  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/35]
+root       147  0.0  0.0      0     0 ?        S     2012   0:00 [migration/36]
+root       148  0.0  0.0      0     0 ?        S     2012   0:00 [migration/36]
+root       149  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/36]
+root       150  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/36]
+root       151  0.0  0.0      0     0 ?        S     2012   0:01 [migration/37]
+root       152  0.0  0.0      0     0 ?        S     2012   0:00 [migration/37]
+root       153  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/37]
+root       154  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/37]
+root       155  0.0  0.0      0     0 ?        S     2012   0:00 [migration/38]
+root       156  0.0  0.0      0     0 ?        S     2012   0:00 [migration/38]
+root       157  0.0  0.0      0     0 ?        S     2012   0:05 [ksoftirqd/38]
+root       158  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/38]
+root       159  0.0  0.0      0     0 ?        S     2012   0:00 [migration/39]
+root       160  0.0  0.0      0     0 ?        S     2012   0:00 [migration/39]
+root       161  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/39]
+root       162  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/39]
+root       163  0.0  0.0      0     0 ?        S     2012   0:00 [migration/40]
+root       164  0.0  0.0      0     0 ?        S     2012   0:00 [migration/40]
+root       165  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/40]
+root       166  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/40]
+root       167  0.0  0.0      0     0 ?        S     2012   0:00 [migration/41]
+root       168  0.0  0.0      0     0 ?        S     2012   0:00 [migration/41]
+root       169  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/41]
+root       170  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/41]
+root       171  0.0  0.0      0     0 ?        S     2012   0:01 [migration/42]
+root       172  0.0  0.0      0     0 ?        S     2012   0:00 [migration/42]
+root       173  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/42]
+root       174  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/42]
+root       175  0.0  0.0      0     0 ?        S     2012   0:02 [migration/43]
+root       176  0.0  0.0      0     0 ?        S     2012   0:00 [migration/43]
+root       177  0.0  0.0      0     0 ?        S     2012   0:04 [ksoftirqd/43]
+root       178  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/43]
+root       179  0.0  0.0      0     0 ?        S     2012   0:00 [migration/44]
+root       180  0.0  0.0      0     0 ?        S     2012   0:00 [migration/44]
+root       181  0.0  0.0      0     0 ?        S     2012   0:04 [ksoftirqd/44]
+root       182  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/44]
+root       183  0.0  0.0      0     0 ?        S     2012   0:00 [migration/45]
+root       184  0.0  0.0      0     0 ?        S     2012   0:00 [migration/45]
+root       185  0.0  0.0      0     0 ?        S     2012   0:07 [ksoftirqd/45]
+root       186  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/45]
+root       187  0.0  0.0      0     0 ?        S     2012   0:00 [migration/46]
+root       188  0.0  0.0      0     0 ?        S     2012   0:00 [migration/46]
+root       189  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/46]
+root       190  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/46]
+root       191  0.0  0.0      0     0 ?        S     2012   0:00 [migration/47]
+root       192  0.0  0.0      0     0 ?        S     2012   0:00 [migration/47]
+root       193  0.0  0.0      0     0 ?        S     2012   0:00 [ksoftirqd/47]
+root       194  0.0  0.0      0     0 ?        S     2012   0:00 [watchdog/47]
+root       195  0.0  0.0      0     0 ?        S     2012   0:00 [events/0]
+root       196  0.0  0.0      0     0 ?        S     2012   0:04 [events/1]
+root       197  0.0  0.0      0     0 ?        S     2012   0:04 [events/2]
+root       198  0.0  0.0      0     0 ?        S     2012   0:06 [events/3]
+root       199  0.0  0.0      0     0 ?        S     2012   4:07 [events/4]
+root       200  0.0  0.0      0     0 ?        S     2012   0:06 [events/5]
+root       201  0.0  0.0      0     0 ?        S     2012   0:15 [events/6]
+root       202  0.0  0.0      0     0 ?        S     2012   0:21 [events/7]
+root       203  0.0  0.0      0     0 ?        S     2012   0:17 [events/8]
+root       204  0.0  0.0      0     0 ?        S     2012   0:26 [events/9]
+root       205  0.0  0.0      0     0 ?        S     2012   0:29 [events/10]
+root       206  0.0  0.0      0     0 ?        S     2012   0:37 [events/11]
+root       207  0.0  0.0      0     0 ?        S     2012   5:32 [events/12]
+root       208  0.0  0.0      0     0 ?        S     2012   7:23 [events/13]
+root       209  0.0  0.0      0     0 ?        S     2012   9:54 [events/14]
+root       210  0.0  0.0      0     0 ?        S     2012   6:36 [events/15]
+root       211  0.0  0.0      0     0 ?        S     2012   8:09 [events/16]
+root       212  0.0  0.0      0     0 ?        S     2012  10:33 [events/17]
+root       213  0.0  0.0      0     0 ?        S     2012  20:52 [events/18]
+root       214  0.0  0.0      0     0 ?        S     2012  18:07 [events/19]
+root       215  0.0  0.0      0     0 ?        S     2012  12:17 [events/20]
+root       216  0.0  0.0      0     0 ?        S     2012   9:12 [events/21]
+root       217  0.0  0.0      0     0 ?        S     2012   7:35 [events/22]
+root       218  0.0  0.0      0     0 ?        S     2012   8:48 [events/23]
+root       219  0.0  0.0      0     0 ?        S     2012   7:51 [events/24]
+root       220  0.0  0.0      0     0 ?        S     2012   7:45 [events/25]
+root       221  0.0  0.0      0     0 ?        S     2012   9:00 [events/26]
+root       222  0.0  0.0      0     0 ?        S     2012   6:28 [events/27]
+root       223  0.0  0.0      0     0 ?        S     2012   2:17 [events/28]
+root       224  0.0  0.0      0     0 ?        S     2012  14:16 [events/29]
+root       225  0.0  0.0      0     0 ?        S     2012   1:52 [events/30]
+root       226  0.0  0.0      0     0 ?        S     2012   2:58 [events/31]
+root       227  0.0  0.0      0     0 ?        S     2012   2:45 [events/32]
+root       228  0.0  0.0      0     0 ?        S     2012   2:38 [events/33]
+root       229  0.0  0.0      0     0 ?        S     2012   2:34 [events/34]
+root       230  0.0  0.0      0     0 ?        S     2012   3:22 [events/35]
+root       231  0.0  0.0      0     0 ?        S     2012   0:52 [events/36]
+root       232  0.0  0.0      0     0 ?        S     2012   2:19 [events/37]
+root       233  0.0  0.0      0     0 ?        S     2012   0:45 [events/38]
+root       234  0.0  0.0      0     0 ?        S     2012   3:22 [events/39]
+root       235  0.0  0.0      0     0 ?        S     2012   1:43 [events/40]
+root       236  0.0  0.0      0     0 ?        S     2012   1:09 [events/41]
+root       237  0.0  0.0      0     0 ?        S     2012   0:03 [events/42]
+root       238  0.0  0.0      0     0 ?        S     2012   0:03 [events/43]
+root       239  0.0  0.0      0     0 ?        S     2012   0:02 [events/44]
+root       240  0.0  0.0      0     0 ?        S     2012   0:03 [events/45]
+root       241  0.0  0.0      0     0 ?        S     2012   0:01 [events/46]
+root       242  0.0  0.0      0     0 ?        S     2012   0:38 [events/47]
+root       243  0.0  0.0      0     0 ?        S     2012   0:00 [cpuset]
+root       244  0.0  0.0      0     0 ?        S     2012   0:00 [khelper]
+root       245  0.0  0.0      0     0 ?        S     2012   0:00 [netns]
+root       246  0.0  0.0      0     0 ?        S     2012   0:00 [async/mgr]
+root       247  0.0  0.0      0     0 ?        S     2012   0:00 [pm]
+root       248  0.0  0.0      0     0 ?        S     2012   0:11 [sync_supers]
+root       249  0.0  0.0      0     0 ?        S     2012   0:47 [bdi-default]
+root       250  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/0]
+root       251  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/1]
+root       252  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/2]
+root       253  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/3]
+root       254  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/4]
+root       255  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/5]
+root       256  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/6]
+root       257  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/7]
+root       258  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/8]
+root       259  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/9]
+root       260  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/10]
+root       261  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/11]
+root       262  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/12]
+root       263  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/13]
+root       264  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/14]
+root       265  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/15]
+root       266  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/16]
+root       267  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/17]
+root       268  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/18]
+root       269  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/19]
+root       270  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/20]
+root       271  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/21]
+root       272  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/22]
+root       273  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/23]
+root       274  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/24]
+root       275  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/25]
+root       276  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/26]
+root       277  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/27]
+root       278  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/28]
+root       279  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/29]
+root       280  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/30]
+root       281  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/31]
+root       282  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/32]
+root       283  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/33]
+root       284  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/34]
+root       285  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/35]
+root       286  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/36]
+root       287  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/37]
+root       288  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/38]
+root       289  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/39]
+root       290  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/40]
+root       291  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/41]
+root       292  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/42]
+root       293  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/43]
+root       294  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/44]
+root       295  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/45]
+root       296  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/46]
+root       297  0.0  0.0      0     0 ?        S     2012   0:00 [kintegrityd/47]
+root       298  0.0  0.0      0     0 ?        S     2012   0:50 [kblockd/0]
+root       299  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/1]
+root       300  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/2]
+root       301  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/3]
+root       302  0.0  0.0      0     0 ?        S     2012   0:01 [kblockd/4]
+root       303  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/5]
+root       304  0.0  0.0      0     0 ?        S     2012   0:07 [kblockd/6]
+root       305  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/7]
+root       306  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/8]
+root       307  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/9]
+root       308  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/10]
+root       309  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/11]
+root       310  0.0  0.0      0     0 ?        S     2012   0:22 [kblockd/12]
+root       311  0.0  0.0      0     0 ?        S     2012   0:02 [kblockd/13]
+root       312  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/14]
+root       313  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/15]
+root       314  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/16]
+root       315  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/17]
+root       316  0.0  0.0      0     0 ?        S     2012   0:14 [kblockd/18]
+root       317  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/19]
+root       318  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/20]
+root       319  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/21]
+root       320  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/22]
+root       321  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/23]
+root       322  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/24]
+root       323  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/25]
+root       324  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/26]
+root       325  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/27]
+root       326  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/28]
+root       327  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/29]
+root       328  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/30]
+root       329  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/31]
+root       330  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/32]
+root       331  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/33]
+root       332  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/34]
+root       333  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/35]
+root       334  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/36]
+root       335  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/37]
+root       336  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/38]
+root       337  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/39]
+root       338  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/40]
+root       339  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/41]
+root       340  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/42]
+root       341  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/43]
+root       342  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/44]
+root       343  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/45]
+root       344  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/46]
+root       345  0.0  0.0      0     0 ?        S     2012   0:00 [kblockd/47]
+root       346  0.0  0.0      0     0 ?        S     2012  39:58 [kacpid]
+root       347  0.1  0.0      0     0 ?        S     2012 274:26 [kacpi_notify]
+root       348  0.0  0.0      0     0 ?        S     2012   0:00 [kacpi_hotplug]
+root       349  0.0  0.0      0     0 ?        S     2012   0:00 [ata/0]
+root       350  0.0  0.0      0     0 ?        S     2012   0:00 [ata/1]
+root       351  0.0  0.0      0     0 ?        S     2012   0:00 [ata/2]
+root       352  0.0  0.0      0     0 ?        S     2012   0:00 [ata/3]
+root       353  0.0  0.0      0     0 ?        S     2012   0:00 [ata/4]
+root       354  0.0  0.0      0     0 ?        S     2012   0:00 [ata/5]
+root       355  0.0  0.0      0     0 ?        S     2012   0:00 [ata/6]
+root       356  0.0  0.0      0     0 ?        S     2012   0:00 [ata/7]
+root       357  0.0  0.0      0     0 ?        S     2012   0:00 [ata/8]
+root       358  0.0  0.0      0     0 ?        S     2012   1:34 [ata/9]
+root       359  0.0  0.0      0     0 ?        S     2012   0:00 [ata/10]
+root       360  0.0  0.0      0     0 ?        S     2012   0:00 [ata/11]
+root       361  0.0  0.0      0     0 ?        S     2012   0:00 [ata/12]
+root       362  0.0  0.0      0     0 ?        S     2012   0:00 [ata/13]
+root       363  0.0  0.0      0     0 ?        S     2012   0:00 [ata/14]
+root       364  0.0  0.0      0     0 ?        S     2012   0:00 [ata/15]
+root       365  0.0  0.0      0     0 ?        S     2012   0:00 [ata/16]
+root       366  0.0  0.0      0     0 ?        S     2012   0:00 [ata/17]
+root       367  0.0  0.0      0     0 ?        S     2012   0:00 [ata/18]
+root       368  0.0  0.0      0     0 ?        S     2012   0:00 [ata/19]
+root       369  0.0  0.0      0     0 ?        S     2012   0:00 [ata/20]
+root       370  0.0  0.0      0     0 ?        S     2012   0:00 [ata/21]
+root       371  0.0  0.0      0     0 ?        S     2012   0:00 [ata/22]
+root       372  0.0  0.0      0     0 ?        S     2012   0:00 [ata/23]
+root       373  0.0  0.0      0     0 ?        S     2012   0:00 [ata/24]
+root       374  0.0  0.0      0     0 ?        S     2012   0:00 [ata/25]
+root       375  0.0  0.0      0     0 ?        S     2012   0:00 [ata/26]
+root       376  0.0  0.0      0     0 ?        S     2012   0:00 [ata/27]
+root       377  0.0  0.0      0     0 ?        S     2012   0:00 [ata/28]
+root       378  0.0  0.0      0     0 ?        S     2012   0:00 [ata/29]
+root       379  0.0  0.0      0     0 ?        S     2012   0:00 [ata/30]
+root       380  0.0  0.0      0     0 ?        S     2012   0:00 [ata/31]
+root       381  0.0  0.0      0     0 ?        S     2012   0:00 [ata/32]
+root       382  0.0  0.0      0     0 ?        S     2012   0:01 [ata/33]
+root       383  0.0  0.0      0     0 ?        S     2012   0:00 [ata/34]
+root       384  0.0  0.0      0     0 ?        S     2012   0:00 [ata/35]
+root       385  0.0  0.0      0     0 ?        S     2012   0:00 [ata/36]
+root       386  0.0  0.0      0     0 ?        S     2012   0:00 [ata/37]
+root       387  0.0  0.0      0     0 ?        S     2012   0:00 [ata/38]
+root       388  0.0  0.0      0     0 ?        S     2012   0:00 [ata/39]
+root       389  0.0  0.0      0     0 ?        S     2012   0:00 [ata/40]
+root       390  0.0  0.0      0     0 ?        S     2012   0:00 [ata/41]
+root       391  0.0  0.0      0     0 ?        S     2012   0:00 [ata/42]
+root       392  0.0  0.0      0     0 ?        S     2012   0:00 [ata/43]
+root       393  0.0  0.0      0     0 ?        S     2012   0:00 [ata/44]
+root       394  0.0  0.0      0     0 ?        S     2012   0:00 [ata/45]
+root       395  0.0  0.0      0     0 ?        S     2012   0:00 [ata/46]
+root       396  0.0  0.0      0     0 ?        S     2012   0:00 [ata/47]
+root       397  0.0  0.0      0     0 ?        S     2012   0:00 [ata_aux]
+root       398  0.0  0.0      0     0 ?        S     2012   0:00 [ksuspend_usbd]
+root       399  0.0  0.0      0     0 ?        S     2012   0:00 [khubd]
+root       400  0.0  0.0      0     0 ?        S     2012   0:00 [kseriod]
+root       401  0.0  0.0      0     0 ?        S     2012   0:00 [md/0]
+root       402  0.0  0.0      0     0 ?        S     2012   0:00 [md/1]
+root       403  0.0  0.0      0     0 ?        S     2012   0:00 [md/2]
+root       404  0.0  0.0      0     0 ?        S     2012   0:00 [md/3]
+root       405  0.0  0.0      0     0 ?        S     2012   0:00 [md/4]
+root       406  0.0  0.0      0     0 ?        S     2012   0:00 [md/5]
+root       407  0.0  0.0      0     0 ?        S     2012   0:00 [md/6]
+root       408  0.0  0.0      0     0 ?        S     2012   0:00 [md/7]
+root       409  0.0  0.0      0     0 ?        S     2012   0:00 [md/8]
+root       410  0.0  0.0      0     0 ?        S     2012   0:00 [md/9]
+root       411  0.0  0.0      0     0 ?        S     2012   0:00 [md/10]
+root       412  0.0  0.0      0     0 ?        S     2012   0:00 [md/11]
+root       413  0.0  0.0      0     0 ?        S     2012   0:00 [md/12]
+root       414  0.0  0.0      0     0 ?        S     2012   0:00 [md/13]
+root       415  0.0  0.0      0     0 ?        S     2012   0:00 [md/14]
+root       416  0.0  0.0      0     0 ?        S     2012   0:00 [md/15]
+root       417  0.0  0.0      0     0 ?        S     2012   0:00 [md/16]
+root       418  0.0  0.0      0     0 ?        S     2012   0:00 [md/17]
+root       419  0.0  0.0      0     0 ?        S     2012   0:00 [md/18]
+root       420  0.0  0.0      0     0 ?        S     2012   0:00 [md/19]
+root       421  0.0  0.0      0     0 ?        S     2012   0:00 [md/20]
+root       422  0.0  0.0      0     0 ?        S     2012   0:00 [md/21]
+root       423  0.0  0.0      0     0 ?        S     2012   0:00 [md/22]
+root       424  0.0  0.0      0     0 ?        S     2012   0:00 [md/23]
+root       425  0.0  0.0      0     0 ?        S     2012   0:00 [md/24]
+root       426  0.0  0.0      0     0 ?        S     2012   0:00 [md/25]
+root       427  0.0  0.0      0     0 ?        S     2012   0:00 [md/26]
+root       428  0.0  0.0      0     0 ?        S     2012   0:00 [md/27]
+root       429  0.0  0.0      0     0 ?        S     2012   0:00 [md/28]
+root       430  0.0  0.0      0     0 ?        S     2012   0:00 [md/29]
+root       431  0.0  0.0      0     0 ?        S     2012   0:00 [md/30]
+root       432  0.0  0.0      0     0 ?        S     2012   0:00 [md/31]
+root       433  0.0  0.0      0     0 ?        S     2012   0:00 [md/32]
+root       434  0.0  0.0      0     0 ?        S     2012   0:00 [md/33]
+root       435  0.0  0.0      0     0 ?        S     2012   0:00 [md/34]
+root       436  0.0  0.0      0     0 ?        S     2012   0:00 [md/35]
+root       437  0.0  0.0      0     0 ?        S     2012   0:00 [md/36]
+root       438  0.0  0.0      0     0 ?        S     2012   0:00 [md/37]
+root       439  0.0  0.0      0     0 ?        S     2012   0:00 [md/38]
+root       440  0.0  0.0      0     0 ?        S     2012   0:00 [md/39]
+root       441  0.0  0.0      0     0 ?        S     2012   0:00 [md/40]
+root       442  0.0  0.0      0     0 ?        S     2012   0:00 [md/41]
+root       443  0.0  0.0      0     0 ?        S     2012   0:00 [md/42]
+root       444  0.0  0.0      0     0 ?        S     2012   0:00 [md/43]
+root       445  0.0  0.0      0     0 ?        S     2012   0:00 [md/44]
+root       446  0.0  0.0      0     0 ?        S     2012   0:00 [md/45]
+root       447  0.0  0.0      0     0 ?        S     2012   0:00 [md/46]
+root       448  0.0  0.0      0     0 ?        S     2012   0:00 [md/47]
+root       449  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/0]
+root       450  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/1]
+root       451  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/2]
+root       452  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/3]
+root       453  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/4]
+root       454  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/5]
+root       455  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/6]
+root       456  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/7]
+root       457  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/8]
+root       458  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/9]
+root       459  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/10]
+root       460  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/11]
+root       461  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/12]
+root       462  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/13]
+root       463  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/14]
+root       464  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/15]
+root       465  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/16]
+root       466  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/17]
+root       467  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/18]
+root       468  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/19]
+root       469  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/20]
+root       470  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/21]
+root       471  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/22]
+root       472  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/23]
+root       473  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/24]
+root       474  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/25]
+root       475  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/26]
+root       476  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/27]
+root       477  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/28]
+root       478  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/29]
+root       479  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/30]
+root       480  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/31]
+root       481  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/32]
+root       482  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/33]
+root       483  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/34]
+root       484  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/35]
+root       485  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/36]
+root       486  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/37]
+root       487  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/38]
+root       488  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/39]
+root       489  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/40]
+root       490  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/41]
+root       491  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/42]
+root       492  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/43]
+root       493  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/44]
+root       494  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/45]
+root       495  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/46]
+root       496  0.0  0.0      0     0 ?        S     2012   0:00 [md_misc/47]
+root       497  0.0  0.0      0     0 ?        S     2012   0:47 [khungtaskd]
+root       498  0.0  0.0      0     0 ?        S     2012   0:00 [kswapd0]
+root       499  0.0  0.0      0     0 ?        S     2012   0:00 [kswapd1]
+root       500  0.0  0.0      0     0 ?        S     2012   0:00 [kswapd2]
+root       501  0.0  0.0      0     0 ?        S     2012   0:00 [kswapd3]
+root       502  0.0  0.0      0     0 ?        SN    2012   0:00 [ksmd]
+root       503  0.0  0.0      0     0 ?        SN    2012   1:01 [khugepaged]
+root       504  0.0  0.0      0     0 ?        S     2012   0:00 [aio/0]
+root       505  0.0  0.0      0     0 ?        S     2012   0:00 [aio/1]
+root       506  0.0  0.0      0     0 ?        S     2012   0:00 [aio/2]
+root       507  0.0  0.0      0     0 ?        S     2012   0:00 [aio/3]
+root       508  0.0  0.0      0     0 ?        S     2012   0:00 [aio/4]
+root       509  0.0  0.0      0     0 ?        S     2012   0:00 [aio/5]
+root       510  0.0  0.0      0     0 ?        S     2012   0:00 [aio/6]
+root       511  0.0  0.0      0     0 ?        S     2012   0:00 [aio/7]
+root       512  0.0  0.0      0     0 ?        S     2012   0:00 [aio/8]
+root       513  0.0  0.0      0     0 ?        S     2012   0:00 [aio/9]
+root       514  0.0  0.0      0     0 ?        S     2012   0:00 [aio/10]
+root       515  0.0  0.0      0     0 ?        S     2012   0:00 [aio/11]
+root       516  0.0  0.0      0     0 ?        S     2012   0:00 [aio/12]
+root       517  0.0  0.0      0     0 ?        S     2012   0:00 [aio/13]
+root       518  0.0  0.0      0     0 ?        S     2012   0:00 [aio/14]
+root       519  0.0  0.0      0     0 ?        S     2012   0:00 [aio/15]
+root       520  0.0  0.0      0     0 ?        S     2012   0:00 [aio/16]
+root       521  0.0  0.0      0     0 ?        S     2012   0:00 [aio/17]
+root       522  0.0  0.0      0     0 ?        S     2012   0:00 [aio/18]
+root       523  0.0  0.0      0     0 ?        S     2012   0:00 [aio/19]
+root       524  0.0  0.0      0     0 ?        S     2012   0:00 [aio/20]
+root       525  0.0  0.0      0     0 ?        S     2012   0:00 [aio/21]
+root       526  0.0  0.0      0     0 ?        S     2012   0:00 [aio/22]
+root       527  0.0  0.0      0     0 ?        S     2012   0:00 [aio/23]
+root       528  0.0  0.0      0     0 ?        S     2012   0:00 [aio/24]
+root       529  0.0  0.0      0     0 ?        S     2012   0:00 [aio/25]
+root       530  0.0  0.0      0     0 ?        S     2012   0:00 [aio/26]
+root       531  0.0  0.0      0     0 ?        S     2012   0:00 [aio/27]
+root       532  0.0  0.0      0     0 ?        S     2012   0:00 [aio/28]
+root       533  0.0  0.0      0     0 ?        S     2012   0:00 [aio/29]
+root       534  0.0  0.0      0     0 ?        S     2012   0:00 [aio/30]
+root       535  0.0  0.0      0     0 ?        S     2012   0:00 [aio/31]
+root       536  0.0  0.0      0     0 ?        S     2012   0:00 [aio/32]
+root       537  0.0  0.0      0     0 ?        S     2012   0:00 [aio/33]
+root       538  0.0  0.0      0     0 ?        S     2012   0:00 [aio/34]
+root       539  0.0  0.0      0     0 ?        S     2012   0:00 [aio/35]
+root       540  0.0  0.0      0     0 ?        S     2012   0:00 [aio/36]
+root       541  0.0  0.0      0     0 ?        S     2012   0:00 [aio/37]
+root       542  0.0  0.0      0     0 ?        S     2012   0:00 [aio/38]
+root       543  0.0  0.0      0     0 ?        S     2012   0:00 [aio/39]
+root       544  0.0  0.0      0     0 ?        S     2012   0:00 [aio/40]
+root       545  0.0  0.0      0     0 ?        S     2012   0:00 [aio/41]
+root       546  0.0  0.0      0     0 ?        S     2012   0:00 [aio/42]
+root       547  0.0  0.0      0     0 ?        S     2012   0:00 [aio/43]
+root       548  0.0  0.0      0     0 ?        S     2012   0:00 [aio/44]
+root       549  0.0  0.0      0     0 ?        S     2012   0:00 [aio/45]
+root       550  0.0  0.0      0     0 ?        S     2012   0:00 [aio/46]
+root       551  0.0  0.0      0     0 ?        S     2012   0:00 [aio/47]
+root       552  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/0]
+root       553  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/1]
+root       554  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/2]
+root       555  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/3]
+root       556  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/4]
+root       557  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/5]
+root       558  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/6]
+root       559  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/7]
+root       560  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/8]
+root       561  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/9]
+root       562  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/10]
+root       563  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/11]
+root       564  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/12]
+root       565  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/13]
+root       566  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/14]
+root       567  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/15]
+root       568  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/16]
+root       569  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/17]
+root       570  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/18]
+root       571  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/19]
+root       572  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/20]
+root       573  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/21]
+root       574  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/22]
+root       575  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/23]
+root       576  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/24]
+root       577  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/25]
+root       578  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/26]
+root       579  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/27]
+root       580  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/28]
+root       581  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/29]
+root       582  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/30]
+root       583  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/31]
+root       584  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/32]
+root       585  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/33]
+root       586  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/34]
+root       587  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/35]
+root       588  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/36]
+root       589  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/37]
+root       590  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/38]
+root       591  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/39]
+root       592  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/40]
+root       593  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/41]
+root       594  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/42]
+root       595  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/43]
+root       596  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/44]
+root       597  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/45]
+root       598  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/46]
+root       599  0.0  0.0      0     0 ?        S     2012   0:00 [crypto/47]
+root       604  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/0]
+root       605  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/1]
+root       606  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/2]
+root       607  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/3]
+root       608  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/4]
+root       609  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/5]
+root       610  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/6]
+root       611  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/7]
+root       612  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/8]
+root       613  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/9]
+root       614  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/10]
+root       615  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/11]
+root       616  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/12]
+root       617  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/13]
+root       618  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/14]
+root       619  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/15]
+root       620  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/16]
+root       621  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/17]
+root       622  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/18]
+root       623  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/19]
+root       624  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/20]
+root       625  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/21]
+root       626  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/22]
+root       627  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/23]
+root       628  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/24]
+root       629  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/25]
+root       630  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/26]
+root       631  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/27]
+root       632  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/28]
+root       633  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/29]
+root       634  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/30]
+root       635  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/31]
+root       636  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/32]
+root       637  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/33]
+root       638  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/34]
+root       639  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/35]
+root       640  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/36]
+root       641  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/37]
+root       642  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/38]
+root       643  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/39]
+root       644  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/40]
+root       645  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/41]
+root       646  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/42]
+root       647  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/43]
+root       648  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/44]
+root       649  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/45]
+root       650  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/46]
+root       651  0.0  0.0      0     0 ?        S     2012   0:00 [kthrotld/47]
+root       674  0.0  0.0      0     0 ?        S     2012   0:00 [kpsmoused]
+root       675  0.0  0.0      0     0 ?        S     2012   0:00 [usbhid_resumer]
+root       705  0.0  0.0      0     0 ?        S     2012   0:00 [kstriped]
+root       834  0.0  0.0 150588  3616 ?        Sl    2012   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+root       845  0.0  0.0 247876  6432 ?        Ssl   2012   0:06 gnome-session
+root       853  0.0  0.0  20084   676 ?        S     2012   0:00 dbus-launch --sh-syntax --exit-with-session
+root       854  0.0  0.0  32340  1752 ?        Ssl   2012   0:06 /bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+root       872  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_eh_0]
+root       925  0.0  0.0 133204  5380 ?        S     2012   1:48 /usr/libexec/gconfd-2
+root       934  0.0  0.1 533880 49576 ?        Ssl   2012  11:00 /usr/libexec/gnome-settings-daemon
+root       935  0.0  0.0 292680  7844 ?        Ss    2012   0:03 seahorse-daemon
+root       938  0.0  0.0 134756  2108 ?        S     2012   0:00 /usr/libexec/gvfsd
+root       945  0.0  0.0 272048  2720 ?        Ssl   2012   0:02 /usr/libexec//gvfs-fuse-daemon /root/.gvfs
+root       962  0.0  0.0 335248 15432 ?        S     2012   8:02 gnome-panel
+root       963  0.0  0.0      0     0 ?        S     2012   0:07 [scsi_eh_1]
+root       964  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_eh_2]
+root       965  0.1  0.1 1153332 41076 ?       Sl    2012 215:05 nautilus
+root       967  0.0  0.0 696180  5308 ?        Ssl   2012   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=18
+root       969  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/0]
+root       970  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/1]
+root       971  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/2]
+root       972  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/3]
+root       973  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/4]
+root       974  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/5]
+root       975  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/6]
+root       976  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/7]
+root       977  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/8]
+root       978  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/9]
+root       979  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/10]
+root       980  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/11]
+root       981  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/12]
+root       982  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/13]
+root       983  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/14]
+root       984  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/15]
+root       985  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/16]
+root       986  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/17]
+root       987  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/18]
+root       988  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/19]
+root       989  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/20]
+root       990  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/21]
+root       991  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/22]
+root       992  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/23]
+root       993  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/24]
+root       994  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/25]
+root       995  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/26]
+root       996  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/27]
+root       997  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/28]
+root       998  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/29]
+root       999  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/30]
+root      1000  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/31]
+root      1001  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/32]
+root      1002  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/33]
+root      1003  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/34]
+root      1004  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/35]
+root      1005  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/36]
+root      1006  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/37]
+root      1007  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/38]
+root      1008  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/39]
+root      1009  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/40]
+root      1010  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/41]
+root      1011  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/42]
+root      1012  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/43]
+root      1013  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/44]
+root      1014  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/45]
+root      1015  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/46]
+root      1016  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_tgtd/47]
+root      1018  0.0  0.0      0     0 ?        S<    2012   0:00 [lpfc_worker_0]
+root      1019  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_eh_3]
+root      1020  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_wq_3]
+root      1021  0.0  0.0      0     0 ?        S     2012   0:00 [fc_wq_3]
+root      1022  0.0  0.0      0     0 ?        S     2012   0:00 [fc_dl_3]
+root      1024  0.0  0.0      0     0 ?        S<    2012   0:00 [lpfc_worker_1]
+root      1025  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_eh_4]
+root      1026  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_wq_4]
+root      1027  0.0  0.0      0     0 ?        S     2012   0:00 [fc_wq_4]
+root      1028  0.0  0.0      0     0 ?        S     2012   0:00 [fc_dl_4]
+root      1029  0.0  0.0 331904 20004 ?        S     2012   0:01 python /usr/share/system-config-printer/applet.py
+root      1030  0.0  0.0 320420 10752 ?        S     2012   0:25 gpk-update-icon
+root      1032  0.0  0.0 293892  9504 ?        S     2012   2:04 gnome-power-manager
+root      1033  0.0  0.0 449464 13156 ?        S     2012   0:00 gnome-volume-control-applet
+root      1034  0.0  0.0 255792  7976 ?        S     2012   0:03 bluetooth-applet
+root      1038  0.0  0.0 263584  8780 ?        S     2012   0:00 rhsm-icon
+root      1042  0.0  0.0 269936  8832 ?        S     2012   0:02 abrt-applet
+root      1043  0.0  0.0 310020  9352 ?        S     2012   0:00 /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=24
+root      1046  0.0  0.0 295204  3332 ?        S     2012   0:00 /usr/libexec/gvfs-gdu-volume-monitor
+root      1048  0.0  0.0 224372  5396 ?        S     2012   0:00 /usr/libexec/polkit-gnome-authentication-agent-1
+root      1050  0.0  0.0 114396  3776 ?        S     2012   0:00 /usr/libexec/im-settings-daemon
+root      1051  0.0  0.0 312480 11684 ?        S     2012   0:07 nm-applet --sm-disable
+root      1058  0.0  0.0 250008  6496 ?        S     2012   0:00 /usr/libexec/gdu-notification-daemon
+root      1093  0.0  0.0 297900  8192 ?        S     2012   0:24 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=19
+root      1096  0.0  0.0 148296  2208 ?        S     2012   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+root      1098  0.0  0.0 141384  2952 ?        S     2012   0:00 /usr/libexec/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+root      1112  0.0  0.0 259168  6264 ?        Ss    2012   5:09 gnome-screensaver
+root      1115  0.0  0.0 231968  2068 ?        Sl    2012   4:01 /usr/libexec/gvfs-afc-volume-monitor
+root      1149  0.0  0.0      0     0 ?        S     2012  16:42 [jbd2/sda3-8]
+root      1150  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1151  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1152  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1153  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1154  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1155  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1156  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1157  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1158  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1159  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1160  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1161  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1162  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1163  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1164  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1165  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1166  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1167  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1168  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1169  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1170  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1171  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1172  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1173  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1174  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1175  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1176  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1177  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1178  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1179  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1180  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1181  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1182  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1183  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1184  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1185  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1186  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1187  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1188  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1189  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1190  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1191  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1192  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1193  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1194  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1195  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1196  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1197  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      1228  0.0  0.0      0     0 ?        S     2012   0:07 [kauditd]
+root      1236  0.0  0.0 387280 11028 ?        S     2012   0:00 /usr/libexec/gdm-user-switch-applet --oaf-activate-iid=OAFIID:GNOME_FastUserSwitchApplet_Factory --oaf-ior-fd=20
+root      1238  0.0  0.0 408620 18716 ?        S     2012   0:00 /usr/bin/gnote --panel-applet --oaf-activate-iid=OAFIID:GnoteApplet_Factory --oaf-ior-fd=28
+root      1240  0.0  0.0 465360 14652 ?        S     2012   4:35 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=34
+root      1242  0.0  0.0 285212  7880 ?        S     2012   0:00 /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=25
+root      1268  0.0  0.0  51056 27276 ?        Ss    2012   0:17 /usr/sbin/restorecond -u
+root      1284  0.0  0.0  11296  1352 ?        S<s   2012   0:00 /sbin/udevd -d
+root      1305  0.0  0.0  38312  2212 ?        S     2012   0:00 /usr/libexec/gconf-im-settings-daemon
+root      1316  0.0  0.0 134652  2188 ?        S     2012   0:00 /usr/libexec/gvfsd-burn --spawner :1.7 /org/gtk/gvfs/exec_spaw/1
+root      1319  0.0  0.0 217024  2936 ?        S     2012   0:00 /usr/libexec/gvfsd-computer --spawner :1.7 /org/gtk/gvfs/exec_spaw/2
+root      1331  0.0  0.0 132564  1788 ?        S     2012   0:00 /usr/libexec/gvfsd-metadata
+root      1514  0.0  0.0 308952 15104 ?        S     2012   0:08 gpk-application
+root      1689  0.0  0.0      0     0 ?        S     2012  54:13 [flush-8:0]
+root      1826  0.0  0.0      0     0 ?        S     2012   0:00 [edac-poller]
+root      2173  0.0  0.0 140132  1716 ?        S    Jan18   0:00 CROND
+root      2175  0.0  0.0   9284  1084 ?        Ss   Jan18   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      2177  0.0  0.0   9288  1180 ?        S    Jan18   0:00 /bin/sh /root/nms/collection.sh
+root      2198  0.0  0.0  15092   968 ?        S    Jan18   0:00 ftp -n
+root      2220  0.0  0.0 140132  1716 ?        S    Jan18   0:00 CROND
+root      2223  0.0  0.0   9284  1084 ?        Ss   Jan18   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      2226  0.0  0.0   9288  1176 ?        S    Jan18   0:00 /bin/sh /root/nms/collection.sh
+root      2245  0.0  0.0  15092   968 ?        S    Jan18   0:00 ftp -n
+root      2440  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root      2444  0.0  0.0   9284  1084 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      2446  0.0  0.0   9288  1180 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root      2467  0.0  0.0  15092   972 ?        S     2012   0:00 ftp -n
+root      2489  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root      2491  0.0  0.0   9284  1088 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      2493  0.0  0.0   9288  1176 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root      2512  0.0  0.0  15092   972 ?        S     2012   0:00 ftp -n
+root      2537  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root      2540  0.0  0.0   9284  1084 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      2543  0.0  0.0   9288  1176 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root      2562  0.0  0.0  15092   968 ?        S     2012   0:00 ftp -n
+root      2952  0.0  0.0      0     0 ?        S     2012   0:00 [jbd2/sda2-8]
+root      2953  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2954  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2955  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2956  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2957  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2958  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2959  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2960  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2961  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2962  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2963  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2964  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2965  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2966  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2967  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2968  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2969  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2970  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2971  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2972  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2973  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2974  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2975  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2976  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2977  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2978  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2979  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2980  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2981  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2982  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2983  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2984  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2985  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2986  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2987  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2988  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2989  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2990  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2991  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2992  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2993  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2994  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2995  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2996  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2997  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2998  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      2999  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      3000  0.0  0.0      0     0 ?        S     2012   0:00 [ext4-dio-unwrit]
+root      3210  0.0  0.0      0     0 ?        S     2012  20:24 [bond0]
+root      3401  0.0  0.0 250856  1608 ?        Sl    2012   0:23 /sbin/rsyslogd -i /var/run/syslogd.pid -c 4
+root      3425  0.0  0.0      0     0 ?        S     2012   0:22 [kondemand/0]
+root      3426  0.0  0.0      0     0 ?        S     2012   0:17 [kondemand/1]
+root      3427  0.0  0.0      0     0 ?        S     2012   0:12 [kondemand/2]
+root      3428  0.0  0.0      0     0 ?        S     2012   0:11 [kondemand/3]
+root      3429  0.0  0.0      0     0 ?        S     2012  18:19 [kondemand/4]
+root      3430  0.0  0.0      0     0 ?        S     2012   0:07 [kondemand/5]
+root      3431  0.0  0.0      0     0 ?        S     2012   0:24 [kondemand/6]
+root      3432  0.0  0.0      0     0 ?        S     2012   0:21 [kondemand/7]
+root      3433  0.0  0.0      0     0 ?        S     2012   0:27 [kondemand/8]
+root      3434  0.0  0.0      0     0 ?        S     2012   0:21 [kondemand/9]
+root      3435  0.0  0.0      0     0 ?        S     2012   0:21 [kondemand/10]
+root      3436  0.0  0.0      0     0 ?        S     2012   0:28 [kondemand/11]
+root      3437  0.0  0.0      0     0 ?        S     2012   8:34 [kondemand/12]
+root      3438  0.0  0.0      0     0 ?        S     2012   6:03 [kondemand/13]
+root      3439  0.0  0.0      0     0 ?        S     2012   6:29 [kondemand/14]
+root      3440  0.0  0.0      0     0 ?        S     2012   5:55 [kondemand/15]
+root      3441  0.0  0.0      0     0 ?        S     2012   6:09 [kondemand/16]
+root      3442  0.0  0.0      0     0 ?        S     2012   7:19 [kondemand/17]
+root      3443  0.0  0.0      0     0 ?        S     2012   7:54 [kondemand/18]
+root      3444  0.0  0.0      0     0 ?        S     2012   6:37 [kondemand/19]
+root      3445  0.0  0.0      0     0 ?        S     2012   3:58 [kondemand/20]
+root      3446  0.0  0.0      0     0 ?        S     2012   2:50 [kondemand/21]
+root      3447  0.0  0.0      0     0 ?        S     2012   2:24 [kondemand/22]
+root      3448  0.0  0.0      0     0 ?        S     2012   2:16 [kondemand/23]
+root      3449  0.0  0.0      0     0 ?        S     2012   1:41 [kondemand/24]
+root      3450  0.0  0.0      0     0 ?        S     2012   1:39 [kondemand/25]
+root      3451  0.0  0.0      0     0 ?        S     2012   1:33 [kondemand/26]
+root      3452  0.0  0.0      0     0 ?        S     2012   1:18 [kondemand/27]
+root      3453  0.0  0.0      0     0 ?        S     2012   0:29 [kondemand/28]
+root      3454  0.0  0.0      0     0 ?        S     2012   1:19 [kondemand/29]
+root      3455  0.0  0.0      0     0 ?        S     2012   0:38 [kondemand/30]
+root      3456  0.0  0.0      0     0 ?        S     2012   1:02 [kondemand/31]
+root      3457  0.0  0.0      0     0 ?        S     2012   0:49 [kondemand/32]
+root      3458  0.0  0.0      0     0 ?        S     2012   0:46 [kondemand/33]
+root      3459  0.0  0.0      0     0 ?        S     2012   0:47 [kondemand/34]
+root      3460  0.0  0.0      0     0 ?        S     2012   2:21 [kondemand/35]
+root      3461  0.0  0.0      0     0 ?        S     2012   0:20 [kondemand/36]
+root      3462  0.0  0.0      0     0 ?        S     2012   0:44 [kondemand/37]
+root      3463  0.0  0.0      0     0 ?        S     2012   0:10 [kondemand/38]
+root      3464  0.0  0.0      0     0 ?        S     2012   0:16 [kondemand/39]
+root      3465  0.0  0.0      0     0 ?        S     2012   0:15 [kondemand/40]
+root      3466  0.0  0.0      0     0 ?        S     2012   0:04 [kondemand/41]
+root      3467  0.0  0.0      0     0 ?        S     2012   0:06 [kondemand/42]
+root      3468  0.0  0.0      0     0 ?        S     2012   0:06 [kondemand/43]
+root      3469  0.0  0.0      0     0 ?        S     2012   0:04 [kondemand/44]
+root      3470  0.0  0.0      0     0 ?        S     2012   0:03 [kondemand/45]
+root      3471  0.0  0.0      0     0 ?        S     2012   0:01 [kondemand/46]
+root      3472  0.0  0.0      0     0 ?        S     2012   0:01 [kondemand/47]
+root      3483  0.0  0.0   9308   736 ?        Ss    2012 161:17 irqbalance
+rpc       3497  0.0  0.0  19024   996 ?        Ss    2012   0:10 rpcbind
+dbus      3583  0.0  0.0  98728  2372 ?        Ssl   2012   1:36 dbus-daemon --system
+avahi     3595  0.0  0.0  27852  1628 ?        S     2012   0:03 avahi-daemon: running [SVR-YTHAP-03.local]
+avahi     3596  0.0  0.0  27720   368 ?        Ss    2012   0:00 avahi-daemon: chroot helper
+rpcuser   3613  0.0  0.0  23200  1204 ?        Ss    2012   0:00 rpc.statd
+root      3648  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/0]
+root      3649  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/1]
+root      3650  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/2]
+root      3651  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/3]
+root      3652  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/4]
+root      3653  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/5]
+root      3654  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/6]
+root      3655  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/7]
+root      3656  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/8]
+root      3657  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/9]
+root      3658  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/10]
+root      3659  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/11]
+root      3660  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/12]
+root      3661  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/13]
+root      3662  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/14]
+root      3663  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/15]
+root      3664  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/16]
+root      3665  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/17]
+root      3666  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/18]
+root      3667  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/19]
+root      3668  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/20]
+root      3669  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/21]
+root      3670  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/22]
+root      3671  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/23]
+root      3672  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/24]
+root      3673  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/25]
+root      3674  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/26]
+root      3675  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/27]
+root      3676  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/28]
+root      3677  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/29]
+root      3678  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/30]
+root      3679  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/31]
+root      3680  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/32]
+root      3681  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/33]
+root      3682  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/34]
+root      3683  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/35]
+root      3684  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/36]
+root      3685  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/37]
+root      3686  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/38]
+root      3687  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/39]
+root      3688  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/40]
+root      3689  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/41]
+root      3690  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/42]
+root      3691  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/43]
+root      3692  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/44]
+root      3693  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/45]
+root      3694  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/46]
+root      3695  0.0  0.0      0     0 ?        S     2012   0:00 [rpciod/47]
+root      3699  0.0  0.0  27436   556 ?        Ss    2012   0:00 rpc.idmapd
+root      3709  0.0  0.0 189144  3420 ?        Ss    2012   0:00 cupsd -C /etc/cups/cupsd.conf
+root      3734  0.0  0.0   4132   672 ?        Ss    2012  48:16 /usr/sbin/acpid
+68        3743  0.0  0.0  26756  5488 ?        Ss    2012  98:58 hald
+root      3744  0.0  0.0  18160  1192 ?        S     2012   0:00 hald-runner
+68        3782  0.0  0.0  17860  1120 ?        S     2012  94:44 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+root      3787  0.0  0.0  20276  1136 ?        S     2012   0:00 hald-addon-input: Listening on /dev/input/event3 /dev/input/event2 /dev/input/event0
+root      3806  0.0  0.0 452316  3828 ?        Ssl   2012   0:39 automount --pid-file /var/run/autofs.pid
+root      3830  0.0  0.0  64068  1152 ?        Ss    2012   0:01 /usr/sbin/sshd
+root      3865  0.0  0.0 118916  1440 ?        Ss    2012   0:00 /usr/sbin/abrtd
+root      3873  0.0  0.0   9216   780 ?        Ss    2012   0:05 abrt-dump-oops -d /var/spool/abrt -rwx /var/log/messages
+qpidd     3884  0.0  0.0 3818732 19384 ?       Ssl   2012  14:45 /usr/sbin/qpidd --data-dir /var/lib/qpidd --daemon
+root      3963  0.0  0.0 117248  1380 ?        Ss    2012   1:22 crond
+root      3974  0.0  0.0  21492   468 ?        Ss    2012   0:01 /usr/sbin/atd
+root      3990  0.0  0.0   4112   348 ?        Ss    2012   0:00 /usr/bin/rhsmcertd 240 1440
+root      3992  0.0  0.0   4112   344 ?        S     2012   0:04 /usr/bin/rhsmcertd 240 1440
+root      4007  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root      4009  0.0  0.0   9284  1080 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      4011  0.0  0.0   9288  1176 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root      4032  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root      4057  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root      4060  0.0  0.0   9284  1084 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      4063  0.0  0.0   9288  1176 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root      4082  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root      4120  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root      4122  0.0  0.0   9284  1088 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      4124  0.0  0.0   9288  1176 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root      4143  0.0  0.0  15092   972 ?        S    Jan24   0:00 ftp -n
+root      4637  0.0  0.0 121532  2128 ?        Ss    2012   0:06 /usr/sbin/gdm-binary -nodaemon
+root      4644  0.0  0.0   4116   548 tty2     Ss+   2012   0:00 /sbin/mingetty /dev/tty2
+root      4646  0.0  0.0   4116   548 tty3     Ss+   2012   0:00 /sbin/mingetty /dev/tty3
+root      4648  0.0  0.0   4116   544 tty4     Ss+   2012   0:00 /sbin/mingetty /dev/tty4
+root      4650  0.0  0.0   4116   548 tty5     Ss+   2012   0:00 /sbin/mingetty /dev/tty5
+root      4652  0.0  0.0   4116   544 tty6     Ss+   2012   0:00 /sbin/mingetty /dev/tty6
+root      4661  0.0  0.0  12612  2840 ?        S<    2012   0:00 /sbin/udevd -d
+root      4662  0.0  0.0  12612  2784 ?        S<    2012   0:00 /sbin/udevd -d
+root      4675  0.0  0.0 152284  3304 ?        S     2012   0:00 /usr/libexec/gdm-simple-slave --display-id /org/gnome/DisplayManager/Display1 --force-active-vt
+root      4677  0.0  0.0 135248 32364 tty1     Ss+   2012  11:23 /usr/bin/Xorg :0 -nr -verbose -auth /var/run/gdm/auth-for-gdm-9SUpOv/database -nolisten tcp vt1
+root      4727  0.0  0.0 4113888 3524 ?        Sl    2012   0:17 /usr/sbin/console-kit-daemon --no-daemon
+gdm       4797  0.0  0.0  20084   684 ?        S     2012   0:00 /usr/bin/dbus-launch --exit-with-session
+root      4803  0.0  0.0  45180  2664 ?        S     2012   0:07 /usr/libexec/devkit-power-daemon
+root      4857  0.0  0.0  50064  4160 ?        S     2012   0:08 /usr/libexec/polkit-1/polkitd
+rtkit     4866  0.0  0.0 168504  1236 ?        SNl   2012   1:30 /usr/libexec/rtkit-daemon
+root      4871  0.0  0.0 176940  2904 ?        S     2012   0:00 pam: gdm-password
+root      5051  0.0  0.0 140132  1716 ?        S    Jan30   0:00 CROND
+root      5054  0.0  0.0   9284  1084 ?        Ss   Jan30   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      5057  0.0  0.0   9288  1180 ?        S    Jan30   0:00 /bin/sh /root/nms/collection.sh
+root      5079  0.0  0.0  15092   972 ?        S    Jan30   0:00 ftp -n
+root      5100  0.0  0.0 140132  1716 ?        S    Jan30   0:00 CROND
+root      5102  0.0  0.0   9284  1080 ?        Ss   Jan30   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      5104  0.0  0.0   9288  1172 ?        S    Jan30   0:00 /bin/sh /root/nms/collection.sh
+root      5124  0.0  0.0  15092   968 ?        S    Jan30   0:00 ftp -n
+root      5148  0.0  0.0 140132  1716 ?        S    Jan30   0:00 CROND
+root      5153  0.0  0.0   9284  1088 ?        Ss   Jan30   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      5154  0.0  0.0   9288  1180 ?        S    Jan30   0:00 /bin/sh /root/nms/collection.sh
+root      5174  0.0  0.0  15092   972 ?        S    Jan30   0:00 ftp -n
+root      6734  0.0  0.0  51056 27256 ?        Ss    2012   0:16 /usr/sbin/restorecond -u
+root      7459  0.0  0.0 140132  1716 ?        S    Jan19   0:00 CROND
+root      7463  0.0  0.0   9284  1088 ?        Ss   Jan19   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      7465  0.0  0.0   9288  1176 ?        S    Jan19   0:00 /bin/sh /root/nms/collection.sh
+root      7486  0.0  0.0  15092   972 ?        S    Jan19   0:00 ftp -n
+root      7508  0.0  0.0 140132  1716 ?        S    Jan19   0:00 CROND
+root      7510  0.0  0.0   9284  1084 ?        Ss   Jan19   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      7512  0.0  0.0   9288  1180 ?        S    Jan19   0:00 /bin/sh /root/nms/collection.sh
+root      7531  0.0  0.0  15092   968 ?        S    Jan19   0:00 ftp -n
+root      7769  0.0  0.0 140132  1716 ?        S    Jan07   0:00 CROND
+root      7771  0.0  0.0   9284  1088 ?        Ss   Jan07   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      7773  0.0  0.0   9288  1180 ?        S    Jan07   0:00 /bin/sh /root/nms/collection.sh
+root      7796  0.0  0.0  15092   968 ?        S    Jan07   0:00 ftp -n
+root      7816  0.0  0.0 140132  1716 ?        S    Jan07   0:00 CROND
+root      7819  0.0  0.0   9284  1088 ?        Ss   Jan07   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root      7822  0.0  0.0   9288  1180 ?        S    Jan07   0:00 /bin/sh /root/nms/collection.sh
+root      7843  0.0  0.0  15092   968 ?        S    Jan07   0:00 ftp -n
+root      7889  0.0  0.0 241100  8444 ?        S     2012   0:40 metacity
+root      8061  0.0  0.0 272064  9388 ?        S     2012   0:03 /usr/libexec/notification-daemon
+root     11795  0.0  0.0 140132  1716 ?        S    Mar13   0:00 CROND
+root     11799  0.0  0.0   9284  1080 ?        Ss   Mar13   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     11801  0.0  0.0   9288  1180 ?        S    Mar13   0:00 /bin/sh /root/nms/collection.sh
+root     11822  0.0  0.0  15092   968 ?        S    Mar13   0:00 ftp -n
+root     11844  0.0  0.0 140132  1716 ?        S    Mar13   0:00 CROND
+root     11846  0.0  0.0   9284  1084 ?        Ss   Mar13   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     11848  0.0  0.0   9288  1180 ?        S    Mar13   0:00 /bin/sh /root/nms/collection.sh
+root     11867  0.0  0.0  15092   972 ?        S    Mar13   0:00 ftp -n
+root     11890  0.0  0.0 140132  1716 ?        S    Mar13   0:00 CROND
+root     11893  0.0  0.0   9284  1080 ?        Ss   Mar13   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     11896  0.0  0.0   9288  1180 ?        S    Mar13   0:00 /bin/sh /root/nms/collection.sh
+root     11915  0.0  0.0  15092   968 ?        S    Mar13   0:00 ftp -n
+root     11937  0.0  0.0 140132  1716 ?        S    Mar13   0:00 CROND
+root     11939  0.0  0.0   9284  1084 ?        Ss   Mar13   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     11941  0.0  0.0   9288  1180 ?        S    Mar13   0:00 /bin/sh /root/nms/collection.sh
+root     11960  0.0  0.0  15092   968 ?        S    Mar13   0:00 ftp -n
+root     13683  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     13685  0.0  0.0   9284  1088 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     13687  0.0  0.0   9288  1176 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     13710  0.0  0.0  15196  1048 ?        S     2012   0:00 ftp -n
+root     13731  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     13734  0.0  0.0   9284  1084 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     13737  0.0  0.0   9288  1176 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     13758  0.0  0.0  15092   964 ?        S     2012   0:00 ftp -n
+root     13776  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     13778  0.0  0.0   9284  1088 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     13780  0.0  0.0   9288  1172 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     13801  0.0  0.0  15092   972 ?        S     2012   0:00 ftp -n
+root     13824  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     13827  0.0  0.0   9284  1088 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     13830  0.0  0.0   9288  1180 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     13851  0.0  0.0  15092   972 ?        S     2012   0:00 ftp -n
+root     18355  0.0  0.0 140132  1716 ?        S    Mar19   0:00 CROND
+root     18357  0.0  0.0   9284  1080 ?        Ss   Mar19   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     18359  0.0  0.0   9288  1176 ?        S    Mar19   0:00 /bin/sh /root/nms/collection.sh
+root     18380  0.0  0.0  15092   968 ?        S    Mar19   0:00 ftp -n
+root     18401  0.0  0.0 140132  1716 ?        S    Mar19   0:00 CROND
+root     18405  0.0  0.0   9284  1084 ?        Ss   Mar19   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     18407  0.0  0.0   9288  1180 ?        S    Mar19   0:00 /bin/sh /root/nms/collection.sh
+root     18426  0.0  0.0  15092   972 ?        S    Mar19   0:00 ftp -n
+root     18448  0.0  0.0 140132  1716 ?        S    Mar19   0:00 CROND
+root     18450  0.0  0.0   9284  1084 ?        Ss   Mar19   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     18452  0.0  0.0   9288  1176 ?        S    Mar19   0:00 /bin/sh /root/nms/collection.sh
+root     18471  0.0  0.0  15092   968 ?        S    Mar19   0:00 ftp -n
+root     18493  0.0  0.0 140132  1716 ?        S    Mar05   0:00 CROND
+root     18496  0.0  0.0   9284  1084 ?        Ss   Mar05   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     18499  0.0  0.0   9288  1180 ?        S    Mar05   0:00 /bin/sh /root/nms/collection.sh
+root     18521  0.0  0.0  15092   968 ?        S    Mar05   0:00 ftp -n
+root     18560  0.0  0.0 140132  1716 ?        S    Mar05   0:00 CROND
+root     18562  0.0  0.0   9284  1084 ?        Ss   Mar05   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     18564  0.0  0.0   9288  1176 ?        S    Mar05   0:00 /bin/sh /root/nms/collection.sh
+root     18584  0.0  0.0  15092   972 ?        S    Mar05   0:00 ftp -n
+root     18606  0.0  0.0 140132  1716 ?        S    Mar05   0:00 CROND
+root     18611  0.0  0.0   9284  1088 ?        Ss   Mar05   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     18612  0.0  0.0   9288  1180 ?        S    Mar05   0:00 /bin/sh /root/nms/collection.sh
+root     18632  0.0  0.0  15092   972 ?        S    Mar05   0:00 ftp -n
+root     19205  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     19208  0.0  0.0   9284  1088 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     19211  0.0  0.0   9288  1180 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     19233  0.0  0.0  15200  1048 ?        S    Mar08   0:00 ftp -n
+root     19254  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     19256  0.0  0.0   9284  1080 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     19258  0.0  0.0   9288  1180 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     19278  0.0  0.0  15092   968 ?        S    Mar08   0:00 ftp -n
+root     19300  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     19303  0.0  0.0   9284  1084 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     19306  0.0  0.0   9288  1176 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     19326  0.0  0.0  15092   968 ?        S    Mar08   0:00 ftp -n
+root     19341  0.0  0.0  44720 20876 ?        Ss   Feb21   0:04 /usr/sbin/restorecond -u
+root     19490  0.0  0.0 140132  1716 ?        S    Jan28   0:00 CROND
+root     19492  0.0  0.0   9284  1084 ?        Ss   Jan28   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     19494  0.0  0.0   9288  1180 ?        S    Jan28   0:00 /bin/sh /root/nms/collection.sh
+root     19515  0.0  0.0  15092   968 ?        S    Jan28   0:00 ftp -n
+root     19538  0.0  0.0 140132  1716 ?        S    Jan28   0:00 CROND
+root     19541  0.0  0.0   9284  1084 ?        Ss   Jan28   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     19544  0.0  0.0   9288  1176 ?        S    Jan28   0:00 /bin/sh /root/nms/collection.sh
+root     19563  0.0  0.0  15092   972 ?        S    Jan28   0:00 ftp -n
+root     19586  0.0  0.0 140132  1716 ?        S    Jan28   0:00 CROND
+root     19588  0.0  0.0   9284  1084 ?        Ss   Jan28   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     19590  0.0  0.0   9288  1172 ?        S    Jan28   0:00 /bin/sh /root/nms/collection.sh
+root     19609  0.0  0.0  15092   968 ?        S    Jan28   0:00 ftp -n
+root     20105  0.0  0.0 140132  1716 ?        S    Feb27   0:00 CROND
+root     20108  0.0  0.0   9284  1084 ?        Ss   Feb27   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     20111  0.0  0.0   9288  1176 ?        S    Feb27   0:00 /bin/sh /root/nms/collection.sh
+root     20134  0.0  0.0  15200  1052 ?        S    Feb27   0:00 ftp -n
+root     20167  0.0  0.0 140132  1716 ?        S    Feb27   0:00 CROND
+root     20169  0.0  0.0   9284  1084 ?        Ss   Feb27   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     20171  0.0  0.0   9288  1176 ?        S    Feb27   0:00 /bin/sh /root/nms/collection.sh
+root     20192  0.0  0.0  15092   968 ?        S    Feb27   0:00 ftp -n
+root     20213  0.0  0.0 140132  1716 ?        S    Feb27   0:00 CROND
+root     20216  0.0  0.0   9284  1084 ?        Ss   Feb27   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     20219  0.0  0.0   9288  1172 ?        S    Feb27   0:00 /bin/sh /root/nms/collection.sh
+root     20240  0.0  0.0  15092   972 ?        S    Feb27   0:00 ftp -n
+root     26272  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     26274  0.0  0.0   9284  1088 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     26276  0.0  0.0   9288  1176 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     26299  0.0  0.0  15092   968 ?        S    Mar08   0:00 ftp -n
+root     26323  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     26326  0.0  0.0   9284  1084 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     26329  0.0  0.0   9288  1180 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     26350  0.0  0.0  15092   968 ?        S    Mar08   0:00 ftp -n
+root     26371  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     26373  0.0  0.0   9284  1088 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     26375  0.0  0.0   9288  1176 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     26396  0.0  0.0  15092   964 ?        S    Mar08   0:00 ftp -n
+root     30596  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     30599  0.0  0.0   9284  1084 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     30602  0.0  0.0   9288  1180 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     30623  0.0  0.0  15092   972 ?        S     2012   0:00 ftp -n
+root     30644  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     30646  0.0  0.0   9284  1088 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     30648  0.0  0.0   9288  1176 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     30667  0.0  0.0  15092   968 ?        S     2012   0:00 ftp -n
+root     30692  0.0  0.0 140132  1716 ?        S     2012   0:00 CROND
+root     30696  0.0  0.0   9284  1084 ?        Ss    2012   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     30698  0.0  0.0   9288  1180 ?        S     2012   0:00 /bin/sh /root/nms/collection.sh
+root     30717  0.0  0.0  15092   972 ?        S     2012   0:00 ftp -n
+root     30934  0.0  0.0 140132  1716 ?        S    Mar11   0:00 CROND
+root     30937  0.0  0.0   9284  1084 ?        Ss   Mar11   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     30940  0.0  0.0   9288  1176 ?        S    Mar11   0:00 /bin/sh /root/nms/collection.sh
+root     30962  0.0  0.0  15092   968 ?        S    Mar11   0:00 ftp -n
+root     30981  0.0  0.0 140132  1716 ?        S    Mar11   0:00 CROND
+root     30983  0.0  0.0   9284  1088 ?        Ss   Mar11   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     30985  0.0  0.0   9288  1180 ?        S    Mar11   0:00 /bin/sh /root/nms/collection.sh
+root     31004  0.0  0.0  15092   968 ?        S    Mar11   0:00 ftp -n
+root     31046  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     31049  0.0  0.0   9284  1088 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31052  0.0  0.0   9288  1176 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     31074  0.0  0.0  15092   972 ?        S    Mar08   0:00 ftp -n
+root     31095  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     31097  0.0  0.0   9284  1084 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31099  0.0  0.0   9288  1176 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     31119  0.0  0.0  15092   964 ?        S    Mar08   0:00 ftp -n
+root     31139  0.0  0.0 140132  1716 ?        S    Mar08   0:00 CROND
+root     31142  0.0  0.0   9284  1084 ?        Ss   Mar08   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31145  0.0  0.0   9288  1176 ?        S    Mar08   0:00 /bin/sh /root/nms/collection.sh
+root     31166  0.0  0.0  15092   968 ?        S    Mar08   0:00 ftp -n
+root     31575  0.0  0.0 140132  1716 ?        S    Jan29   0:00 CROND
+root     31577  0.0  0.0   9284  1088 ?        Ss   Jan29   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31592  0.0  0.0   9288  1176 ?        S    Jan29   0:00 /bin/sh /root/nms/collection.sh
+root     31614  0.0  0.0  15092   968 ?        S    Jan29   0:00 ftp -n
+root     31638  0.0  0.0 140132  1716 ?        S    Jan29   0:00 CROND
+root     31642  0.0  0.0   9284  1088 ?        Ss   Jan29   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31645  0.0  0.0   9288  1176 ?        S    Jan29   0:00 /bin/sh /root/nms/collection.sh
+root     31665  0.0  0.0  15092   972 ?        S    Jan29   0:00 ftp -n
+root     31701  0.0  0.0 140132  1716 ?        S    Jan29   0:00 CROND
+root     31703  0.0  0.0   9284  1084 ?        Ss   Jan29   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31705  0.0  0.0   9288  1180 ?        S    Jan29   0:00 /bin/sh /root/nms/collection.sh
+root     31725  0.0  0.0  15092   964 ?        S    Jan29   0:00 ftp -n
+root     31745  0.0  0.0 140132  1716 ?        S    Jan29   0:00 CROND
+root     31750  0.0  0.0   9284  1080 ?        Ss   Jan29   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     31751  0.0  0.0   9288  1176 ?        S    Jan29   0:00 /bin/sh /root/nms/collection.sh
+root     31771  0.0  0.0  15092   964 ?        S    Jan29   0:00 ftp -n
+root     33373  0.0  0.0 140132  1716 ?        S    18:00   0:00 CROND
+root     33378  0.0  0.0   9284  1088 ?        Ss   18:00   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     33379  0.0  0.0   9288  1180 ?        S    18:00   0:00 /bin/sh /root/nms/collection.sh
+root     33392  0.0  0.0  13428  1064 ?        R    18:00   0:00 ps aux
+root     33815  0.0  0.0 140132  1716 ?        S    Feb01   0:00 CROND
+root     33817  0.0  0.0   9284  1084 ?        Ss   Feb01   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     33819  0.0  0.0   9288  1180 ?        S    Feb01   0:00 /bin/sh /root/nms/collection.sh
+root     33841  0.0  0.0  15200  1052 ?        S    Feb01   0:00 ftp -n
+root     33861  0.0  0.0 140132  1716 ?        S    Feb01   0:00 CROND
+root     33865  0.0  0.0   9284  1084 ?        Ss   Feb01   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     33867  0.0  0.0   9288  1180 ?        S    Feb01   0:00 /bin/sh /root/nms/collection.sh
+root     33887  0.0  0.0  15092   968 ?        S    Feb01   0:00 ftp -n
+root     33910  0.0  0.0 140132  1716 ?        S    Feb01   0:00 CROND
+root     33912  0.0  0.0   9284  1088 ?        Ss   Feb01   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     33914  0.0  0.0   9288  1180 ?        S    Feb01   0:00 /bin/sh /root/nms/collection.sh
+root     33935  0.0  0.0  15092   968 ?        S    Feb01   0:00 ftp -n
+root     33959  0.0  0.0 140132  1716 ?        S    Feb01   0:00 CROND
+root     33962  0.0  0.0   9284  1084 ?        Ss   Feb01   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     33965  0.0  0.0   9288  1180 ?        S    Feb01   0:00 /bin/sh /root/nms/collection.sh
+root     33985  0.0  0.0  15092   968 ?        S    Feb01   0:00 ftp -n
+root     39350  0.0  0.0 140132  1716 ?        S    Feb04   0:00 CROND
+root     39352  0.0  0.0   9284  1080 ?        Ss   Feb04   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     39354  0.0  0.0   9288  1176 ?        S    Feb04   0:00 /bin/sh /root/nms/collection.sh
+root     39375  0.0  0.0  15092   964 ?        S    Feb04   0:00 ftp -n
+root     39398  0.0  0.0 140132  1716 ?        S    Feb04   0:00 CROND
+root     39401  0.0  0.0   9284  1084 ?        Ss   Feb04   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     39404  0.0  0.0   9288  1172 ?        S    Feb04   0:00 /bin/sh /root/nms/collection.sh
+root     39423  0.0  0.0  15092   968 ?        S    Feb04   0:00 ftp -n
+root     39444  0.0  0.0 140132  1716 ?        S    Feb04   0:00 CROND
+root     39446  0.0  0.0   9284  1084 ?        Ss   Feb04   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     39448  0.0  0.0   9288  1176 ?        S    Feb04   0:00 /bin/sh /root/nms/collection.sh
+root     39467  0.0  0.0  15092   968 ?        S    Feb04   0:00 ftp -n
+root     39546  0.0  0.0 140132  1716 ?        S    Jan06   0:00 CROND
+root     39549  0.0  0.0   9284  1080 ?        Ss   Jan06   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     39552  0.0  0.0   9288  1172 ?        S    Jan06   0:00 /bin/sh /root/nms/collection.sh
+root     39575  0.0  0.0  15200  1052 ?        S    Jan06   0:00 ftp -n
+root     39593  0.0  0.0 140132  1716 ?        S    Jan06   0:00 CROND
+root     39595  0.0  0.0   9284  1084 ?        Ss   Jan06   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     39597  0.0  0.0   9288  1176 ?        S    Jan06   0:00 /bin/sh /root/nms/collection.sh
+root     39618  0.0  0.0  15092   964 ?        S    Jan06   0:00 ftp -n
+root     39641  0.0  0.0 140132  1716 ?        S    Jan06   0:00 CROND
+root     39645  0.0  0.0   9284  1084 ?        Ss   Jan06   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     39647  0.0  0.0   9288  1180 ?        S    Jan06   0:00 /bin/sh /root/nms/collection.sh
+root     39668  0.0  0.0  15092   964 ?        S    Jan06   0:00 ftp -n
+root     41110  0.0  0.0  42788  2944 ?        S     2012   0:07 /usr/libexec/udisks-daemon
+root     41111  0.0  0.0  40396   620 ?        S     2012   9:23 udisks-daemon: polling /dev/sr0
+root     41243  0.0  0.0  51056 27316 ?        Ss    2012   0:16 /usr/sbin/restorecond -u
+root     43445  0.0  0.0 140132  1716 ?        S    Jan30   0:00 CROND
+root     43447  0.0  0.0   9284  1084 ?        Ss   Jan30   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     43449  0.0  0.0   9288  1176 ?        S    Jan30   0:00 /bin/sh /root/nms/collection.sh
+root     43471  0.0  0.0  15092   972 ?        S    Jan30   0:00 ftp -n
+root     43495  0.0  0.0 140132  1716 ?        S    Jan30   0:00 CROND
+root     43499  0.0  0.0   9284  1084 ?        Ss   Jan30   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     43501  0.0  0.0   9288  1176 ?        S    Jan30   0:00 /bin/sh /root/nms/collection.sh
+root     43521  0.0  0.0  15092   968 ?        S    Jan30   0:00 ftp -n
+root     43542  0.0  0.0 140132  1716 ?        S    Jan30   0:00 CROND
+root     43544  0.0  0.0   9284  1084 ?        Ss   Jan30   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     43546  0.0  0.0   9288  1176 ?        S    Jan30   0:00 /bin/sh /root/nms/collection.sh
+root     43566  0.0  0.0  15092   968 ?        S    Jan30   0:00 ftp -n
+root     44048  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     44050  0.0  0.0   9284  1084 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     44052  0.0  0.0   9288  1172 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     44073  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root     44097  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     44101  0.0  0.0   9284  1084 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     44103  0.0  0.0   9288  1180 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     44122  0.0  0.0  15092   972 ?        S    Jan24   0:00 ftp -n
+root     44144  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     44146  0.0  0.0   9284  1088 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     44148  0.0  0.0   9288  1176 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     44167  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root     44195  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     44199  0.0  0.0   9284  1088 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     44201  0.0  0.0   9288  1176 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     44221  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root     44790  0.4  1.4 9651736 485392 ?      Sl   Mar18  15:38 /opt/IBM/WebSphere/AppServer/java/bin/java -Declipse.security -Dwas.status.socket=37451 -Dosgi.install.area=/opt/IBM/WebSphere/AppServer -Dosgi.configuration.area=/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/configuration -Djava.awt.headless=true -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev70_%g,groupAccess,nonFatal -Xscmx50M -Xbootclasspath/p:/opt/IBM/WebSphere/AppServer/java/jre/lib/ext/ibmorb.jar:/opt/IBM/WebSphere/AppServer/java/jre/lib/ext/ibmext.jar -classpath /opt/IBM/WebSphere/AppServer/profiles/Dmgr01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/lib/jsf-nls.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere/AppServer/java/lib/tools.jar -Dibm.websphere.internalClassAccessMode=allow -Xms50m -Xmx256m -Xcompressedrefs -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/lib:/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/classes:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere/AppServer/profiles/Dmgr01 -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Dpython.cachedir=/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/temp/cachedir -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere/AppServer/profiles/Dmgr01 -Dcom.ibm.security.jgss.debug=off -Dcom.ibm.security.krb5.Krb5Debug=off -Djava.security.auth.login.config=/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere/AppServer/profiles/Dmgr01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere/AppServer/profiles/Dmgr01/config Was7Cell Was7CellNode dmgr
+root     44998  0.3  0.7 8781796 238984 ?      Sl   Mar18  12:14 /opt/IBM/WebSphere/AppServer/java/bin/java -Xmaxt0.5 -Dwas.status.socket=48208 -Declipse.security -Dosgi.install.area=/opt/IBM/WebSphere/AppServer -Dosgi.configuration.area=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev70_%g,groupAccess,nonFatal -Xscmx50M -Xbootclasspath/p:/opt/IBM/WebSphere/AppServer/java/jre/lib/ext/ibmorb.jar:/opt/IBM/WebSphere/AppServer/java/jre/lib/ext/ibmext.jar -classpath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/lib/jsf-nls.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere/AppServer/java/lib/tools.jar -Dibm.websphere.internalClassAccessMode=allow -Xms50m -Xmx256m -Xcompressedrefs -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/lib:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01 -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Dpython.cachedir=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/cachedir -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01 -Djava.awt.headless=true -Djava.security.auth.login.config=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config Was7Cell Was7AppSrvNode nodeagent 
+root     45126  0.0  0.0 140132  1716 ?        S    Mar12   0:00 CROND
+root     45130  0.0  0.0   9284  1084 ?        Ss   Mar12   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     45132  0.0  0.0   9288  1176 ?        S    Mar12   0:00 /bin/sh /root/nms/collection.sh
+root     45153  0.0  0.0  15092   968 ?        S    Mar12   0:00 ftp -n
+root     45172  0.0  0.0 140132  1716 ?        S    Mar12   0:00 CROND
+root     45174  0.0  0.0   9284  1084 ?        Ss   Mar12   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     45176  0.0  0.0   9288  1176 ?        S    Mar12   0:00 /bin/sh /root/nms/collection.sh
+root     45196  0.0  0.0  15092   972 ?        S    Mar12   0:00 ftp -n
+root     45220  0.0  0.0 140132  1716 ?        S    Mar12   0:00 CROND
+root     45223  0.0  0.0   9284  1088 ?        Ss   Mar12   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     45226  0.0  0.0   9288  1176 ?        S    Mar12   0:00 /bin/sh /root/nms/collection.sh
+root     45239  153  5.6 27292520 1862880 ?    Sl   Mar18 4990:23 /opt/IBM/WebSphere/AppServer/java/bin/java -Declipse.security -Dwas.status.socket=59781 -Dosgi.install.area=/opt/IBM/WebSphere/AppServer -Dosgi.configuration.area=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/configuration -Djava.awt.headless=true -Dosgi.framework.extensions=com.ibm.cds,com.ibm.ws.eclipse.adaptors -Xshareclasses:name=webspherev70_%g,groupAccess,nonFatal -Xscmx50M -Dwas.debug.mode=true -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=7778 -Xbootclasspath/p:/opt/IBM/WebSphere/AppServer/lib/dertrjrt.jar:/opt/IBM/WebSphere/AppServer/java/jre/lib/ext/ibmorb.jar:/opt/IBM/WebSphere/AppServer/java/jre/lib/ext/ibmext.jar -classpath /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/lib/jsf-nls.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere/AppServer/java/lib/tools.jar -Dibm.websphere.internalClassAccessMode=allow -Xms512m -Xmx1024m -Xcompressedrefs -Dws.ext.dirs=/opt/IBM/WebSphere/AppServer/java/lib:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime -Dderby.system.home=/opt/IBM/WebSphere/AppServer/derby -Dcom.ibm.itp.location=/opt/IBM/WebSphere/AppServer/bin -Djava.util.logging.configureByServer=true -Duser.install.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01 -Djavax.management.builder.initial=com.ibm.ws.management.PlatformMBeanServerBuilder -Dwas.install.root=/opt/IBM/WebSphere/AppServer -Dpython.cachedir=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/temp/cachedir -Djava.util.logging.manager=com.ibm.ws.bootstrap.WsLogManager -Dserver.root=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01 -Dcom.ibm.security.jgss.debug=off -Dcom.ibm.security.krb5.Krb5Debug=off -Dfile.encoding=UTF-8 -Djava.security.auth.login.config=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/wsjaas.conf -Djava.security.policy=/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/server.policy com.ibm.wsspi.bootstrap.WSPreLauncher -nosplash -application com.ibm.ws.bootstrap.WSLauncher com.ibm.ws.runtime.WsServer /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config Was7Cell Was7AppSrvNode server1
+root     45245  0.0  0.0  15092   968 ?        S    Mar12   0:00 ftp -n
+root     47755  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     47757  0.0  0.0   9284  1088 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     47759  0.0  0.0   9288  1180 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     47781  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root     47807  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     47810  0.0  0.0   9284  1088 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     47813  0.0  0.0   9288  1180 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     47833  0.0  0.0  15092   968 ?        S    Jan24   0:00 ftp -n
+root     47872  0.0  0.0 140132  1716 ?        S    Jan24   0:00 CROND
+root     47874  0.0  0.0   9284  1088 ?        Ss   Jan24   0:00 /bin/sh -c /root/nms/collection.sh >/dev/null
+root     47876  0.0  0.0   9288  1176 ?        S    Jan24   0:00 /bin/sh /root/nms/collection.sh
+root     47895  0.0  0.0  15092   964 ?        S    Jan24   0:00 ftp -n
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth3: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP qlen 1000
+    link/ether 34:40:b5:b1:3a:92 brd ff:ff:ff:ff:ff:ff
+3: eth2: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc mq master bond0 state UP qlen 1000
+    link/ether 34:40:b5:b1:3a:92 brd ff:ff:ff:ff:ff:ff
+4: usb0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether 36:40:b5:b2:ba:ab brd ff:ff:ff:ff:ff:ff
+5: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP 
+    link/ether 34:40:b5:b1:3a:92 brd ff:ff:ff:ff:ff:ff
+    inet 10.44.20.42/24 brd 10.44.20.255 scope global bond0
+    inet6 fe80::3640:b5ff:feb1:3a92/64 scope link 
+       valid_lft forever preferred_lft forever
+cmdbegin:interface
+Linux 2.6.32-220.el6.x86_64 (SVR-YTHAP-03) 	03/20/13 	_x86_64_	(48 CPU)
+
+18:00:07        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+18:00:08           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:08         eth3      2.00      0.00      0.19      0.00      0.00      0.00      0.00
+18:00:08         eth2    477.00    467.00    148.63     35.57      0.00      0.00      0.00
+18:00:08         usb0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:08        bond0    479.00    467.00    148.82     35.57      0.00      0.00      0.00
+
+18:00:08        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+18:00:09           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:09         eth3      1.00      0.00      0.09      0.00      0.00      0.00      0.00
+18:00:09         eth2    472.00    467.00    150.03     34.99      0.00      0.00      0.00
+18:00:09         usb0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:09        bond0    473.00    467.00    150.13     34.99      0.00      0.00      0.00
+
+18:00:09        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+18:00:10           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:10         eth3      4.00      0.00      0.28      0.00      0.00      0.00      3.00
+18:00:10         eth2    495.00    482.00    150.95     37.07      0.00      0.00      6.00
+18:00:10         usb0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+18:00:10        bond0    499.00    482.00    151.23     37.07      0.00      0.00      9.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         eth3      2.33      0.00      0.19      0.00      0.00      0.00      1.00
+Average:         eth2    481.33    472.00    149.87     35.87      0.00      0.00      2.00
+Average:         usb0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:        bond0    483.67    472.00    150.06     35.87      0.00      0.00      3.00
+cmdbegin:uname
+Linux SVR-YTHAP-03
+cmdbegin:usergroup
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail,postfix
+uucp:x:14:uucp
+man:x:15:
+games:x:20:
+gopher:x:30:
+video:x:39:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+nobody:x:99:
+users:x:100:
+dbus:x:81:
+usbmuxd:x:113:
+utmp:x:22:
+utempter:x:35:
+avahi-autoipd:x:170:
+desktop_admin_r:x:499:
+desktop_user_r:x:498:
+floppy:x:19:
+vcsa:x:69:
+rpc:x:32:
+rtkit:x:497:
+abrt:x:173:
+cdrom:x:11:
+tape:x:33:
+dialout:x:18:
+qpidd:x:496:
+saslauth:x:76:
+postdrop:x:90:
+postfix:x:89:
+haldaemon:x:68:haldaemon
+ntp:x:38:
+apache:x:48:
+avahi:x:70:
+rpcuser:x:29:
+nfsnobody:x:65534:
+pulse:x:495:
+pulse-access:x:494:
+fuse:x:493:
+gdm:x:42:
+stapdev:x:492:
+stapusr:x:491:
+sshd:x:74:
+tcpdump:x:72:
+slocate:x:21:
+nms:x:500:
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+rtkit:x:499:497:RealtimeKit:/proc:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+saslauth:x:498:76:"Saslauthd user":/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+qpidd:x:497:496:Owner of Qpidd Daemons:/var/lib/qpidd:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+pulse:x:496:495:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+nms:x:500:500::/home/nms:/bin/bash
+cmdbegin:date
+Wed Mar 20 18:00:10 CST 2013
+cmdbegin:uptime
+ 18:00:10 up 112 days, 20:22,  1 user,  load average: 0.45, 1.12, 1.11
+cmdbegin:end
+t      1025  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_eh_4]
+root      1026  0.0  0.0      0     0 ?        S     2012   0:00 [scsi_wq_4]
+root      1027  0.0  0.0      0     0 ?        S     2012   0:00 [fc_wq_4]
+root      1028  0.0  0.0      0     0 ?        S     2012   0:00 [fc_dl_4]
+root      1029  0.0  0.0 331904 20004 ?        S     2012   0:01 python /usr/share/system-config-printer/appl

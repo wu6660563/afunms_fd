@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gb2312"?>
+<alarmTree alarmNum="2">
+	<alarmNode ip="11C_S3652P-EI(11C_S3652P-EI)" level="2" content="11C_S3652P-EI(IP: 10.10.0.50) 入口流速超过阀值 当前值:193192 kb/秒 阀值:100000 kb/秒" />
+	<alarmNode ip="11C_S3652P-EI(11C_S3652P-EI)" level="2" content="11C_S3652P-EI(IP: 10.10.0.50) 出口流速超过阀值 当前值:193312 kb/秒 阀值:100000 kb/秒" />
+</alarmTree>
+

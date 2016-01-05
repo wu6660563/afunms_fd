@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gather-config>
+    <threadPool>
+        <name>采集线程池</name>
+        <max-threads>500</max-threads>
+        <max-spare-threads>100</max-spare-threads>
+        <min-spare-threads>20</min-spare-threads>
+    </threadPool>
+    <gather-indicator-action-service>
+        <local>true</local>
+        <synchronize>true</synchronize>
+    </gather-indicator-action-service>
+    <gather-send-service>
+        <enable>true</enable>
+        <class>com.afunms.gather.service.LocalGatherDataSendService</class>
+    </gather-send-service>
+    <gather-send-service>
+        <enable>true</enable>
+        <class>com.afunms.gather.service.RemoteGatherDataSendService</class>
+    </gather-send-service>
+</gather-config>
+

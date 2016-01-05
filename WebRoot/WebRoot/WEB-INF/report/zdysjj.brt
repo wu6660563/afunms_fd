@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report version="3.0">
+	<head>
+		<property name="type">0</property>
+		<name><![CDATA[zdysjj]]></name>
+		<dataSets>
+			<dataSet name="custom_dataset" type="Self" >
+				<property name="dataSource"></property>
+				<property name="desc"><![CDATA[]]></property>
+				<property name="query"><![CDATA[com.afunms.biosreport.dataset.AlarmDealAndReportDataSet]]></property>
+				<property name="beginRow">0</property>
+				<property name="endRow">0</property>
+			</dataSet>
+		</dataSets>
+		<parameters/>
+		<variables/>
+		<subReports/>
+	</head>
+	<body>
+		<sheet id="sheet1">
+			<page>
+				<property name="margin-left">4</property>
+				<property name="margin-right">4</property>
+			</page>
+			<grid row="3" col="6">
+				<properties>
+				</properties>
+				<rows>
+					<row id="1">
+						<property name="type">1</property>
+						<property name="height">32</property>
+					</row>
+					<row id="2">
+						<property name="type">2</property>
+					</row>
+					<row id="3">
+						<property name="height">30</property>
+					</row>
+				</rows>
+				<columns>
+					<column id="1">
+						<property name="width">188</property>
+					</column>
+					<column id="2">
+						<property name="width">191</property>
+					</column>
+					<column id="3">
+						<property name="width">99</property>
+					</column>
+					<column id="4">
+						<property name="width">98</property>
+					</column>
+					<column id="5">
+						<property name="width">83</property>
+					</column>
+					<column id="6">
+						<property name="width">104</property>
+					</column>
+				</columns>
+				<cells>
+					<cell id="1,1" type="0" colspan="6" >
+						<property name="value"><![CDATA[查询结果（计算机类图书）]]></property>
+						<property name="font-size">11</property>
+						<property name="bold">0</property>
+					</cell>
+					<cell id="2,1" type="0" >
+						<property name="value"><![CDATA[书名]]></property>
+						<property name="font-color"><![CDATA[255,255,255]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[153,51,0]]></property>
+					</cell>
+					<cell id="2,2" type="0" >
+						<property name="value"><![CDATA[作者]]></property>
+						<property name="font-color"><![CDATA[255,255,255]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[153,51,0]]></property>
+					</cell>
+					<cell id="2,3" type="0" >
+						<property name="value"><![CDATA[出版社]]></property>
+						<property name="font-color"><![CDATA[255,255,255]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[153,51,0]]></property>
+					</cell>
+					<cell id="2,4" type="0" >
+						<property name="value"><![CDATA[出版日期]]></property>
+						<property name="font-color"><![CDATA[255,255,255]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[153,51,0]]></property>
+					</cell>
+					<cell id="2,5" type="0" >
+						<property name="value"><![CDATA[价格]]></property>
+						<property name="font-color"><![CDATA[255,255,255]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[153,51,0]]></property>
+					</cell>
+					<cell id="2,6" type="0" >
+						<property name="value"><![CDATA[ISBN]]></property>
+						<property name="font-color"><![CDATA[255,255,255]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[153,51,0]]></property>
+					</cell>
+					<cell id="3,1" type="0" >
+						<property name="value"><![CDATA[=custom_dataset.select(书名)]]></property>
+						<property name="ext-direction">3</property>
+						<property name="background"><![CDATA[=if(row()%2==0,'192,192,192','255,255,153')]]></property>
+						<property name="size-adjust">1</property>
+					</cell>
+					<cell id="3,2" type="0" >
+						<property name="value"><![CDATA[=custom_dataset.作者]]></property>
+						<property name="background"><![CDATA[=if(row()%2==0,'192,192,192','255,255,153')]]></property>
+					</cell>
+					<cell id="3,3" type="0" >
+						<property name="value"><![CDATA[=custom_dataset.出版社]]></property>
+						<property name="background"><![CDATA[=if(row()%2==0,'192,192,192','255,255,153')]]></property>
+					</cell>
+					<cell id="3,4" type="0" >
+						<property name="value"><![CDATA[=custom_dataset.出版日期]]></property>
+						<property name="view-format">4|yyyy-M-d</property>
+						<property name="font-color"><![CDATA[51,51,51]]></property>
+						<property name="background"><![CDATA[=if(row()%2==0,'192,192,192','255,255,153')]]></property>
+					</cell>
+					<cell id="3,5" type="0" >
+						<property name="value"><![CDATA[=custom_dataset.价格]]></property>
+						<property name="view-format">2|￥#,##0.00;￥-#,##0.00</property>
+						<property name="background"><![CDATA[=if(row()%2==0,'192,192,192','255,255,153')]]></property>
+					</cell>
+					<cell id="3,6" type="0" >
+						<property name="value"><![CDATA[=custom_dataset.ISBN]]></property>
+						<property name="background"><![CDATA[=if(row()%2==0,'192,192,192','255,255,153')]]></property>
+					</cell>
+				</cells>
+			</grid>
+		</sheet>
+	</body>
+	<param-form col="2">
+	</param-form>
+</report>

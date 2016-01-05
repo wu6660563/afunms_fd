@@ -1,0 +1,28 @@
+cmdbegin:status
+[2013-05-13 15:34:55]
+--ptimers[PID:23449][PORT:9981] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_00[PID:22004][PORT:9982] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_01[PID:22085][PORT:9983] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_02[PID:22141][PORT:9984] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_03[PID:22220][PORT:9985] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_04[PID:22274][PORT:9986] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_05[PID:22355][PORT:9987] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_06[PID:22438][PORT:9988] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_07[PID:22492][PORT:9989] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_08[PID:22579][PORT:9990] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_09[PID:22644][PORT:9991] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_10[PID:22722][PORT:9992] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_11[PID:22807][PORT:9993] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_12[PID:22863][PORT:9994] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_13[PID:22942][PORT:9995] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_14[PID:23009][PORT:9996] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_15[PID:23079][PORT:9997] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_16[PID:23158][PORT:9998] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_17[PID:23220][PORT:9999] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_18[PID:23315][PORT:10000] Is Running.
+--ptimedb_redhat_ia64_sv_50000_14mar2013_19[PID:23369][PORT:10001] Is Running.
+
+PTimeRS Service Stauts:[OK].
+retcd:[110]
+
+cmdend:status

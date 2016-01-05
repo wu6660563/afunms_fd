@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config> 
+  <!--=================== system ======================-->
+  <manager>
+    <name>serverAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.ServerAjaxManager</class>
+  </manager>
+   <manager>
+    <name>oracleAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.OracleAjaxManager</class>
+  </manager>
+  <manager>
+    <name>networkDeviceAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.NetworkDeviceAjaxManager</class>
+  </manager>
+  <manager>
+    <name>sqlServerAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.SqlServerAjaxManager</class>
+  </manager>
+  <manager>
+    <name>mySqlAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.MySqlAjaxManager</class>
+  </manager>
+  <manager>
+    <name>sybaseAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.SybaseAjaxManager</class>
+  </manager>
+  <manager>
+    <name>db2AjaxManager</name>
+    <class>com.afunms.application.ajaxManager.DB2AjaxManager</class>
+  </manager>
+  <manager>
+    <name>informixAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.InformixAjaxManager</class>
+  </manager>
+    <manager>
+    <name>systemConfigAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.SystemConfigAjaxManager</class>
+  </manager>
+</config>  

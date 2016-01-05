@@ -1,0 +1,42 @@
+.small {
+	FONT-SIZE: 9pt
+}
+.smallh20 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 20pt
+}
+.smallh15 {
+	FONT-SIZE: 12px; LINE-HEIGHT: 15pt
+}
+.medium {
+	FONT-SIZE: 14px
+}
+.mediumh15 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 15pt
+}
+.mediumh20 {
+	FONT-SIZE: 14px; LINE-HEIGHT: 20pt
+}
+.big {
+	FONT-SIZE: 16px
+}
+A {
+	COLOR: #111177
+}
+A:link {
+	COLOR: #111177
+}
+A:active {
+	COLOR: #cc6600
+}
+A:visited {
+	COLOR: #888888
+}
+A:hover {
+	COLOR: #cc6600
+}
+TD {
+	FONT-SIZE: 12px
+}
+BODY {
+	MARGIN-TOP: 5pt
+}

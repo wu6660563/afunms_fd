@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+   <item objectName="数据库测试域" objectNumber="180"/>
+   <item objectName="网络设备测试域" objectNumber="155"/>
+<item objectName="安全设备测试域" objectNumber="45"/>
+<item objectName="全局域" objectNumber="10"/>
+<item objectName="windows测试域" objectNumber="5"/>
+</data>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+	<series>
+		<value xid="0">US</value>
+		<value xid="1">Japan</value>
+		<value xid="2">Germany</value>
+		<value xid="3">UK</value>
+		<value xid="4">France</value>
+		<value xid="5">India</value>
+		<value xid="6">Spain</value>
+		<value xid="7">Netherlands</value>
+		<value xid="8">Russia</value>
+		<value xid="9">South Korea</value>
+	</series>
+	<graphs>
+	<graph gid="1">
+    		<value xid="0" color="FF0F00">30</value>
+    		<value xid="1" color="FF6600">18</value>
+    		<value xid="2" color="FF9E01">40</value>
+    		<value xid="3" color="FCD202">20</value>
+    		<value xid="4" color="F8FF01">30</value>
+    		<value xid="5" color="B0DE09">50</value>
+    		<value xid="6" color="04D215">40</value>
+    		<value xid="7" color="0D8ECF">20</value>
+    		<value xid="8" color="0D52D1">665</value>
+    		<value xid="9" color="2A0CD0">580</value>
+      </graph>
+      <graph gid="2">
+    		<value xid="0" color="FF0F00">10</value>
+    		<value xid="1" color="FF6600">20</value>
+    		<value xid="2" color="FF9E01">30</value>
+    		<value xid="3" color="FCD202">20</value>
+    		<value xid="4" color="F8FF01">50</value>
+    		<value xid="5" color="B0DE09">10</value>
+    		<value xid="6" color="04D215">30</value>
+    		<value xid="7" color="0D8ECF">40</value>
+    		<value xid="8" color="0D52D1">20</value>
+    		<value xid="9" color="2A0CD0">50</value>
+      </graph>
+	</graphs>
+</chart>

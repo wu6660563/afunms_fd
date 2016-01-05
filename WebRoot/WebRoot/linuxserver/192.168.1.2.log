@@ -1,0 +1,679 @@
+cmdbegin:version
+Linux version 2.6.18-194.el5 (mockbuild@ia64-001.build.bos.redhat.com) (gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)) #1 SMP Tue Mar 16 21:57:01 EDT 2010
+cmdbegin:cpuconfig
+processor  : 0
+cpu MHz    : 1403.000000
+processor  : 1
+cpu MHz    : 1403.000000
+processor  : 2
+cpu MHz    : 1403.000000
+processor  : 3
+cpu MHz    : 1403.000000
+processor  : 4
+cpu MHz    : 1403.000000
+processor  : 5
+cpu MHz    : 1403.000000
+processor  : 6
+cpu MHz    : 1403.000000
+processor  : 7
+cpu MHz    : 1594.000000
+cmdbegin:disk
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda5             20314748    945196  18320976   5% /
+/dev/sda6             88122220  33531716  50041900  41% /df8003
+/dev/sda3             60944380   8576352  49222300  15% /usr
+/dev/sda2             81259184  39793156  37271724  52% /rdbm
+/dev/sda1               511696      9144    502552   2% /boot/efi
+tmpfs                 16655408         0  16655408   0% /dev/shm
+cmdbegin:diskperf
+Linux 2.6.18-194.el5 (dshis-b) 	09/13/13 	_ia64_	(8 CPU)
+
+16:55:01          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:02       dev8-0      4.00      0.00    311.69     78.00      0.04      9.00      9.00      3.60
+16:55:02      dev8-16      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02      dev8-32      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02      dev8-48      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02      dev8-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02      dev8-80      9.99   1569.43      3.00    157.40      0.03      2.70      2.70      2.70
+16:55:02      dev8-96      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-128      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-176      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-192      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-208      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-224      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev8-240      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02      dev65-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-0      9.99   1569.43      3.00    157.40      0.03      2.70      2.70      2.70
+16:55:02     dev253-1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-7      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02     dev253-8      3.00    512.49      1.00    171.33      0.01      3.00      3.00      0.90
+16:55:02     dev253-9      3.00    512.49      1.00    171.33      0.01      3.00      3.00      0.90
+16:55:02    dev253-10      3.00    512.49      1.00    171.33      0.00      0.33      0.33      0.10
+16:55:02    dev253-11      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:02    dev253-12      1.00     31.97      0.00     32.00      0.01      8.00      8.00      0.80
+
+16:55:02          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:03       dev8-0      2.00      0.00     71.93     36.00      0.02      8.00      8.00      1.60
+16:55:03      dev8-16      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03      dev8-32      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03      dev8-48      1.00      0.00      7.99      8.00      0.00      0.00      0.00      0.00
+16:55:03      dev8-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03      dev8-80     14.99   1537.46     38.96    105.20      0.03      1.93      1.33      2.00
+16:55:03      dev8-96      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-128      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-176      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-192      1.00     15.98      0.00     16.00      0.00      5.00      5.00      0.50
+16:55:03     dev8-208      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-224      2.00      0.00     23.98     12.00      0.00      0.00      0.00      0.00
+16:55:03     dev8-240      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03      dev65-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-0     15.98   1569.43     38.96    100.62      0.03      1.81      1.31      2.10
+16:55:03     dev253-1      2.00      0.00     23.98     12.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-2      1.00      0.00      7.99      8.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-3      1.00     15.98      0.00     16.00      0.00      5.00      5.00      0.50
+16:55:03     dev253-4      1.00      0.00      7.99      8.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-5      2.00      0.00     23.98     12.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-7      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:03     dev253-8      3.00    512.49      1.00    171.33      0.01      3.00      3.00      0.90
+16:55:03     dev253-9      3.00    512.49      1.00    171.33      0.00      0.33      0.33      0.10
+16:55:03    dev253-10      3.00    512.49      1.00    171.33      0.00      0.33      0.33      0.10
+16:55:03    dev253-11      3.00      0.00     17.98      6.00      0.01      3.00      3.00      0.90
+16:55:03    dev253-12      4.00     31.97     17.98     12.50      0.01      2.25      2.75      1.10
+
+16:55:03          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:04       dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04      dev8-16      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04      dev8-32      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04      dev8-48      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04      dev8-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04      dev8-80     12.99   1601.40     66.93    128.46      0.05      3.54      2.92      3.80
+16:55:04      dev8-96      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-128      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-176      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-192      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-208      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-224      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev8-240      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04      dev65-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-0     11.99   1569.43     66.93    136.50      0.04      3.83      3.08      3.70
+16:55:04     dev253-1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-7      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:04     dev253-8      3.00    512.49      1.00    171.33      0.00      0.33      0.33      0.10
+16:55:04     dev253-9      3.00    512.49      1.00    171.33      0.01      3.00      3.00      0.90
+16:55:04    dev253-10      3.00    512.49      1.00    171.33      0.01      4.00      4.00      1.20
+16:55:04    dev253-11      1.00      0.00     31.97     32.00      0.01      8.00      8.00      0.80
+16:55:04    dev253-12      2.00     31.97     31.97     32.00      0.01      8.00      7.00      1.40
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:       dev8-0      2.00      0.00    127.87     64.00      0.02      8.67      8.67      1.73
+Average:      dev8-16      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:      dev8-32      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:      dev8-48      0.33      0.00      2.66      8.00      0.00      0.00      0.00      0.00
+Average:      dev8-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:      dev8-80     12.65   1569.43     36.30    126.89      0.03      2.68      2.24      2.83
+Average:      dev8-96      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-128      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-176      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-192      0.33      5.33      0.00     16.00      0.00      5.00      5.00      0.17
+Average:     dev8-208      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-224      0.67      0.00      7.99     12.00      0.00      0.00      0.00      0.00
+Average:     dev8-240      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:      dev65-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev253-0     12.65   1569.43     36.30    126.89      0.03      2.68      2.24      2.83
+Average:     dev253-1      0.67      0.00      7.99     12.00      0.00      0.00      0.00      0.00
+Average:     dev253-2      0.33      0.00      2.66      8.00      0.00      0.00      0.00      0.00
+Average:     dev253-3      0.33      5.33      0.00     16.00      0.00      5.00      5.00      0.17
+Average:     dev253-4      0.33      0.00      2.66      8.00      0.00      0.00      0.00      0.00
+Average:     dev253-5      0.67      0.00      7.99     12.00      0.00      0.00      0.00      0.00
+Average:     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev253-7      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev253-8      3.00    512.49      1.00    171.33      0.01      2.11      2.11      0.63
+Average:     dev253-9      3.00    512.49      1.00    171.33      0.01      2.11      2.11      0.63
+Average:    dev253-10      3.00    512.49      1.00    171.33      0.00      1.56      1.56      0.47
+Average:    dev253-11      1.33      0.00     16.65     12.50      0.01      4.25      4.25      0.57
+Average:    dev253-12      2.33     31.97     16.65     20.86      0.01      4.71      4.71      1.10
+cmdbegin:cpu
+Linux 2.6.18-194.el5 (dshis-b) 	09/13/13 	_ia64_	(8 CPU)
+
+16:55:04        CPU     %user     %nice   %system   %iowait    %steal     %idle
+16:55:05        all     13.01      0.00      0.26      0.35      0.00     86.37
+16:55:06        all     19.31      0.00      0.59      1.15      0.00     78.95
+16:55:07        all     17.36      0.00      1.09      1.26      0.00     80.30
+Average:        all     16.56      0.00      0.65      0.92      0.00     81.87
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:      33310816    7646272   25664544          0     777680    3782944
+-/+ buffers/cache:    3085648   30225168
+Swap:     33554400          0   33554400
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4512  1728 ?        Ss   Jul19   3:10 init [5]                                                                                 
+root         2  0.0  0.0      0     0 ?        S<   Jul19   0:55 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN   Jul19   1:16 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/0]
+root         5  0.0  0.0      0     0 ?        S<   Jul19   0:39 [migration/1]
+root         6  0.0  0.0      0     0 ?        SN   Jul19   0:00 [ksoftirqd/1]
+root         7  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/1]
+root         8  0.0  0.0      0     0 ?        S<   Jul19   1:20 [migration/2]
+root         9  0.0  0.0      0     0 ?        SN   Jul19   1:29 [ksoftirqd/2]
+root        10  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/2]
+root        11  0.0  0.0      0     0 ?        S<   Jul19   0:24 [migration/3]
+root        12  0.0  0.0      0     0 ?        SN   Jul19   0:00 [ksoftirqd/3]
+root        13  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/3]
+root        14  0.0  0.0      0     0 ?        S<   Jul19   0:58 [migration/4]
+root        15  0.0  0.0      0     0 ?        SN   Jul19   0:50 [ksoftirqd/4]
+root        16  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/4]
+root        17  0.0  0.0      0     0 ?        S<   Jul19   0:22 [migration/5]
+root        18  0.0  0.0      0     0 ?        SN   Jul19   0:01 [ksoftirqd/5]
+root        19  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/5]
+root        20  0.0  0.0      0     0 ?        S<   Jul19   0:38 [migration/6]
+root        21  0.0  0.0      0     0 ?        SN   Jul19   0:46 [ksoftirqd/6]
+root        22  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/6]
+root        23  0.0  0.0      0     0 ?        S<   Jul19   0:24 [migration/7]
+root        24  0.0  0.0      0     0 ?        SN   Jul19   0:01 [ksoftirqd/7]
+root        25  0.0  0.0      0     0 ?        S<   Jul19   0:00 [watchdog/7]
+root        26  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/0]
+root        27  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/1]
+root        28  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/2]
+root        29  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/3]
+root        30  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/4]
+root        31  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/5]
+root        32  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/6]
+root        33  0.0  0.0      0     0 ?        S<   Jul19   0:00 [events/7]
+root        34  0.0  0.0      0     0 ?        S<   Jul19   0:00 [khelper]
+root        67  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kthread]
+root        78  0.0  0.0      0     0 ?        S<   Jul19   0:13 [kblockd/0]
+root        79  0.0  0.0      0     0 ?        S<   Jul19   0:03 [kblockd/1]
+root        80  0.0  0.0      0     0 ?        S<   Jul19   0:07 [kblockd/2]
+root        81  0.0  0.0      0     0 ?        S<   Jul19   0:05 [kblockd/3]
+root        82  0.0  0.0      0     0 ?        S<   Jul19   0:06 [kblockd/4]
+root        83  0.0  0.0      0     0 ?        S<   Jul19   0:04 [kblockd/5]
+root        84  0.0  0.0      0     0 ?        S<   Jul19   0:05 [kblockd/6]
+root        85  0.0  0.0      0     0 ?        S<   Jul19   0:03 [kblockd/7]
+root        86  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kacpid]
+root       213  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/0]
+root       214  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/1]
+root       215  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/2]
+root       216  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/3]
+root       217  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/4]
+root       218  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/5]
+root       219  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/6]
+root       220  0.0  0.0      0     0 ?        S<   Jul19   0:00 [cqueue/7]
+root       223  0.0  0.0      0     0 ?        S<   Jul19   0:00 [khubd]
+root       225  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kseriod]
+root       323  0.0  0.0      0     0 ?        S    Jul19   0:00 [khungtaskd]
+root       324  0.0  0.0      0     0 ?        S    Jul19   0:00 [pdflush]
+root       325  0.0  0.0      0     0 ?        S    Jul19   0:06 [pdflush]
+root       326  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kswapd0]
+root       327  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/0]
+root       328  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/1]
+root       329  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/2]
+root       330  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/3]
+root       331  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/4]
+root       332  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/5]
+root       333  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/6]
+root       334  0.0  0.0      0     0 ?        S<   Jul19   0:00 [aio/7]
+orasrv     398  0.0  0.1 2317568 45792 ?       Ss   14:55   0:00 oracleorcl2 (LOCAL=NO)
+orasrv     425  0.4  3.4 2324864 1141696 ?     Rs   14:55   0:34 oracleorcl2 (LOCAL=NO)
+root       500  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kpsmoused]
+orasrv     614  0.0  3.2 2324672 1079696 ?     Ss   Sep10   0:41 oracleorcl2 (LOCAL=NO)
+root       638  0.0  0.0      0     0 ?        S<   Jul19   0:00 [mpt_poll_0]
+root       639  0.0  0.0      0     0 ?        S<   Jul19   0:00 [mpt/0]
+root       640  0.0  0.0      0     0 ?        S<   Jul19   0:00 [scsi_eh_0]
+root       659  0.0  0.0      0     0 ?        S<   Jul19   0:00 [fc_sc_wq]
+root       660  0.0  0.0      0     0 ?        S<   Jul19   0:00 [lpfc_worker_0]
+root       661  0.0  0.0      0     0 ?        S<   Jul19   0:00 [scsi_eh_1]
+root       662  0.0  0.0      0     0 ?        S<   Jul19   0:00 [scsi_wq_1]
+root       663  0.0  0.0      0     0 ?        S<   Jul19   0:00 [fc_wq_1]
+root       664  0.0  0.0      0     0 ?        S<   Jul19   0:00 [fc_dl_1]
+root       665  0.0  0.0      0     0 ?        S<   Jul19   0:00 [lpfc_worker_1]
+root       666  0.0  0.0      0     0 ?        S<   Jul19   0:00 [scsi_eh_2]
+root       667  0.0  0.0      0     0 ?        S<   Jul19   0:00 [scsi_wq_2]
+root       668  0.0  0.0      0     0 ?        S<   Jul19   0:00 [fc_wq_2]
+root       669  0.0  0.0      0     0 ?        S<   Jul19   0:00 [fc_dl_2]
+root       679  0.0  0.0      0     0 ?        S<   Jul19   0:00 [scsi_eh_3]
+root       680  0.0  0.0      0     0 ?        S<   Jul19   6:50 [usb-storage]
+root       700  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kstriped]
+root       737  0.0  0.0      0     0 ?        S<   Jul19  10:49 [kjournald]
+root       762  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kauditd]
+root       795  0.0  0.0   5600  2080 ?        S<s  Jul19   0:00 /sbin/udevd -d
+orasrv     973  0.0  0.1 2317568 46112 ?       Ss   Sep10   0:00 oracleorcl2 (LOCAL=NO)
+orasrv     975  0.0  2.2 2324800 748400 ?      Ss   Sep10   0:06 oracleorcl2 (LOCAL=NO)
+orasrv    1530  0.0  0.5 2324672 196848 ?      Ss   Aug31   0:00 oracleorcl2 (LOCAL=NO)
+root      2669  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/0]
+root      2670  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/1]
+root      2671  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/2]
+root      2672  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/3]
+root      2673  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/4]
+root      2674  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/5]
+root      2675  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/6]
+root      2676  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpathd/7]
+root      2677  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kmpath_handlerd]
+orasrv    2688  0.0  3.0 2324800 1006832 ?     Ss   Sep10   0:04 oracleorcl2 (LOCAL=NO)
+orasrv    2857  0.0  0.0 2317424 31760 ?       Ss   Jul19   0:18 ora_q001_orcl2
+root      2970  0.0  0.0      0     0 ?        S<   Jul19   0:01 [kjournald]
+root      2972  0.0  0.0      0     0 ?        S<   Jul19   0:38 [kjournald]
+root      2974  0.0  0.0      0     0 ?        S<   Jul19   0:57 [kjournald]
+orasrv    3055  0.0  0.1 2317568 45856 ?       Ss   14:57   0:00 oracleorcl2 (LOCAL=NO)
+orasrv    3057  0.3  4.0 2326720 1344672 ?     Rs   14:57   0:21 oracleorcl2 (LOCAL=NO)
+root      3165  0.0  0.0  84544 18640 ?        SLl  Jul19  13:21 /sbin/multipathd
+root      3393  0.0  0.0      0     0 ?        S<   Jul19   0:00 [bond0]
+orasrv    3407  0.0  0.6 2324672 205136 ?      Ss   Sep06   0:00 oracleorcl2 (LOCAL=NO)
+root      3562  0.0  0.0      0     0 ?        S<   Jul19   0:00 [bond1]
+root      3714  0.0  0.0  82272  2128 ?        S<sl Jul19   0:03 auditd
+root      3716  0.0  0.0  80480  1776 ?        S<sl Jul19   0:01 /sbin/audispd
+root      3742  0.0  0.0   4608  1584 ?        Ss   Jul19   0:13 syslogd -m 0
+root      3750  0.0  0.0   4432  1120 ?        Ss   Jul19   0:11 klogd -x
+root      3821  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/0]
+root      3822  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/1]
+root      3823  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/2]
+root      3824  0.0  0.0      0     0 ?        S<   Jul19   0:01 [kondemand/3]
+root      3825  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/4]
+root      3826  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/5]
+root      3827  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/6]
+root      3828  0.0  0.0      0     0 ?        S<   Jul19   0:00 [kondemand/7]
+root      3845  0.0  0.0   6016  1152 ?        Ss   Jul19   4:23 irqbalance
+rpc       3856  0.0  0.0   4800  1424 ?        Ss   Jul19   0:00 portmap
+root      3889  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/0]
+root      3890  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/1]
+root      3891  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/2]
+root      3892  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/3]
+root      3893  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/4]
+root      3894  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/5]
+root      3895  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/6]
+root      3896  0.0  0.0      0     0 ?        S<   Jul19   0:00 [rpciod/7]
+root      3909  0.0  0.0   4976  1904 ?        Ss   Jul19   0:00 rpc.statd
+root      3936  0.0  0.0  14272  2160 ?        Ss   Jul19   0:00 rpc.idmapd
+dbus      3952  0.0  0.0   7136  2560 ?        Ss   Jul19   0:02 dbus-daemon --system
+root      3967  0.0  0.0   5536  1888 ?        Ss   Jul19   0:00 /usr/sbin/hcid
+root      3971  0.0  0.0   4592  1296 ?        Ss   Jul19   0:00 /usr/sbin/sdpd
+root      4019  0.0  0.0      0     0 ?        S<   Jul19   0:00 [krfcommd]
+orasrv    4047  0.2  6.2 2330944 2079056 ?     Ss   Jul29 164:46 ora_j000_orcl2
+root      4059  0.0  0.0  25552  2704 ?        Ssl  Jul19   0:21 pcscd
+root      4069  0.0  0.0   4352  1376 ?        Ss   Jul19   0:00 /usr/sbin/acpid
+68        4078  0.0  0.0  11888  7600 ?        Ss   Jul19   0:09 hald
+root      4079  0.0  0.0   6944  2832 ?        S    Jul19   0:00 hald-runner
+68        4087  0.0  0.0   4480  2032 ?        S    Jul19   0:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+68        4089  0.0  0.0   4480  2032 ?        S    Jul19   0:00 hald-addon-keyboard: listening on /dev/input/event3
+68        4093  0.0  0.0   4480  2048 ?        S    Jul19   0:00 hald-addon-keyboard: listening on /dev/input/event2
+68        4100  0.0  0.0   4480  2032 ?        S    Jul19   0:00 hald-addon-keyboard: listening on /dev/input/event0
+orasrv    4112  0.0  0.4 2324800 147072 ?      Ss   Sep03   0:00 oracleorcl2 (LOCAL=NO)
+root      4119  0.0  0.0   4256  1664 ?        S    Jul19   5:33 hald-addon-storage: polling /dev/scd0
+root      4190  0.0  0.0   5472  1216 ?        Ss   Jul19   0:00 /usr/bin/hidd --server
+root      4217  0.0  0.0 123104  3680 ?        Ssl  Jul19   0:41 automount
+orasrv    4360  0.0  1.0 2324688 360432 ?      Ss   Sep08   0:00 oracleorcl2 (LOCAL=NO)
+root      4486  0.0  0.0  11248  2128 ?        Ss   Jul19   0:00 ./hpiod
+root      4491  0.0  0.0  82912 10464 ?        S    Jul19   0:02 python ./hpssd.py
+root      4504  0.0  0.0  16512  3328 ?        Ss   Jul19   0:00 /usr/sbin/sshd
+root      4513  0.0  0.0  76688  6304 ?        Ss   Jul19   0:00 cupsd
+root      4546  0.0  0.0   7392  2304 ?        Ss   Jul19   0:00 xinetd -stayalive -pidfile /var/run/xinetd.pid
+ntp       4563  0.0  0.0   9760  9456 ?        SLs  Jul19   0:01 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+root      4580  0.0  0.0  12304  1648 ?        Ss   Jul19   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
+orasrv    4636  0.0  3.9 2332928 1328640 ?     Ss   Sep10   1:30 oracleorcl2 (LOCAL=NO)
+root      4805  0.0  0.0  20608  4880 ?        Ss   Jul19   0:07 sendmail: accepting connections
+smmsp     4839  0.0  0.0  18208  3872 ?        Ss   Jul19   0:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      4849  0.0  0.0   4512  1232 ?        Ss   Jul19   0:00 gpm -m /dev/input/mice -t exps2
+root      4858  0.0  0.0  64112  2384 ?        Ss   Jul19   0:00 crond
+xfs       4891  0.0  0.0   8544  3568 ?        Ss   Jul19   0:00 xfs -droppriv -daemon
+root      4916  0.0  0.0   6048  1376 ?        Ss   Jul19   0:00 /usr/sbin/atd
+root      4928  0.0  0.0   3296   560 ?        S    Jul19   0:00 salinfo_decode_all
+root      4929  0.0  0.0   3504  1328 ?        S    Jul19   0:00 salinfo_decode -t cmc -D /var/log/salinfo -i 90 -s 90 -l 10
+root      4930  0.0  0.0   3504  1328 ?        S    Jul19   0:00 salinfo_decode -t cpe -D /var/log/salinfo -i 90 -s 90 -l 10
+root      4931  0.0  0.0   3504  1328 ?        S    Jul19   0:00 salinfo_decode -t init -D /var/log/salinfo -i 90 -s 90 -l 16
+root      4932  0.0  0.0   3504  1328 ?        S    Jul19   0:00 salinfo_decode -t mca -D /var/log/salinfo -i 90 -s 90 -l 4
+avahi     5008  0.0  0.0   6112  3184 ?        Ss   Jul19   0:00 avahi-daemon: running [dshis-b.local]
+avahi     5009  0.0  0.0   5984  1392 ?        Ss   Jul19   0:00 avahi-daemon: chroot helper
+root      5084  0.0  0.0   8800  1296 ?        S    Jul19   0:00 /usr/sbin/smartd -q never
+root      5089  0.0  0.0   3520  1232 tty1     Ss+  Jul19   0:00 /sbin/mingetty tty1
+root      5090  0.0  0.0   3520  1232 tty2     Ss+  Jul19   0:00 /sbin/mingetty tty2
+root      5091  0.0  0.0   3520  1232 tty3     Ss+  Jul19   0:00 /sbin/mingetty tty3
+root      5095  0.0  0.0   3520  1232 tty4     Ss+  Jul19   0:00 /sbin/mingetty tty4
+root      5097  0.0  0.0   3520  1232 tty5     Ss+  Jul19   0:00 /sbin/mingetty tty5
+root      5098  0.0  0.0   3520  1232 tty6     Ss+  Jul19   0:00 /sbin/mingetty tty6
+root      5100  0.0  0.0  88480  8736 ?        Ss   Jul19   0:00 /usr/sbin/gdm-binary -nodaemon
+root      5102  0.0  0.0   7920  3264 ?        Ss   Jul19   0:00 /bin/su -l orasrv -c sh -c 'ulimit -c unlimited; cd /rdbm/orasrv/product/10.2.0/crs/log/dshis-b/evmd; exec /rdbm/orasrv/product/10.2.0/crs/bin/evmd '
+root      5104  0.0  0.0   5552  2976 ?        Ss   Jul19  48:32 /bin/sh /etc/init.d/init.cssd fatal
+root      5463  0.0  0.0  90256  7392 ?        S    Jul19   0:00 /usr/sbin/gdm-binary -nodaemon
+root      5465  0.0  0.0 167664 11984 ?        Sl   Jul19   0:00 /usr/libexec/gdm-rh-security-token-helper
+root      5466  0.0  0.0  28128 13632 tty7     Ss+  Jul19   0:07 /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+root      5480  0.0  0.0 110816 23472 ?        SN   Jul19   0:02 /usr/bin/python -tt /usr/sbin/yum-updatesd
+root      5482  0.0  0.0   5472  2928 ?        SN   Jul19   0:01 /usr/libexec/gam_server
+gdm       5501  0.0  0.1 264576 51824 ?        Ss   Jul19   0:01 /usr/libexec/gdmgreeter
+orasrv    5517  0.0  0.1 2317568 45792 ?       Ss   Sep09   0:00 oracleorcl2 (LOCAL=NO)
+root      5547  0.0  0.0   5552  2944 ?        S<   Jul19   0:00 /bin/sh /etc/init.d/init.cssd daemon
+orasrv    5575  0.0  0.0 414256 21904 ?        Ssl  Jul19   3:50 /rdbm/orasrv/product/10.2.0/crs/bin/evmd.bin
+root      5671  0.0  0.0   7920  3264 ?        S<   Jul19   0:00 /bin/su -l orasrv -c /bin/sh -c 'ulimit -c unlimited; cd /rdbm/orasrv/product/10.2.0/crs/log/dshis-b/cssd;  /rdbm/orasrv/product/10.2.0/crs/bin/ocssd  || exit $?'
+orasrv    5672  0.0  0.0  62656  2784 ?        S<s  Jul19   0:00 /bin/sh -c ulimit -c unlimited; cd /rdbm/orasrv/product/10.2.0/crs/log/dshis-b/cssd;  /rdbm/orasrv/product/10.2.0/crs/bin/ocssd  || exit $?
+orasrv    5704  0.0  0.0 356608 21984 ?        S<sl Jul19  42:19 /rdbm/orasrv/product/10.2.0/crs/bin/ocssd.bin
+orasrv    5841  0.0  0.5 2324672 187168 ?      Ss   Sep10   0:00 oracleorcl2 (LOCAL=NO)
+orasrv    5966  0.0  0.0  56640 15888 ?        S    Jul19   0:18 /rdbm/orasrv/product/10.2.0/crs/bin/evmlogger.bin -o /rdbm/orasrv/product/10.2.0/crs/evm/log/evmlogger.info -l /rdbm/orasrv/product/10.2.0/crs/evm/log/evmlogger.log
+orasrv    6647  0.0  0.0 344416 32016 ?        Ss   Jul19   2:46 asm_pmon_+ASM2
+orasrv    6649  0.0  0.0 346208 33024 ?        Ss   Jul19   0:14 asm_diag_+ASM2
+orasrv    6651  0.0  0.0 343168 29376 ?        Ss   Jul19   0:01 asm_psp0_+ASM2
+orasrv    6653  0.0  0.1 347232 44320 ?        Ss   Jul19   0:24 asm_lmon_+ASM2
+orasrv    6655  0.0  0.1 358016 52384 ?        Ss   Jul19   0:18 asm_lmd0_+ASM2
+orasrv    6657  0.0  0.1 358016 61360 ?        Ss   Jul19   0:23 asm_lms0_+ASM2
+orasrv    6667  0.0  0.0 343168 29568 ?        Ss   Jul19   0:01 asm_mman_+ASM2
+orasrv    6669  0.0  0.1 347936 47504 ?        Ss   Jul19   0:03 asm_dbw0_+ASM2
+orasrv    6671  0.0  0.1 344816 34720 ?        Ss   Jul19   0:03 asm_lgwr_+ASM2
+orasrv    6673  0.0  0.0 343168 31952 ?        Ss   Jul19   0:05 asm_ckpt_+ASM2
+orasrv    6675  0.0  0.0 343168 30288 ?        Ss   Jul19   0:07 asm_smon_+ASM2
+orasrv    6687  0.0  0.1 344816 34096 ?        Ss   Jul19   0:02 asm_rbal_+ASM2
+orasrv    6704  0.0  0.1 348368 37600 ?        Ss   Jul19   6:31 asm_gmon_+ASM2
+orasrv    6706  0.0  0.1 345696 35168 ?        Ss   Jul19   0:28 asm_lck0_+ASM2
+orasrv    6809  0.0  0.5 2324672 194656 ?      Ss   Sep11   0:00 oracleorcl2 (LOCAL=NO)
+orasrv    6975  0.0  0.0 175264 17600 ?        Ssl  Jul19   0:20 /rdbm/orasrv/product/10.2.0/db/bin/racgimon daemon ora.dshis-b.ASM2.asm
+orasrv    6995  0.0  0.0   6896  1072 ?        Ss   Jul19   0:00 /rdbm/orasrv/product/10.2.0/crs/opmn/bin/ons -d
+orasrv    6996  0.0  0.0 176848  4704 ?        Sl   Jul19   0:02 /rdbm/orasrv/product/10.2.0/crs/opmn/bin/ons -d
+orasrv    7069  0.0  0.0 422464 31168 ?        Ssl  Jul19   2:34 /rdbm/orasrv/product/10.2.0/db/bin/racgimon startd orcl
+orasrv    7145  0.0  0.0 343296 32384 ?        Ss   Jul19   0:00 asm_o000_+ASM2
+orasrv    7242  0.0  0.9 2322752 310192 ?      Ss   Sep11   0:00 oracleorcl2 (LOCAL=NO)
+orasrv    7276  0.0  0.1 2321776 62448 ?       Ss   Jul19  15:44 ora_pmon_orcl2
+orasrv    7278  0.0  0.1 2324592 55152 ?       Ss   Jul19   0:27 ora_diag_orcl2
+orasrv    7280  0.0  0.0 2319088 32192 ?       Ss   Jul19   0:07 ora_psp0_orcl2
+orasrv    7282  0.0  1.8 2324688 623984 ?      Ss   Jul19  20:37 ora_lmon_orcl2
+orasrv    7284  0.1  1.7 2332416 590768 ?      Ss   Jul19 128:31 ora_lmd0_orcl2
+orasrv    7286  0.1  4.2 2332432 1430544 ?     Ss   Jul19 120:12 ora_lms0_orcl2
+orasrv    7296  0.1  4.2 2332416 1431088 ?     Ss   Jul19  82:44 ora_lms1_orcl2
+orasrv    7306  0.0  2.6 2317440 888064 ?      Ss   Jul19   0:11 ora_mman_orcl2
+orasrv    7308  0.1  5.7 2386560 1911280 ?     Ss   Jul19 158:12 ora_dbw0_orcl2
+orasrv    7310  0.0  0.3 2340720 125456 ?      Ss   Jul19  55:47 ora_lgwr_orcl2
+orasrv    7312  0.0  0.9 2330656 332912 ?      Ss   Jul19   4:40 ora_ckpt_orcl2
+orasrv    7314  0.0  6.2 2381696 2088016 ?     Ss   Jul19  41:19 ora_smon_orcl2
+orasrv    7316  0.0  1.7 2322176 568272 ?      Ss   Jul19   0:03 ora_reco_orcl2
+orasrv    7318  0.0  5.8 2322320 1963376 ?     Ss   Jul19  15:13 ora_cjq0_orcl2
+orasrv    7320  0.0  4.2 2324464 1419648 ?     Ss   Jul19  10:48 ora_mmon_orcl2
+orasrv    7322  0.0  1.1 2320256 366544 ?      Ss   Jul19   8:52 ora_mmnl_orcl2
+orasrv    7349  0.1  2.2 2343024 763072 ?      Ss   Jul19 157:25 ora_lck0_orcl2
+orasrv    7379  0.0  1.6 2319984 561168 ?      Ss   Jul19   2:23 ora_asmb_orcl2
+orasrv    7381  0.0  0.0 343152 33232 ?        Ss   Jul19   0:04 oracle+ASM2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+orasrv    7383  0.0  0.1 2321632 36208 ?       Ss   Jul19   0:01 ora_rbal_orcl2
+orasrv    7464  0.0  0.7 2324800 251952 ?      Ss   Sep12   0:00 oracleorcl2 (LOCAL=NO)
+orasrv    8075  0.0  0.1 2319984 46784 ?       Ss   Jul19   0:00 ora_qmnc_orcl2
+orasrv    8197  0.0  1.8 2324672 612160 ?      Ss   Sep06   0:03 oracleorcl2 (LOCAL=NO)
+orasrv    8256  0.0  3.2 2322448 1069584 ?     Ss   Jul19   1:24 oracleorcl2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+orasrv    8425  0.0  1.2 2322304 430096 ?      Ss   Jul19   1:05 oracleorcl2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+orasrv    8430  0.0  0.2 2322432 92784 ?       Ss   Jul19   3:08 oracleorcl2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+orasrv    8436  0.0  0.2 2320400 68288 ?       Ss   Jul19   0:00 oracleorcl2 (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+orasrv    8463  0.0  0.1 2318960 50912 ?       Ss   Jul19   0:00 ora_q000_orcl2
+orasrv    8904  0.0  0.0  72800 14176 ?        Ssl  Jul19  18:59 /rdbm/orasrv/product/10.2.0/db/bin/tnslsnr LISTENER_DSHIS-B -inherit
+orasrv    9312  0.0  0.5 2324672 174784 ?      Ss   Sep06   0:00 oracleorcl2 (LOCAL=NO)
+orasrv    9653  0.0  1.3 2320256 464736 ?      Ss   Sep01   0:01 oracleorcl2 (LOCAL=NO)
+orasrv   10023  0.0  0.1 2317424 43360 ?       Ss   16:48   0:00 ora_pz99_orcl2
+orasrv   10204  0.0  2.4 2322432 807472 ?      Ss   Sep06   0:06 oracleorcl2 (LOCAL=NO)
+orasrv   10206  0.0  4.4 2341120 1493744 ?     Ss   Sep06   2:11 oracleorcl2 (LOCAL=NO)
+orasrv   11773  0.0  2.6 2324800 897296 ?      Ss   Sep06   0:03 oracleorcl2 (LOCAL=NO)
+orasrv   11956  0.3  6.2 2328896 2077392 ?     Ss   Aug01 212:28 ora_j001_orcl2
+orasrv   12524  0.0  0.4 2324800 143872 ?      Ss   Sep03   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   12580  0.0  1.0 2322304 347312 ?      Ss   Sep06   0:01 oracleorcl2 (LOCAL=NO)
+root     12581  0.0  0.0  20400  7344 ?        Ss   16:07   0:00 sshd: root@pts/1 
+orasrv   12582  0.0  4.7 2324736 1595136 ?     Ss   Sep06   1:09 oracleorcl2 (LOCAL=NO)
+root     12738  0.0  0.0  63024  3664 pts/1    Ss+  16:07   0:00 -bash
+orasrv   12779  0.0  2.4 2326912 831072 ?      Ss   Sep12   0:31 oracleorcl2 (LOCAL=NO)
+orasrv   12788  0.2  3.8 2328448 1289280 ?     Ss   Sep09  14:34 oracleorcl2 (LOCAL=NO)
+orasrv   12790  0.0  3.2 2324864 1099152 ?     Ss   Sep09   0:31 oracleorcl2 (LOCAL=NO)
+orasrv   13363  0.0  1.0 2324800 357232 ?      Ss   09:23   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   13873  0.1  3.7 2331008 1243936 ?     Ss   Sep11   5:41 oracleorcl2 (LOCAL=NO)
+orasrv   14041  0.0  1.3 2324800 451360 ?      Ss   Sep02   0:01 oracleorcl2 (LOCAL=NO)
+orasrv   14050  0.0  4.0 2357632 1345392 ?     Ss   Sep12   0:41 oracleorcl2 (LOCAL=NO)
+root     14370  0.0  0.1 673040 36752 ?        Ssl  Sep07   3:40 /rdbm/orasrv/product/10.2.0/crs/bin/crsd.bin restart
+orasrv   14648  0.0  0.0 162944 16768 ?        Ssl  Sep07   0:00 /rdbm/orasrv/product/10.2.0/db/bin/racgimon daemon ora.dshis-b.ASM2.asm
+orasrv   15386  0.0  2.0 2324800 685632 ?      Ss   Sep12   0:07 oracleorcl2 (LOCAL=NO)
+orasrv   15539  1.3  3.7 2332928 1244752 ?     Ss   11:11   4:29 oracleorcl2 (LOCAL=NO)
+orasrv   15648  0.0  0.7 2324672 265984 ?      Ss   Sep11   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   16124  0.7  3.4 2326720 1138752 ?     Ss   11:11   2:44 oracleorcl2 (LOCAL=NO)
+orasrv   16485  0.0  4.6 2330880 1544336 ?     Ss   Sep09   1:56 oracleorcl2 (LOCAL=NO)
+orasrv   16958  0.0  0.1 2317568 33488 ?       Ss   Sep05   0:00 ora_o000_orcl2
+orasrv   17096  0.0  1.0 2324672 347216 ?      Ss   Sep05   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   17174  0.0  4.7 2324864 1576112 ?     Ss   Sep11   1:50 oracleorcl2 (LOCAL=NO)
+orasrv   17282  0.0  1.0 2324800 340400 ?      Ss   09:05   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   17517  0.0  1.6 2324672 549136 ?      Ss   Sep10   0:01 oracleorcl2 (LOCAL=NO)
+orasrv   17718  0.0  0.7 2324672 248944 ?      Ss   Sep10   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   18876  0.0  2.8 2324672 941712 ?      Ss   Sep11   0:02 oracleorcl2 (LOCAL=NO)
+orasrv   18958  0.0  1.2 2324816 419584 ?      Ss   Sep09   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   20015  0.0  0.7 2324800 264288 ?      Ss   Sep11   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   20067  0.0  2.1 2328896 708848 ?      Ss   09:07   0:03 oracleorcl2 (LOCAL=NO)
+orasrv   20181  0.0  0.7 2324672 241664 ?      Ss   09:49   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   20280  0.0  1.6 2324800 553328 ?      Ss   16:12   0:01 oracleorcl2 (LOCAL=NO)
+ems      20426  0.0  0.0  66112  3680 ?        S    16:55   0:00 crond
+ems      20428  0.0  0.0   5248  2560 ?        Ss   16:55   0:00 /bin/sh -c /df8003/home/nms/collection.sh >/dev/null
+ems      20429  0.0  0.0   5312  2656 ?        S    16:55   0:00 /bin/sh /df8003/home/nms/collection.sh
+root     20580  0.0  0.0   3456  1056 ?        S    16:55   0:00 /bin/sleep 1
+ems      20582  0.0  0.0   4464  2048 ?        R    16:55   0:00 ps aux
+orasrv   20990  0.0  5.4 2322304 1831440 ?     Ss   Aug12  34:35 oracleorcl2 (LOCAL=NO)
+orasrv   21192  0.0  0.6 2324800 206656 ?      Ss   Sep01   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   21440  1.5  3.7 2343168 1238400 ?     Ss   16:13   0:37 oracleorcl2 (LOCAL=NO)
+orasrv   21482  0.0  3.8 2339200 1287600 ?     Ss   Sep09   0:42 oracleorcl2 (LOCAL=NO)
+orasrv   22181  0.0  0.1 2317568 42112 ?       Ss   Aug15   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   22183  0.0  0.7 2320256 250896 ?      Ss   Aug15   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   22844  0.0  0.7 2324800 235488 ?      Ss   Aug31   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   22913  0.0  0.8 2324672 282656 ?      Ss   Sep11   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   23984  0.0  0.5 2324672 172176 ?      Ss   Sep06   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   24026  0.0  0.9 2324672 311488 ?      Ss   Sep12   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   24068  0.0  0.5 2324672 187872 ?      Ss   Sep06   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   24128  0.0  2.1 2324672 704624 ?      Ss   Sep10   0:04 oracleorcl2 (LOCAL=NO)
+orasrv   24427  0.0  5.9 2322448 1972208 ?     Ss   Aug12  33:48 oracleorcl2 (LOCAL=NO)
+orasrv   26563  0.0  2.1 2324672 732416 ?      Ss   Sep04   0:03 oracleorcl2 (LOCAL=NO)
+orasrv   26767  0.0  0.1 2317568 41968 ?       Ss   Aug13   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   27088  0.0  1.9 2324672 633760 ?      Ss   Sep09   0:03 oracleorcl2 (LOCAL=NO)
+orasrv   28681  0.0  1.2 2322320 424624 ?      Ss   Sep11   0:02 oracleorcl2 (LOCAL=NO)
+orasrv   28683  0.0  3.5 2324800 1195248 ?     Ss   Sep11   2:23 oracleorcl2 (LOCAL=NO)
+orasrv   28724  0.0  0.1 2317568 42112 ?       Ss   Aug13   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   28889  0.0  1.3 2324672 444144 ?      Ss   Sep09   0:02 oracleorcl2 (LOCAL=NO)
+orasrv   29080  0.0  0.1 2317568 42736 ?       Ss   Sep12   0:04 oracleorcl2 (LOCAL=NO)
+orasrv   29107  0.0  0.1 2317568 42608 ?       Ss   Sep12   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   29191  0.0  0.9 2324672 323872 ?      Ss   Sep10   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   30246  0.0  0.6 2324800 212976 ?      Ss   Sep06   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   30780  0.3  4.0 2324736 1351504 ?     Ss   09:14   1:28 oracleorcl2 (LOCAL=NO)
+orasrv   30995  0.0  1.3 2324672 445264 ?      Ss   09:56   0:01 oracleorcl2 (LOCAL=NO)
+orasrv   31014  0.0  1.1 2324800 378816 ?      Ss   Sep11   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   31114  0.0  0.6 2324672 231888 ?      Ss   09:14   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   31115  0.0  1.1 2324800 382992 ?      Ss   Sep08   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   31419  0.0  2.9 2324368 985856 ?      Ss   Sep10   0:15 oracleorcl2 (LOCAL=NO)
+orasrv   31421  0.0  4.2 2343296 1427744 ?     Ss   Sep10   1:39 oracleorcl2 (LOCAL=NO)
+orasrv   32096  0.0  2.1 2324800 713984 ?      Ss   Sep12   0:02 oracleorcl2 (LOCAL=NO)
+orasrv   32304  0.0  0.1 2317568 41952 ?       Ss   Aug13   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   32534  0.0  0.1 2317568 42656 ?       Ss   Sep12   0:03 oracleorcl2 (LOCAL=NO)
+orasrv   32572  0.0  1.0 2320368 354592 ?      Ss   Sep12   0:00 oracleorcl2 (LOCAL=NO)
+orasrv   32649  0.0  2.3 2324800 799440 ?      Ss   Sep10   0:04 oracleorcl2 (LOCAL=NO)
+orasrv   32667  0.0  0.5 2324672 170672 ?      Ss   Aug30   0:00 oracleorcl2 (LOCAL=NO)
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:23:7d:3d:3b:c5 brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:23:7d:3d:3b:c5 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond1 qlen 1000
+    link/ether 00:24:81:77:bf:1f brd ff:ff:ff:ff:ff:ff
+5: eth3: <NO-CARRIER,BROADCAST,MULTICAST,SLAVE,UP> mtu 1500 qdisc pfifo_fast master bond1 qlen 1000
+    link/ether 00:24:81:77:bf:1f brd ff:ff:ff:ff:ff:ff
+6: sit0: <NOARP> mtu 1480 qdisc noop 
+    link/sit 0.0.0.0 brd 0.0.0.0
+7: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue 
+    link/ether 00:23:7d:3d:3b:c5 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.2/24 brd 192.168.1.255 scope global bond0
+    inet 192.168.1.102/24 brd 192.168.1.255 scope global secondary bond0:2
+    inet6 fe80::223:7dff:fe3d:3bc5/64 scope link 
+       valid_lft forever preferred_lft forever
+8: bond1: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue 
+    link/ether 00:24:81:77:bf:1f brd ff:ff:ff:ff:ff:ff
+    inet 10.10.10.2/24 brd 10.10.10.255 scope global bond1
+    inet6 fe80::224:81ff:fe77:bf1f/64 scope link 
+       valid_lft forever preferred_lft forever
+cmdbegin:interface
+Linux 2.6.18-194.el5 (dshis-b) 	09/13/13 	_ia64_	(8 CPU)
+
+16:55:07        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:08           lo      1.00      1.00      0.03      0.03      0.00      0.00      0.00
+16:55:08         eth0     56.94      0.00     35.54      0.00      0.00      0.00      0.00
+16:55:08         eth1     56.94      0.00     35.54      0.00      0.00      0.00      0.00
+16:55:08         eth2     21.98     15.98     18.63      4.08      0.00      0.00      0.00
+16:55:08         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08        bond0    113.89      0.00     71.08      0.00      0.00      0.00      0.00
+16:55:08        bond1     21.98     15.98     18.63      4.08      0.00      0.00      0.00
+
+16:55:08        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:09           lo     63.94     63.94     33.81     33.81      0.00      0.00      0.00
+16:55:09         eth0     56.94     18.98     30.21      6.01      0.00      0.00      0.00
+16:55:09         eth1     37.96      0.00     23.43      0.00      0.00      0.00      0.00
+16:55:09         eth2     28.97     23.98     21.62     12.32      0.00      0.00      0.00
+16:55:09         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09        bond0     94.91     18.98     53.63      6.01      0.00      0.00      0.00
+16:55:09        bond1     28.97     23.98     21.62     12.32      0.00      0.00      0.00
+
+16:55:09        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:10           lo      6.99      6.99      0.96      0.96      0.00      0.00      0.00
+16:55:10         eth0    164.84      5.99    164.49      0.98      0.00      0.00      0.00
+16:55:10         eth1    157.84      0.00    163.67      0.00      0.00      0.00      0.00
+16:55:10         eth2      5.00      6.99      1.08      2.03      0.00      0.00      0.00
+16:55:10         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10        bond0    322.68      5.99    328.16      0.98      0.00      0.00      0.00
+16:55:10        bond1      5.00      6.99      1.08      2.03      0.00      0.00      0.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo     23.98     23.98     11.60     11.60      0.00      0.00      0.00
+Average:         eth0     92.91      8.33     76.75      2.33      0.00      0.00      0.00
+Average:         eth1     84.25      0.00     74.21      0.00      0.00      0.00      0.00
+Average:         eth2     18.65     15.65     13.78      6.14      0.00      0.00      0.00
+Average:         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:        bond0    177.16      8.33    150.96      2.33      0.00      0.00      0.00
+Average:        bond1     18.65     15.65     13.78      6.14      0.00      0.00      0.00
+cmdbegin:uname
+Linux dshis-b
+cmdbegin:usergroup
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+games:x:20:
+gopher:x:30:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+nobody:x:99:
+users:x:100:
+audio:x:63:gdm
+nscd:x:28:
+floppy:x:19:
+vcsa:x:69:
+utmp:x:22:
+rpc:x:32:
+mailnull:x:47:
+smmsp:x:51:
+pcap:x:77:
+utempter:x:35:
+slocate:x:21:
+dbus:x:81:
+avahi:x:70:
+rpcuser:x:29:
+nfsnobody:x:4294967294:
+sshd:x:74:
+haldaemon:x:68:
+avahi-autoipd:x:101:
+distcache:x:94:
+apache:x:48:
+ntp:x:38:
+oprofile:x:16:
+webalizer:x:67:
+squid:x:23:
+xfs:x:43:
+gdm:x:42:
+sabayon:x:86:
+stapdev:x:102:
+stapusr:x:103:
+screen:x:84:
+ems:x:500:
+dba:x:1001:orasrv
+oinstall:x:1002:orasrv
+orasrv:x:501:
+oracle:x:502:
+dfdz:x:1003:ems
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/etc/news:
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rpc:x:32:32:Portmapper RPC user:/:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+pcap:x:77:77::/var/arpwatch:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+avahi:x:70:70:Avahi daemon:/:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:4294967294:4294967294:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+avahi-autoipd:x:100:101:avahi-autoipd:/var/lib/avahi-autoipd:/sbin/nologin
+distcache:x:94:94:Distcache:/:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+xfs:x:43:43:X Font Server:/etc/X11/fs:/sbin/nologin
+gdm:x:42:42::/var/gdm:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+orasrv:x:501:1002:orasrv:/rdbm/orasrv:/bin/bash
+ems:x:115:1003:ems:/df8003/home:/bin/bash
+oracle:x:502:502:oracle:/home/oracle:/bin/bash
+cmdbegin:date
+Fri Sep 13 16:55:10 CST 2013
+cmdbegin:uptime
+ 16:55:10 up 55 days, 20:34,  1 user,  load average: 0.50, 0.29, 0.27
+cmdbegin:end

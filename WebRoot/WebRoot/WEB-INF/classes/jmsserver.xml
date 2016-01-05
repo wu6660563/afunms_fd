@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for jms by wupinlong in 2013/12/12 -->
+<server>
+	<!-- <ipaddress>10.79.128.120</ipaddress> -->
+	<ipaddress>127.0.0.1</ipaddress>
+	<port>61616</port>
+	<!-- reConnectTime断线重连时间间隔 单位：秒 -->
+	<reConnectTime>20</reConnectTime>
+	<!-- 接收端通道 -->
+	<topicNames>
+		<topicName enable="true">topic_fs_donghua_all_nr</topicName>
+		<topicName enable="true">test</topicName>
+		<topicName enable="true">192.168.102.100$192.168.102.103_GR</topicName>
+	</topicNames>
+	<!-- 发送通道 -->
+	<topicSendNames>
+		<!-- 东华发送各类json数据到nr -->
+		<topicName type="json">topic_fs_donghua_all_nr</topicName>
+		<topicName type="remoteview">192.168.102.103$192.168.102.100_GR</topicName>
+	</topicSendNames>
+</server>

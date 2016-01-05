@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<catalog>
+
+    <product productId="1">
+        <name>windows xp</name>
+        <description>&lt;font color='green'&gt;类型:服务器&lt;/font&gt;&lt;br&gt;机器名：LEGEND-3E3FE228&lt;br&gt;别名:服务器&lt;br&gt;IP地址:10.10.152.27&lt;br&gt;CPU利用率:13.0 %&lt;br&gt;内存利用率:VirtualMemory 29.54 %&lt;br&gt;内存利用率:PhysicalMemory 65.86 %&lt;br&gt;连通性测试:100 %&lt;br&gt;硬盘利用率:C:/ 91.06 %&lt;br&gt;硬盘利用率:D:/ 95.12 %&lt;br&gt;硬盘利用率:E:/ 98.15 %&lt;br&gt;硬盘利用率:F:/ 0.0 %&lt;br&gt;&lt;font color='red'&gt;--报警信息:--&lt;/font&gt;&lt;br&gt;内存利用率超过阀值&lt;br&gt;更新时间:2009-11-16 16:07:32&lt;br&gt;</description>
+        <image>assets/pic/1.gif</image>
+        <series>window</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1>111</highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="2">
+        <name>windows 2000</name>
+        <description>&lt;font color='green'&gt;类型:服务器&lt;/font&gt;&lt;br&gt;机器名：LEGEND-3E3FE228&lt;br&gt;别名:服务器&lt;</description>
+        <image>assets/pic/2.gif</image>
+        <series>window</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="3">
+        <name>windows 2003</name>
+        <description>&lt;font color='green'&gt;类型:服务器&lt;/font&gt;&lt;br&gt;机器名：LEGEND-3E3FE228&lt;br&gt;别名:服务器&lt;</description>
+        
+        <image>assets/pic/3.gif</image>
+        <series>window</series>
+        <host>false</host>
+        <switchs>true</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="4">
+        <name>windows NT</name>
+        <description>&lt;font color='green'&gt;类型:服务器&lt;/font&gt;&lt;br&gt;机器名：LEGEND-3E3FE228&lt;br&gt;别名:服务器&lt;</description>
+        
+        <image>assets/pic/4.gif</image>
+        <series>window</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="5">
+        <name>windows server</name>
+        <description>&lt;font color='green'&gt;类型:服务器&lt;/font&gt;&lt;br&gt;机器名：LEGEND-3E3FE228&lt;br&gt;别名:服务器&lt;</description>
+        
+        <image>assets/pic/5.gif</image>
+        <series>window</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="6">
+        <name>IBM</name>
+        <description>12345</description>
+        
+        <image>assets/pic/6.gif</image>
+        <series>IBM</series>
+        <host>false</host>
+        <switchs>false</switchs>
+        <router>true</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="7">
+        <name>HP 6820</name>
+        <description></description>
+        
+        <image>assets/pic/7.gif</image>
+        <series>HP</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="8">
+        <name>IBM</name>
+        <description></description>
+        
+        <image>assets/pic/ibm.gif</image>
+        <series>IBM</series>
+        <host>false</host>
+        <switchs>true</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="9">
+        <name>solaris</name>
+        <description></description>
+        
+        <image>assets/pic/solaris_alarm.gif</image>
+        <series>solaris</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="10">
+        <name>linux</name>
+        <description></description>
+        <image>assets/pic/linux.gif</image>
+        <series>linux</series>
+        <host>true</host>
+        <switchs>false</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+
+    <product productId="11">
+        <name>compaq</name>
+        <description></description>
+        <image>assets/pic/compaq.gif</image>
+        <series>compaq</series>
+        <host>false</host>
+        <switchs>true</switchs>
+        <router>false</router>
+        <highlight1></highlight1>
+		<highlight2></highlight2>
+    </product>
+</catalog>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tab-config>
+	<tab id="PingInfo" title="连通率" action="getPingInfo">
+		<title-tr>
+		</title-tr>
+	</tab> 
+	<tab id="ArraySiteInfo" title="矩阵位置" action="getArraySiteInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="arsite">arsite</title>
+		 	<title id="da_pair">DA Pair</title>
+			<title id="dkcap">dkcap (10^9B)</title>
+			<title id="state">State</title>
+			<title id="array">Array</title>
+		</title-tr>
+	</tab> 
+	<tab id="ArrayInfo" title="矩阵" action="getArrayInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="array">Array</title>
+		 	<title id="state">State</title>
+			<title id="data">Data</title>
+			<title id="raidtype">RAIDtype</title>
+			<title id="arsite">arsite</title>
+			<title id="rank">Rank</title>
+			<title id="da_pair">DA Pair</title>
+			<title id="ddmcap">DDMcap (10^9B)</title>
+		</title-tr>
+	</tab>
+	<tab id="RankInfo" title="列" action="getRankInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="rank_id">ID</title>
+		 	<title id="group">Group</title>
+			<title id="state">State</title>
+			<title id="datastate">datastate</title>
+			<title id="array">Array</title>
+			<title id="raidtype">RAIDtype</title>
+			<title id="extpoolid">extpoolID</title>
+			<title id="stgtype">stgtype</title>
+		</title-tr>
+	</tab> 
+	<tab id="ExtpoolInfo" title="扩展域" action="getExtpoolInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">Name</title>
+		 	<title id="extpool_id">ID</title>
+			<title id="stgtype">stgtype</title>
+			<title id="rankgrp">rankgrp</title>
+			<title id="status">status</title>
+			<title id="availstor">availstor (2^30B)</title>
+			<title id="allocated">%allocated</title>
+			<title id="available">available</title>
+			<title id="reserved">reserved</title>
+			<title id="numvols">numvols</title>
+		</title-tr>
+	</tab> 
+	<tab id="FbvolInfo" title="逻辑卷" action="getFbvolInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">Name</title>
+			<title id="fbvol_id">ID</title>
+			<title id="accstate">accstate</title>
+			<title id="datastate">datastate</title>
+			<title id="configstate">configstate</title>
+			<title id="devicemtm">deviceMTM</title>
+			<title id="datatype">datatype</title>
+			<title id="extpool">extpool</title>
+			<title id="cap_2_30B">cap (2^30B)</title>
+			<title id="cap_10_9B">cap (10^9B)</title>
+			<title id="cap_blocks">cap (blocks)</title>
+		</title-tr>
+	</tab> 
+	<tab id="VolgrpInfo" title="卷组" action="getVolgrpInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">Name</title>
+		 	<title id="volgrp_id">ID</title>
+			<title id="type">Type</title>
+   		</title-tr>
+	</tab> 
+	<tab id="IOPortInfo" title="I/O 端口" action="getIOPortInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="ioport_id">ID</title>
+		 	<title id="wwpn">WWPN</title>
+			<title id="state">State</title>
+			<title id="type">Type</title>
+		 	<title id="topo">topo</title>
+			<title id="portgrp">portgrp</title>
+		</title-tr>
+	</tab> 
+	<tab id="HostConnectInfo" title="连接主机" action="getHostConnectInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">Name</title>
+		 	<title id="hostconnect_id">ID</title>	
+			<title id="wwpn">WWPN</title>
+			<title id="hostType">HostType</title>
+		 	<title id="profile">Profile</title>
+			<title id="portgrp">portgrp</title>
+			<title id="volgrpID">volgrpID</title>
+			<title id="essIOport">ESSIOport</title>
+		</title-tr>
+	</tab> 
+</tab-config> 

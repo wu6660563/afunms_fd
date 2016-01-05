@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://www.cim.com" viewBox="0 0 1500 800" source="NR-PCS9000">
+	<header>
+		<systype>4</systype>
+		<sysname>ForceView</sysname>
+		<sysdomain>4</sysdomain>
+		<msgtype>11</msgtype>
+	</header>
+	<defs>
+		<symbol xmlns="" id="net:cisco@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/net_switch_0.png" />
+		</symbol>
+		<symbol xmlns="" id="net:h3c@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/net_switch_0.png" />
+		</symbol>
+		<symbol xmlns="" id="firewall:topsec@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/firewall_topsec_0.png" />
+		</symbol>
+		<symbol xmlns="" id="host:linux@0">
+			<image width="65" height="26" x="0" y="0" xlinkHref="topo/host_linux_0.png" />
+		</symbol>
+		<symbol xmlns="" id="host:tru64@0">
+			<image width="65" height="26" x="0" y="0" xlinkHref="topo/host_tru64_0.png" />
+		</symbol>
+		<symbol xmlns="" id="防火墙:防火墙@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/firewall_0.png" />
+		</symbol>
+		<symbol xmlns="" id="交换机:交换机@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/net_switch_0.png" />
+		</symbol>
+		<symbol xmlns="" id="服务器:服务器@0">
+			<image width="65" height="26" x="0" y="0" xlinkHref="topo/host_server_0.png" />
+		</symbol>
+		<symbol xmlns="" id="WAP:WAP@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/wap_0.png" />
+		</symbol>
+		<symbol xmlns="" id="三层交换机:三层交换机@0">
+			<image width="26" height="25" x="0" y="0" xlinkHref="topo/net_switch1_0.png" />
+		</symbol>
+		<symbol xmlns="" id="路由器:路由器@0">
+			<image width="32" height="32" x="0" y="0" xlinkHref="topo/net_router_0.png" />
+		</symbol>
+		<symbol xmlns="" id="子图:子图@0">
+			<image width="64" height="64" x="0" y="0" xlinkHref="topo/area_0.png" />
+		</symbol>
+		<symbol xmlns="" id="net:cisco@1">
+			<image width="32" height="29" x="0" y="0" xlinkHref="topo/net_switch_1.png" />
+		</symbol>
+	</defs>
+	<g id="HeadClass">
+		<rect width="1300" x="0" y="0" fill="rgb(255,255,255)" height="768" />
+	</g>
+	<g id="nodeClass" />
+	<g id="lineClass" />
+	<g xmlns="" id="nodeClass">
+		<g id="net:cisco:143">
+			<use x="55" y="301" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:144">
+			<use x="54" y="393" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:h3c:149">
+			<use x="1419" y="313" xlinkHref="#net:h3c@0" />
+		</g>
+		<g id="net:h3c:151">
+			<use x="1425" y="393" xlinkHref="#net:h3c@0" />
+		</g>
+		<g id="firewall:topsec:142">
+			<use x="299" y="303" xlinkHref="#firewall:topsec@0" />
+		</g>
+		<g id="firewall:topsec:152">
+			<use x="1177" y="220" xlinkHref="#firewall:topsec@0" />
+		</g>
+		<g id="net:cisco:153">
+			<use x="490" y="293" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:154">
+			<use x="721" y="252" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:155">
+			<use x="780" y="315" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:h3c:160">
+			<use x="1007" y="277" xlinkHref="#net:h3c@0" />
+		</g>
+		<g id="net:h3c:161">
+			<use x="1002" y="393" xlinkHref="#net:h3c@0" />
+		</g>
+		<g id="net:cisco:162">
+			<use x="932" y="329" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:163">
+			<use x="449" y="191" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="host:linux:156">
+			<use x="1164" y="517" xlinkHref="#host:linux@0" />
+		</g>
+		<g id="host:linux:157">
+			<use x="1267" y="518" xlinkHref="#host:linux@0" />
+		</g>
+		<g id="host:linux:158">
+			<use x="1375" y="516" xlinkHref="#host:linux@0" />
+		</g>
+		<g id="host:linux:159">
+			<use x="1485" y="516" xlinkHref="#host:linux@0" />
+		</g>
+		<g id="net:h3c:147">
+			<use x="1176" y="310" xlinkHref="#net:h3c@0" />
+		</g>
+		<g id="net:h3c:148">
+			<use x="1173" y="392" xlinkHref="#net:h3c@0" />
+		</g>
+		<g id="net:cisco:209">
+			<use x="501" y="498" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:210">
+			<use x="498" y="568" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:167">
+			<use x="913" y="493" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="net:cisco:168">
+			<use x="913" y="564" xlinkHref="#net:cisco@0" />
+		</g>
+		<g id="host:tru64:214">
+			<use x="529" y="435" xlinkHref="#host:tru64@0" />
+		</g>
+		<g id="host:tru64:215">
+			<use x="624" y="437" xlinkHref="#host:tru64@0" />
+		</g>
+		<g id="host:tru64:216">
+			<use x="721" y="437" xlinkHref="#host:tru64@0" />
+		</g>
+		<g id="host:tru64:217">
+			<use x="810" y="437" xlinkHref="#host:tru64@0" />
+		</g>
+		<g id="host:linux:181">
+			<use x="114" y="482" xlinkHref="#host:linux@0" />
+		</g>
+		<g id="host:linux:241">
+			<use x="227" y="478" xlinkHref="#host:linux@0" />
+		</g>
+		<g id="hin242">
+			<use x="838" y="606" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin246">
+			<use x="137" y="51" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin247">
+			<use x="232" y="51" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin248">
+			<use x="118" y="121" xlinkHref="#服务器:服务器@0" />
+		</g>
+		<g id="hin249">
+			<use x="211" y="122" xlinkHref="#服务器:服务器@0" />
+		</g>
+		<g id="hin253">
+			<use x="305" y="55" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin254">
+			<use x="169" y="242" xlinkHref="#WAP:WAP@0" />
+		</g>
+		<g id="hin255">
+			<use x="59" y="548" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin256">
+			<use x="56" y="616" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin257">
+			<use x="300" y="392" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin259">
+			<use x="518" y="149" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin260">
+			<use x="591" y="149" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin261">
+			<use x="665" y="148" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin262">
+			<use x="577" y="89" xlinkHref="#服务器:服务器@0" />
+		</g>
+		<g id="hin263">
+			<use x="519" y="85" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin264">
+			<use x="520" y="33" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin265">
+			<use x="584" y="245" xlinkHref="#WAP:WAP@0" />
+		</g>
+		<g id="hin266">
+			<use x="892" y="231" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin267">
+			<use x="821" y="230" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin268">
+			<use x="856" y="126" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin269">
+			<use x="934" y="166" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin270">
+			<use x="852" y="54" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin271">
+			<use x="936" y="23" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin272">
+			<use x="779" y="85" xlinkHref="#WAP:WAP@0" />
+		</g>
+		<g id="hin273">
+			<use x="930" y="86" xlinkHref="#WAP:WAP@0" />
+		</g>
+		<g id="hin274">
+			<use x="762" y="168" xlinkHref="#服务器:服务器@0" />
+		</g>
+		<g id="hin275">
+			<use x="762" y="23" xlinkHref="#服务器:服务器@0" />
+		</g>
+		<g id="hin276">
+			<use x="1558" y="614" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin277">
+			<use x="1557" y="702" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin278">
+			<use x="576" y="606" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin279">
+			<use x="659" y="605" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin280">
+			<use x="753" y="606" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin281">
+			<use x="751" y="669" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin282">
+			<use x="577" y="673" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin283">
+			<use x="661" y="671" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin284">
+			<use x="916" y="668" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin285">
+			<use x="838" y="670" xlinkHref="#交换机:交换机@0" />
+		</g>
+		<g id="hin286">
+			<use x="576" y="730" xlinkHref="#三层交换机:三层交换机@0" />
+		</g>
+		<g id="hin287">
+			<use x="662" y="731" xlinkHref="#三层交换机:三层交换机@0" />
+		</g>
+		<g id="hin288">
+			<use x="914" y="731" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin289">
+			<use x="838" y="732" xlinkHref="#防火墙:防火墙@0" />
+		</g>
+		<g id="hin290">
+			<use x="744" y="830" xlinkHref="#路由器:路由器@0" />
+		</g>
+		<g id="hin291">
+			<use x="743" y="779" xlinkHref="#路由器:路由器@0" />
+		</g>
+		<g id="hin292">
+			<use x="425" y="836" xlinkHref="#路由器:路由器@0" />
+		</g>
+		<g id="hin293">
+			<use x="450" y="778" xlinkHref="#路由器:路由器@0" />
+		</g>
+		<g id="hin294">
+			<use x="1078" y="104" xlinkHref="#子图:子图@0" />
+		</g>
+		<g id="hin295">
+			<use x="681" y="325" xlinkHref="#子图:子图@0" />
+		</g>
+		<g id="hin296">
+			<use x="1078" y="219" xlinkHref="#子图:子图@0" />
+		</g>
+		<g id="hin297">
+			<use x="179" y="329" xlinkHref="#子图:子图@0" />
+		</g>
+		<g id="hin298">
+			<use x="1538" y="344" xlinkHref="#子图:子图@0" />
+		</g>
+		<g id="net:cisco:10000000">
+			<use x="59" y="179" xlinkHref="#net:cisco@1" />
+		</g>
+		<g id="net:cisco:10000001">
+			<use x="290" y="183" xlinkHref="#net:cisco@1" />
+		</g>
+	</g>
+	<g xmlns="" id="lineClass">
+		<g id="6">
+			<path stroke-width="1" d="M 71 317L 315 319" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="7">
+			<path stroke-width="1" d="M 70 409L 71 317" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="8">
+			<path stroke-width="1" d="M 315 319L 465 207" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="9">
+			<path stroke-width="1" d="M 465 207L 1023 293" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="10">
+			<path stroke-width="1" d="M 465 207L 796 331" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="11">
+			<path stroke-width="1" d="M 796 331L 1023 293" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="12">
+			<path stroke-width="1" d="M 1018 409L 948 345" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="13">
+			<path stroke-width="1" d="M 1023 293L 1192 326" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="14">
+			<path stroke-width="1" d="M 1018 409L 1189 408" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="15">
+			<path stroke-width="1" d="M 1192 326L 1435 329" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="16">
+			<path stroke-width="1" d="M 1189 408L 1441 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="17">
+			<path stroke-width="1" d="M 1196 530L 1435 329" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="18">
+			<path stroke-width="1" d="M 1196 530L 1441 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="19">
+			<path stroke-width="1" d="M 1299 531L 1435 329" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="20">
+			<path stroke-width="1" d="M 1299 531L 1441 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="21">
+			<path stroke-width="1" d="M 1407 529L 1441 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="22">
+			<path stroke-width="1" d="M 1407 529L 1435 329" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="23">
+			<path stroke-width="1" d="M 1517 529L 1435 329" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="24">
+			<path stroke-width="1" d="M 1517 529L 1441 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="25">
+			<path stroke-width="1" d="M 1193 236L 1192 326" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="66">
+			<path stroke-width="1" d="M 517 514L 929 509" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="67">
+			<path stroke-width="1" d="M 514 584L 929 580" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="71">
+			<path stroke-width="1" d="M 842 450L 517 514" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="72">
+			<path stroke-width="1" d="M 842 450L 514 584" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="51">
+			<path stroke-width="1" d="M 146 495L 71 317" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="52">
+			<path stroke-width="1" d="M 146 495L 70 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="73">
+			<path stroke-width="1" d="M 259 491L 70 409" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="74">
+			<path stroke-width="1" d="M 259 491L 71 317" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="81">
+			<path stroke-width="1" d="M 842 450L 506 309" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="82">
+			<path stroke-width="1" d="M 842 450L 737 268" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="83">
+			<path stroke-width="1" d="M 506 309L 737 268" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="85">
+			<path stroke-width="1" d="M 506 309L 796 331" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="87">
+			<path stroke-width="1" d="M 737 268L 948 345" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="105">
+			<path stroke-width="1" d="M 561 448L 517 514" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="106">
+			<path stroke-width="1" d="M 561 448L 514 584" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="107">
+			<path stroke-width="1" d="M 561 448L 506 309" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="108">
+			<path stroke-width="1" d="M 561 448L 737 268" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="109">
+			<path stroke-width="1" d="M 656 450L 506 309" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="110">
+			<path stroke-width="1" d="M 656 450L 737 268" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="111">
+			<path stroke-width="1" d="M 656 450L 517 514" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="112">
+			<path stroke-width="1" d="M 656 450L 514 584" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="113">
+			<path stroke-width="1" d="M 753 450L 506 309" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="114">
+			<path stroke-width="1" d="M 753 450L 737 268" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="115">
+			<path stroke-width="1" d="M 753 450L 517 514" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="116">
+			<path stroke-width="1" d="M 753 450L 514 584" stroke="rgb(0,255,0)" />
+		</g>
+		<g id="26">
+			<path stroke-width="1" d="M 1193 236L 1192 326" stroke="blue" />
+		</g>
+		<g id="84">
+			<path stroke-width="1" d="M 506 309L 737 268" stroke="blue" />
+		</g>
+		<g id="86">
+			<path stroke-width="1" d="M 506 309L 796 331" stroke="blue" />
+		</g>
+		<g id="88">
+			<path stroke-width="1" d="M 737 268L 948 345" stroke="blue" />
+		</g>
+		<g id="hl1">
+			<path stroke-width="1" d="M 854 622L 737 268" stroke="blue" />
+		</g>
+		<g id="hl8">
+			<path stroke-width="1" d="M 153 67L 248 67" stroke="blue" />
+		</g>
+		<g id="hl9">
+			<path stroke-width="1" d="M 150 134L 153 67" stroke="blue" />
+		</g>
+		<g id="hl10">
+			<path stroke-width="1" d="M 248 67L 243 135" stroke="blue" />
+		</g>
+		<g id="hl11">
+			<path stroke-width="1" d="M 150 134L 248 67" stroke="blue" />
+		</g>
+		<g id="hl12">
+			<path stroke-width="1" d="M 153 67L 243 135" stroke="blue" />
+		</g>
+		<g id="hl13">
+			<path stroke-width="1" d="M 150 134L 243 135" stroke="blue" />
+		</g>
+		<g id="hl21">
+			<path stroke-width="1" d="M 71 317L 185 258" stroke="blue" />
+		</g>
+		<g id="hl22">
+			<path stroke-width="1" d="M 185 258L 70 409" stroke="blue" />
+		</g>
+		<g id="hl23">
+			<path stroke-width="1" d="M 75 564L 146 495" stroke="blue" />
+		</g>
+		<g id="hl24">
+			<path stroke-width="1" d="M 72 632L 259 491" stroke="blue" />
+		</g>
+		<g id="hl25">
+			<path stroke-width="1" d="M 75 564L 259 491" stroke="blue" />
+		</g>
+		<g id="hl26">
+			<path stroke-width="1" d="M 72 632L 146 495" stroke="blue" />
+		</g>
+		<g id="hl27">
+			<path stroke-width="1" d="M 70 409L 316 408" stroke="blue" />
+		</g>
+		<g id="hl29">
+			<path stroke-width="1" d="M 536 49L 535 101" stroke="blue" />
+		</g>
+		<g id="hl30">
+			<path stroke-width="1" d="M 535 101L 534 165" stroke="blue" />
+		</g>
+		<g id="hl31">
+			<path stroke-width="1" d="M 609 102L 534 165" stroke="blue" />
+		</g>
+		<g id="hl32">
+			<path stroke-width="1" d="M 609 102L 607 165" stroke="blue" />
+		</g>
+		<g id="hl33">
+			<path stroke-width="1" d="M 609 102L 681 164" stroke="blue" />
+		</g>
+		<g id="hl34">
+			<path stroke-width="1" d="M 681 164L 600 261" stroke="blue" />
+		</g>
+		<g id="hl35">
+			<path stroke-width="1" d="M 600 261L 506 309" stroke="blue" />
+		</g>
+		<g id="hl36">
+			<path stroke-width="1" d="M 600 261L 737 268" stroke="blue" />
+		</g>
+		<g id="hl37">
+			<path stroke-width="1" d="M 794 36L 952 39" stroke="blue" />
+		</g>
+		<g id="hl38">
+			<path stroke-width="1" d="M 794 181L 950 182" stroke="blue" />
+		</g>
+		<g id="hl39">
+			<path stroke-width="1" d="M 794 36L 868 70" stroke="blue" />
+		</g>
+		<g id="hl40">
+			<path stroke-width="1" d="M 868 70L 952 39" stroke="blue" />
+		</g>
+		<g id="hl41">
+			<path stroke-width="1" d="M 795 101L 868 70" stroke="blue" />
+		</g>
+		<g id="hl42">
+			<path stroke-width="1" d="M 868 70L 946 102" stroke="blue" />
+		</g>
+		<g id="hl43">
+			<path stroke-width="1" d="M 872 142L 795 101" stroke="blue" />
+		</g>
+		<g id="hl44">
+			<path stroke-width="1" d="M 872 142L 946 102" stroke="blue" />
+		</g>
+		<g id="hl45">
+			<path stroke-width="1" d="M 872 142L 794 181" stroke="blue" />
+		</g>
+		<g id="hl46">
+			<path stroke-width="1" d="M 872 142L 950 182" stroke="blue" />
+		</g>
+		<g id="hl47">
+			<path stroke-width="1" d="M 872 142L 908 247" stroke="blue" />
+		</g>
+		<g id="hl48">
+			<path stroke-width="1" d="M 837 246L 872 142" stroke="blue" />
+		</g>
+		<g id="hl49">
+			<path stroke-width="1" d="M 908 247L 796 331" stroke="blue" />
+		</g>
+		<g id="hl50">
+			<path stroke-width="1" d="M 837 246L 948 345" stroke="blue" />
+		</g>
+		<g id="hl51">
+			<path stroke-width="1" d="M 1574 630L 1196 530" stroke="blue" />
+		</g>
+		<g id="hl52">
+			<path stroke-width="1" d="M 1574 630L 1299 531" stroke="blue" />
+		</g>
+		<g id="hl53">
+			<path stroke-width="1" d="M 1574 630L 1407 529" stroke="blue" />
+		</g>
+		<g id="hl54">
+			<path stroke-width="1" d="M 1574 630L 1517 529" stroke="blue" />
+		</g>
+		<g id="hl55">
+			<path stroke-width="1" d="M 1573 718L 1196 530" stroke="blue" />
+		</g>
+		<g id="hl56">
+			<path stroke-width="1" d="M 1573 718L 1299 531" stroke="blue" />
+		</g>
+		<g id="hl57">
+			<path stroke-width="1" d="M 1573 718L 1407 529" stroke="blue" />
+		</g>
+		<g id="hl58">
+			<path stroke-width="1" d="M 1573 718L 1517 529" stroke="blue" />
+		</g>
+		<g id="hl59">
+			<path stroke-width="1" d="M 592 622L 517 514" stroke="blue" />
+		</g>
+		<g id="hl60">
+			<path stroke-width="1" d="M 514 584L 675 621" stroke="blue" />
+		</g>
+		<g id="hl61">
+			<path stroke-width="1" d="M 592 622L 593 689" stroke="blue" />
+		</g>
+		<g id="hl62">
+			<path stroke-width="1" d="M 593 689L 589 742" stroke="blue" />
+		</g>
+		<g id="hl63">
+			<path stroke-width="1" d="M 589 742L 760 846" stroke="blue" />
+		</g>
+		<g id="hl64">
+			<path stroke-width="1" d="M 592 622L 675 621" stroke="blue" />
+		</g>
+		<g id="hl65">
+			<path stroke-width="1" d="M 675 621L 677 687" stroke="blue" />
+		</g>
+		<g id="hl66">
+			<path stroke-width="1" d="M 677 687L 675 743" stroke="blue" />
+		</g>
+		<g id="hl67">
+			<path stroke-width="1" d="M 675 743L 759 795" stroke="blue" />
+		</g>
+		<g id="hl68">
+			<path stroke-width="1" d="M 593 689L 677 687" stroke="blue" />
+		</g>
+		<g id="hl69">
+			<path stroke-width="1" d="M 589 742L 675 743" stroke="blue" />
+		</g>
+		<g id="hl70">
+			<path stroke-width="1" d="M 760 846L 759 795" stroke="blue" />
+		</g>
+		<g id="hl71">
+			<path stroke-width="1" d="M 769 622L 593 689" stroke="blue" />
+		</g>
+		<g id="hl72">
+			<path stroke-width="1" d="M 769 622L 767 685" stroke="blue" />
+		</g>
+		<g id="hl73">
+			<path stroke-width="1" d="M 769 622L 932 684" stroke="blue" />
+		</g>
+		<g id="hl74">
+			<path stroke-width="1" d="M 854 622L 854 686" stroke="blue" />
+		</g>
+		<g id="hl75">
+			<path stroke-width="1" d="M 854 686L 854 748" stroke="blue" />
+		</g>
+		<g id="hl76">
+			<path stroke-width="1" d="M 932 684L 930 747" stroke="blue" />
+		</g>
+		<g id="hl77">
+			<path stroke-width="1" d="M 677 687L 767 685" stroke="blue" />
+		</g>
+		<g id="hl78">
+			<path stroke-width="1" d="M 767 685L 854 686" stroke="blue" />
+		</g>
+		<g id="hl79">
+			<path stroke-width="1" d="M 854 686L 932 684" stroke="blue" />
+		</g>
+		<g id="hl80">
+			<path stroke-width="1" d="M 759 795L 854 748" stroke="blue" />
+		</g>
+		<g id="hl81">
+			<path stroke-width="1" d="M 760 846L 930 747" stroke="blue" />
+		</g>
+		<g id="hl82">
+			<path stroke-width="1" d="M 466 794L 759 795" stroke="blue" />
+		</g>
+		<g id="hl83">
+			<path stroke-width="1" d="M 441 852L 760 846" stroke="blue" />
+		</g>
+		<g id="hl84">
+			<path stroke-width="1" d="M 466 794L 737 268" stroke="blue" />
+		</g>
+		<g id="hl85">
+			<path stroke-width="1" d="M 441 852L 506 309" stroke="blue" />
+		</g>
+		<g id="hl86">
+			<path stroke-width="1" d="M 316 408L 465 207" stroke="blue" />
+		</g>
+		<g id="hl87">
+			<path stroke-width="1" d="M 71 317L 211 361" stroke="blue" />
+		</g>
+		<g id="hl88">
+			<path stroke-width="1" d="M 70 409L 211 361" stroke="blue" />
+		</g>
+		<g id="hl89">
+			<path stroke-width="1" d="M 506 309L 713 357" stroke="blue" />
+		</g>
+		<g id="hl90">
+			<path stroke-width="1" d="M 737 268L 713 357" stroke="blue" />
+		</g>
+		<g id="hl91">
+			<path stroke-width="1" d="M 1435 329L 1570 376" stroke="blue" />
+		</g>
+		<g id="hl92">
+			<path stroke-width="1" d="M 1441 409L 1570 376" stroke="blue" />
+		</g>
+	</g>
+</svg>
+

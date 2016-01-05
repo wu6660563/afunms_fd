@@ -1,0 +1,45 @@
+.favMenu {
+	FONT: menu; CURSOR: hand; COLOR: windowtext
+}
+.favMenu DIV {
+	WIDTH: 100%
+}
+.favMenu A {
+	FONT-SIZE: 12px; COLOR: windowtext; TEXT-DECORATION: none
+}
+.favMenu A:hover {
+	FONT-SIZE: 12px; COLOR: windowtext; TEXT-DECORATION: underline
+}
+.topFolder {
+	BORDER-RIGHT: 1px; PADDING-RIGHT: 4px; BORDER-TOP: 4px; PADDING-LEFT: 2px; FONT-SIZE: 14px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: 1px
+}
+.topItem {
+	BORDER-RIGHT: 1px; PADDING-RIGHT: 2px; BORDER-TOP: 1px; PADDING-LEFT: 2px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: 1px
+}
+.subFolder {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.subItem {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.sub {
+	BORDER-RIGHT: 1px; DISPLAY: none; FONT-SIZE: 12px; BORDER-LEFT: 1px; PADDING-TOP: 1px; BORDER-BOTTOM: 1px
+}
+.sub .sub {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.icon {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: top; WIDTH: 16px; MARGIN-RIGHT: 5px; HEIGHT: 16px
+}
+.outer {
+	BORDER-RIGHT: 1px; PADDING-RIGHT: 0px; BORDER-TOP: 1px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; BORDER-LEFT: 1px; PADDING-TOP: 0px; BORDER-BOTTOM: 1px
+}
+.inner {
+	BORDER-RIGHT: 1px; PADDING-RIGHT: 0px; BORDER-TOP: 1px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; BORDER-LEFT: 1px; PADDING-TOP: 0px; BORDER-BOTTOM: 1px
+}
+.scrollButton {
+	BORDER-RIGHT: buttonface 1px; BORDER-TOP: buttonface 1px; DISPLAY: none; FONT-SIZE: 10px; OVERFLOW: hidden; BORDER-LEFT: 1px; WIDTH: 50px; CURSOR: default; COLOR: buttontext; BORDER-BOTTOM: buttonface 1px; FONT-FAMILY: webdings; POSITION: absolute; HEIGHT: 16px; TEXT-ALIGN: center
+}
+.flat {
+	BORDER-RIGHT: buttonface 1px; PADDING-RIGHT: 0px; BORDER-TOP: buttonface 1px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; BORDER-LEFT: buttonface 1px; PADDING-TOP: 0px; BORDER-BOTTOM: buttonface 1px
+}

@@ -1,0 +1,6 @@
+open 10.10.152.57
+nms
+webnms
+cd /
+put 10.10.152.57.xml
+bye

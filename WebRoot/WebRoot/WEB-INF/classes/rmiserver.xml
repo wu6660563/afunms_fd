@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<server>
+    <host>127.0.0.1</host>
+    <port>7777</port>
+    <name>rmiClient</name>
+    <serviceClass>com.afunms.rmi.service.RMIClientImpl</serviceClass>
+    <actions>
+        <action>
+            <name>fvsd</name>
+            <class>com.afunms.alarm.fvsd.service.FvsdAlarmServerService</class>
+        </action>
+        <action>
+            <name>sms</name>
+            <class>com.afunms.alarm.sms.service.SMSAlarmServerService</class>
+        </action>
+    </actions>
+</server>

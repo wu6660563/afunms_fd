@@ -1,0 +1,219 @@
+cmdbegin:disk
+Filesystem           1024-blocks        Used   Available Capacity  Mounted on
+root_domain#root         4194304      133133     4055192     4%    /
+/proc                          0           0           0   100%    /proc
+usr_domain#usr          41943040     2616344    39162592     7%    /usr
+usr_domain#var          41943040      129831    39162592     1%    /var
+df8003_domain#df8003    71132000    19459484    51636176    28%    /df8003
+cmdbegin:proc
+USER            PID %CPU %MEM   VSZ  RSS TTY      S    STARTED         TIME COMMAND
+root          93846 13.3  4.7  239M 191M ??       R N    Mar 05 27-05:32:47 scn_slmd
+ems          469669  8.8  4.6  317M 189M ??       U N    Sep 05    19:11:14 SCADA_Rep -mode r
+root         218214  3.7  0.0 21.5M 1.9M ??       S <    Dec 26  7-00:45:19 /df8003/bin/applogd
+root          93845  2.1  2.7  333M 112M ??       S N    Mar 05  4-21:18:25 code_saver 10
+root              0  1.7  6.1 5.04G 249M ??       R <    Dec 11  6-02:46:51 [kernel idle]
+ems          455339  1.5  2.2  385M  90M ??       S N    Jul 25    19:14:56 comServer -ref
+root         218217  1.2  0.5 44.1M  21M ??       S <    Dec 26  2-20:57:27 /df8003/bin/sysmd
+root         218216  0.1  0.0 21.2M 1.6M ??       S <    Dec 26    04:42:50 /df8003/bin/netmd
+ems           93840  0.1  0.3 38.6M  13M ??       S N    Mar 05    06:49:46 hisWrite
+root          93841  0.1  1.7 95.3M  69M ??       S N    Mar 05    08:04:25 netmond -s 3600
+ems            1235  0.0  0.1 13.6M 3.1M ??       S      Dec 11     3:24.50 dtwm
+root           1227  0.0  0.0 7.31M 896K ??       I      Dec 11     0:00.04 rpc.ttdbserverd
+root           1236  0.0  0.0 8.03M 1.4M ??       I      Dec 11     0:02.93 /usr/bin/X11/dxconsole
+ems            1237  0.0  0.1 12.9M 3.1M ??       I      Dec 11     0:00.09 dtterm -sl 10000
+ems            1238  0.0  0.0 2.80M 328K pts/1    I  +   Dec 11     0:00.01 /usr/bin/ksh
+ems            1239  0.0  0.0 5.91M 472K ??       I      Dec 11     0:00.02 /usr/dt/bin/dtexec -open 0 -ttprocid 2.1Gnl4i 01 1226 1342177279 1 1 115 192.168.108.24 4_101_1 /usr/dt/bin/dtterm -ls
+ems            1240  0.0  0.0 11.7M 1.8M ??       I      Dec 11     1:02.81 /usr/dt/bin/dtterm -ls
+ems            1241  0.0  0.0 2.94M 496K pts/2    I  +   Dec 11     0:00.05 -ksh (ksh)
+ems            1226  0.0  0.0 7.36M 680K ??       I      Dec 11     0:00.03 /usr/dt/bin/ttsession -s
+ems            1200  0.0  0.1 14.6M 2.6M ??       I      Dec 11     0:00.23 /usr/bin/X11/dxhanziim -xrm *fontList: -dt-interface system-medium-r-normal-m-*-*-*-*-*-*-*-*:
+ems            1188  0.0  0.0 11.4M 1.5M ??       I      Dec 11     0:00.12 /usr/dt/bin/dtsession
+root           1165  0.0  0.0 8.03M 736K ??       S      Dec 11     1:02.72 sendmail: accept -bd -q15m -om
+root           1123  0.0  0.0 5.35M 376K ??       I      Dec 11     0:00.01 dtlogin <:0> -daemon
+root           1124  0.0  0.2 17.1M 7.1M ??       S      Dec 11     0:21.37 /usr/sbin/smsd -d
+root           1126  0.0  0.0  584K 136K console  I  +   Dec 11     0:00.01 /usr/sbin/getty console console vt100
+root           1121  0.0  0.3 35.7M  12M ??       S      Dec 11     6:59.30 /usr/bin/X11/X :0 -screen0 1280x1024 -vsync0 60 -auth /var/dt/authdir/authfiles/A:0-SccTTc
+root            964  0.0  0.0 3.94M 248K ??       S      Dec 11     0:07.49 /usr/sbin/cron
+root            972  0.0  0.0 4.36M 992K ??       S      Dec 11     0:05.85 /usr/sbin/sysman_hmmod
+root           1002  0.0  0.0 3.20M 328K ??       I      Dec 11     0:00.00 /usr/lbin/lpd
+root           1021  0.0  0.0 2.20M 136K ??       I      Dec 11     0:00.00 /usr/sbin/utxd
+root           1037  0.0  0.0 5.37M 360K ??       I      Dec 11     6:49.49 /usr/dt/bin/dtlogin -daemon
+root           1095  0.0  0.2 14.0M 8.8M ??       S      Dec 11     0:14.69 /usr/opt/java131/bin/../bin/alpha/native_threads/java -classic -mx2m -Dos.version=boot authentication.server.AuthenticationServer
+root            953  0.0  0.0 2.42M 224K ??       I      Dec 11     0:02.27 -child (inetd)
+root            745  0.0  0.0 3.20M 224K ??       S      Dec 11     0:00.41 /usr/sbin/svrSystem_mib
+root            744  0.0  0.0 3.12M 160K ??       S      Dec 11     0:01.17 /usr/sbin/svrMgt_mib
+root            735  0.0  0.0 2.59M 184K ??       S      Dec 11     0:02.86 /usr/sbin/snmpd
+root            700  0.0  0.0 3.39M 264K ??       S      Dec 11     0:14.84 /usr/sbin/xntpd -g -c /etc/ntp.conf
+root            674  0.0  0.0 10.6M 368K ??       I      Dec 11     0:00.07 /usr/sbin/sshd2
+root            756  0.0  0.0 4.09M 208K ??       S      Dec 11     0:26.05 /usr/sbin/os_mibs
+root            758  0.0  0.0 5.00M 1.3M ??       S      Dec 11     0:08.75 /usr/sbin/cpq_mibs
+root            759  0.0  0.0 4.48M 352K ??       S <    Dec 11     0:00.07 /usr/sbin/pmgrd
+root            868  0.0  0.0 3.06M 200K ??       S      Dec 11     0:01.31 /usr/sbin/cpqthresh_mib
+root            887  0.0  0.1 8.80M 4.1M ??       S      Dec 11     0:03.11 /usr/sbin/insightd
+root            896  0.0  0.1 6.70M 2.1M ??       S      Dec 11    01:24:02 /usr/sbin/envmond -ui cli
+root            939  0.0  0.0 5.81M 1.4M ??       S <    Dec 11     0:02.70 /usr/sbin/advfsd
+root            942  0.0  0.0 4.36M 992K ??       S      Dec 11     0:05.98 /usr/sbin/config_hmmod
+root            952  0.0  0.0 2.34M 112K ??       I      Dec 11     0:00.00 /usr/sbin/inetd
+root            510  0.0  0.0 2.28M 104K ??       I      Dec 11     0:00.03 /usr/sbin/nfsiod 7
+root              5  0.0  0.0 3.12M 368K ??       S      Dec 11     0:00.28 /sbin/hotswapd
+root              3  0.0  0.0 1.74M 1.2M ??       I      Dec 11     0:01.39 /sbin/kloadsrv
+root              1  0.0  0.0  616K  96K ??       IL     Dec 11     0:20.31 /sbin/init -a
+root             49  0.0  0.0 2.94M 328K ??       I      Dec 11     0:00.01 /usr/sbin/esmd
+root             60  0.0  0.0 2.16M 112K ??       I      Dec 11     0:00.19 /sbin/update
+root            185  0.0  0.0 3.98M 1.0M ??       I      Dec 11     1:04.71 /usr/sbin/evmd
+ems           93842  0.0  1.8  358M  72M ??       S N    Mar 05     1:45.14 BZTListen -mode r
+root            222  0.0  0.0 3.34M 472K ??       I      Dec 11     0:17.76 /usr/sbin/evmlogger -o /var/run/evmlogger.info -l /var/evm/adm/logfiles/evmlogger.log
+root            223  0.0  0.0 2.87M 360K ??       I      Dec 11     0:03.98 /usr/sbin/evmchmgr -l /var/evm/adm/logfiles/evmchmgr.log
+root          93838  0.0  0.7  289M  27M ??       S N    Mar 05    18:06.32 ssrd
+ems           93836  0.0  2.0  327M  81M ??       S N    Mar 05    03:49:33 alm_replica -mode r
+ems           93835  0.0  0.1 39.9M 5.7M ??       S N    Mar 05    03:06:18 almd_server_rep
+ems           93800  0.0  0.0 2.94M 496K pts/4    I  +   Mar 05     0:00.05 -ksh (ksh)
+ems           93799  0.0  0.0 11.7M 1.8M ??       S      Mar 05     1:24.59 /usr/dt/bin/dtterm -ls
+ems           93798  0.0  0.0 5.91M 504K ??       I      Mar 05     0:00.02 /usr/dt/bin/dtexec -open 0 -ttprocid 2.1Gnl4i 01 1226 1342177279 1 1 115 192.168.108.24 4_103_1 /usr/dt/bin/dtterm -ls
+root          93797  0.0  1.7 87.6M  69M ??       I N    Mar 05     0:00.28 proc_watchd
+ems           93715  0.0  0.0 11.7M 1.9M ??       I      Mar 05     0:00.14 /usr/dt/bin/dtterm -ls
+ems           93714  0.0  0.0 5.91M 504K ??       I      Mar 05     0:00.02 /usr/dt/bin/dtexec -open 0 -ttprocid 2.1Gnl4i 01 1226 1342177279 1 1 115 192.168.108.24 4_102_1 /usr/dt/bin/dtterm -ls
+ems           93712  0.0  0.0 2.94M 496K pts/3    I  +   Mar 05     0:00.06 -ksh (ksh)
+root          88547  0.0  0.2 11.8M 8.1M ??       R    16:55:00     0:00.08 ps aux
+root          88545  0.0  0.0 2.68M 224K ??       S    16:55:00     0:00.00 /home/nms/collection.sh
+root          88544  0.0  0.0 2.68M 216K ??       S    16:55:00     0:00.00 sh -c /home/nms/collection.sh >/dev/null
+root         218289  0.0  1.7 88.2M  69M ??       S N    Dec 26     1:09.95 /df8003/bin/procmd
+root            350  0.0  0.0 2.88M 224K ??       I      Dec 11     0:02.05 /usr/sbin/niffd
+root            396  0.0  0.0 2.95M 272K ??       S      Dec 11     0:02.23 /usr/sbin/syslogd -e
+root         218215  0.0  0.1 23.2M 3.5M ??       I N    Dec 26     0:00.02 /df8003/bin/dbmd
+root            400  0.0  0.0 4.01M 464K ??       I      Dec 11     0:04.98 /usr/sbin/binlogd
+root            507  0.0  0.0 2.80M 168K ??       I      Dec 11     0:00.17 /usr/sbin/portmap
+cmdbegin:vmstat
+Virtual Memory Statistics: (pagesize = 8192)
+  procs      memory        pages                            intr       cpu
+  r   w   u  act free wire fault  cow zero react  pin pout  in  sy  cs us sy id
+  4 222  42 226K 231K  49K    2G  43M  76M   108  83M    0 930 16K 14K 12  5 83
+cmdbegin:vm -P
+
+Total Physical Memory =  4096.00 M
+                      =   524288 pages
+
+Physical Memory Clusters:
+
+start_pfn     end_pfn        type  size_pages / size_bytes
+         0         910         pal         910 /    7.11M
+       910      524279          os      523369 / 4088.82M
+    524279      524288         pal           9 /   72.00k
+
+Physical Memory Use:
+
+ start_pfn     end_pfn        type  size_pages / size_bytes
+       910        1057    scavenge         147 /    1.15M
+      1057        1946        text         889 /    6.95M
+      1946        2120        data         174 /    1.36M
+      2120        2354         bss         234 /    1.83M
+      2354        2571      kdebug         217 /    1.70M
+      2571        2578     cfgmgmt           7 /   56.00k
+      2578        2580       locks           2 /   16.00k
+      2580        2594        pmap          14 /  112.00k
+      2594        4524   unixtable        1930 /   15.08M
+      4524        4620        logs          96 /  768.00k
+      4620       16773    vmtables       12153 /   94.95M
+     16773      524279     managed      507506 / 3964.89M
+                             ============================
+         Total Physical Memory Use:     523369 / 4088.82M
+
+Managed Pages Break Down:
+
+       free pages = 231660
+     active pages = 91309
+   inactive pages = 19541
+      wired pages = 49096
+        ubc pages = 116047
+        ==================
+            Total = 507653
+
+WIRED Pages Break Down:
+
+   vm wired pages = 16001
+  ubc wired pages = 0
+  meta data pages = 15650
+     malloc pages = 11889
+     contig pages = 3778
+    user ptepages = 1243
+  kernel ptepages = 528
+    free ptepages = 7
+        ==================
+            Total = 49096
+
+cmdbegin:uname
+OSF1 esfe-d
+cmdbegin:date
+Fri Sep 13 16:55:00 CST 2013
+cmdbegin:uptime
+16:55  up 276 days, 19 mins,  5 users,  load average: 0.49, 0.55, 0.56
+cmdbegin:ifconfig
+bcm0: flags=4000c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX,RESERVED>
+     NetRAIN Virtual Interface: nr0 
+     NetRAIN Attached Interfaces: ( ee0 bcm0 ) Active Interface: ( bcm0 )
+
+bcm1: flags=c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX>
+     inet 192.168.106.40 netmask ffffff00 broadcast 192.168.106.255 ipmtu 1500 
+
+bcm2: flags=c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX>
+     inet 192.168.206.40 netmask ffffff00 broadcast 192.168.206.255 ipmtu 1500 
+
+ee0: flags=4000c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX,RESERVED>
+     NetRAIN Virtual Interface: nr0 
+     NetRAIN Attached Interfaces: ( ee0 bcm0 ) Active Interface: ( bcm0 )
+
+lo0: flags=100c89<UP,LOOPBACK,NOARP,MULTICAST,SIMPLEX,NOCHECKSUM>
+     inet 127.0.0.1 netmask ff000000 ipmtu 4096 
+
+nr0: flags=c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX>
+     NetRAIN Attached Interfaces: ( ee0 bcm0 ) Active Interface: ( bcm0 )
+     inet 192.168.108.24 netmask ffffff00 broadcast 192.168.108.255 ipmtu 1500 
+
+sl0: flags=10<POINTOPOINT>
+
+tun0: flags=80<NOARP>
+
+tun1: flags=80<NOARP>
+
+cmdbegin:netstat
+Name  Mtu   Network        Address               Ipkts Ierrs    Opkts Oerrs  Coll
+bcm0  1500  <Link>         02:02:a5:20:51:a8       716     0      117     0     0
+bcm0  1500  DLI            none                    716     0      117     0     0
+bcm1  1500  <Link>         00:1f:29:32:d5:8a  114890847     0 53983023     0     0
+bcm1  1500  DLI            none               114890847     0 53983023     0     0
+bcm1  1500  192.168.106/24 192.168.106.40     114890847     0 53983023     0     0
+bcm2  1500  <Link>         00:1f:29:32:d5:80  7953248293     0 5831778602     0     0
+bcm2  1500  DLI            none               7953248293     0 5831778602     0     0
+bcm2  1500  192.168.206/24 192.168.206.40     7953248293     0 5831778602     0     0
+ee0   1500  <Link>         00:02:a5:20:51:a8  6201113438     1 273391781     0     0
+ee0   1500  DLI            none               6201113438     1 273391781     0     0
+lo0   4096  <Link>         Link#6             1079880113     0 1079880113     0     0
+lo0   4096  127/8          127.0.0.1          1079880113     0 1079880113     0     0
+nr0   1500  <Link>         02:02:a5:20:51:a8  6939094039     0 1008726179     0     0
+nr0   1500  192.168.108/24 192.168.108.24     6939094039     0 1008726179     0     0
+nr0   1500  DLI            none               6939094039     0 1008726179     0     0
+sl0*  296   <Link>         Link#5                    0     0        0     0     0
+tun0* 1280  <Link>         Link#7                    0     0        0     0     0
+tun1* 1280  <Link>         Link#8                    0     0        0     0     0
+cmdbegin:end
+cmdbegin:memoryend
+root:FQaL5HjD282Ps:0:1:system PRIVILEGED account:/:/bin/sh
+nobody:*Nologin:65534:65534:anonymous NFS user:/:
+nobodyV:*Nologin:60001:60001:anonymous SystemV.4 NFS user:/:
+daemon:*:1:1:system background account:/:
+bin:*:3:4:system librarian account:/bin:
+uucp:Nologin:4:2:UNIX-to-UNIX Copy:/usr/spool/uucppublic:/usr/lib/uucp/uucico
+uucpa:Nologin:4:2:uucp adminstrative account:/usr/lib/uucp:
+auth:*:6:11:Authentication Subsystem:/tcb/bin:
+cron:*:7:14:Cron Subsystem:/usr/adm/cron:
+lp:*:8:12:Line Printer Subsystem:/users/lp:
+tcb:*:9:18:Trusted Computing Base:/tcb:
+adm:*:10:19:Administration Subsystem:/usr/adm:
+ris:Nologin:11:21:Remote Installation Services Account:/usr/adm/ris:/bin/sh
+wnn:Nologin:12:1:Wnn Japanese Input Method System Account:/tmp:/bin/sh
+pop:*:13:6:POP Mail Service Account:/:
+imap:*:14:6:IMAP Mail Service Account:/:
+smmsp:Nologin:200:200::/usr/users/smmsp:/bin/sh
+ems:L0ZLQb0wO/BJo:115:202::/df8003/home:/usr/bin/ksh
+oracle:Me15ytLAAz27I:201:201::/usr/local/oracle:/usr/bin/ksh
+cmdbegin:user

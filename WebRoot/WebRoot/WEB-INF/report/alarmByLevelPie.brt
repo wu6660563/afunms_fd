@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report version="3.0">
+	<head>
+		<property name="type">0</property>
+		<name><![CDATA[alarmByLevelPie]]></name>
+		<dataSets>
+			<dataSet name="ds" type="DB_SQL" >
+				<property name="dataSource">dhcc_newafunms</property>
+				<property name="desc"><![CDATA[]]></property>
+				<property name="query"><![CDATA[select subtype,level1,count(1) as cnt from system_eventlist where to_days(recordtime) >= to_days(?) 
+and to_days(recordtime) <= to_days(?) 
+group by subtype,level1; ]]></property>
+				<property name="beginRow">0</property>
+				<property name="endRow">0</property>
+				<queryParam name="starttime" />
+				<queryParam name="endtime" />
+			</dataSet>
+		</dataSets>
+		<parameters>
+			<parameter name="starttime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">开始时间</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="endtime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc"></property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+		</parameters>
+		<variables/>
+		<subReports/>
+	</head>
+	<body>
+		<sheet id="sheet1">
+			<page>
+			</page>
+			<grid row="8" col="5">
+				<properties>
+				</properties>
+				<rows>
+					<row id="1">
+						<property name="type">1</property>
+						<property name="height">100</property>
+					</row>
+					<row id="2">
+						<property name="type">1</property>
+						<property name="height">100</property>
+					</row>
+					<row id="3">
+						<property name="height">80</property>
+					</row>
+					<row id="4">
+						<property name="height">50</property>
+					</row>
+					<row id="5">
+						<property name="height">50</property>
+					</row>
+					<row id="6">
+						<property name="height">50</property>
+					</row>
+					<row id="7">
+						<property name="height">50</property>
+					</row>
+					<row id="8">
+						<property name="height">136</property>
+					</row>
+				</rows>
+				<columns>
+					<column id="1">
+						<property name="width">108</property>
+					</column>
+					<column id="2">
+						<property name="width">150</property>
+					</column>
+					<column id="3">
+						<property name="width">150</property>
+					</column>
+					<column id="4">
+						<property name="width">150</property>
+					</column>
+					<column id="5">
+						<property name="width">150</property>
+					</column>
+				</columns>
+				<cells>
+					<cell id="1,1" type="0" colspan="5" >
+						<property name="value"><![CDATA[=@starttime + 至 + @endtime]]></property>
+						<property name="font-size">12</property>
+						<property name="align">2</property>
+						<property name="valign">2</property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+					</cell>
+					<cell id="2,1" type="0" colspan="5" >
+						<property name="value"><![CDATA[告警类别汇总报表]]></property>
+						<property name="font-size">18</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=179,227,247]]></property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,1" type="2" >
+						<property name="value"><![CDATA[等级,类别]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,2" type="0" >
+						<property name="value"><![CDATA[网络告警]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,3" type="0" >
+						<property name="value"><![CDATA[服务器告警]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,4" type="0" >
+						<property name="value"><![CDATA[数据库告警]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,5" type="0" >
+						<property name="value"><![CDATA[中间件告警]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,1" type="0" >
+						<property name="value"><![CDATA[提示]]></property>
+						<property name="font-size">11</property>
+						<property name="background"><![CDATA[0,0,255]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,2" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='net' and level1=0),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,3" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='host' and level1=0),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,4" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='db' and level1=0),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,5" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='middleware' and level1=0),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="5,1" type="0" >
+						<property name="value"><![CDATA[普通]]></property>
+						<property name="font-size">11</property>
+						<property name="background"><![CDATA[255,255,0]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="5,2" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='net' and level1=1),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="5,3" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='host' and level1=1),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="5,4" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='db' and level1=1),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="5,5" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='middleware' and level1=1),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="6,1" type="0" >
+						<property name="value"><![CDATA[严重]]></property>
+						<property name="font-size">11</property>
+						<property name="background"><![CDATA[255,153,0]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="6,2" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='net' and level1=2),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="6,3" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='host' and level1=2),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="6,4" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='db' and level1=2),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="6,5" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='middleware' and level1=2),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="7,1" type="0" >
+						<property name="value"><![CDATA[紧急]]></property>
+						<property name="font-size">11</property>
+						<property name="background"><![CDATA[255,0,0]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="7,2" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='net' and level1=3),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="7,3" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='host' and level1=3),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="7,4" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='db' and level1=3),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="7,5" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='middleware' and level1=3),0)]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="8,1" type="0" >
+						<property name="value"><![CDATA[饼状图]]></property>
+						<property name="font-size">11</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="8,2" type="1" >
+						<property name="value"><![CDATA[<chart><param name="webtarget_3" value="_blank" /><param name="webtarget_2" value="_blank" /><param name="seriescount" value="1" /><param name="colorstyle" value="报警等级配色" /><param name="legendon" value="true" /><param name="3ddepth" value="18" /><param name="titlefont" value="宋体,plain,14" /><param name="valuelineson" value="true" /><param name="webtarget_1" value="_blank" /><param name="webtarget_0" value="_blank" /><param name="pielabelson" value="true" /><param name="samplelabels" value="提示,普通,严重,紧急" /><param name="rangedecimalcount" value="auto" /><param name="pointinglabelfont" value="宋体,plain,11" /><param name="valuelabelfont" value="宋体,plain,11" /><param name="percentlabelstyle" value="inside" /><param name="sampleaxislabelfont" value="宋体,plain,11" /><param name="percentdecimalcount" value="0" /><param name="rangelabelfont" value="宋体,plain,11" /><param name="percentlabelson" value="true" /><param name="startangle" value="90" /><param name="3dmodeon" value="true" /><param name="serieslabelson" value="false" /><param name="pielabelfont" value="宋体,plain,11" /><param name="endangle" value="270" /><param name="serieslabels" value="网络告警" /><param name="legendfont" value="宋体,plain,11" /><param name="serieslabels_0" value="网络告警" /><param name="rangelabelson" value="true" /><param name="valuelabelstyle" value="outside" /><param name="rangeaxislabelfont" value="宋体,plain,11" /><param name="insidelabelfont" value="宋体,plain,11" /><param name="autolabelspacingon" value="true" /><param name="outsidelabelfont" value="宋体,plain,11" /><param name="samplevalues_0" value="=[B4,B5,B6,B7]" /><param name="baroutlineoff" value="true" /><param name="sampledecimalcount" value="0" /><param name="background" value="255,255,255" /><param name="chart" value="pie" /></chart>]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="8,3" type="1" >
+						<property name="value"><![CDATA[<chart><param name="seriescount" value="1" /><param name="colorstyle" value="报警等级配色" /><param name="legendon" value="true" /><param name="3ddepth" value="18" /><param name="titlefont" value="宋体,plain,14" /><param name="valuelineson" value="true" /><param name="webtarget_0" value="_blank" /><param name="pielabelson" value="true" /><param name="samplelabels" value="提示,普通,严重,紧急" /><param name="rangedecimalcount" value="auto" /><param name="pointinglabelfont" value="宋体,plain,11" /><param name="valuelabelfont" value="宋体,plain,11" /><param name="percentlabelstyle" value="inside" /><param name="sampleaxislabelfont" value="宋体,plain,11" /><param name="percentdecimalcount" value="0" /><param name="rangelabelfont" value="宋体,plain,11" /><param name="percentlabelson" value="true" /><param name="startangle" value="90" /><param name="3dmodeon" value="true" /><param name="serieslabelson" value="false" /><param name="pielabelfont" value="宋体,plain,11" /><param name="endangle" value="270" /><param name="serieslabels" value="服务器告警" /><param name="legendfont" value="宋体,plain,11" /><param name="serieslabels_0" value="服务器告警" /><param name="rangelabelson" value="true" /><param name="valuelabelstyle" value="outside" /><param name="rangeaxislabelfont" value="宋体,plain,11" /><param name="insidelabelfont" value="宋体,plain,11" /><param name="autolabelspacingon" value="true" /><param name="outsidelabelfont" value="宋体,plain,11" /><param name="samplevalues_0" value="=[C4,C5,C6,C7]" /><param name="baroutlineoff" value="true" /><param name="sampledecimalcount" value="0" /><param name="background" value="255,255,255" /><param name="chart" value="pie" /></chart>]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="8,4" type="1" >
+						<property name="value"><![CDATA[<chart><param name="seriescount" value="1" /><param name="colorstyle" value="报警等级配色" /><param name="legendon" value="true" /><param name="3ddepth" value="18" /><param name="titlefont" value="宋体,plain,14" /><param name="valuelineson" value="true" /><param name="webtarget_0" value="_blank" /><param name="pielabelson" value="true" /><param name="samplelabels" value="提示,普通,严重,紧急" /><param name="rangedecimalcount" value="auto" /><param name="pointinglabelfont" value="宋体,plain,11" /><param name="valuelabelfont" value="宋体,plain,11" /><param name="percentlabelstyle" value="inside" /><param name="sampleaxislabelfont" value="宋体,plain,11" /><param name="percentdecimalcount" value="0" /><param name="rangelabelfont" value="宋体,plain,11" /><param name="percentlabelson" value="true" /><param name="startangle" value="90" /><param name="3dmodeon" value="true" /><param name="serieslabelson" value="false" /><param name="pielabelfont" value="宋体,plain,11" /><param name="endangle" value="270" /><param name="serieslabels" value="数据库告警" /><param name="legendfont" value="宋体,plain,11" /><param name="serieslabels_0" value="数据库告警" /><param name="rangelabelson" value="true" /><param name="valuelabelstyle" value="outside" /><param name="rangeaxislabelfont" value="宋体,plain,11" /><param name="insidelabelfont" value="宋体,plain,11" /><param name="autolabelspacingon" value="true" /><param name="outsidelabelfont" value="宋体,plain,11" /><param name="samplevalues_0" value="=[D4,D5,D6,D7]" /><param name="baroutlineoff" value="true" /><param name="sampledecimalcount" value="0" /><param name="background" value="255,255,255" /><param name="chart" value="pie" /></chart>]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="8,5" type="1" >
+						<property name="value"><![CDATA[<chart><param name="seriescount" value="1" /><param name="colorstyle" value="报警等级配色" /><param name="legendon" value="true" /><param name="3ddepth" value="18" /><param name="titlefont" value="宋体,plain,14" /><param name="valuelineson" value="true" /><param name="webtarget_0" value="_blank" /><param name="pielabelson" value="true" /><param name="samplelabels" value="提示,普通,严重,紧急" /><param name="rangedecimalcount" value="auto" /><param name="pointinglabelfont" value="宋体,plain,11" /><param name="valuelabelfont" value="宋体,plain,11" /><param name="percentlabelstyle" value="inside" /><param name="sampleaxislabelfont" value="宋体,plain,11" /><param name="percentdecimalcount" value="0" /><param name="rangelabelfont" value="宋体,plain,11" /><param name="percentlabelson" value="true" /><param name="startangle" value="90" /><param name="3dmodeon" value="true" /><param name="serieslabelson" value="false" /><param name="pielabelfont" value="宋体,plain,11" /><param name="endangle" value="270" /><param name="serieslabels" value="中间件告警" /><param name="legendfont" value="宋体,plain,11" /><param name="serieslabels_0" value="中间件告警" /><param name="rangelabelson" value="true" /><param name="valuelabelstyle" value="outside" /><param name="rangeaxislabelfont" value="宋体,plain,11" /><param name="insidelabelfont" value="宋体,plain,11" /><param name="autolabelspacingon" value="true" /><param name="outsidelabelfont" value="宋体,plain,11" /><param name="samplevalues_0" value="=[E4,E5,E6,E7]" /><param name="baroutlineoff" value="true" /><param name="sampledecimalcount" value="0" /><param name="background" value="255,255,255" /><param name="chart" value="pie" /></chart>]]></property>
+						<property name="font-size">11</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+				</cells>
+			</grid>
+		</sheet>
+	</body>
+	<param-form col="2">
+		<ctrl ver="new" id="starttime" type="1" label="开始时间">
+		</ctrl>
+		<ctrl ver="new" id="endtime" type="1" label="">
+		</ctrl>
+	</param-form>
+</report>

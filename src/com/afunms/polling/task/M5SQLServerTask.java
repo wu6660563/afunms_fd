@@ -1,0 +1,214 @@
+/*
+ * Created on 2010-06-24
+ *
+ */
+package com.afunms.polling.task;
+
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Vector;
+
+import org.apache.commons.beanutils.BeanUtils;
+
+import com.afunms.application.dao.DBDao;
+import com.afunms.application.dao.DBTypeDao;
+import com.afunms.application.model.DBTypeVo;
+import com.afunms.application.model.DBVo;
+import com.afunms.common.util.SysLogger;
+import com.afunms.indicators.dao.NodeGatherIndicatorsDao;
+import com.afunms.indicators.model.NodeGatherIndicators;
+import com.afunms.polling.PollingEngine;
+import com.afunms.polling.impl.HostCollectDataManager;
+import com.afunms.polling.node.Host;
+import com.afunms.polling.om.Task;
+import com.afunms.polling.snmp.cpu.BDComCpuSnmp;
+import com.afunms.polling.snmp.cpu.CiscoCpuSnmp;
+import com.afunms.polling.snmp.cpu.DLinkCpuSnmp;
+import com.afunms.polling.snmp.cpu.EnterasysCpuSnmp;
+import com.afunms.polling.snmp.cpu.H3CCpuSnmp;
+import com.afunms.polling.snmp.cpu.LinuxCpuSnmp;
+import com.afunms.polling.snmp.cpu.MaipuCpuSnmp;
+import com.afunms.polling.snmp.cpu.NortelCpuSnmp;
+import com.afunms.polling.snmp.cpu.RadwareCpuSnmp;
+import com.afunms.polling.snmp.cpu.RedGiantCpuSnmp;
+import com.afunms.polling.snmp.cpu.WindowsCpuSnmp;
+import com.afunms.polling.snmp.db.DB2DataCollector;
+import com.afunms.polling.snmp.db.InformixDataCollector;
+import com.afunms.polling.snmp.db.OracleDataCollector;
+import com.afunms.polling.snmp.db.SQLServerDataCollector;
+import com.afunms.polling.snmp.db.SybaseDataCollector;
+import com.afunms.polling.snmp.device.LinuxDeviceSnmp;
+import com.afunms.polling.snmp.device.WindowsDeviceSnmp;
+import com.afunms.polling.snmp.disk.LinuxDiskSnmp;
+import com.afunms.polling.snmp.disk.WindowsDiskSnmp;
+import com.afunms.polling.snmp.fan.CiscoFanSnmp;
+import com.afunms.polling.snmp.fan.H3CFanSnmp;
+import com.afunms.polling.snmp.flash.BDComFlashSnmp;
+import com.afunms.polling.snmp.flash.CiscoFlashSnmp;
+import com.afunms.polling.snmp.flash.H3CFlashSnmp;
+import com.afunms.polling.snmp.interfaces.ArpSnmp;
+import com.afunms.polling.snmp.interfaces.FdbSnmp;
+import com.afunms.polling.snmp.interfaces.InterfaceSnmp;
+import com.afunms.polling.snmp.interfaces.PackageSnmp;
+import com.afunms.polling.snmp.interfaces.RouterSnmp;
+import com.afunms.polling.snmp.memory.BDComMemorySnmp;
+import com.afunms.polling.snmp.memory.CiscoMemorySnmp;
+import com.afunms.polling.snmp.memory.DLinkMemorySnmp;
+import com.afunms.polling.snmp.memory.EnterasysMemorySnmp;
+import com.afunms.polling.snmp.memory.H3CMemorySnmp;
+import com.afunms.polling.snmp.memory.LinuxPhysicalMemorySnmp;
+import com.afunms.polling.snmp.memory.MaipuMemorySnmp;
+import com.afunms.polling.snmp.memory.NortelMemorySnmp;
+import com.afunms.polling.snmp.memory.RedGiantMemorySnmp;
+import com.afunms.polling.snmp.memory.WindowsPhysicalMemorySnmp;
+import com.afunms.polling.snmp.memory.WindowsVirtualMemorySnmp;
+import com.afunms.polling.snmp.ping.PingSnmp;
+import com.afunms.polling.snmp.power.CiscoPowerSnmp;
+import com.afunms.polling.snmp.power.H3CPowerSnmp;
+import com.afunms.polling.snmp.process.LinuxProcessSnmp;
+import com.afunms.polling.snmp.process.WindowsProcessSnmp;
+import com.afunms.polling.snmp.service.WindowsServiceSnmp;
+import com.afunms.polling.snmp.software.LinuxSoftwareSnmp;
+import com.afunms.polling.snmp.software.WindowsSoftwareSnmp;
+import com.afunms.polling.snmp.storage.LinuxStorageSnmp;
+import com.afunms.polling.snmp.storage.WindowsStorageSnmp;
+import com.afunms.polling.snmp.system.SystemSnmp;
+import com.afunms.polling.snmp.temperature.BDComTemperatureSnmp;
+import com.afunms.polling.snmp.temperature.CiscoTemperatureSnmp;
+import com.afunms.polling.snmp.temperature.H3CTemperatureSnmp;
+import com.afunms.polling.snmp.voltage.CiscoVoltageSnmp;
+import com.afunms.polling.snmp.voltage.H3CVoltageSnmp;
+
+
+public class M5SQLServerTask extends MonitorTask {
+	
+	public void run() {
+		SysLogger.info("#### 开始执行SQLServer的5分钟采集任务 ####");
+		try{
+			NodeGatherIndicatorsDao indicatorsdao = new NodeGatherIndicatorsDao();
+	    	List<NodeGatherIndicators> monitorItemList = new ArrayList<NodeGatherIndicators>(); 	
+	    	Hashtable<String,Hashtable<String,NodeGatherIndicators>> sqlserverHash = new Hashtable<String,Hashtable<String,NodeGatherIndicators>>();//存放需要监视的DB2指标  <dbid:Hashtable<name:NodeGatherIndicators>>
+
+	    	Hashtable dbhash = new Hashtable();
+			DBDao dbdao = null;
+			try{	
+				DBTypeVo db2typevo = null;
+				DBTypeDao typedao = null;
+				try {
+					typedao = new DBTypeDao();
+					db2typevo = (DBTypeVo) typedao.findByDbtype("sqlserver");
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					if (typedao != null)
+						typedao.close();
+				}
+				List db2list = new ArrayList();
+				try {
+					dbdao = new DBDao();
+					db2list = dbdao.getDbByTypeMonFlag(db2typevo.getId(), 1);
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					if (dbdao != null)
+						dbdao.close();
+				}
+				//取得db2采集
+				if (db2list != null) {
+					for (int i = 0; i < db2list.size(); i++) {
+						DBVo dbmonitorlist = (DBVo)db2list.get(i);
+						dbhash.put(dbmonitorlist.getId()+"", dbmonitorlist);
+					}
+				}
+			}catch(Exception e){
+				
+			}
+	    	try{
+	    		//获取被启用的DB2所有被监视指标
+	    		monitorItemList = indicatorsdao.getByInterval("5", "m",1,"db","sqlserver");
+	    	}catch(Exception e){
+	    		e.printStackTrace();
+	    	}finally{
+	    		indicatorsdao.close();
+	    	}
+	    	if(monitorItemList == null)monitorItemList = new ArrayList<NodeGatherIndicators>();
+	    	for(int i=0;i<monitorItemList.size();i++){
+	    		NodeGatherIndicators nodeGatherIndicators = (NodeGatherIndicators)monitorItemList.get(i);
+	    		//判断该数据库是否被监视
+	    		if(!dbhash.containsKey(nodeGatherIndicators.getNodeid()))continue;
+	    		//SQLSERVER数据库
+    			if(sqlserverHash.containsKey(nodeGatherIndicators.getNodeid())){
+    				//若dbid已经存在,则获取原来的,再把新的添加进去
+    				Hashtable gatherHash = (Hashtable)sqlserverHash.get(nodeGatherIndicators.getNodeid());
+    				gatherHash.put(nodeGatherIndicators.getName(), nodeGatherIndicators);
+    				sqlserverHash.put(nodeGatherIndicators.getNodeid(), gatherHash);
+    			}else{
+    				//若dbid不存在,则把新的添加进去
+    				Hashtable gatherHash = new Hashtable();
+    				gatherHash.put(nodeGatherIndicators.getName(), nodeGatherIndicators);
+    				sqlserverHash.put(nodeGatherIndicators.getNodeid(), gatherHash);
+    			}
+	    	}
+        		int numThreads = 200;        		
+        		try {
+        			List numList = new ArrayList();
+        			TaskXml taskxml = new TaskXml();
+        			numList = taskxml.ListXml();
+        			for (int k = 0; k < numList.size(); k++) {
+        				Task task = new Task();
+        				BeanUtils.copyProperties(task, numList.get(k));
+        				if (task.getTaskname().equals("netthreadnum")){
+        					numThreads = task.getPolltime().intValue();
+        				}
+        			}
+
+        		} catch (Exception e) {
+        			e.printStackTrace();
+        		}
+        		
+        		//生成SQLSERVER采集线程
+        		if(sqlserverHash != null && sqlserverHash.size()>0){
+        			// 生成线程池
+            		ThreadPool dbthreadPool = new ThreadPool(sqlserverHash.size());
+        			//存在需要采集的SQLSERVER指标
+        			for(Enumeration enumeration = sqlserverHash.keys(); enumeration.hasMoreElements();){
+						String dbid = (String)enumeration.nextElement();
+						Hashtable<String,NodeGatherIndicators> gatherHash = (Hashtable<String,NodeGatherIndicators>)sqlserverHash.get(dbid);
+						dbthreadPool.runTask(createSQLServerTask(dbid,gatherHash));
+					}
+        			// 关闭线程池并等待所有任务完成
+            		dbthreadPool.join();
+            		dbthreadPool.close();
+            		dbthreadPool = null;
+        		}
+	    								
+		}catch(Exception e){					 	
+			e.printStackTrace();
+		}finally{
+			SysLogger.info("#### M5SQLSERVERTask Thread Count : "+Thread.activeCount()+" ####");
+		}
+	}
+	
+	/**
+    创建SQLSERVER采集任务
+	 */	
+	private static Runnable createSQLServerTask(final String dbid,final Hashtable gatherHash) {
+    return new Runnable() {
+        public void run() {
+            try {                	
+//            	HostCollectDataManager hostdataManager=new HostCollectDataManager(); 
+            	SQLServerDataCollector sqlservercollector = new SQLServerDataCollector();
+            	SysLogger.info("##############################");
+            	SysLogger.info("### 开始采集ID为"+dbid+"的SQLSERVER数据 ");
+            	SysLogger.info("##############################");
+//            	sqlservercollector.collect_data(dbid, gatherHash);
+            }catch(Exception exc){
+            	
+            }
+        }
+    };
+	}
+	
+}

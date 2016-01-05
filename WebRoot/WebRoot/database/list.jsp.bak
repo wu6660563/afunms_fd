@@ -1,0 +1,165 @@
+<%@page language="java" contentType="text/html;charset=GB2312"%>
+<%@page import="com.afunms.system.model.User"%>
+<%@page import="com.afunms.common.base.JspPage"%>
+<%@page import="java.util.List"%>
+<%@page import="com.afunms.system.util.UserView"%>
+<%@ include file="/include/globe.inc"%>
+<%
+  String rootPath = request.getContextPath();
+  List list = (List)request.getAttribute("list");
+  JspPage jp = (JspPage)request.getAttribute("page");
+  
+  UserView view = new UserView();
+%>
+<html>
+<head>
+<LINK href="<%=rootPath%>/resource/css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script> 
+<meta http-equiv="Page-Enter" content="revealTrans(duration=x, transition=y)">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="<%=rootPath%>/resource/css/itsm_style.css" type="text/css" rel="stylesheet">
+<link href="<%=rootPath%>/resource/css/detail.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
+<link href="<%=rootPath%>/include/mainstyle.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/javascript">
+  var listAction = "<%=rootPath%>/user.do?action=list";
+  var delAction = "<%=rootPath%>/user.do?action=delete";
+  var curpage= <%=jp.getCurrentPage()%>;
+  var totalpages = <%=jp.getPageTotal()%>;
+
+  function toAdd()
+  {
+     mainForm.action = "<%=rootPath%>/user.do?action=ready_add";
+     mainForm.submit();
+  }
+</script>
+</head>
+<BODY leftmargin="0" topmargin="0" bgcolor="#9FB0C4">
+<form method="post" name="mainForm">
+<table border="0" id="table1" cellpadding="0" cellspacing="0" width=100%>
+	<tr>
+		<td width="200" valign=top align=center>
+			<table width="90%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none w align=center border=1 algin="center">
+                        <tbody>                     										                        								
+                    		<tr algin="left" valign="center">                      														
+                      			<td height="28" align="left" bordercolor="#397DBD" bgcolor="#397DBD" class="txtGlobalBold">&nbsp;数据库管理</td>
+                    		</tr>
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<a href="<%=rootPath%>/snmp.do?action=list" ><img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;S数据库类型管理</a></td>
+                    		</tr> 
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<a href="<%=rootPath%>/producer.do?action=list&jp=1" ><img src="<%=rootPath%>/resource/image/manageDev.gif" border=0>&nbsp;数据库监视</a></td>
+                    		</tr>                    		                   		                   										                 										                      								
+            		</tbody>
+            		</table>  
+            		<br>
+			<table width="90%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none w align=center border=1 algin="center">
+                        <tbody>                     										                        								
+                    		<tr algin="left" valign="center">                      														
+                      			<td height="28" align="left" bordercolor="#397DBD" bgcolor="#397DBD" class="txtGlobalBold">&nbsp;服务管理</td>
+                    		</tr>
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/peo.gif" border=0 width=20>&nbsp;<a href="<%=rootPath%>/user.do?action=list&jp=1">WEB访问监视</a></td>
+                    		</tr> 
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;<a href="<%=rootPath%>/role.do?action=list&jp=1">FTP服务监视</td>
+                    		</tr>
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;<a href="<%=rootPath%>/dept.do?action=list&jp=1">EMail服务监视</td>
+                    		</tr> 
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;<a href="<%=rootPath%>/position.do?action=list&jp=1">职位</td>
+                    		</tr>                     		                    		                     		
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/manageDev.gif" border=0>&nbsp;<a href="<%=rootPath%>/admin.do?action=list&jp=1">权限设置</td>
+                    		</tr> 
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/manageDev.gif" border=0>&nbsp;<a href="<%=rootPath%>/network.do?action=list">修改密码</td>
+                    		</tr>                     		                   										                 										                      								
+            		</tbody>
+            		</table> 
+            		<br>
+			<table width="90%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none w align=center border=1 algin="center">
+                        <tbody>                     										                        								
+                    		<tr algin="left" valign="center">                      														
+                      			<td height="28" align="left" bordercolor="#397DBD" bgcolor="#397DBD" class="txtGlobalBold">&nbsp;系统配置</td>
+                    		</tr>
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/editicon.gif" border=0>&nbsp;<a href="<%=rootPath%>/network.do?action=monitornodelist">业务分类</td>
+                    		</tr> 
+                    		<tr align="left" valign="center"> 
+                    			<td height="28" align="left">&nbsp;<img src="<%=rootPath%>/resource/image/manageDev.gif" border=0>&nbsp;<a href="<%=rootPath%>/network.do?action=list">操作日志</td>
+                    		</tr>                    		                   										                 										                      								
+            		</tbody>
+            		</table>             		           				
+		
+		
+		</td>
+		<td bgcolor="#ffffff" align="center" valign=top>
+			<table width="100%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none align=center border=1 algin="center">
+				<tr>
+					<td height="28" align="left" bordercolor="#397DBD" bgcolor="#397DBD" class="txtGlobalBold" colspan=3>&nbsp;&nbsp;系统管理 >> 用户管理 >> 用户列表</td>
+				</tr>
+			<tr>
+				<td height=300 bgcolor="#FFFFFF" valign="top">
+	<table cellSpacing="1" cellPadding="0" width="100%" border="0">
+    <tr><td colspan="2" width="80%" align="center">
+    <jsp:include page="../../common/page.jsp">
+     <jsp:param name="curpage" value="<%=jp.getCurrentPage()%>"/>
+     <jsp:param name="pagetotal" value="<%=jp.getPageTotal()%>"/>
+   </jsp:include>
+        </td></tr> 
+		<tr >
+			<td colspan="2">
+				<table class="microsoftLook" cellspacing="1" cellpadding="0" width="100%">
+					<tr height=28>
+						<th width='5%'><INPUT type="checkbox" class=noborder name="checkall" onclick="javascript:chkall()"></th>
+    						<th width='5%'>序号</th>
+    						<th width='15%'>帐号</th>
+    						<th width='15%'>姓名</th>
+    						<th width='10%'>性别</th>    
+    						<th width="15%">部门</th>
+    						<th width='15%'>职务</th>
+    						<th width='10%'>角色</th>    
+    						<th width='10%'>编辑</th>
+					</tr>
+<%
+    String sex = "";
+    User vo = null;
+    int startRow = jp.getStartRow();
+    for(int i=0;i<list.size();i++)
+    {
+       vo = (User)list.get(i);
+       if(vo.getSex()==1) sex="男";
+       else sex="女";
+%>
+<tr bgcolor="DEEBF7" <%=onmouseoverstyle%> class="microsoftLook" height=25> 
+    	<td><INPUT type="checkbox" class=noborder name=checkbox value="<%=vo.getId()%>"></td>
+    	<td ><font color='blue'><%=startRow + i%></font></td>    	 	
+    	<a href="<%=rootPath%>/user.do?action=read&id=<%=vo.getId()%>">
+    	<td  style="cursor:hand" align='center'><%=vo.getUserid()%></td></a>
+    	<td  ><%=vo.getName()%></td>
+    	<td ><%=sex%></td>
+    	<td ><%=view.getDept(vo.getDept())%></td>
+    	<td ><%=view.getPosition(vo.getPosition())%></td>
+    	<td ><%=view.getRole(vo.getRole())%></td>
+		<td ><a href="<%=rootPath%>/user.do?action=ready_edit&id=<%=vo.getId()%>"><img src="<%=rootPath%>/resource/image/editicon.gif" border="0"/></a></td>
+  	</tr>
+<%
+    }
+%> 				
+			</table>
+			</td>
+		</tr>	
+	</table>
+	<table cellspacing="5" border="0" >
+	    <tr>
+			<td><a href="#" onclick="toAdd()">添加</a></td>
+			<td><a href="#" onclick="toDelete()">删除</a></td>
+		</tr>
+	 </table>
+</td>
+			</tr>
+		</table>
+</BODY>
+</HTML>

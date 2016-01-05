@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report-locations>
+    <report-location>
+        <id>1</id>
+        <descr>银川运营部</descr>
+        <default>true</default>
+    </report-location>
+    <report-location>
+        <id>2</id>
+        <descr>银北运营部</descr>
+        <default>false</default>
+    </report-location>
+    <report-location>
+        <id>3</id>
+        <descr>宁东运营部</descr>
+        <default>false</default>
+    </report-location>
+    <report-location>
+        <id>4</id>
+        <descr>石嘴山</descr>
+        <default>false</default>
+    </report-location>
+    <report-location>
+        <id>5</id>
+        <descr>银川太阳城</descr>
+        <default>false</default>
+    </report-location>
+</report-locations>

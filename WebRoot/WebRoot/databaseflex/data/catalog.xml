@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+   <product productId="4">
+      <name>afunms</name>
+      <description />
+      <price>4</price>
+      <image>../resource/databaseflex/image/topo/oracle.gif</image>
+      <isManage>已监视</isManage>
+      <series>afunms数据库</series>
+      <mysql />
+      <oracle>true</oracle>
+      <sqlserver />
+      <sybase />
+      <db2 />
+      <informix />
+      <highlight1>IP 10.10.152.61</highlight1>
+      <highlight2 />
+      <qty />
+      <ip>10.10.152.61</ip>
+      <showmessage />
+   </product>
+</catalog>
+

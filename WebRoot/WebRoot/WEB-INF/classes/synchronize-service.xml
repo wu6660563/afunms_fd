@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    该配置文件定义数据同步服务：
+    buffer（发送服务缓冲线程）：
+        各个所需要发送的 prameter 都将放置在缓冲区中，由缓冲线程进行发送
+    maintain（维护服务线程）：
+        用于维护各个发送服务，如果发送服务被关闭，则启动维护线程定时进行重连。
+    receive 代表接收服务，send 代表发送服务，data 代表数据接收处理，都必须包含以下字段：
+    name（名称）：
+        各个服务的名称
+    enable （是否启用）：
+        true 或者 false
+    class （类名）：
+        receive继承自 com.afunms.synchronize.service.BaseReceiveService 超类，实现 start方法。
+        send 继承自 com.afunms.synchronize.service.BaseSendService 超类，实现 Send 方法。
+        receive 可以自行写执行线程。
+    properties （配置属性及参数）：
+        该参数在使用时将其 Element 名称作为 properties 名称 ，
+        Element Text 作为值出入 BaseReceiveService 及 BaseSendService 的 properties 中。
+ -->
+<root>
+    <buffer>
+        <name>缓冲区发送线程</name>
+    </buffer>
+    <maintain>
+        <name>MaintainRunnable</name>
+        <properties>
+            <name>维护线程</name>
+            <intervalTime>300000</intervalTime>
+        </properties>
+    </maintain>
+    <receive>
+        <service>
+            <name>SocketReceiveService</name>
+            <enable>false</enable>
+            <class>com.afunms.synchronize.service.SocketReceiveSerivce</class>
+            <properties>
+                <name>Socket 接收服务</name>
+                <port>9987</port>
+            </properties>
+        </service>
+        <service>
+            <name>FileReceiveService</name>
+            <enable>false</enable>
+            <class>com.afunms.synchronize.service.FileReceiveService</class>
+            <properties>
+                <name>File 接收服务</name>
+                <intervalTime>60000</intervalTime>
+                <filePath>receive_file/</filePath>
+            </properties>
+        </service>
+    </receive>
+    <send>
+        <enable>true</enable>
+        <threadPool>
+                <properties>
+                    <name>数据发送</name>
+                    <max-threads>20</max-threads>
+                    <max-spare-threads>10</max-spare-threads>
+                    <min-spare-threads>5</min-spare-threads>
+                </properties>
+            </threadPool>
+        <service>
+            <name>SocketSendService</name>
+            <enable>false</enable>
+            <class>com.afunms.synchronize.service.SocketSendService</class>
+            <properties>
+                <name>Socket 发送服务</name>
+                <host>127.0.0.1</host>
+                <port>9987</port>
+            </properties>
+        </service>
+        <service>
+            <name>FileSendService</name>
+            <enable>false</enable>
+            <class>com.afunms.synchronize.service.FileSendService</class>
+            <properties>
+                <name>File 发送服务</name>
+				<path>serializable_file</path>
+            </properties>
+        </service>
+    </send>
+    <data>
+        <service>
+            <enable>false</enable>
+            <threadPool>
+                <properties>
+                    <name>数据处理</name>
+                    <max-threads>20</max-threads>
+                    <max-spare-threads>10</max-spare-threads>
+                    <min-spare-threads>5</min-spare-threads>
+                </properties>
+            </threadPool>
+        </service>
+        <action>
+            <name>IndicatorValueAction</name>
+            <enable>true</enable>
+            <class>com.afunms.synchronize.service.IndicatorValueAction</class>
+        </action>
+        <action>
+            <name>NodeAction</name>
+            <enable>true</enable>
+            <class>com.afunms.synchronize.service.NodeAction</class>
+        </action>
+        <action>
+            <name>DBAttributeAction</name>
+            <enable>true</enable>
+            <class>com.afunms.synchronize.service.DBAttributeAction</class>
+        </action>
+    </data>
+</root>

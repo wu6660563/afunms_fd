@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+   <series>
+      <value xid="0" />
+   </series>
+   <graphs>
+      <graph gid="0">
+         <value xid="0">0</value>
+      </graph>
+      <graph gid="1">
+         <value xid="0">0</value>
+      </graph>
+      <graph gid="2">
+         <value xid="0">0</value>
+      </graph>
+      <graph gid="3">
+         <value xid="0">0</value>
+      </graph>
+   </graphs>
+</chart>
+

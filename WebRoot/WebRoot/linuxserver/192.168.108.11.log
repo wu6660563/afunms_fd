@@ -1,0 +1,237 @@
+cmdbegin:disk
+Filesystem          1024-blocks        Used   Available Capacity  Mounted on
+cluster_root#root       1048576      450955      588320    44%    /
+root1_domain#root        131072       35694       90016    29%    /cluster/members/member1/boot_partition
+cluster_usr#usr         1048576      995240       35400    97%    /usr
+df8003a_dmn#df8003a     6291456     4775968     1496992    77%    /ems/member1
+cluster_var#var         3963384      976470     2983672    25%    /var
+df8003b_dmn#df8003b     5242880     2958778     2249416    57%    /ems/member2
+rdbm_dmn#rdbm          49767408     9132341    40600568    19%    /rdbm
+root2_domain#root        131072       35693       90016    29%    /cluster/members/member2/boot_partition
+/proc                         0           0           0   100%    /proc
+cmdbegin:proc
+USER        PID %CPU %MEM   VSZ  RSS TTY      S    STARTED         TIME COMMAND
+root     888136  1.8  0.2 17.0M  15M ??       R    16:55:01     0:00.12 ps aux
+root     888139  0.6  0.0 2.23M 224K ??       S    16:55:00     0:00.02 sh -c /df8003/home/nms/collection.sh >/dev/null
+root     888140  0.5  0.0 2.23M 240K ??       S    16:55:00     0:00.01 /df8003/home/nms/collection.sh
+root     524288  0.4  3.7 10.2G 301M ??       R <    Aug 10    11:57:57 [kernel idle]
+orasrv   797279  0.0  0.2 1.19G  16M ??       S      Sep 06     0:03.57 oracleorcl1 (DESCRIPTION=(LOCAL=no)(ADDRESS=(PROTOCOL=BEQ)))
+orasrv   797166  0.0  0.2 1.19G  14M ??       I      Sep 06     0:00.38 ora_reco_orcl1
+orasrv   797169  0.0  0.1 1.19G 8.6M ??       S      Sep 06     0:00.78 ora_bsp0_orcl1
+orasrv   797162  0.0  1.9 1.19G 158M ??       S      Sep 06     0:18.73 ora_lck0_orcl1
+orasrv   797160  0.0  0.1 1.19G 5.1M ??       S      Sep 06     0:00.37 ora_lgwr_orcl1
+orasrv   797159  0.0  2.2 1.19G 179M ??       I      Sep 06     0:55.13 ora_smon_orcl1
+orasrv   797157  0.0  0.3 1.19G  22M ??       S      Sep 06     0:00.42 ora_dbw0_orcl1
+orasrv   797151  0.0  2.1 1.20G 170M ??       S      Sep 06    01:25:40 ora_lmd0_orcl1
+orasrv   797161  0.0  1.2 1.19G  96M ??       S      Sep 06     5:02.18 ora_ckpt_orcl1
+orasrv   797145  0.0  1.3 1.19G 110M ??       S      Sep 06     5:02.75 ora_lmon_orcl1
+orasrv   797138  0.0  0.0 12.2M 3.0M ??       I      Sep 06     0:04.57 /rdbm/orasrv/app/product/8.1.7/bin/tnslsnr LISTENER -inherit
+root     526360  0.0  0.0    0K   0K ??       U      Aug 10     0:35.66 [icssvr_daemon_pe]
+root     525958  0.0  0.0  472K 136K console  I  +   Aug 10     0:00.03 /usr/sbin/getty console console vt100
+root     525953  0.0  0.2 27.1M  18M ??       S      Aug 10     0:46.01 /usr/sbin/smsd -d
+root     525896  0.0  0.0 1.80M 136K ??       I      Aug 10     0:00.00 /usr/sbin/rdginit
+root     525893  0.0  0.0 2.73M 480K ??       S      Aug 10     0:01.10 /usr/sbin/clu_mibs
+root     525892  0.0  0.0 2.27M 168K ??       I      Aug 10     0:00.00 /usr/sbin/clu_wall -d
+root     525843  0.0  0.0 8.68M 3.9M ??       S      Aug 10     0:02.63 /usr/opt/java118/bin/../bin/alpha/native_threads/java -mx2m authentication/server/AuthenticationServer
+root     525794  0.0  0.0 4.60M 304K ??       I      Aug 10     1:12.49 /usr/dt/bin/dtlogin -daemon
+root     525771  0.0  0.0 3.95M 504K ??       S      Aug 10     0:10.61 sendmail: accept -bd -q15m -om 2
+orasrv   797143  0.0  0.1 1.19G 5.8M ??       S      Sep 06     0:00.15 ora_pmon_orcl1
+root     525721  0.0  0.0 3.81M 1.2M ??       I      Aug 10     0:00.10 /usr/bin/X11/xfs -port 7100
+root     525672  0.0  0.2 24.3M  19M ??       S N    Aug 10     0:21.52 /usr/opt/compaq/svctools/common/jre/bin/../bin/alpha/native_threads/java -classic -noverify -DSvctools.Home=/usr/opt/compaq/svctools -DSwcc.Home=/var/adm -Xmx340m com.compaq.svctools.desta.core.DESTAController
+root     525620  0.0  0.0 2.80M 568K ??       S N    Aug 10     0:00.13 /usr/opt/compaq/svctools/common/share/WCCProxy
+root     525351  0.0  0.0 1.76M 144K ??       I      Aug 10     0:00.01 /usr/sbin/utxd
+root     525271  0.0  0.0 2.70M 296K ??       I      Aug 10     0:00.01 /usr/lbin/lpd
+root     525227  0.0  0.0 2.50M 320K ??       I      Aug 10     0:00.03 volnotify -p -f -w 15
+root     525226  0.0  0.0 1.30M 184K ??       I      Aug 10     0:00.01 /usr/sbin/volwatch -m
+root     525187  0.0  0.0 2.50M 320K ??       I      Aug 10     0:00.02 /usr/sbin/volnotify -eicfd
+root     525162  0.0  0.0 3.98M 384K ??       S      Aug 10     0:08.90 /usr/sbin/cron
+root     525152  0.0  0.0 1.95M 192K ??       I      Aug 10     0:00.97 -child (inetd)
+root     525150  0.0  0.0 1.86M 128K ??       I      Aug 10     0:00.00 /usr/sbin/inetd
+root     525140  0.0  0.0 3.64M 728K ??       S      Aug 10     0:04.28 /usr/sbin/sysman_hmmod
+root     525133  0.0  0.0 3.64M 728K ??       S      Aug 10     0:05.96 /usr/sbin/config_hmmod
+root     525115  0.0  0.0 7.97M 3.9M ??       S      Aug 10     0:02.53 /usr/sbin/insightd
+root     525105  0.0  0.0 2.59M 192K ??       S      Aug 10     0:00.06 /usr/sbin/cpqthresh_mib
+root     525078  0.0  0.0 4.25M 768K ??       S      Aug 10     0:01.18 /usr/sbin/gated -f /etc/gated.conf.member1
+root     524986  0.0  0.0 3.20M 1.2M ??       S      Aug 10     0:01.89 /usr/sbin/cpq_mibs
+root     524983  0.0  0.0 3.58M 208K ??       S      Aug 10     0:00.53 /usr/sbin/os_mibs
+root     524982  0.0  0.0 3.24M 336K ??       I <    Aug 10     0:00.02 /usr/sbin/pmgrd
+root     524980  0.0  0.0 2.66M 232K ??       I      Aug 10     0:00.02 /usr/sbin/svrSystem_mib
+root     524978  0.0  0.0 2.59M 176K ??       S      Aug 10     0:00.05 /usr/sbin/svrMgt_mib
+root     524968  0.0  0.0 2.23M 184K ??       S      Aug 10     0:00.12 /usr/sbin/snmpd
+root     524936  0.0  0.0 2.89M 408K ??       S <    Aug 10     0:01.92 /usr/sbin/xntpd -g -c /etc/ntp.conf
+root     525708  0.0  0.0 3.02M 656K ??       S N    Aug 10     0:06.66 /usr/opt/compaq/svctools/common/share/CAAgents -s 19 -p 1187 -1 -g
+root     524864  0.0  0.0 1.80M 104K ??       I      Aug 10     0:00.01 /usr/sbin/nfsiod 7
+root     524858  0.0  0.0 2.55M 352K ??       I      Aug 10     0:00.01 /usr/sbin/rpc.statd -c
+root     524835  0.0  0.0 17.5M 2.8M ??       S      Aug 10    16:53.14 /usr/sbin/caad -0
+root     524834  0.0  0.0    0K   0K ??       U      Aug 10     0:00.00 [icssvr_daemon_pe]
+root     524832  0.0  0.0 2.48M 288K ??       I      Aug 10     0:00.37 /usr/sbin/portmap
+root     524824  0.0  0.0 2.39M 304K ??       I      Aug 10     0:00.02 aliasd_niff
+root     524822  0.0  0.0 2.43M 168K ??       I      Aug 10     0:00.01 aliasd
+root     524816  0.0  0.0    0K   0K ??       U      Aug 10     0:01.58 [icssvr_daemon_pe]
+root     524761  0.0  0.0 3.42M 336K ??       I      Aug 10     0:03.27 /usr/sbin/binlogd
+root     524757  0.0  0.0 2.41M 248K ??       I      Aug 10     0:00.72 /usr/sbin/syslogd -e
+root     524712  0.0  0.0 2.30M 192K ??       I      Aug 10     0:02.35 /usr/sbin/niffd
+root     524588  0.0  0.0 2.33M 328K ??       I      Aug 10     0:00.60 /usr/sbin/evmchmgr -l /var/evm/adm/logfiles/evmchmgr.log
+root     524587  0.0  0.0 2.39M 376K ??       I      Aug 10     0:01.90 /usr/sbin/evmlogger -o /var/run/evmlogger.info -l /var/evm/adm/logfiles/evmlogger.log
+root     524542  0.0  0.0 3.28M 984K ??       I      Aug 10     0:16.97 /usr/sbin/evmd
+root     524428  0.0  0.0 1.74M 112K ??       S      Aug 10     4:39.43 /sbin/update
+root     524418  0.0  0.0 2.60M 544K ??       S      Aug 10     0:00.06 /sbin/hotswapd -f
+root     524417  0.0  0.0 1.80M 1.4M ??       I      Aug 10     0:02.54 /sbin/kloadsrv -f
+root     524373  0.0  0.0 6.80M 3.7M ??       S      Aug 10     0:01.95 /sbin/vold -k
+root     524316  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_pe]
+root     524315  0.0  0.0    0K   0K ??       U      Jan 01     0:00.03 [icssvr_daemon_fr]
+root     524314  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524313  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524312  0.0  0.0    0K   0K ??       U      Jan 01     0:03.28 [icssvr_daemon_fr]
+root     524311  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524310  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_pe]
+root     524309  0.0  0.0    0K   0K ??       U      Jan 01    12:30.41 [icssvr_daemon_pe]
+root     524308  0.0  0.0    0K   0K ??       U      Jan 01     0:03.49 [icssvr_daemon_fr]
+root     524307  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524306  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_pe]
+root     524305  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_pe]
+root     524304  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_pe]
+root     524303  0.0  0.0    0K   0K ??       U      Jan 01     0:00.02 [icssvr_daemon_pe]
+root     524302  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [CFS daemon]
+root     524301  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524300  0.0  0.0    0K   0K ??       U      Jan 01     0:00.01 [icssvr_daemon_fr]
+root     524299  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524298  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524297  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524296  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icscli_throttle_]
+root     524295  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_nanny]
+root     524294  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524293  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_daemon_fr]
+root     524292  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_throttle_]
+root     524291  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [icssvr_nomem_dae]
+root     524290  0.0  0.0    0K   0K ??       U      Jan 01     0:00.00 [kproc_creator_da]
+root     524289  0.0  0.0  488K  96K ??       IL     Aug 10     0:24.02 /sbin/init -a
+root     524861  0.0  0.0 2.66M 352K ??       I      Aug 10     0:00.02 /usr/sbin/rpc.lockd -c
+cmdbegin:vmstat
+Virtual Memory Statistics: (pagesize = 8192)
+  procs      memory        pages                            intr       cpu
+  r   w   u  act free wire fault  cow zero react  pin pout  in  sy  cs us sy id
+  5 236 141 161K 816K  48K  246M  10M 215M     0   8M    0 921  1K  2K  0  1 99
+cmdbegin:vm -P
+
+Total Physical Memory =  8192.00 M
+                      =  1048576 pages
+
+Physical Memory Clusters:
+
+start_pfn     end_pfn        type  size_pages / size_bytes
+         0         256         pal         256 /    2.00M
+       256      130985          os      130729 / 1021.32M
+    130985      131072         pal          87 /  696.00k
+    131072     1048562          os      917490 / 7167.89M
+   1048562     1048576         pal          14 /  112.00k
+
+Physical Memory Use:
+
+ start_pfn     end_pfn        type  size_pages / size_bytes
+       256         288    scavenge          32 /  256.00k
+       288        1203        text         915 /    7.15M
+      1203        1430        data         227 /    1.77M
+      1430        1895         bss         465 /    3.63M
+      1895        2147      kdebug         252 /    1.97M
+      2147        2154     cfgmgmt           7 /   56.00k
+      2154        2156       locks           2 /   16.00k
+      2156        2170        pmap          14 /  112.00k
+      2170        4970   unixtable        2800 /   21.88M
+      4970        4976        logs           6 /   48.00k
+      4976       21537    vmtables       16561 /  129.38M
+     21537     1048562     managed     1027025 / 8023.63M
+                             ============================
+         Total Physical Memory Use:    1048306 / 8189.89M
+
+Managed Pages Break Down:
+
+       free pages = 816232
+     active pages = 139460
+   inactive pages = 0
+      wired pages = 48924
+        ubc pages = 22353
+        ==================
+            Total = 1026969
+
+WIRED Pages Break Down:
+
+   vm wired pages = 7806
+  ubc wired pages = 0
+  meta data pages = 31391
+     malloc pages = 6405
+     contig pages = 675
+    user ptepages = 1255
+  kernel ptepages = 1056
+    free ptepages = 5
+        ==================
+            Total = 48593
+
+cmdbegin:uname
+OSF1 eshis-a
+cmdbegin:date
+Fri Sep 13 16:55:01 CST 2013
+cmdbegin:uptime
+16:55  up 33 days, 20:39,  0 users,  load average: 0.01, 0.01, 0.00
+cmdbegin:ifconfig
+alt0: flags=c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX>
+     NetRAIN Virtual Interface: nr0 
+     NetRAIN Attached Interfaces: ( alt1 alt0 ) Active Interface: ( alt1 )
+
+alt1: flags=c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX>
+     NetRAIN Virtual Interface: nr0 
+     NetRAIN Attached Interfaces: ( alt1 alt0 ) Active Interface: ( alt1 )
+
+lo0: flags=100c89<UP,LOOPBACK,NOARP,MULTICAST,SIMPLEX,NOCHECKSUM>
+     inet 127.0.0.1 netmask ff000000 ipmtu 4096 
+
+mc0: flags=1100063<UP,BROADCAST,NOTRAILERS,RUNNING,NOCHECKSUM,CLUIF>
+     inet 10.1.1.1 netmask ffffff00 broadcast 10.1.1.255 ipmtu 7000 
+
+nr0: flags=c63<UP,BROADCAST,NOTRAILERS,RUNNING,MULTICAST,SIMPLEX>
+     NetRAIN Attached Interfaces: ( alt1 alt0 ) Active Interface: ( alt1 )
+     inet 192.168.108.11 netmask ffffff00 broadcast 192.168.108.255 ipmtu 1500 
+
+sl0: flags=10<POINTOPOINT>
+
+tun0: flags=80<NOARP>
+
+cmdbegin:netstat
+Name  Mtu   Network        Address               Ipkts Ierrs    Opkts Oerrs  Coll
+alt0  1500  <Link>         0:60:cf:21:30:9b   714487239     0        3     0     0
+alt0  1500  DLI            none               714487239     0        3     0     0
+alt1  1500  <Link>         2:60:cf:21:16:e5   717842620     0  8820008     0     0
+alt1  1500  DLI            none               717842620     0  8820008     0     0
+lo0   4096  <Link>         Link#4               126262     0   126262     0     0
+lo0   4096  127/8          127.0.0.1            126262     0   126262     0     0
+mc0   7000  <Link>         mc0:42.0.0.0.0.1   314787124     0 314330439     0     0
+mc0   7000  10.1.1/24      10.1.1.1           314787124     0 314330439     0     0
+nr0   1500  <Link>         2:60:cf:21:16:e5   1432329859     0  8820011     0     0
+nr0   1500  DLI            none               1432329859     0  8820011     0     0
+nr0   1500  192.168.108/24 192.168.108.11     1432329859     0  8820011     0     0
+sl0*  296   <Link>         Link#3                    0     0        0     0     0
+tun0* 1280  <Link>         Link#5                    0     0        0     0     0
+cmdbegin:end
+cmdbegin:memoryend
+root:NitBjR6TT0PNw:0:1:system PRIVILEGED account:/:/bin/sh
+nobody:*Nologin:65534:65534:anonymous NFS user:/:
+nobodyV:*Nologin:60001:60001:anonymous SystemV.4 NFS user:/:
+daemon:*:1:1:system background account:/:
+bin:*:3:4:system librarian account:/bin:
+uucp:Nologin:4:2:UNIX-to-UNIX Copy:/usr/spool/uucppublic:/usr/lib/uucp/uucico
+uucpa:Nologin:4:2:uucp adminstrative account:/usr/lib/uucp:
+auth:*:6:11:Authentication Subsystem:/tcb/bin:
+cron:*:7:14:Cron Subsystem:/usr/adm/cron:
+lp:*:8:12:Line Printer Subsystem:/users/lp:
+tcb:*:9:18:Trusted Computing Base:/tcb:
+adm:*:10:19:Administration Subsystem:/usr/adm:
+ris:Nologin:11:21:Remote Installation Services Account:/usr/adm/ris:/bin/sh
+wnn:Nologin:12:1:Wnn Japanese Input Method System Account:/tmp:/bin/sh
+pop:*:13:6:POP Mail Service Account:/:
+imap:*:14:6:IMAP Mail Service Account:/:
+orasrv:2YNFservJfJAY:15:200:orasrv:/rdbm/orasrv:/bin/ksh
+ems:vB.3ItIfq4tuk:115:15:ems:/df8003/home:/bin/ksh
+oracle:ZUc4ln0crvKwc:116:200:oracle:/usr/local/oracle:/bin/ksh
+cvs:AGxGfOg.IJbxQ:117:15:cvs:/disk7/cvs:/usr/bin/ksh
+lcy:.LqqjpBkj83e2:118:15:lcy:/usr/local/lcy:/bin/ksh
+cmdbegin:user

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<snmp-traps>
+    <snmp-trap>
+        <enable>false</enable>
+        <port>162</port>
+        <class-name>com.afunms.polling.snmp.trap.SNMPTrapHandlerImpl</class-name>
+        <description>SNMP TRAPS</description>
+    </snmp-trap>
+    <snmp-trap>
+        <enable>false</enable>
+        <port>9876</port>
+        <class-name>com.afunms.polling.snmp.trap.IManagerSNMPTrapHandler</class-name>
+        <description>华为北向接口 SNMP TRAPS</description>
+    </snmp-trap>
+</snmp-traps> 

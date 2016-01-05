@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report version="3.0">
+	<head>
+		<property name="type">0</property>
+		<name><![CDATA[nodeAlarmPerDay]]></name>
+		<dataSets>
+			<dataSet name="ds" type="DB_SQL" >
+				<property name="dataSource">dhcc_newafunms</property>
+				<property name="desc"><![CDATA[]]></property>
+				<property name="query"><![CDATA[="select subtype,date_format(recordtime,'%Y-%m-%d') as recordtime,count(1) as cnt from system_eventlist where 
+to_days(recordtime) >= to_days(?) 
+and to_days(recordtime) <= to_days(?) and(" + @query + ") 
+group by subtype,date_format(recordtime,'%Y-%mm-%dd');" ]]></property>
+				<property name="beginRow">0</property>
+				<property name="endRow">0</property>
+				<queryParam name="starttime" />
+				<queryParam name="endtime" />
+			</dataSet>
+		</dataSets>
+		<parameters>
+			<parameter name="starttime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">开始时间</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="endtime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc"></property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="query" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">查询条件</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+		</parameters>
+		<variables/>
+		<subReports/>
+	</head>
+	<body>
+		<sheet id="sheet1">
+			<page>
+			</page>
+			<grid row="4" col="5">
+				<properties>
+				</properties>
+				<rows>
+					<row id="1">
+						<property name="type">1</property>
+						<property name="height">100</property>
+					</row>
+					<row id="2">
+						<property name="type">1</property>
+						<property name="height">100</property>
+					</row>
+					<row id="3">
+						<property name="type">2</property>
+						<property name="height">60</property>
+					</row>
+					<row id="4">
+						<property name="height">35</property>
+					</row>
+				</rows>
+				<columns>
+					<column id="1">
+						<property name="width">133</property>
+					</column>
+					<column id="2">
+						<property name="width">100</property>
+					</column>
+					<column id="3">
+						<property name="width">100</property>
+					</column>
+					<column id="4">
+						<property name="width">100</property>
+					</column>
+					<column id="5">
+						<property name="width">100</property>
+					</column>
+				</columns>
+				<cells>
+					<cell id="1,1" type="0" colspan="5" >
+						<property name="value"><![CDATA[=@starttime + 至 + @endtime]]></property>
+						<property name="font-size">12</property>
+						<property name="align">2</property>
+						<property name="valign">2</property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+					</cell>
+					<cell id="2,1" type="0" colspan="5" >
+						<property name="value"><![CDATA[每日告警数统计报表]]></property>
+						<property name="font-size">18</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=179,227,247]]></property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,1" type="2" >
+						<property name="value"><![CDATA[日期,类别]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,2" type="0" >
+						<property name="value"><![CDATA[网络告警]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,3" type="0" >
+						<property name="value"><![CDATA[服务器告警]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,4" type="0" >
+						<property name="value"><![CDATA[数据库告警]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,5" type="0" >
+						<property name="value"><![CDATA[中间件告警]]></property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,1" type="0" >
+						<property name="value"><![CDATA[=ds.group(recordtime)]]></property>
+						<property name="ext-direction">3</property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,2" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='net'),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,3" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='host'),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,4" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='db'),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,5" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,subtype='middleware'),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+				</cells>
+			</grid>
+		</sheet>
+	</body>
+	<param-form col="2">
+		<ctrl ver="new" id="starttime" type="1" label="开始时间">
+		</ctrl>
+		<ctrl ver="new" id="endtime" type="1" label="">
+		</ctrl>
+		<ctrl ver="new" id="query" type="1" label="查询条件">
+		</ctrl>
+	</param-form>
+</report>

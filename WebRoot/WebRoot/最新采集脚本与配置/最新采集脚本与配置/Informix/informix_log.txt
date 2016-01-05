@@ -1,0 +1,134 @@
+informix@:/informix> onstat -p
+
+Informix Dynamic Server Version 9.40.FC1     -- On-Line -- Up 125 days 21:35:05s
+
+Profile
+dskreads pagreads bufreads %cached dskwrits pagwrits bufwrits %cached
+50817459 51177895 5173863718 99.02   751250   1570509  26084486 97.12
+
+isamtot  open     start    read     write    rewrite  delete   commit   rollbk
+1049938798 54918589 98081371 583360287 5303867  1298499  3746232  195689   123
+
+gp_read  gp_write gp_rewrt gp_del   gp_alloc gp_free  gp_curs
+0        0        0        0        0        0        0
+
+ovlock   ovuserthread ovbuff   usercpu  syscpu   numckpts flushes
+1        0            0        45427.55 133098.28 21671    72730
+
+bufwaits lokwaits lockreqs deadlks  dltouts  ckpwaits compress seqscans
+940199   36       23516257033 0        0        179      397098   38511736
+
+ixda-RA  idx-RA   da-RA    RA-pgsused lchwaits
+1113346  22825    48405592 49527300   103
+
+
+informix@:/informix> onstat -
+
+Informix Dynamic Server Version 9.40.FC1     -- On-Line -- Up 125 days 21:43:23s
+
+ 
+
+informix@:/informix> onstat -g rea
+
+Informix Dynamic Server Version 9.40.FC1     -- On-Line -- Up 125 days 21:44:19s
+
+Ready threads:
+ tid     tcb             rstcb            prty status                vp-class  e
+
+
+informix@:/informix> onstat -g wai
+
+Informix Dynamic Server Version 9.40.FC1     -- On-Line -- Up 125 days 21:52:56s
+
+Waiting threads:
+ tid     tcb             rstcb            prty status                vp-class  e
+ 2       50489c28         0                2    sleeping forever        3lio   0
+ 3       504a91f8         0                2    sleeping forever        4pio   0
+ 4       504c91f8         0                2    sleeping forever        5aio   0
+ 5       504e91f8         0                2    sleeping forever        6msc   0
+ 6       505211f8         0                2    sleeping forever        7aio   1
+ 7       50541418         5031a028         4    sleeping secs: 1        1cpu   )
+ 9       50521c60         0                3    sleeping forever        1cpu   t
+ 10      504a9748         5031a848         2    sleeping forever        1cpu   )
+ 11      504c9be0         0                4    sleeping forever        1cpu   o
+ 12      50722028         0                2    sleeping forever        8aio   2
+ 13      50722330         0                2    sleeping forever        9aio   3
+ 14      507501f8         0                2    sleeping forever       10aio   4
+ 15      507701f8         0                2    sleeping forever       11aio   5
+ 16      507901f8         0                2    sleeping forever       12aio   6
+ 17      507b01f8         0                2    sleeping forever       13aio   7
+ 18      507b0500         0                2    sleeping forever       14aio   8
+ 19      507b0808         0                2    sleeping forever       15aio   9
+ 20      507b0b10         0                2    sleeping forever       16aio   0
+ 21      50722638         0                2    sleeping forever       17aio   1
+ 22      7004d1f8         0                2    sleeping forever       18aio   2
+ 23      7006d1f8         0                2    sleeping forever       19aio   3
+ 24      7008d1f8         0                2    sleeping forever       20aio   4
+ 25      700ad1f8         0                2    sleeping forever       21aio   5
+ 26      700cd1f8         0                2    sleeping forever       22aio   6
+ 27      700cd500         0                2    sleeping forever       23aio   7
+ 28      700cd808         0                2    sleeping forever       24aio   8
+ 29      700cdb10         0                2    sleeping forever       25aio   9
+ 30      70161638         5031b068         3    sleeping forever        1cpu   h
+ 31      50722858         5031b888         1    sleeping secs: 141      1cpu   0
+ 47      7008dd38         5031d0e8         4    sleeping secs: 1        1cpu   n
+ 1502614 7000000304e1028  50354688         2    cond wait  netnorm      1cpu   c
+ 1502615 700000000377028  a0720848         2    cond wait  netnorm      1cpu   c
+ 1502616 c0670bd8         a0735d88         2    cond wait  netnorm      1cpu   c
+ 1502617 c0751558         5034f548         2    cond wait  netnorm      1cpu   c
+ 1502618 7000000402b2230  a0751448         2    cond wait  netnorm      1cpu   c
+ 1502619 700000020427880  503283a8         2    cond wait  netnorm      1cpu   c
+ 1502620 7000000302b9028  50343a68         2    cond wait  netnorm      1cpu   c
+ 1502621 7000000205f2028  a07324a8         2    cond wait  netnorm      1cpu   c
+ 1502622 700000020613bd8  50342a28         2    cond wait  netnorm      1cpu   c
+ 1502623 70000006018aac8  7000000206ceb08  2    cond wait  netnorm      1cpu   c
+ 1502624 700000020563578  a073bf08         2    cond wait  netnorm      1cpu   c
+ 1502625 7000000205d5248  a075b6c8         2    cond wait  netnorm      1cpu   c
+ 1502626 700000020639ac8  a07430c8         2    cond wait  netnorm      1cpu   c
+ 1502627 70000002064a9b8  a073b6e8         2    cond wait  netnorm      1cpu   c
+ 1502628 700000030287028  a074f3c8         2    cond wait  netnorm      1cpu   c
+ 1502629 70000002053f710  7000000002863c8  2    cond wait  netnorm      1cpu   c
+ 1502630 700000020668798  700000000267428  2    cond wait  netnorm      1cpu   c
+ 1502631 700000030243028  7000000206e0768  2    cond wait  netnorm      1cpu   c
+ 1502632 70000003024b028  700000000285ba8  2    cond wait  netnorm      1cpu   c
+
+informix@:/informix> onstat -F
+
+Informix Dynamic Server Version 9.40.FC1     -- On-Line -- Up 125 days 21:55:59s
+
+
+Fg Writes     LRU Writes    Chunk Writes
+0             0             478603
+
+address           flusher  state    data
+5031a848         0        I        0        = 0X0
+      states: Exit Idle Chunk Lru
+
+
+informix@:/informix> onstat -d
+
+Informix Dynamic Server Version 9.40.FC1     -- On-Line -- Up 125 days 21:58:29s
+
+Dbspaces
+address          number   flags      fchunk   nchunks  flags    owner    name
+5017fe58         1        0x20001    1        7        N        informix rootdbs
+5035b848         2        0x20001    2        3        N        informix datadbs
+ 2 active, 2047 maximum
+
+Chunks
+address          chunk/dbs  offset     size       free       bpages     flags pe
+50180028         1     1    0          7500       2205                  PO--  /t
+501808f8         2     2    0          471859     394486                PO--  /0
+50180a90         3     2    0          471859     471856                PO--  /1
+50180c28         4     1    0          458750     376                   PO--  /v
+50180dc0         5     1    0          131072     9                     PO--  /1
+5035b050         6     1    0          327680     101                   PO--  /v
+5035b1e8         7     1    0          512000     97                    PO--  /1
+5035b380         8     1    0          512000     80951                 PO--  /2
+5035b518         9     1    0          256000     247354                PO--  /3
+5035b6b0         10    2    0          262144     259701                PO--  /k
+ 10 active, 2047 maximum
+
+Expanded chunk capacity mode: disabled
+
+

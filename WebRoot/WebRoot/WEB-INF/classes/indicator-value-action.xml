@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indicator-value-action>
+    <threadPool>
+        <name>采集数据处理服务线程池</name>
+        <max-threads>50</max-threads>
+        <max-spare-threads>10</max-spare-threads>
+        <min-spare-threads>5</min-spare-threads>
+    </threadPool>
+</indicator-value-action>
+

@@ -1,0 +1,479 @@
+cmdbegin:version
+Linux version 2.6.18-194.el5 (mockbuild@ia64-001.build.bos.redhat.com) (gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)) #1 SMP Tue Mar 16 21:57:01 EDT 2010
+cmdbegin:cpuconfig
+processor  : 0
+cpu MHz    : 1403.000000
+processor  : 1
+cpu MHz    : 1403.000000
+processor  : 2
+cpu MHz    : 1403.000000
+processor  : 3
+cpu MHz    : 1403.000000
+processor  : 4
+cpu MHz    : 1403.000000
+processor  : 5
+cpu MHz    : 1403.000000
+processor  : 6
+cpu MHz    : 1403.000000
+processor  : 7
+cpu MHz    : 1403.000000
+cmdbegin:disk
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda4             20314748    862720  18403452   5% /
+/dev/sda5            169378632  50852544 109783180  32% /df8003
+/dev/sda2             60944380   9476560  48322092  17% /usr
+/dev/sda1               511696      9144    502552   2% /boot/efi
+tmpfs                 16655408         0  16655408   0% /dev/shm
+cmdbegin:diskperf
+Linux 2.6.18-194.el5 (dsdms-a) 	09/13/13 	_ia64_	(8 CPU)
+
+17:00:01          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+17:00:02       dev8-0      4.00      0.00    151.85     38.00      0.03     13.75      6.50      2.60
+
+17:00:02          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+17:00:03       dev8-0    109.89      0.00  46002.00    418.62     38.30    285.33      5.00     54.95
+
+17:00:03          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+17:00:04       dev8-0     14.99      0.00   9046.95    603.73      0.39    489.60      3.80      5.69
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:       dev8-0     42.96      0.00  18400.27    428.34     12.91    300.66      4.91     21.08
+cmdbegin:cpu
+Linux 2.6.18-194.el5 (dsdms-a) 	09/13/13 	_ia64_	(8 CPU)
+
+17:00:04        CPU     %user     %nice   %system   %iowait    %steal     %idle
+17:00:05        all      0.14      1.09      0.36      0.00      0.00     98.41
+17:00:06        all      0.12      0.36      0.53      2.05      0.00     96.94
+17:00:07        all      0.09      1.00      0.29      2.01      0.00     96.62
+Average:        all      0.12      0.82      0.39      1.35      0.00     97.32
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:      33310816   26554976    6755840          0    1546720   22834096
+-/+ buffers/cache:    2174160   31136656
+Swap:     33554400        320   33554080
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4512  1728 ?        Ss   Apr17   0:29 init [5]                                                                                 
+root         2  0.0  0.0      0     0 ?        S<   Apr17   0:00 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN   Apr17   0:53 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/0]
+root         5  0.0  0.0      0     0 ?        S<   Apr17   0:00 [migration/1]
+root         6  0.0  0.0      0     0 ?        SN   Apr17   0:13 [ksoftirqd/1]
+root         7  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/1]
+root         8  0.0  0.0      0     0 ?        S<   Apr17   0:00 [migration/2]
+root         9  0.0  0.0      0     0 ?        SN   Apr17   5:21 [ksoftirqd/2]
+root        10  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/2]
+root        11  0.0  0.0      0     0 ?        S<   Apr17   0:00 [migration/3]
+root        12  0.0  0.0      0     0 ?        SN   Apr17   0:03 [ksoftirqd/3]
+root        13  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/3]
+root        14  0.0  0.0      0     0 ?        S<   Apr17   0:00 [migration/4]
+root        15  0.0  0.0      0     0 ?        SN   Apr17   9:00 [ksoftirqd/4]
+root        16  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/4]
+root        17  0.0  0.0      0     0 ?        S<   Apr17   0:01 [migration/5]
+root        18  0.0  0.0      0     0 ?        SN   Apr17   1:38 [ksoftirqd/5]
+root        19  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/5]
+root        20  0.0  0.0      0     0 ?        S<   Apr17   0:00 [migration/6]
+root        21  0.0  0.0      0     0 ?        SN   Apr17   5:27 [ksoftirqd/6]
+root        22  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/6]
+root        23  0.0  0.0      0     0 ?        S<   Apr17   0:01 [migration/7]
+root        24  0.0  0.0      0     0 ?        SN   Apr17   0:06 [ksoftirqd/7]
+root        25  0.0  0.0      0     0 ?        S<   Apr17   0:00 [watchdog/7]
+root        26  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/0]
+root        27  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/1]
+root        28  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/2]
+root        29  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/3]
+root        30  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/4]
+root        31  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/5]
+root        32  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/6]
+root        33  0.0  0.0      0     0 ?        S<   Apr17   0:00 [events/7]
+root        34  0.0  0.0      0     0 ?        S<   Apr17   0:00 [khelper]
+root        67  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kthread]
+root        78  0.0  0.0      0     0 ?        S<   Apr17   0:01 [kblockd/0]
+root        79  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kblockd/1]
+root        80  0.0  0.0      0     0 ?        S<   Apr17   0:14 [kblockd/2]
+root        81  0.0  0.0      0     0 ?        S<   Apr17   0:09 [kblockd/3]
+root        82  0.0  0.0      0     0 ?        S<   Apr17   0:14 [kblockd/4]
+root        83  0.0  0.0      0     0 ?        S<   Apr17   0:01 [kblockd/5]
+root        84  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kblockd/6]
+root        85  0.0  0.0      0     0 ?        S<   Apr17   0:02 [kblockd/7]
+root        86  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kacpid]
+root       213  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/0]
+root       214  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/1]
+root       215  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/2]
+root       216  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/3]
+root       217  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/4]
+root       218  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/5]
+root       219  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/6]
+root       220  0.0  0.0      0     0 ?        S<   Apr17   0:00 [cqueue/7]
+root       223  0.0  0.0      0     0 ?        S<   Apr17   0:05 [khubd]
+root       225  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kseriod]
+root       323  0.0  0.0      0     0 ?        S    Apr17   0:00 [khungtaskd]
+root       326  0.0  0.0      0     0 ?        S<   Apr17   2:35 [kswapd0]
+root       327  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/0]
+root       328  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/1]
+root       329  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/2]
+root       330  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/3]
+root       331  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/4]
+root       332  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/5]
+root       333  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/6]
+root       334  0.0  0.0      0     0 ?        S<   Apr17   0:00 [aio/7]
+root       500  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kpsmoused]
+root       638  0.0  0.0      0     0 ?        S<   Apr17   0:00 [mpt_poll_0]
+root       639  0.0  0.0      0     0 ?        S<   Apr17   0:00 [mpt/0]
+root       640  0.0  0.0      0     0 ?        S<   Apr17   0:00 [scsi_eh_0]
+root       659  0.0  0.0      0     0 ?        S<   Apr17   0:00 [fc_sc_wq]
+root       660  0.0  0.0      0     0 ?        S<   Apr17   0:09 [lpfc_worker_0]
+root       661  0.0  0.0      0     0 ?        S<   Apr17   0:00 [scsi_eh_1]
+root       662  0.0  0.0      0     0 ?        S<   Apr17   0:00 [scsi_wq_1]
+root       663  0.0  0.0      0     0 ?        S<   Apr17   0:00 [fc_wq_1]
+root       664  0.0  0.0      0     0 ?        S<   Apr17   0:00 [fc_dl_1]
+root       665  0.0  0.0      0     0 ?        S<   Apr17   0:09 [lpfc_worker_1]
+root       666  0.0  0.0      0     0 ?        S<   Apr17   0:00 [scsi_eh_2]
+root       667  0.0  0.0      0     0 ?        S<   Apr17   0:00 [scsi_wq_2]
+root       668  0.0  0.0      0     0 ?        S<   Apr17   0:00 [fc_wq_2]
+root       669  0.0  0.0      0     0 ?        S<   Apr17   0:00 [fc_dl_2]
+root       679  0.0  0.0      0     0 ?        S<   Apr17   0:00 [scsi_eh_3]
+root       680  0.0  0.0      0     0 ?        S<   Apr17  16:30 [usb-storage]
+root       700  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kstriped]
+root       737  0.0  0.0      0     0 ?        S<   Apr17  11:54 [kjournald]
+root       762  0.0  0.0      0     0 ?        S<   Apr17   0:01 [kauditd]
+root       795  0.0  0.0   5600  2016 ?        S<s  Apr17   0:00 /sbin/udevd -d
+root      1276  0.0  0.0  20400  7312 ?        Ss   Aug29   0:00 sshd: ems [priv] 
+ems       1278  0.0  0.0  20400  4800 ?        S    Aug29   0:00 sshd: ems@pts/3  
+ems       1279  0.0  0.0  63584  3920 pts/3    Ss   Aug29   0:00 -bash
+ems       1384  0.0  0.0  15792  6848 pts/3    S+   Aug29   0:00 ssh dsdms-b
+root      2085  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/0]
+root      2086  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/1]
+root      2087  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/2]
+root      2088  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/3]
+root      2089  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/4]
+root      2090  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/5]
+root      2091  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/6]
+root      2092  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpathd/7]
+root      2093  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kmpath_handlerd]
+root      2170  0.0  0.0      0     0 ?        S<   Apr17  72:54 [kjournald]
+root      2172  0.0  0.0      0     0 ?        S<   Apr17   0:14 [kjournald]
+root      2491  0.0  0.0      0     0 ?        S<   Apr17   0:00 [bond0]
+root      2627  0.0  0.0  82272  2128 ?        S<sl Apr17   0:13 auditd
+root      2629  0.0  0.0  80480  1792 ?        S<sl Apr17   0:06 /sbin/audispd
+root      2651  0.0  0.0   4608  1584 ?        Ss   Apr17   0:10 syslogd -m 0
+root      2654  0.0  0.0   4432  1152 ?        Ss   Apr17   0:02 klogd -x
+root      2729  0.0  0.0      0     0 ?        S<   Apr17   0:09 [kondemand/0]
+root      2730  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kondemand/1]
+root      2731  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kondemand/2]
+root      2732  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kondemand/3]
+root      2733  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kondemand/4]
+root      2734  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kondemand/5]
+root      2735  0.0  0.0      0     0 ?        S<   Apr17   0:00 [kondemand/6]
+root      2736  0.0  0.0      0     0 ?        S<   Apr17   0:02 [kondemand/7]
+root      2749  0.0  0.0   6016  1152 ?        Ss   Apr17  11:35 irqbalance
+root      2750  0.0  0.0  20400  7312 ?        Ss   Aug27   0:00 sshd: ems [priv] 
+ems       2752  0.0  0.0  20400  4864 ?        S    Aug27   0:00 sshd: ems@pts/2  
+ems       2753  0.0  0.0  63584  3920 pts/2    Ss   Aug27   0:00 -bash
+rpc       2760  0.0  0.0   4800  1424 ?        Ss   Apr17   0:00 portmap
+root      2793  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/0]
+root      2794  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/1]
+root      2795  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/2]
+root      2796  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/3]
+root      2797  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/4]
+root      2798  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/5]
+root      2799  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/6]
+root      2800  0.0  0.0      0     0 ?        S<   Apr17   0:00 [rpciod/7]
+root      2813  0.0  0.0   4976  1904 ?        Ss   Apr17   0:00 rpc.statd
+root      2837  0.0  0.0  14272  2160 ?        Ss   Apr17   0:00 rpc.idmapd
+dbus      2852  0.0  0.0   7136  2736 ?        Ss   Apr17  10:10 dbus-daemon --system
+ems       2858  0.0  0.0  15792  6848 pts/2    S+   Aug27   0:00 ssh dsint-a
+root      2868  0.0  0.0   5536  1936 ?        Ss   Apr17   0:00 /usr/sbin/hcid
+root      2872  0.0  0.0   4592  1296 ?        Ss   Apr17   0:00 /usr/sbin/sdpd
+root      2917  0.0  0.0      0     0 ?        S<   Apr17   0:00 [krfcommd]
+root      2953  0.0  0.0  35792  2752 ?        Ssl  Apr17   0:40 pcscd
+root      2963  0.0  0.0   4352  1376 ?        Ss   Apr17   0:00 /usr/sbin/acpid
+68        2972  0.0  0.0  11424  7200 ?        Ss   Apr17   3:21 hald
+root      2973  0.0  0.0   6944  2880 ?        S    Apr17   0:00 hald-runner
+68        2981  0.0  0.0   4480  2032 ?        S    Apr17   0:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+68        2983  0.0  0.0   4480  2064 ?        S    Apr17   0:00 hald-addon-keyboard: listening on /dev/input/event3
+68        2987  0.0  0.0   4480  2064 ?        S    Apr17   0:00 hald-addon-keyboard: listening on /dev/input/event2
+68        2994  0.0  0.0   4480  2032 ?        S    Apr17   0:00 hald-addon-keyboard: listening on /dev/input/event0
+root      3013  0.0  0.0   4256  1664 ?        S    Apr17  10:13 hald-addon-storage: polling /dev/scd0
+root      3039  0.0  0.0   5472  1216 ?        Ss   Apr17   0:00 /usr/bin/hidd --server
+root      3066  0.0  0.0 123104  3680 ?        Ssl  Apr17   2:24 automount
+root      3083  0.0  0.0  11248  2128 ?        Ss   Apr17   0:00 ./hpiod
+root      3088  0.0  0.0  82976 10448 ?        S    Apr17   0:00 python ./hpssd.py
+root      3101  0.0  0.0  16512  3328 ?        Ss   Apr17   0:00 /usr/sbin/sshd
+root      3110  0.0  0.0  76752  6576 ?        Ss   Apr17   0:00 cupsd
+root      3124  0.0  0.0   7392  2304 ?        Ss   Apr17   0:00 xinetd -stayalive -pidfile /var/run/xinetd.pid
+ntp       3136  0.0  0.0  10096  9728 ?        SLs  Apr17   0:00 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+root      3155  0.0  0.0  20608  4880 ?        Ss   Apr17   0:04 sendmail: accepting connections
+smmsp     3164  0.0  0.0  18208  3872 ?        Ss   Apr17   0:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      3174  0.0  0.0   4512  1232 ?        Ss   Apr17   0:00 gpm -m /dev/input/mice -t exps2
+root      3183  0.0  0.0  64176  2384 ?        Ss   Apr17   0:00 crond
+xfs       3216  0.0  0.0   8544  3568 ?        Ss   Apr17   0:00 xfs -droppriv -daemon
+root      3241  0.0  0.0   6048  1376 ?        Ss   Apr17   0:00 /usr/sbin/atd
+root      3253  0.0  0.0   3296   560 ?        S    Apr17   0:00 salinfo_decode_all
+root      3254  0.0  0.0   4240  1424 ?        S    Apr17   0:00 salinfo_decode -t cmc -D /var/log/salinfo -i 90 -s 90 -l 10
+root      3255  0.0  0.0   3504  1328 ?        S    Apr17   0:00 salinfo_decode -t cpe -D /var/log/salinfo -i 90 -s 90 -l 10
+root      3256  0.0  0.0   3504  1328 ?        S    Apr17   0:00 salinfo_decode -t init -D /var/log/salinfo -i 90 -s 90 -l 16
+root      3257  0.0  0.0   3504  1328 ?        S    Apr17   0:00 salinfo_decode -t mca -D /var/log/salinfo -i 90 -s 90 -l 4
+avahi     3291  0.0  0.0   6128  3200 ?        Ss   Apr17   0:01 avahi-daemon: running [dsdms-a.local]
+avahi     3292  0.0  0.0   5984  1392 ?        Ss   Apr17   0:00 avahi-daemon: chroot helper
+root      3353  0.0  0.0   8800  1312 ?        S    Apr17   0:00 /usr/sbin/smartd -q never
+root      3358  0.0  0.0   3520  1232 tty1     Ss+  Apr17   0:00 /sbin/mingetty tty1
+root      3359  0.0  0.0   3520  1232 tty2     Ss+  Apr17   0:00 /sbin/mingetty tty2
+root      3360  0.0  0.0   3520  1232 tty3     Ss+  Apr17   0:00 /sbin/mingetty tty3
+root      3361  0.0  0.0   3520  1232 tty4     Ss+  Apr17   0:00 /sbin/mingetty tty4
+root      3362  0.0  0.0   3520  1232 tty5     Ss+  Apr17   0:00 /sbin/mingetty tty5
+root      3364  0.0  0.0   3520  1232 tty6     Ss+  Apr17   0:00 /sbin/mingetty tty6
+root      3366  0.0  0.0  88544  8752 ?        Ss   Apr17   0:00 /usr/sbin/gdm-binary -nodaemon
+root      3468  0.0  0.0  90336  8368 ?        S    Apr17   0:00 /usr/sbin/gdm-binary -nodaemon
+root      3470  0.0  0.0 102192 11984 ?        Sl   Apr17   0:00 /usr/libexec/gdm-rh-security-token-helper
+root      3471  0.0  0.0  37392 22528 tty7     Ss+  Apr17  22:10 /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+root      3484  0.0  0.0 112624 25328 ?        SN   Apr17   0:07 /usr/bin/python -tt /usr/sbin/yum-updatesd
+root      3486  0.0  0.0   5472  2928 ?        SN   Apr17   0:00 /usr/libexec/gam_server
+root      3848  0.0  0.0  20400  7312 ?        Ss   Sep12   0:00 sshd: ems [priv] 
+ems       3850  0.0  0.0  20400  4800 ?        S    Sep12   0:00 sshd: ems@pts/7  
+ems       3851  0.0  0.0  63584  3920 pts/7    Ss   Sep12   0:00 -bash
+ems       3943  0.0  0.0  15792  6848 pts/7    S+   Sep12   0:00 ssh dsrt-a
+root      4404  0.0  0.0  20400  7312 ?        Ss   Aug13   0:00 sshd: ems [priv] 
+ems       4406  0.2  0.0  21424  6960 ?        S    Aug13  97:48 sshd: ems@pts/10 
+ems       4407  0.0  0.0  63920  4112 pts/10   Ss+  Aug13   0:00 -bash
+root      4821  0.4  0.0  95760  8128 ?        SN   Aug13 218:21 /df8003/bin/applogd
+root      4822  0.5  0.0  94128  7440 ?        S    Aug13 240:00 /df8003/bin/netmd
+root      4823  0.0  0.0  98816 12112 ?        SN   Aug13   0:00 /df8003/bin/dbmd
+root      4824  0.3  0.0 114064 22832 ?        S    Aug13 163:49 /df8003/bin/sysmd
+root      4897  0.0  0.0 165632 15744 ?        SN   Aug13   0:25 /df8003/bin/procmd
+root      4898  0.0  0.0 165072 15152 ?        SN   Aug13   0:00 proc_watchd
+root      4899  0.2  0.0 166528 16336 ?        SN   Aug13 110:03 netmond -s 3600
+ems       4900  0.0  0.0 156592 23216 ?        SN   Aug13  20:24 almd_server_rep
+ems       4901  0.0  0.1 1639984 42752 ?       SN   Aug13  21:32 alm_replica -mode r
+ems       4905  0.0  0.1 378800 39760 ?        SN   Aug13  20:30 comServer
+ems       4913  0.0  0.0  94528 14304 ?        SN   Aug13   0:11 grsd
+root      4914  0.0  0.5 1734592 177968 ?      SN   Aug13   0:08 ssrd
+ems       5371  3.1  2.7 5651600 921504 ?      SN   Sep12  54:19 pasNasEngine -mode r
+root      5624  0.0  0.0  20400  7312 ?        Ss   Aug08   0:00 sshd: ems [priv] 
+ems       5626  0.0  0.0  20400  4800 ?        S    Aug08   1:36 sshd: ems@pts/9  
+ems       5627  0.0  0.0  63584  3920 pts/9    Ss+  Aug08   0:00 -bash
+root      5893  0.0  0.0  20400  7312 ?        Ss   Sep05   0:00 sshd: ems [priv] 
+ems       5895  0.0  0.0  20400  5744 ?        S    Sep05   0:04 sshd: ems@pts/11 
+ems       5896  0.0  0.0  63920  4112 pts/11   Ss+  Sep05   0:00 -bash
+ems       6959  1.2  1.4 1618544 481856 ?      SN   Aug13 536:20 SCADA_Rep -mode r
+root      9041  0.0  0.0  20400  7312 ?        Ss   Sep10   0:00 sshd: ems [priv] 
+ems       9043  0.3  0.0  21504  6832 ?        S    Sep10  16:33 sshd: ems@pts/1  
+ems       9044  0.0  0.0  63584  3920 pts/1    Ss   Sep10   0:00 -bash
+ems       9135  1.5  2.4 5684064 802784 pts/1  SNl+ Sep10  69:37 qtmmi
+ems      10383  0.0  0.0   5008  2704 ?        S    Apr19   0:02 top
+root     12308  0.0  0.0  68208  7232 ?        S    May23   0:00 /usr/libexec/gconfd-2 11
+root     12313  0.0  0.0   7136  2320 ?        Ss   May23   0:00 /bin/dbus-daemon --fork --print-pid 11 --print-address 13 --session
+root     12315  0.0  0.0  79744  9792 ?        S    May23   0:00 /usr/libexec/gnome-vfs-daemon
+root     14033  0.0  0.0  12304  1680 ?        Ss   May23   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
+ems      14114  0.0  0.0 105888 19248 ?        Ss   May23   0:00 /usr/bin/gnome-session
+ems      14150  0.0  0.0      0     0 ?        Z    May23   0:00 [Xsession] <defunct>
+ems      14157  0.0  0.0  15200  2064 ?        Ss   May23   0:00 /usr/bin/ssh-agent /bin/sh -c exec -l /bin/bash -c "/usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients"
+root     14158  0.0  0.0  20400  7312 ?        Ss   Aug20   0:00 sshd: ems [priv] 
+ems      14160  0.2  0.0  20400  5952 ?        S    Aug20  94:04 sshd: ems@pts/5  
+ems      14161  0.0  0.0  63920  4112 pts/5    Ss+  Aug20   0:00 -bash
+ems      14250  0.0  0.0   5968  1760 ?        S    May23   0:00 /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients
+ems      14251  0.0  0.0   7136  2512 ?        Ss   May23   0:00 /bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
+ems      14257  0.0  0.0  68656  7600 ?        S    May23   0:04 /usr/libexec/gconfd-2 5
+ems      14260  0.0  0.0   5376  2000 ?        S    May23   0:00 /usr/bin/gnome-keyring-daemon
+ems      14262  0.0  0.0 117664 21232 ?        Sl   May23   0:32 /usr/libexec/gnome-settings-daemon
+ems      14279  0.0  0.0  80272 14880 ?        Ss   May23   0:00 /usr/lib/scim-1.0/scim-launcher -d -c simple -e all -f socket --no-stay
+ems      14285  0.0  0.0 177808  7856 ?        Ssl  May23   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=18
+ems      14289  0.0  0.0  66736  2432 ?        Ss   May23   0:00 /usr/lib/scim-1.0/scim-helper-manager
+ems      14290  0.0  0.0 122448 16352 ?        Ssl  May23   0:00 /usr/lib/scim-1.0/scim-panel-gtk --display :0.0 -c socket -d --no-stay
+ems      14292  0.0  0.0  69312  3328 ?        Ss   May23   0:00 /usr/lib/scim-1.0/scim-launcher -d -c socket -e socket -f x11
+ems      14296  0.0  0.0 112528 23104 ?        Ss   May23   0:38 metacity --sm-client-id=default1
+ems      14298  0.0  0.0 105712 16688 ?        S    May23   0:00 /usr/libexec/vino-server --oaf-activate-iid=OAFIID:GNOME_RemoteDesktopServer --oaf-ior-fd=17
+ems      14303  0.0  0.1 186464 39584 ?        Ss   May23   0:19 gnome-panel --sm-client-id default2
+ems      14305  0.0  0.1 305152 45392 ?        Ss   May23   0:14 nautilus --no-default-window --sm-client-id default3
+ems      14309  0.0  0.0  80016  9936 ?        S    May23   0:00 /usr/libexec/gnome-vfs-daemon
+ems      14310  0.0  0.0 104304 13600 ?        Ss   May23   0:00 gnome-volume-manager --sm-client-id default5
+ems      14314  0.0  0.0 118992 21728 ?        Ss   May23   0:00 eggcups --sm-client-id default4
+ems      14322  0.0  0.0  85232 12816 ?        Ss   May23   0:01 bt-applet --sm-disable
+ems      14331  0.0  0.0 196048 28016 ?        Ss   May23   0:01 nm-applet --sm-disable
+ems      14333  0.0  0.1 141760 50928 ?        Ss   May23   0:04 /usr/bin/python -tt /usr/bin/puplet
+ems      14348  0.0  0.0  87120 12176 ?        Ss   May23   4:32 pam-panel-icon --sm-client-id default0
+ems      14349  0.0  0.0 156976 18144 ?        Ss   May23   6:31 gnome-power-manager
+root     14350  0.0  0.0   5040  1648 ?        S    May23   0:00 /sbin/pam_timestamp_check -d root
+ems      14351  0.0  0.0  28688  7104 ?        Sl   May23   0:00 ./escd --key_Inserted="/usr/bin/esc" --on_Signal="/usr/bin/esc"
+ems      14357  0.0  0.0   5248  2320 ?        S    May23   0:00 /usr/libexec/mapping-daemon
+ems      14360  0.0  0.0   5600  2976 ?        S    May23   0:06 /usr/libexec/gam_server
+ems      14364  0.0  0.0 181440 29984 ?        S    May23   0:00 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=23
+ems      14366  0.0  0.0 263456 23056 ?        S    May23   0:00 /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=29
+root     14379  0.0  0.0  14336  8304 ?        S    May23   0:00 /usr/sbin/nm-system-settings --config /etc/NetworkManager/nm-system-settings.conf
+ems      14395  0.0  0.0 183328 30304 ?        S    May23   0:00 /usr/libexec/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=27
+ems      14399  0.0  0.0 139248 28560 ?        S    May23   1:04 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=28
+ems      14405  0.0  0.0 105584 20576 ?        S    May23   0:00 /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=29
+ems      14409  0.0  0.0  91168 12496 ?        Ss   May23   0:02 gnome-screensaver
+ems      14456  0.0  0.0  18784 10720 ?        S    May23   0:00 /usr/bin/artsd -F 10 -S 4096 -s 60 -m artsmessage -l 3 -f
+root     19937  0.0  0.0      0     0 ?        S    May24  56:58 [pdflush]
+root     19986  0.0  0.0      0     0 ?        S    May24   0:02 [pdflush]
+root     20174  0.0  0.0  20400  7312 ?        Ss   Sep11   0:00 sshd: ems [priv] 
+ems      20176  0.0  0.0  20400  4800 ?        S    Sep11   0:00 sshd: ems@pts/6  
+ems      20177  0.0  0.0  63584  3920 pts/6    Ss   Sep11   0:00 -bash
+ems      20269  0.0  0.0  15792  6848 pts/6    S+   Sep11   0:00 ssh dsdms-b
+root     20467  0.0  0.0  20400  7312 ?        Ss   10:34   0:00 sshd: ems [priv] 
+ems      20469  0.0  0.0  20400  4800 ?        S    10:34   0:00 sshd: ems@pts/14 
+ems      20470  0.0  0.0  63584  3920 pts/14   Ss   10:34   0:00 -bash
+ems      20562  0.0  0.0  15792  6848 pts/14   S+   10:34   0:00 ssh dsdms-b
+ems      21188  4.6  2.8 5242304 962256 ?      SN   10:48  17:21 pasServer -mode r -ref
+ems      22495  0.0  0.0  68624  7520 ?        S    Sep06   0:00 /usr/libexec/gconfd-2 5
+ems      24958  0.0  0.0  66176  3600 ?        S    17:00   0:00 crond
+ems      24959  0.0  0.0   5248  2560 ?        Ss   17:00   0:00 /bin/sh -c /df8003/home/nms/collection.sh >/dev/null
+ems      24960  0.0  0.0   5312  2656 ?        S    17:00   0:00 /bin/sh /df8003/home/nms/collection.sh
+ems      24970  0.0  0.0   4464  2048 ?        R    17:00   0:00 ps aux
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:23:7d:3d:3c:22 brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:23:7d:3d:3c:22 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop qlen 1000
+    link/ether 00:24:81:77:c1:7d brd ff:ff:ff:ff:ff:ff
+5: eth3: <BROADCAST,MULTICAST> mtu 1500 qdisc noop qlen 1000
+    link/ether 00:23:7d:3d:3c:0a brd ff:ff:ff:ff:ff:ff
+6: sit0: <NOARP> mtu 1480 qdisc noop 
+    link/sit 0.0.0.0 brd 0.0.0.0
+7: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue 
+    link/ether 00:23:7d:3d:3c:22 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.7/24 brd 192.168.1.255 scope global bond0
+    inet6 fe80::223:7dff:fe3d:3c22/64 scope link 
+       valid_lft forever preferred_lft forever
+cmdbegin:interface
+Linux 2.6.18-194.el5 (dsdms-a) 	09/13/13 	_ia64_	(8 CPU)
+
+17:00:07        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+17:00:08           lo    243.76    243.76    107.52    107.52      0.00      0.00      0.00
+17:00:08         eth0     66.93     76.92     34.80     99.01      0.00      0.00      0.00
+17:00:08         eth1     46.95      0.00     30.93      0.00      0.00      0.00      0.00
+17:00:08         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:08         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:08         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:08        bond0    113.89     76.92     65.73     99.01      0.00      0.00      0.00
+
+17:00:08        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+17:00:09           lo    666.33    666.33    139.90    139.90      0.00      0.00      0.00
+17:00:09         eth0    163.84     68.93    160.65     94.19      0.00      0.00     12.99
+17:00:09         eth1    144.86      0.00    157.57      0.00      0.00      0.00      0.00
+17:00:09         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:09         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:09         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:09        bond0    308.69     68.93    318.23     94.19      0.00      0.00     12.99
+
+17:00:09        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+17:00:10           lo    295.00    295.00    113.23    113.23      0.00      0.00      0.00
+17:00:10         eth0     70.00     69.00     38.54     95.42      0.00      0.00      0.00
+17:00:10         eth1     51.00      0.00     34.78      0.00      0.00      0.00      0.00
+17:00:10         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:10         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:10         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+17:00:10        bond0    121.00     69.00     73.31     95.42      0.00      0.00      0.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo    401.73    401.73    120.22    120.22      0.00      0.00      0.00
+Average:         eth0    100.27     71.62     78.01     96.21      0.00      0.00      4.33
+Average:         eth1     80.95      0.00     74.44      0.00      0.00      0.00      0.00
+Average:         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:        bond0    181.21     71.62    152.45     96.21      0.00      0.00      4.33
+cmdbegin:uname
+Linux dsdms-a
+cmdbegin:usergroup
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+games:x:20:
+gopher:x:30:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+nobody:x:99:
+users:x:100:orasrv
+audio:x:63:gdm
+nscd:x:28:
+floppy:x:19:
+vcsa:x:69:
+utmp:x:22:
+rpc:x:32:
+mailnull:x:47:
+smmsp:x:51:
+pcap:x:77:
+utempter:x:35:
+slocate:x:21:
+dbus:x:81:
+avahi:x:70:
+rpcuser:x:29:
+nfsnobody:x:4294967294:
+sshd:x:74:
+haldaemon:x:68:
+avahi-autoipd:x:101:
+ntp:x:38:
+oprofile:x:16:
+xfs:x:43:
+gdm:x:42:
+sabayon:x:86:
+stapdev:x:102:
+stapusr:x:103:
+screen:x:84:
+ems:x:500:
+dfdz:x:501:ems
+dba:x:502:oracle,ems,orasrv
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/etc/news:
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rpc:x:32:32:Portmapper RPC user:/:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+pcap:x:77:77::/var/arpwatch:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+avahi:x:70:70:Avahi daemon:/:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:4294967294:4294967294:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+avahi-autoipd:x:100:101:avahi-autoipd:/var/lib/avahi-autoipd:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+xfs:x:43:43:X Font Server:/etc/X11/fs:/sbin/nologin
+gdm:x:42:42::/var/gdm:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+ems:x:115:501:ems:/df8003/home:/bin/bash
+oracle:x:502:502:oracle:/usr/local/oracle:/bin/bash
+orasrv:x:503:502:orasrv:/usr/local/orasrv:/bin/bash
+cmdbegin:date
+Fri Sep 13 17:00:10 CST 2013
+cmdbegin:uptime
+ 17:00:10 up 149 days,  2:30, 11 users,  load average: 0.05, 0.09, 0.16
+cmdbegin:end

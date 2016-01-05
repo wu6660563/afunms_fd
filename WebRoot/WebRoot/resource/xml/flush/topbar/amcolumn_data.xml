@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<chart>
+	<series>
+		<value xid="0"></value>                        		
+	</series>
+	<graphs>
+		<graph gid="0">
+			<value xid="0">2.2</value>
+		</graph>	
+		<graph gid="1">
+			<value xid="0">3.2</value>
+		</graph>
+		<graph gid="2">
+			<value xid="0">4.2</value>
+		</graph>
+		<graph gid="3">
+			<value xid="0">5.2</value>
+		</graph>
+		<graph gid="4">
+			<value xid="0">3.8</value>
+		</graph>				
+	</graphs>
+</chart>

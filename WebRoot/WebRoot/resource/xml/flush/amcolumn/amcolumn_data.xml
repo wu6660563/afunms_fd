@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GBK"?>
+<graph caption="CPU利用率" xAxisName="" yAxisName="%" decimalPrecision="0" formatNumberScale="0">
+   <set name="10.10.1.1" value="9" color="FF0F00" />
+   <set name="10.10.1.2" value="9" color="FF6600" />
+</graph>
+

@@ -1,0 +1,541 @@
+cmdbegin:version
+Linux version 2.6.18-238.el5 (mockbuild@x86-012.build.bos.redhat.com) (gcc version 4.1.2 20080704 (Red Hat 4.1.2-50)) #1 SMP Sun Dec 19 14:22:44 EST 2010
+cmdbegin:cpuconfig
+processor	: 0
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 1
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 2
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 3
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 4
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 5
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 6
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+processor	: 7
+model name	: Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+cpu MHz		: 1596.000
+cache size	: 12288 KB
+cmdbegin:disk
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/sda2             40624208   4931356  33595968  13% /
+/dev/sda6            183130036  31358708 142318684  19% /df8003
+/dev/sda3             39674224   8347040  29279300  23% /usr
+tmpfs                  4081948         0   4081948   0% /dev/shm
+cmdbegin:diskperf
+Linux 2.6.18-238.el5 (wh3) 	09/13/13 	_x86_64_	(8 CPU)
+
+16:55:01          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:02       dev8-0      4.04      0.00    137.37     34.00      0.02      5.75      5.50      2.22
+
+16:55:02          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:03       dev8-0      2.97      0.00   1600.00    538.67      0.02      8.00      5.33      1.58
+
+16:55:03          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:04       dev8-0      7.00      0.00    224.00     32.00      0.03      4.43      3.71      2.60
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:       dev8-0      4.67      0.00    658.67    141.14      0.03      5.57      4.57      2.13
+cmdbegin:cpu
+Linux 2.6.18-238.el5 (wh3) 	09/13/13 	_x86_64_	(8 CPU)
+
+16:55:04        CPU     %user     %nice   %system   %iowait    %steal     %idle
+16:55:05        all      0.13      0.75      0.38      0.25      0.00     98.50
+16:55:06        all      0.12      0.50      0.62      0.12      0.00     98.63
+16:55:07        all      0.75      0.75      0.38      0.25      0.00     97.88
+Average:        all      0.33      0.67      0.46      0.21      0.00     98.33
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:       8163900    2913812    5250088          0     458440    1518508
+-/+ buffers/cache:     936864    7227036
+Swap:     20482832     138112   20344720
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  10372   592 ?        Ss   Jun19   0:01 init [5]                             
+root         2  0.0  0.0      0     0 ?        S<   Jun19   0:00 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/0]
+root         5  0.0  0.0      0     0 ?        S<   Jun19   0:00 [migration/1]
+root         6  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/1]
+root         7  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/1]
+root         8  0.0  0.0      0     0 ?        S<   Jun19   0:00 [migration/2]
+root         9  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/2]
+root        10  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/2]
+root        11  0.0  0.0      0     0 ?        S<   Jun19   0:02 [migration/3]
+root        12  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/3]
+root        13  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/3]
+root        14  0.0  0.0      0     0 ?        S<   Jun19   0:03 [migration/4]
+root        15  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/4]
+root        16  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/4]
+root        17  0.0  0.0      0     0 ?        S<   Jun19   0:00 [migration/5]
+root        18  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/5]
+root        19  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/5]
+root        20  0.0  0.0      0     0 ?        S<   Jun19   0:00 [migration/6]
+root        21  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/6]
+root        22  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/6]
+root        23  0.0  0.0      0     0 ?        S<   Jun19   0:00 [migration/7]
+root        24  0.0  0.0      0     0 ?        SN   Jun19   0:00 [ksoftirqd/7]
+root        25  0.0  0.0      0     0 ?        S<   Jun19   0:00 [watchdog/7]
+root        26  0.0  0.0      0     0 ?        S<   Jun19   0:00 [events/0]
+root        27  0.0  0.0      0     0 ?        S<   Jun19   1:13 [events/1]
+root        28  0.0  0.0      0     0 ?        S<   Jun19   0:20 [events/2]
+root        29  0.0  0.0      0     0 ?        S<   Jun19   0:38 [events/3]
+root        30  0.0  0.0      0     0 ?        S<   Jun19   0:00 [events/4]
+root        31  0.0  0.0      0     0 ?        S<   Jun19   0:00 [events/5]
+root        32  0.0  0.0      0     0 ?        S<   Jun19   0:00 [events/6]
+root        33  0.0  0.0      0     0 ?        S<   Jun19   0:00 [events/7]
+root        34  0.0  0.0      0     0 ?        S<   Jun19   0:00 [khelper]
+root       103  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kthread]
+root       115  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/0]
+root       116  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/1]
+root       117  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/2]
+root       118  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/3]
+root       119  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/4]
+root       120  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/5]
+root       121  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/6]
+root       122  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kblockd/7]
+root       123  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kacpid]
+root       346  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/0]
+root       347  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/1]
+root       348  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/2]
+root       349  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/3]
+root       350  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/4]
+root       351  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/5]
+root       352  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/6]
+root       353  0.0  0.0      0     0 ?        S<   Jun19   0:00 [cqueue/7]
+root       356  0.0  0.0      0     0 ?        S<   Jun19   0:00 [khubd]
+root       358  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kseriod]
+root       482  0.0  0.0      0     0 ?        S    Jun19   0:00 [khungtaskd]
+root       483  0.0  0.0      0     0 ?        S    Jun19   0:00 [pdflush]
+root       484  0.0  0.0      0     0 ?        S    Jun19  12:04 [pdflush]
+root       485  0.0  0.0      0     0 ?        S<   Jun19   0:08 [kswapd0]
+root       486  0.0  0.0      0     0 ?        S<   Jun19   0:09 [kswapd1]
+root       487  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/0]
+root       488  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/1]
+root       489  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/2]
+root       490  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/3]
+root       491  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/4]
+root       492  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/5]
+root       493  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/6]
+root       494  0.0  0.0      0     0 ?        S<   Jun19   0:00 [aio/7]
+root       655  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kpsmoused]
+root       760  0.0  0.0      0     0 ?        S<   Jun19   0:00 [mpt_poll_0]
+root       761  0.0  0.0      0     0 ?        S<   Jun19   0:00 [mpt/0]
+root       762  0.0  0.0      0     0 ?        S<   Jun19   0:00 [scsi_eh_0]
+root       781  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/0]
+root       782  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/1]
+root       783  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/2]
+root       784  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/3]
+root       785  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/4]
+root       786  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/5]
+root       787  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/6]
+root       788  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata/7]
+root       789  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ata_aux]
+root       799  0.0  0.0      0     0 ?        S<   Jun19   7:57 [scsi_eh_1]
+root       800  0.0  0.0      0     0 ?        S<   Jun19   0:00 [scsi_eh_2]
+root       801  0.0  0.0      0     0 ?        S<   Jun19   0:00 [scsi_eh_3]
+root       802  0.0  0.0      0     0 ?        S<   Jun19   0:00 [scsi_eh_4]
+root       803  0.0  0.0      0     0 ?        S<   Jun19   0:00 [scsi_eh_5]
+root       804  0.0  0.0      0     0 ?        S<   Jun19   0:00 [scsi_eh_6]
+root       823  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kstriped]
+root       860  0.0  0.0      0     0 ?        S<   Jun19   0:38 [kjournald]
+root       885  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kauditd]
+root       918  0.0  0.0  13076   364 ?        S<s  Jun19   0:00 /sbin/udevd -d
+ems       1591  0.0  0.0 195512  3116 ?        Ssl  Aug16   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+root      1780  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kedac]
+root      2132  0.0  0.0      0     0 ?        S<   Jun19   0:00 [hd-audio0]
+root      2149  0.0  0.0      0     0 ?        S<   Jun19   0:00 [hd-audio1]
+root      3137  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/0]
+root      3138  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/1]
+root      3139  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/2]
+root      3140  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/3]
+root      3141  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/4]
+root      3142  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/5]
+root      3143  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/6]
+root      3144  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpathd/7]
+root      3145  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kmpath_handlerd]
+root      3219  0.0  0.0      0     0 ?        S<   Jun19   5:17 [kjournald]
+root      3221  0.0  0.0      0     0 ?        S<   Jun19   0:06 [kjournald]
+root      3445  0.0  0.0      0     0 ?        S<   Jun19   0:00 [iscsi_eh]
+root      3574  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_addr]
+root      3602  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_mcast]
+root      3603  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_inform]
+root      3604  0.0  0.0      0     0 ?        S<   Jun19   0:00 [local_sa]
+root      3614  0.0  0.0      0     0 ?        S<   Jun19   0:00 [iw_cm_wq]
+root      3624  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/0]
+root      3625  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/1]
+root      3626  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/2]
+root      3627  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/3]
+root      3628  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/4]
+root      3629  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/5]
+root      3630  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/6]
+root      3631  0.0  0.0      0     0 ?        S<   Jun19   0:00 [ib_cm/7]
+root      3641  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rdma_cm]
+root      3670  0.0  0.0  28636   284 ?        Ssl  Jun19   0:00 brcm_iscsiuio
+root      3677  0.0  0.0  12156   384 ?        Ss   Jun19   0:00 iscsid
+root      3678  0.0  0.0  12652  4464 ?        S<Ls Jun19   0:00 iscsid
+root      3768  0.0  0.0 102040  1424 ?        S    Sep09   0:00 crond
+root      3769  0.0  0.0   8724   976 ?        Ss   Sep09   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root      3770  0.0  0.0   8728  1028 ?        S    Sep09   0:00 /bin/sh /home/nms/collection.sh
+root      3789  0.0  0.0  34904  1368 ?        S    Sep09   0:00 ftp -n
+smmsp     3790  0.0  0.0  57720  3488 ?        S    Sep09   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root      3815  0.0  0.0      0     0 ?        S<   Jun19   0:00 [bond0]
+root      4323  0.0  0.0  27348   732 ?        S<sl Jun19   0:01 auditd
+root      4325  0.0  0.0  81824   752 ?        S<sl Jun19   0:00 /sbin/audispd
+root      4347  0.0  0.0   5932   620 ?        Ss   Jun19   0:17 syslogd -m 0
+root      4350  0.0  0.0   3828   320 ?        Ss   Jun19   0:00 klogd -x
+root      4427  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kondemand/0]
+root      4428  0.0  0.0      0     0 ?        S<   Jun19   0:06 [kondemand/1]
+root      4429  0.0  0.0      0     0 ?        S<   Jun19   0:01 [kondemand/2]
+root      4430  0.0  0.0      0     0 ?        S<   Jun19   0:02 [kondemand/3]
+root      4431  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kondemand/4]
+root      4432  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kondemand/5]
+root      4433  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kondemand/6]
+root      4434  0.0  0.0      0     0 ?        S<   Jun19   0:00 [kondemand/7]
+root      4448  0.0  0.0  10784   328 ?        Ss   Jun19   1:05 irqbalance
+rpc       4472  0.0  0.0   8076   612 ?        Ss   Jun19   0:00 portmap
+root      4505  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/0]
+root      4506  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/1]
+root      4507  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/2]
+root      4508  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/3]
+root      4509  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/4]
+root      4510  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/5]
+root      4511  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/6]
+root      4512  0.0  0.0      0     0 ?        S<   Jun19   0:00 [rpciod/7]
+root      4525  0.0  0.0  10184   616 ?        Ss   Jun19   0:00 rpc.statd
+root      4549  0.0  0.0  55204   240 ?        Ss   Jun19   0:00 rpc.idmapd
+dbus      4564  0.0  0.0  21516  1064 ?        Ss   Jun19   2:57 dbus-daemon --system
+root      4579  0.0  0.0  10456   560 ?        Ss   Jun19   0:00 /usr/sbin/hcid
+root      4583  0.0  0.0   5960   384 ?        Ss   Jun19   0:00 /usr/sbin/sdpd
+root      4627  0.0  0.0      0     0 ?        S<   Jun19   0:00 [krfcommd]
+root      4664  0.0  0.0  41684   732 ?        Ssl  Jun19   0:29 pcscd
+root      4674  0.0  0.0   3824   456 ?        Ss   Jun19   0:00 /usr/sbin/acpid
+68        4683  0.0  0.0  32076  2196 ?        Ss   Jun19   0:49 hald
+root      4684  0.0  0.0  21720   860 ?        S    Jun19   0:00 hald-runner
+68        4692  0.0  0.0  12348   736 ?        S    Jun19   0:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+68        4697  0.0  0.0  12348   772 ?        S    Jun19   0:03 hald-addon-keyboard: listening on /dev/input/event0
+root      4706  0.0  0.0  10256   652 ?        S    Jun19   4:54 hald-addon-storage: polling /dev/sr0
+root      4733  0.0  0.0   8540   368 ?        Ss   Jun19   0:00 /usr/bin/hidd --server
+root      4768  0.0  0.0 122008  1000 ?        Ssl  Jun19   0:00 automount
+root      4785  0.0  0.0  26348   284 ?        Ss   Jun19   0:00 ./hpiod
+root      4790  0.0  0.0 159168  1336 ?        S    Jun19   0:00 /usr/bin/python ./hpssd.py
+root      4805  0.0  0.0  62652   692 ?        Ss   Jun19   0:00 /usr/sbin/sshd
+root      4816  0.0  0.0 133692  2336 ?        Ss   Jun19   4:23 cupsd
+root      4831  0.0  0.0  21668   772 ?        Ss   Jun19   0:00 xinetd -stayalive -pidfile /var/run/xinetd.pid
+ntp       4843  0.0  0.0  19216  4908 ?        SLs  Jun19   0:00 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+root      4854  0.0  0.0 102040  1424 ?        S    Sep04   0:00 crond
+root      4855  0.0  0.0   8724   976 ?        Ss   Sep04   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root      4856  0.0  0.0   8728  1028 ?        S    Sep04   0:00 /bin/sh /home/nms/collection.sh
+root      4875  0.0  0.0  34896  1332 ?        S    Sep04   0:00 ftp -n
+smmsp     4876  0.0  0.0  57724  3492 ?        S    Sep04   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root      4879  0.0  0.0  66968   948 ?        Ss   Jun19   0:01 sendmail: accepting connections
+smmsp     4889  0.0  0.0  57716   704 ?        Ss   Jun19   0:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      4899  0.0  0.0   6480   272 ?        Ss   Jun19   0:00 gpm -m /dev/input/mice -t exps2
+root      4908  0.0  0.0  74832   964 ?        Ss   Jun19   0:00 crond
+xfs       4941  0.0  0.0  43456  5168 ?        Ss   Jun19   0:00 xfs -droppriv -daemon
+root      4966  0.0  0.0  18756   344 ?        Ss   Jun19   0:00 /usr/sbin/atd
+avahi     4996  0.0  0.0  23296  1172 ?        Ss   Jun19   0:00 avahi-daemon: running [wh3.local]
+avahi     4997  0.0  0.0  23172   176 ?        Ss   Jun19   0:00 avahi-daemon: chroot helper
+root      5073  0.0  0.0 258412  5616 ?        SN   Jun19   0:02 /usr/bin/python -tt /usr/sbin/yum-updatesd
+root      5075  0.0  0.0  44292   204 ?        Ss   Jun19   0:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
+root      5087  0.0  0.0  12940  1104 ?        SN   Jun19   0:00 /usr/libexec/gam_server
+root      5089  0.0  0.0  18440   324 ?        S    Jun19   0:00 /usr/sbin/smartd -q never
+root      5094  0.0  0.0   3816   404 tty1     Ss+  Jun19   0:00 /sbin/mingetty tty1
+root      5095  0.0  0.0   3816   404 tty2     Ss+  Jun19   0:00 /sbin/mingetty tty2
+root      5096  0.0  0.0   3816   404 tty3     Ss+  Jun19   0:00 /sbin/mingetty tty3
+root      5097  0.0  0.0   3816   404 tty4     Ss+  Jun19   0:00 /sbin/mingetty tty4
+root      5099  0.0  0.0   3816   404 tty5     Ss+  Jun19   0:00 /sbin/mingetty tty5
+root      5101  0.0  0.0   3816   408 tty6     Ss+  Jun19   0:00 /sbin/mingetty tty6
+root      5107  0.0  0.0 169796  3288 ?        Ss   Jun19   0:09 /usr/sbin/gdm-binary -nodaemon
+root      5206  0.0  0.0 194984  1924 ?        S    Jun19   0:00 /usr/sbin/gdm-binary -nodaemon
+root      5208  0.0  0.0 255412  2800 ?        Sl   Jun19   0:00 /usr/libexec/gdm-rh-security-token-helper
+root      5209  4.1  0.8 196744 65660 tty7     SLs+ Jun19 5160:42 /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth vt7
+ems       5478  0.0  0.0 246792  6044 ?        Ss   Jun19   0:00 /usr/bin/gnome-session
+ems       5512  0.0  0.0      0     0 ?        Z    Jun19   0:00 [Xsession] <defunct>
+ems       5515  0.0  0.0  53892   280 ?        Ss   Jun19   0:00 /usr/bin/ssh-agent /bin/sh -c exec -l /bin/bash -c "/usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients"
+ems       5607  0.0  0.0  15204   388 ?        S    Jun19   0:00 /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients
+ems       5608  0.0  0.0  21416   912 ?        Ss   Jun19   0:00 /bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
+ems       5614  0.0  0.0  90588  2312 ?        S    Jun19   0:01 /usr/libexec/gconfd-2 5
+ems       5615  0.0  0.0 114844  4112 ?        Ss   Jun19   0:00 /usr/lib64/scim-1.0/scim-launcher -d -c simple -e all -f socket --no-stay
+ems       5620  0.0  0.0  82436   308 ?        Ss   Jun19   0:00 /usr/lib64/scim-1.0/scim-helper-manager
+ems       5621  0.0  0.0 262676  5964 ?        Ssl  Jun19   0:17 /usr/lib64/scim-1.0/scim-panel-gtk --display :0.0 -c socket -d --no-stay
+root      5623  0.0  0.0 102040  1424 ?        S    Sep10   0:00 crond
+ems       5624  0.0  0.0  90212  1784 ?        Ss   Jun19   0:00 /usr/lib64/scim-1.0/scim-launcher -d -c socket -e socket -f x11
+ems       5625  0.0  0.0  12928   412 ?        S    Jun19   0:00 /usr/bin/gnome-keyring-daemon
+root      5626  0.0  0.0   8724   972 ?        Ss   Sep10   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+ems       5627  0.0  0.0 265980  6672 ?        Sl   Jun19   0:56 /usr/libexec/gnome-settings-daemon
+root      5628  0.0  0.0   8728  1024 ?        S    Sep10   0:00 /bin/sh /home/nms/collection.sh
+root      5648  0.0  0.0  34900  1328 ?        S    Sep10   0:00 ftp -n
+smmsp     5649  0.0  0.0  57716  3480 ?        S    Sep10   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+ems       5653  0.0  0.0 271680  2752 ?        Ssl  Jun19   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=18
+ems       5658  0.0  0.2 193404 19952 ?        Ss   Jun19   9:57 metacity --sm-client-id=default1
+ems       5660  0.0  0.0 239176  3496 ?        S    Jun19   0:00 /usr/libexec/vino-server --oaf-activate-iid=OAFIID:GNOME_RemoteDesktopServer --oaf-ior-fd=17
+ems       5664  0.0  0.2 427084 21540 ?        Ss   Jun19   1:16 gnome-panel --sm-client-id default2
+ems       5666  0.0  0.2 551740 19920 ?        Ss   Jun19   0:30 nautilus --no-default-window --sm-client-id default3
+ems       5670  0.0  0.0 230456  3308 ?        Ss   Jun19   0:00 gnome-volume-manager --sm-client-id default5
+ems       5672  0.0  0.1 304332 10012 ?        Ss   Jun19   0:04 eggcups --sm-client-id default4
+ems       5678  0.0  0.0 149492  2772 ?        S    Jun19   0:00 /usr/libexec/gnome-vfs-daemon
+ems       5680  0.0  0.0 154336  3664 ?        Ss   Jun19   0:00 bt-applet --sm-disable
+ems       5689  0.0  0.2 362376 16688 ?        Ss   Jun19   0:02 /usr/bin/python -tt /usr/bin/puplet
+ems       5691  0.0  0.0 281108  5920 ?        Ss   Jun19   0:00 nm-applet --sm-disable
+ems       5697  0.0  0.0 155076  3552 ?        Ss   Jun19   0:00 pam-panel-icon --sm-client-id default0
+root      5698  0.0  0.0  12212   624 ?        S    Jun19   0:00 /sbin/pam_timestamp_check -d root
+ems       5704  0.0  0.0 267588  4500 ?        Ss   Jun19   2:17 gnome-power-manager
+ems       5705  0.0  0.0  72432  1792 ?        Sl   Jun19   0:00 ./escd --key_Inserted="/usr/bin/esc" --on_Signal="/usr/bin/esc"
+root      5711  0.0  0.0  60080  2556 ?        S    Jun19   0:00 /usr/sbin/nm-system-settings --config /etc/NetworkManager/nm-system-settings.conf
+ems       5721  0.0  0.1 413948 12384 ?        S    Jun19   0:00 /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=23
+ems       5731  0.0  0.0  13708  1804 ?        S    Jun19   0:00 /usr/libexec/gam_server
+ems       5733  0.0  0.0  12852   780 ?        S    Jun19   0:00 /usr/libexec/mapping-daemon
+ems       5736  0.0  0.1 317892  8308 ?        S    Jun19   0:01 /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=24
+ems       5738  0.0  0.8 364632 67216 ?        S    Jun19   3:19 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=31
+ems       5740  0.0  0.1 343292  8348 ?        S    Jun19   1:31 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=28
+ems       5742  0.0  0.1 394664 10220 ?        Sl   Jun19   0:03 /usr/libexec/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=42
+ems       5756  0.0  0.0  78704  1028 ?        S    Jun19  31:23 scim-bridge
+ems       5759  0.0  0.0 183772  2024 ?        Ss   Jun19   3:49 gnome-screensaver
+root      6036  0.0  0.0  10408   652 ?        Ss   Jun19   1:50 in.tftpd -s /tftpboot
+root      8758  0.0  0.0 102040  1424 ?        S    Sep12   0:00 crond
+root      8759  0.0  0.0   8724   976 ?        Ss   Sep12   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root      8760  0.0  0.0   8728  1024 ?        S    Sep12   0:00 /bin/sh /home/nms/collection.sh
+root      8783  0.0  0.0  34900  1336 ?        S    Sep12   0:00 ftp -n
+smmsp     8784  0.0  0.0  57716  3480 ?        S    Sep12   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root      9345  0.0  0.0 102040  1424 ?        S    Sep04   0:00 crond
+root      9346  0.0  0.0   8724   976 ?        Ss   Sep04   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root      9347  0.0  0.0   8728  1024 ?        S    Sep04   0:00 /bin/sh /home/nms/collection.sh
+root      9366  0.0  0.0  34896  1336 ?        S    Sep04   0:00 ftp -n
+smmsp     9367  0.0  0.0  57720  3484 ?        S    Sep04   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+ems       9804  0.0  0.0  68436  1708 pts/3    Ss+  Sep08   0:00 bash
+ems      10137  0.0  0.2 319908 23084 ?        Sl   Sep06   1:13 gnome-terminal
+ems      10139  0.0  0.0 195784  3288 ?        Ssl  Sep06   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=16
+ems      10143  0.0  0.0  14892   748 ?        S    Sep06   0:00 gnome-pty-helper
+ems      10144  0.0  0.0  68436  1720 pts/2    Ss+  Sep06   0:00 bash
+root     10465  0.0  0.0 102040  1424 ?        S    Sep09   0:00 crond
+root     10466  0.0  0.0   8724   972 ?        Ss   Sep09   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     10467  0.0  0.0   8728  1024 ?        S    Sep09   0:00 /bin/sh /home/nms/collection.sh
+root     10498  0.0  0.0  34900  1376 ?        S    Sep09   0:00 ftp -n
+smmsp    10499  0.0  0.0  57720  3484 ?        S    Sep09   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+ems      10610  0.0  0.0  68436  1712 pts/1    Ss+  Sep06   0:00 bash
+ems      13342  0.0  0.0  68436  1708 pts/4    Ss+  Sep11   0:00 bash
+root     14356  0.0  0.0 102040  1424 ?        S    15:35   0:00 crond
+root     14357  0.0  0.0   8724   976 ?        Ss   15:35   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     14358  0.0  0.0   8728  1024 ?        S    15:35   0:00 /bin/sh /home/nms/collection.sh
+root     14385  0.0  0.0  34904  1364 ?        S    15:35   0:00 ftp -n
+smmsp    14386  0.0  0.0  57724  3492 ?        S    15:35   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root     16536  0.0  0.0 102036  1400 ?        S    16:55   0:00 crond
+root     16537  0.0  0.0   8724   972 ?        Ss   16:55   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     16538  0.0  0.0   8728  1024 ?        S    16:55   0:00 /bin/sh /home/nms/collection.sh
+root     16548  0.0  0.0  10484   876 ?        R    16:55   0:00 ps aux
+root     16773  0.0  0.0 102040  1424 ?        S    Sep10   0:00 crond
+root     16774  0.0  0.0   8724   976 ?        Ss   Sep10   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     16775  0.0  0.0   8728  1024 ?        S    Sep10   0:00 /bin/sh /home/nms/collection.sh
+root     16796  0.0  0.0  34900  1368 ?        S    Sep10   0:00 ftp -n
+smmsp    16797  0.0  0.0  57720  3488 ?        S    Sep10   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root     17476  0.0  0.0 102040  1424 ?        S    Sep05   0:00 crond
+root     17477  0.0  0.0   8724   972 ?        Ss   Sep05   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     17478  0.0  0.0   8728  1028 ?        S    Sep05   0:00 /bin/sh /home/nms/collection.sh
+root     17497  0.0  0.0  34904  1348 ?        S    Sep05   0:00 ftp -n
+smmsp    17498  0.0  0.0  57716  3484 ?        S    Sep05   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root     19568  0.0  0.0 102040  1424 ?        S    Sep12   0:00 crond
+root     19569  0.0  0.0   8724   972 ?        Ss   Sep12   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     19570  0.0  0.0   8728  1024 ?        S    Sep12   0:00 /bin/sh /home/nms/collection.sh
+root     19591  0.0  0.0  34904  1332 ?        S    Sep12   0:00 ftp -n
+smmsp    19592  0.0  0.0  57720  3488 ?        S    Sep12   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+ems      22910  0.0  0.0  68436  1712 pts/5    Ss+  Sep11   0:00 bash
+ems      23112  0.0  0.0  95964  7480 ?        S    Aug05   0:03 /usr/libexec/gconfd-2 12
+root     23336  0.3  0.0 135440  3640 ?        SN   Sep11  11:37 /df8003/bin/applogd
+root     23337  0.0  0.1 140148  8176 ?        SN   Sep11   0:00 /df8003/bin/dbmd
+root     23338  0.0  0.0 135304  3472 ?        S    Sep11   2:02 /df8003/bin/netmd
+root     23339  0.5  0.2 158752 21784 ?        S    Sep11  19:21 /df8003/bin/sysmd
+root     23429  0.0  0.1 208608  9256 ?        SN   Sep11   0:00 /df8003/bin/procmd
+root     23431  0.0  0.1 208112  9048 ?        SN   Sep11   0:00 proc_watchd
+ems      23432  0.0  0.1 286112 13932 ?        SN   Sep11   0:59 almd_server_rep
+ems      23433  0.0  0.4 628968 34880 ?        SN   Sep11   1:40 alm_replica -mode r
+ems      23434  4.4  1.1 609032 97272 ?        SN   Sep11 146:52 SCADA_Rep -mode r
+ems      23435  0.0  1.2 662576 99792 ?        SN   Sep11   0:06 SCADA_Server -mode s1
+ems      23436  0.0  0.6 592276 53552 ?        SN   Sep11   0:00 CTRL_Server -mode s1
+ems      23437  0.1  0.2 458540 20628 ?        SN   Sep11   5:27 comServer
+ems      23438  0.1  1.1 980788 91328 ?        SN   Sep11   4:55 pasServer -mode r -rep
+ems      23439  0.0  0.3 994244 25728 ?        SN   Sep11   0:00 pasServer -mode s1 -ref
+ems      23440  0.0  0.2 994240 24008 ?        SN   Sep11   0:00 pasServer -mode s2 -ref
+ems      23441  0.0  1.1 942400 95264 ?        SN   Sep11   0:02 pasEngine -mode s1 -ref
+ems      23442  0.0  0.5 922784 43688 ?        SN   Sep11   0:00 pasEngine -mode s2 -ref
+ems      23443  1.0  0.5 767288 44972 ?        SN   Sep11  35:27 AVCServer -mode r -rep
+root     23445  0.2  0.1 213160  9420 ?        SN   Sep11   8:32 netmond -s 3600
+root     23446  0.0  0.4 568736 39564 ?        SN   Sep11   0:04 ssrd
+ems      23447  0.0  1.7 774676 143780 ?       SN   Sep11   0:02 optload -restart
+ems      23448  0.0  0.0  68436  1708 pts/6    Ss+  Sep11   0:00 bash
+ems      23535  0.0  0.1 344700 14128 pts/6    S    Sep11   0:00 mmi
+ems      23536  0.4  2.5 1448996 210260 pts/6  SNl  Sep11  15:58 mmi
+ems      23537  0.6  2.6 1389852 217596 pts/6  SN   Sep11  20:00 mmi
+root     26850  0.0  0.0 102040  1424 ?        S    04:35   0:00 crond
+root     26851  0.0  0.0   8724   972 ?        Ss   04:35   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     26852  0.0  0.0   8728  1028 ?        S    04:35   0:00 /bin/sh /home/nms/collection.sh
+root     26871  0.0  0.0  34904  1348 ?        S    04:35   0:00 ftp -n
+smmsp    26872  0.0  0.0  57716  3488 ?        S    04:35   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+root     28760  0.0  0.0 102040  1424 ?        S    Sep08   0:00 crond
+root     28761  0.0  0.0   8724   976 ?        Ss   Sep08   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     28762  0.0  0.0   8728  1020 ?        S    Sep08   0:00 /bin/sh /home/nms/collection.sh
+root     28781  0.0  0.0  34900  1332 ?        S    Sep08   0:00 ftp -n
+smmsp    28782  0.0  0.0  57724  3492 ?        S    Sep08   0:00 /usr/sbin/sendmail -FCronDaemon -i -odi -oem -oi -t
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+2: eth0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:10:18:97:83:34 brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:10:18:97:83:34 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast qlen 1000
+    link/ether 2c:27:d7:ee:d9:fa brd ff:ff:ff:ff:ff:ff
+5: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue 
+    link/ether 00:10:18:97:83:34 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.108.163/24 brd 192.168.108.255 scope global bond0
+cmdbegin:interface
+Linux 2.6.18-238.el5 (wh3) 	09/13/13 	_x86_64_	(8 CPU)
+
+16:55:07        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:08           lo     22.00     22.00      4.26      4.26      0.00      0.00      0.00
+16:55:08         eth0    238.00      3.00    151.61      0.55      0.00      0.00     13.00
+16:55:08         eth1    235.00      0.00    148.48      0.00      0.00      0.00      0.00
+16:55:08         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08        bond0    473.00      3.00    300.08      0.55      0.00      0.00     13.00
+
+16:55:08        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:09           lo     21.78     21.78      4.21      4.21      0.00      0.00      0.00
+16:55:09         eth0    226.73      3.96    148.50      0.46      0.00      0.00     11.88
+16:55:09         eth1    224.75      0.00    145.77      0.00      0.00      0.00      0.00
+16:55:09         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09        bond0    451.49      3.96    294.27      0.46      0.00      0.00     11.88
+
+16:55:09        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:10           lo     54.55     54.55     16.58     16.58      0.00      0.00      0.00
+16:55:10         eth0    233.33      6.06    162.50      0.71      0.00      0.00      9.09
+16:55:10         eth1    233.33      0.00    161.34      0.00      0.00      0.00      0.00
+16:55:10         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10        bond0    466.67      6.06    323.84      0.71      0.00      0.00      9.09
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo     32.67     32.67      8.31      8.31      0.00      0.00      0.00
+Average:         eth0    232.67      4.33    154.15      0.57      0.00      0.00     11.33
+Average:         eth1    231.00      0.00    151.81      0.00      0.00      0.00      0.00
+Average:         eth2      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:        bond0    463.67      4.33    305.97      0.57      0.00      0.00     11.33
+cmdbegin:uname
+Linux wh3
+cmdbegin:usergroup
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+games:x:20:
+gopher:x:30:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+nobody:x:99:
+users:x:100:ems,oracle
+utmp:x:22:
+utempter:x:35:
+nscd:x:28:
+distcache:x:94:
+floppy:x:19:
+vcsa:x:69:
+ntp:x:38:
+pcap:x:77:
+slocate:x:21:
+dbus:x:81:
+audio:x:63:gdm
+apache:x:48:
+avahi:x:70:
+rpc:x:32:
+mailnull:x:47:
+smmsp:x:51:
+sshd:x:74:
+webalizer:x:67:
+oprofile:x:16:
+squid:x:23:
+rpcuser:x:29:
+nfsnobody:x:4294967294:
+xfs:x:43:
+stapdev:x:101:
+stapusr:x:102:
+stap-server:x:155:
+haldaemon:x:68:
+avahi-autoipd:x:156:
+gdm:x:42:
+sabayon:x:86:
+dfdz:x:500:ems
+dba:x:501:oracle
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/etc/news:
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+distcache:x:94:94:Distcache:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+pcap:x:77:77::/var/arpwatch:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+avahi:x:70:70:Avahi daemon:/:/sbin/nologin
+rpc:x:32:32:Portmapper RPC user:/:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:4294967294:4294967294:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+xfs:x:43:43:X Font Server:/etc/X11/fs:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+avahi-autoipd:x:100:156:avahi-autoipd:/var/lib/avahi-autoipd:/sbin/nologin
+gdm:x:42:42::/var/gdm:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+ems:x:115:500:ems:/df8003/home:/bin/bash
+oracle:x:502:501:oracle:/usr/local/oracle:/bin/bash
+cmdbegin:date
+Fri Sep 13 16:55:10 CST 2013
+cmdbegin:uptime
+ 16:55:10 up 86 days,  2:20,  7 users,  load average: 0.26, 0.14, 0.10
+cmdbegin:end

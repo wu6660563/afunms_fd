@@ -1,0 +1,170 @@
+<%@page language="java" contentType="text/html;charset=GB2312"%>
+<%@page import="com.afunms.topology.model.HostNode"%>
+<%@page import="com.afunms.common.base.JspPage"%>
+<%@page import="java.util.List"%>
+<%@page import="com.afunms.common.util.SysUtil"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.io.File"%>
+<%@ include file="/include/globe.inc"%>
+<%@page import="com.afunms.polling.node.*"%>
+<%@page import="com.afunms.polling.*"%>
+<%@page import="java.util.List"%>
+<%@page import="com.afunms.config.dao.*"%>
+<%@page import="com.afunms.config.model.*"%>
+<%
+  String rootPath = request.getContextPath();
+  List list = (List)request.getAttribute("list");
+  int rc = list.size();
+  JspPage jp = (JspPage)request.getAttribute("page");
+  String path = rootPath+"/panel/view/image/";
+%>
+<%String menuTable = (String)request.getAttribute("menuTable");%>
+<html>
+<head>
+<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
+<link href="<%=rootPath%>/include/navbar.css" rel="stylesheet" type="text/css" />
+<LINK href="<%=rootPath%>/resource/css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script> 
+<meta http-equiv="Page-Enter" content="revealTrans(duration=x, transition=y)">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="<%=rootPath%>/resource/css/itsm_style.css" type="text/css" rel="stylesheet">
+<link href="<%=rootPath%>/resource/css/detail.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
+<link href="<%=rootPath%>/include/mainstyle.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="<%=rootPath%>/resource/css/examples.css" />
+<link rel="stylesheet" type="text/css" href="<%=rootPath%>/resource/css/chooser.css" />
+<link rel="stylesheet" type="text/css" 	href="<%=rootPath%>/js/ext/lib/resources/css/ext-all.css" charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="<%=rootPath%>/js/ext/css/common.css" charset="utf-8"/>
+<script type="text/javascript" 	src="<%=rootPath%>/js/ext/lib/adapter/ext/ext-base.js" charset="utf-8"></script>
+<script type="text/javascript" src="<%=rootPath%>/js/ext/lib/ext-all.js" charset="utf-8"></script>
+
+<script language="javascript">	
+Ext.onReady(function() { 
+	Ext.QuickTips.init();
+});
+</script>
+
+<script language="javascript">	
+  var curpage= <%=jp.getCurrentPage()%>;
+  var totalpages = <%=jp.getPageTotal()%>;
+  var listAction = "<%=rootPath%>/panel.do?action=panelmodellist";
+  
+
+</script>
+<script language="JavaScript" type="text/JavaScript">
+var show = true;
+var hide = false;
+//修改菜单的上下箭头符号
+function my_on(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="on";
+}
+function my_off(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="off";
+}
+//添加菜单	
+function initmenu()
+{
+	var idpattern=new RegExp("^menu");
+	var menupattern=new RegExp("child$");
+	var tds = document.getElementsByTagName("div");
+	for(var i=0,j=tds.length;i<j;i++){
+		var td = tds[i];
+		if(idpattern.test(td.id)&&!menupattern.test(td.id)){					
+			menu =new Menu(td.id,td.id+"child",'dtu','100',show,my_on,my_off);
+			menu.init();		
+		}
+	}
+
+}
+
+</script>
+</head>
+<BODY leftmargin="0" topmargin="0" bgcolor="#cedefa" onload="initmenu();">
+<form method="post" name="mainForm">
+<table border="0" id="table1" cellpadding="0" cellspacing="0" width=100%>
+	<tr>
+		<td width="200" valign=top align=center>
+			<%=menuTable%>
+		</td>
+		<td bgcolor="#cedefa" align="center" valign=top>
+			<table width="98%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none align=center border=1 algin="center">
+				<tr>
+					<td height="28" align="left" bordercolor="#397DBD" bgcolor="#397DBD" class="txtGlobalBold" colspan=3>&nbsp;&nbsp;设备面板配置管理 >> 设备面板模板列表</td>
+				</tr>
+				<tr>
+					<td height="28" align="right" bgcolor="#FFFFFF" colspan=3><a href="<%=rootPath%>/panel.do?action=showaddpanel">编辑</a>&nbsp;&nbsp;</td>
+				</tr>
+				<tr>
+
+					
+					<td height=300 bgcolor="#FFFFFF" valign="top" align=center>
+
+						<table cellSpacing="1" cellPadding="0" width="100%" border="0">
+						    <tr>
+						    <td colspan="2" width="80%" align="center">
+    <jsp:include page="../../common/page.jsp">
+     <jsp:param name="curpage" value="<%=jp.getCurrentPage()%>"/>
+     <jsp:param name="pagetotal" value="<%=jp.getPageTotal()%>"/>
+   </jsp:include>
+        </td></tr> 						
+							<tr>
+								<td colspan="2">
+									<table cellspacing="1" cellpadding="0" width="100%" >
+	  									<tr class="microsoftLook0" height=28>
+      											<th width='10%'><INPUT type="checkbox" class="noborder" name="checkall" onclick="javascript:chkall()">序号</th>				
+      											<th width='20%'>模板oid</th>
+      											<th width='20%'>模板类型</th> 
+      											<th width='15%'>模板高度</th>     
+      											<th width='15%'>模板宽度</th> 
+      											<th width='20%'>模板图片</th>     											
+										</tr>
+										<%
+											int startRow = jp.getStartRow();
+										    for(int i=0;i<rc;i++)
+										    {
+										       PanelModel panelModel = (PanelModel)list.get(i);
+										%>
+   										<tr bgcolor="DEEBF7" <%=onmouseoverstyle%> class="microsoftLook" height=28>  
+    											<td width='5%'>&nbsp;&nbsp;<INPUT type="checkbox" class=noborder name=checkbox value="<%=panelModel.getId()%>" class=noborder>
+    												<font color='blue'><%=startRow + i%></font></td>
+    											<td  align='center'><font color="#397DBD"><%=panelModel.getOid()%></font></td>
+    											<td  align='center'><%=panelModel.getImageType()%></td>
+    											<td  align='center'><%=panelModel.getHeight()%></td>
+    											<td  align='center'><font color="#397DBD"><%=panelModel.getWidth()%></font></td>
+												<td  align='center' ext:qtitle="" ext:qtip='<img src="<%=path%><%=panelModel.getOid().replace(".","-")%>_<%=panelModel.getImageType()%>.jpg" width="200">'>模板图片</td>
+  										</tr>	
+  										<%} %>		
+									</table>
+								</td>
+							</tr>	
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</form>
+</BODY>
+</HTML>

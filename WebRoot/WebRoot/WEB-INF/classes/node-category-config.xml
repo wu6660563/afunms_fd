@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="gb2312"?>
+<node-category>
+    <category name="net" id="01">
+        <category name="cisco" id="0101">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>cpu</name>
+                <indicator-gather>com.afunms.gather.indicator.cisco.CiscoCpuSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.CpuAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.CpuPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>memory</name>
+                <indicator-gather>com.afunms.gather.indicator.cisco.CiscoMemorySnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.MemoryAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.MemoryPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>systemgroup</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralSystemSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.SystemPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>interface</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralInterfaceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.InterfaceAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.InterfacePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>router</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralRouterSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.RouterPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+             <indicator>
+                <name>ipmac</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralArpSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                	<class>com.afunms.node.indicator.action.alarm.IpMacAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.IPMacPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+        <category name="h3c" id="0102">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>cpu</name>
+                <indicator-gather>com.afunms.gather.indicator.h3c.H3CCpuSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.CpuAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.CpuPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>memory</name>
+                <indicator-gather>com.afunms.gather.indicator.h3c.H3CMemorySnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.MemoryAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.MemoryPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>systemgroup</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralSystemSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.SystemPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>interface</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralInterfaceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.InterfaceAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.InterfacePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>router</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralRouterSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.RouterPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+             <indicator>
+                <name>ipmac</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralArpSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                	<class>com.afunms.node.indicator.action.alarm.IpMacAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.IPMacPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+    </category>
+    <category name="host" id="02">
+        <category name="windows" id="0201">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>cpu</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsCpuSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.CpuAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.CpuPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>physicalmemory</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsPhysicalMemorySnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.MemoryAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.MemoryPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>virtualmemory</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsVirtualMemorySnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.MemoryAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.MemoryPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>systemgroup</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralSystemSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.SystemPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>interface</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralInterfaceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.InterfaceAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.InterfacePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>ipmac</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralArpSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                	<class>com.afunms.node.indicator.action.alarm.IpMacAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.IPMacPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>disk</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsDiskSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.DiskAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.DiskPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>service</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsServiceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.ServiceAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.ServicePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>process</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsProcessSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.ProcessAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.ProcessPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>hardware</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsDeviceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.DevicePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>storage</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsStorageSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.StoragePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>software</name>
+                <indicator-gather>com.afunms.gather.indicator.windows.WindowsSoftwareSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.SoftwarePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+        <category name="linux" id="0202">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>allgather</name>
+                <indicator-gather>com.afunms.gather.indicator.linux.LinuxAllGatherLogFileIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.LinuxAllGatherAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.LinuxAllGatherPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+        <category name="tru64" id="0203">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>allgather</name>
+                <indicator-gather>com.afunms.gather.indicator.tru64.Tru64AllGatherLogFileIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.Tru64AllGatherAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.Tru64AllGatherPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+    </category>
+    <category name="firewall" id="03">
+        <category name="topsec" id="0301">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>cpu</name>
+                <indicator-gather>com.afunms.gather.indicator.topsec.TopsecCpuSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.CpuAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.CpuPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>memory</name>
+                <indicator-gather>com.afunms.gather.indicator.topsec.TopsecMemorySnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.MemoryAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.MemoryPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>systemgroup</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralSystemSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.SystemPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>interface</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralInterfaceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.InterfaceAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.InterfacePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>router</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralRouterSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.RouterPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+             <indicator>
+                <name>ipmac</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralArpSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.IPMacPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+        <category name="venus" id="0301">
+            <indicator>
+                <name>ping</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralPingIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.PingAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.PingPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>cpu</name>
+                <indicator-gather>com.afunms.gather.indicator.venus.VenusCpuSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.CpuAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.CpuPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>memory</name>
+                <indicator-gather>com.afunms.gather.indicator.venus.VenusMemorySnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.MemoryAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.MemoryPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>systemgroup</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralSystemSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.SystemPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>interface</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralInterfaceSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.alarm.InterfaceAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.InterfacePersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+            <indicator>
+                <name>router</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralRouterSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                    <class>com.afunms.node.indicator.action.persistence.RouterPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+             <indicator>
+                <name>ipmac</name>
+                <indicator-gather>com.afunms.gather.indicator.general.GeneralArpSnmpIndicatorGather</indicator-gather>
+                <indicator-value-actions>
+                	<class>com.afunms.node.indicator.action.alarm.IpMacAlarmIndicatorValueAction</class>
+                    <class>com.afunms.node.indicator.action.persistence.IPMacPersistenceIndicatorValueAction</class>
+                </indicator-value-actions>
+            </indicator>
+        </category>
+    </category>
+    <category name="db" id="04">
+    </category>
+    <category name="middleware" id="05">
+        <category name="tomcat" id="0501">
+            <tables>
+                <table name="tomcatping" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="IPADDRESS" type="VARCHAR" length="50"></column>
+                    <column name="RESTYPE" type="VARCHAR" length="50"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="50"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                    <column name="UNIT" type="VARCHAR" length="30"></column>
+                    <column name="COUNT" type="VARCHAR" length="50"></column>
+                    <column name="BAK" type="VARCHAR" length="50"></column>
+                    <column name="CHNAME" type="VARCHAR" length="50"></column>
+                </table>
+                <table name="tomcatjvm" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="IPADDRESS" type="VARCHAR" length="50"></column>
+                    <column name="RESTYPE" type="VARCHAR" length="50"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="50"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                    <column name="UNIT" type="VARCHAR" length="30"></column>
+                    <column name="COUNT" type="VARCHAR" length="50"></column>
+                    <column name="BAK" type="VARCHAR" length="50"></column>
+                    <column name="CHNAME" type="VARCHAR" length="50"></column>
+                </table>
+            </tables>
+        </category>
+    </category>
+    <category name="service" id="06">
+        <category name="ftp" id="0601">
+            <tables>
+                <table name="ftp" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="100"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                </table>
+            </tables>
+        </category>
+        <category name="email" id="0602">
+        </category>
+        <category name="web" id="0603">
+        </category>
+        <category name="dns" id="0603">
+        </category>
+        <category name="url" id="0601">
+            <tables>
+                <table name="url" engine="InnoDB" charset="gb2312" primary-key="id">
+                    <column name="id" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="connect_utilization" type="int" length="10"></column>
+                    <column name="response_time" type="int" length="10"></column>
+                    <column name="page_size" type="int" length="20"></column>
+                    <column name="change_rate" type="int" length="10"></column>
+                    <column name="collecttime" type="timestamp"></column>
+                </table>
+            </tables>
+        </category>
+    </category>
+    <category name="application" id="07">
+    	<category name="ptimedb" id="0701">
+    		<tables>
+                <table name="ptimedbping" engine="InnoDB" charset="gb2312" primary-key="ID">
+                	<column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="IPADDRESS" type="VARCHAR" length="50"></column>
+                    <column name="RESTYPE" type="VARCHAR" length="50"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="50"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                    <column name="UNIT" type="VARCHAR" length="30"></column>
+                    <column name="COUNT" type="VARCHAR" length="50"></column>
+                    <column name="BAK" type="VARCHAR" length="50"></column>
+                    <column name="CHNAME" type="VARCHAR" length="50"></column>
+                </table>
+            </tables>
+    	</category>
+    </category>
+</node-category>

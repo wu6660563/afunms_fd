@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tab-config>
+	<tab id="InterfaceInfo" title="流速信息" action="getInterfaceInfo">
+		<title-tr>
+			<title id="index">索引</title>
+			<title id="ifDescr">描述</title>
+			<!-- <title id="LinkUse">关联应用</title> -->
+			<title id="ifSpeed">每秒字节数(M)</title>
+			<title id="ifOperStatus">状态</title>
+			<title id="ifOutBroadcastPkts">出口广播数据包</title>
+			<title id="ifInBroadcastPkts">入口广播数据包</title>
+			<title id="ifOutMulticastPkts">出口多播数据包</title>
+			<title id="ifInMulticastPkts">入口多播数据包</title>
+			<title id="OutBandwidthUtilHdx">出口流速</title>
+			<title id="InBandwidthUtilHdx">入口流速</title>
+			<title id="showDetail">查看详情</title>
+		</title-tr>
+	</tab> 
+	<tab id="PerformaceInfo" title="性能信息" action="getPerformaceInfo"></tab> 
+	<tab id="ProcessInfo" title="进程信息" action="getProcessInfo">
+		<title-tr>
+			<title id="name">进程名称</title>
+			<title id="count">进程个数</title>
+			<title id="type">进程类型</title>
+			<title id="cpuTime">CPU时间</title>
+			<title id="memoryUtilization">内存占用率</title>
+			<title id="memory">内存占用量</title>
+			<title id="status">当前状态</title>
+			<title id="showDetail">查看详情</title>
+		</title-tr>
+	</tab>
+	<tab id="ARPInfo" title="ARP信息" action="getARPInfo">
+		<title-tr>
+			<title id="index">&lt;input type="checkbox" name="checkall"&gt;</title>
+			<title id="ifindex">端口索引</title>
+			<title id="ipaddress">IP</title>
+			<title id="mac">MAC</title>
+			<title id="collecttime">扫描时间</title>
+			<title id="ifband">基线</title>
+			<title id="action">从设备上清除</title>
+		</title-tr>
+	</tab> 
+	<tab id="SoftwareInfo" title="软件信息" action="getSoftwareInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">软件名称</title>
+			<title id="stype">软件类型</title>
+			<title id="insdate">软件安装时间</title>
+		</title-tr>
+	</tab> 
+	<tab id="ServiceInfo" title="服务信息" action="getServiceInfo">
+		<title-tr>
+			<title id="index">序号</title>
+			<title id="name">服务名称</title>
+			<title id="instate">安装状态</title>
+			<title id="opstate">当前状态</title> 
+	    	<title id="uninst">能否卸载</title>
+			<title id="paused">能否暂停</title>
+		</title-tr>
+	</tab> 
+	<tab id="SyslogInfo" title="Syslog信息" action="getSyslogInfo">
+		<title-tr>
+			<title cols="9">
+			<![CDATA[
+				<table>
+					<tr>
+						<td style="text-align:left;" class="detail-data-body-title">
+							&nbsp;&nbsp;
+							开始日期
+							<input type="text" id="startdate" name="startdate" size="10">
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar1,document.forms[0].startdate,null,0,330)">
+							<img id=imageCalendar1 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							截止日期
+							<input type="text" id="todate" name="todate" size="10"/>
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar2,document.forms[0].todate,null,0,330)">
+							<img id=imageCalendar2 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							日志等级
+							<select id="priorityname" name="priorityname">
+								<option value="all">all</option>
+								<option value="panic">panic</option>
+								<option value="alert">alert</option>
+								<option value="critical">critical</option>		
+								<option value="error">error</option>
+								<option value="warning">warning</option>
+								<option value="notice">notice</option>
+								<option value="info">info</option>
+								<option value="debug">debug</option>
+							</select>
+							<input type="button" id="searchSyslogInfo" value="查  询">
+						</td>
+					</tr>
+				</table>
+	    	]]>
+	    	</title>
+	    </title-tr>
+		<title-tr>
+	    	<title id="index">序号</title>
+	        <title id="priorityName">类型</title>
+	    	<title id="recordtime">日期</title>
+			<title id="facility">来源</title>
+	    	<title id="processname">分类</title>
+	    	<title id="eventid">事件</title>
+	    	<title id="username">用户</title>
+	    	<title id="hostname">计算机</title>
+	    	<title id="showDetail">查看</title>
+   		</title-tr>
+	</tab> 
+	<tab id="DeviceInfo" title="设备信息" action="getDeviceInfo">
+		<title-tr>
+			<title id="index">序号</title>
+		    <title id="dtype">设备类型</title>
+			<title id="name">描述</title> 
+			<title id="status">状态</title>
+		</title-tr>
+	</tab> 
+	<tab id="StorageInfo" title="存储信息" action="getStorageInfo">
+		<title-tr>
+			<title id="index">序号</title>
+		    <title id="stype">设备类型</title>
+			<title id="name">描述</title> 
+			<title id="cap">容量</title>
+		</title-tr>
+	</tab> 
+	<tab id="AlarmInfo" title="告警信息" action="getAlarmInfo">
+		<title-tr>
+			<title cols="6">
+			<![CDATA[
+				<table>
+					<tr>
+						<td style="text-align:left;" class="detail-data-body-title">
+							&nbsp;&nbsp;
+							开始日期
+							<input type="text" id="startdate" name="startdate" size="10">
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar1,document.forms[0].startdate,null,0,330)">
+							<img id=imageCalendar1 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							截止日期
+							<input type="text" id="todate" name="todate" size="10"/>
+							<a onclick="event.cancelBubble=true;" href="javascript:ShowCalendar(document.forms[0].imageCalendar2,document.forms[0].todate,null,0,330)">
+							<img id=imageCalendar2 align=absmiddle width=34 height=21 src=/afunms/include/calendar/button.gif border=0></a>
+							事件等级
+							<select id="level1" name="level1">
+							<option value="-1">不限</option>
+							<option value="1">普通事件</option>
+							<option value="2">严重事件</option>
+							<option value="3">紧急事件</option>
+							</select>
+							处理状态
+							<select id="event_status" name="event_status">
+							<option value="-1">不限</option>
+							<option value="0">未处理</option>
+							<option value="1">正在处理</option>
+							<option value="2">已处理</option>
+							</select>
+							<input type="button" id="searchAlarmInfo" value="查  询">
+					</td>
+				</tr>
+			</table>
+	    	]]>
+	    	</title>
+	    </title-tr>
+	    <title-tr>
+		   	<title id="index">序号</title>
+	        <title id="level1">事件等级</title>
+	    	<title id="content">事件描述</title>
+			<!--
+			<title id="recordtime">登记日期</title>
+	    	<title id="eventtype">登记人</title>
+	    	<title id="managesign">处理状态</title> 
+	    	 -->
+	    	<title id="maxtime">最新时间</title>
+	    	<title id="count">告警次数</title> 
+	    	<title id="operation">操作</title>
+	    </title-tr>
+	</tab>
+</tab-config> 

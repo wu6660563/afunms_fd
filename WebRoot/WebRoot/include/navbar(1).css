@@ -1,0 +1,334 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:#5c90d9;/*整个网页的背景颜色*/
+}
+/*.tit为每个菜单的标题样式  .list 为菜单项目的样式*/
+.tit ,.tits , .list{ width:170px; /*菜单的宽度*/
+} 
+
+/*======================================标题部分===============================*/
+.tit {/*菜单标题的样式*/
+	height: 22px;
+	/*border: 1px solid #2a4dab;/*边框颜色*/
+	border-bottom-style: none;/*底部边框没有*/
+	/*background:#547DBE url(/afunms/resource/image/menu_head_bg.gif) repeat-x;/*背景样式依次为：颜色，图片路径，横向重复*/
+	color: #D9E1F6;/*前景色*/
+	font:bold 12px/22px "lucida Grande", verdana, lucida, Arial, helvetica, "宋体", sans-serif;/*文字样式依次为：粗体 大小/行高 字族*/
+	text-indent: 5px;/*文字缩进*/
+	margin-top:0px;/*外填充*/
+	position: relative;	
+}
+.tit a ,.tit a:link , .tit a hover{/*菜单标题中的链接的样式，共同的部分*/
+	color: #D9E1F6;
+	display:block;
+	text-decoration:none;
+	width:183px;
+	background-repeat: no-repeat;
+	background-position: 160px 6px;
+	cursor: pointer;
+}
+.tit a:hover{
+	color: #ffffff;/*鼠标经过时的颜色*/
+}
+.tits {/*菜单标题的样式*/
+	height: 28px;
+	border: 1px solid #2a4dab;/*边框颜色*/
+	border-bottom-style: none;/*底部边框没有*/
+	background:#547DBE url(/afunms/resource/image/menu_head_bg.gif) repeat-x;/*背景样式依次为：颜色，图片路径，横向重复*/
+	color: #D9E1F6;/*前景色*/
+	font:bold 12px/22px "lucida Grande", verdana, lucida, Arial, helvetica, "宋体", sans-serif;/*文字样式依次为：粗体 大小/行高 字族*/
+	text-indent: 5px;/*文字缩进*/
+	margin-top:0px;/*外填充*/
+	position: relative;	
+}
+/*====================
+	菜单标题中的箭头图片
+======================*/
+.on{
+	background-image: url(/afunms/resource/image/arrow_up.gif);/*向上的箭头-暗色*/
+}
+.on:hover{
+	background-image: url(/afunms/resource/image/arrow_up_o.gif);/*向上的箭头-亮色*/
+}
+.off{
+	background-image: url(/afunms/resource/image/arrow_down.gif);/*向下的箭头-暗色*/
+}
+.off:hover{
+	background-image: url(/afunms/resource/image/arrow_down_o.gif);/*向下的箭头-亮色*/
+}
+/*标题图标样式*/
+.titpic {
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	left: 0px;
+	bottom: 0px;
+}
+
+
+/*每一个标题图标，可变的部分*/
+#pc1{
+	background: url(/afunms/resource/image/pepo.png) no-repeat;
+}
+#pc2{
+	background: url(/afunms/resource/image/st.png) no-repeat;
+}
+#pc3{
+	background: url(/afunms/resource/image/ring.png) no-repeat;
+}
+#pc4{
+	background: url(/afunms/resource/image/pic.png) no-repeat;
+}
+#pc5{
+	background: url(/afunms/resource/image/mv.png) no-repeat;
+}
+#pc6{
+	background: url(/afunms/resource/image/up.png) no-repeat;
+}
+#pc7{
+	background: url(/afunms/resource/image/help.png) no-repeat;
+}
+/*==========================================菜单体部分======================================*/
+/*====================
+	菜单列表的样式
+======================*/
+.list{
+	font-size: 12px;
+	color: #002280;
+	background: #fff no-repeat right bottom;
+	width: 165px;/*宽度*/
+	/*border: 1px solid #2A4DAB;*/
+	text-align:left;
+	padding:0px 5px;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	width:165px;
+	overflow:hidden;
+}
+html>body .list {
+width:165px;
+}
+.list ul{
+list-style-type:none;
+margin:0;
+padding:0;
+padding-left:7px;
+}
+.list li{
+margin:0;
+padding:2;
+padding-left:5px;
+}
+/*============
+菜单链接的样式
+==============*/
+.list a{
+color:#002280;
+text-decoration:none;
+}
+.list a:link{
+color:#002280;
+}
+.list a:hover{
+color:#296DC1;
+text-decoration:underline;
+}
+.list a:active{
+color:#296DC1;
+}
+
+/*每一个菜单体的背景图片可变部分*/
+#menu1_child{
+	background-image:url(/afunms/resource/image/bgmv.png);
+}
+#menu2_child{
+	background-image:url(/afunms/resource/image/bgmv.png);
+}
+#menu3_child{
+	background-image:url(/afunms/resource/image/bgmv.png);
+
+}
+#menu4_child{
+	background-image:url(/afunms/resource/image/bgmv.png);
+
+}
+#menu5_child{
+	background-image:url(/afunms/resource/image/bgmv.png);
+}
+
+/*每一个列表前的，列表图标*/
+#m1_1{
+list-style-image:url(/afunms/resource/image/addDevice.gif);
+}
+#m1_2{
+list-style-image:url(/afunms/resource/image/autoDiscovery16.gif);
+}
+#m1_3{
+list-style-image:url(/afunms/resource/image/zxry.GIF);
+}
+#m1_4{
+list-style-image:url(/afunms/resource/image/manageDev.gif);
+}
+#m1_5{
+list-style-image:url(/afunms/resource/image/xgmm.GIF);
+}
+#m1_6{
+list-style-image:url(/afunms/resource/image/calendar_view_month.png);
+}
+/*2*/
+#m2_1{
+list-style-image:url(/afunms/resource/image/icon_cloud.gif);
+}
+#m2_2{
+list-style-image:url(/afunms/resource/image/bmgl.GIF);
+}
+#m2_3{
+list-style-image:url(/afunms/resource/image/ico/3.gif);
+}
+#m2_4{
+list-style-image:url(/afunms/resource/image/ico/4.gif);
+}
+/*3*/
+#m3_1{
+list-style-image:url(/afunms/resource/image/icon_detail.gif);
+}
+#m3_2{
+list-style-image:url(/afunms/resource/image/mac.jpg);
+}
+#m3_3{
+list-style-image:url(/afunms/resource/image/manageDev.gif);
+}
+#m3_4{
+list-style-image:url(/afunms/resource/image/infopoint.gif);
+}
+/*4*/
+#m4_1{
+list-style-image:url(/afunms/resource/image/hostl.gif);
+}
+#m4_2{
+list-style-image:url(/afunms/resource/image/desktops.gif);
+}
+#m4_3{
+list-style-image:url(/afunms/resource/image/mac.jpg);
+}
+#m4_4{
+list-style-image:url(/afunms/resource/image/maccurrent.gif);
+}
+#m4_5{
+list-style-image:url(/afunms/resource/image/viewmac.gif);
+}
+/*5*/
+#m5_1{
+list-style-image:url(/afunms/resource/image/mkdz.gif);
+}
+#m5_2{
+list-style-image:url(/afunms/resource/image/zcbf.gif);
+}
+#m5_3{
+list-style-image:url(/afunms/resource/image/ico/3.gif);
+}
+#m5_4{
+list-style-image:url(/afunms/resource/image/ico/4.gif);
+}
+/*6*/
+#m6_1{
+list-style-image:url(/afunms/resource/image/editicon.gif);
+}
+#m6_2{
+list-style-image:url(/afunms/resource/image/manageDev.gif);
+}
+#m6_3{
+list-style-image:url(/afunms/resource/image/ico/3.gif);
+}
+#m6_4{
+list-style-image:url(/afunms/resource/image/ico/4.gif);
+}
+/*7*/
+#m7_1{
+list-style-image:url(/afunms/resource/image/sysloglist16.gif);
+}
+#m7_2{
+list-style-image:url(/afunms/resource/image/cancelMng.gif);
+}
+#m7_3{
+list-style-image:url(/afunms/resource/image/reportList-16.gif);
+}
+#m7_4{
+list-style-image:url(/afunms/resource/image/reportsyspara-16.gif);
+}
+#m7_5{
+list-style-image:url(/afunms/resource/image/integratedReports-16.gif);
+}
+#m7_6{
+list-style-image:url(/afunms/resource/image/syslog.gif);
+}
+#m7_7{
+list-style-image:url(/afunms/resource/image/filter16.gif);
+}
+/*8*/
+#m8_1{
+list-style-image:url(/afunms/resource/image/graph1.png);
+}
+#m8_2{
+list-style-image:url(/afunms/resource/image/viewreport.gif);
+}
+#m8_3{
+list-style-image:url(/afunms/resource/image/reportList-16.gif);
+}
+#m8_4{
+list-style-image:url(/afunms/resource/image/reportsyspara-16.gif);
+}
+#m8_5{
+list-style-image:url(/afunms/resource/image/integratedReports-16.gif);
+}
+#m8_6{
+list-style-image:url(/afunms/resource/image/syslog.gif);
+}
+#m8_7{
+list-style-image:url(/afunms/resource/image/filter16.gif);
+}
+/*9*/
+#m9_1{
+list-style-image:url(/afunms/resource/image/editicon.gif);
+}
+#m9_2{
+list-style-image:url(/afunms/resource/image/device_vendor-16.gif);
+}
+#m9_3{
+list-style-image:url(/afunms/resource/image/device_type-16.gif);
+}
+#m9_4{
+list-style-image:url(/afunms/resource/image/vo_service_16.gif);
+}
+#m9_5{
+list-style-image:url(/afunms/resource/image/zxry.GIF);
+}
+#m9_6{
+list-style-image:url(/afunms/resource/image/jsfp.GIF);
+}
+#m9_7{
+list-style-image:url(/afunms/resource/image/bmgl.GIF);
+}
+#m9_8{
+list-style-image:url(/afunms/resource/image/jswh.GIF);
+}
+#m9_9{
+list-style-image:url(/afunms/resource/image/sqgl.GIF);
+}
+#m9_10{
+list-style-image:url(/afunms/resource/image/xgmm.GIF);
+}
+#m9_11{
+list-style-image:url(/afunms/resource/image/mkdz.gif);
+}
+#m9_12{
+list-style-image:url(/afunms/resource/image/zcbf.gif);
+}
+#m9_13{
+list-style-image:url(/afunms/resource/image/friend.gif);
+}
+#m9_14{
+list-style-image:url(/afunms/resource/image/ftp.jpg);
+}

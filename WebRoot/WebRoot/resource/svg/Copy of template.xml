@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 800"
+	xmlns:xlink="http://www.w3.org/1999/xlink" source="NR-PCS9000"
+	xmlns:cge="http://www.cim.com">
+	<defs>
+		<symbol id="net_switch:h3c@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+		<symbol id="net_switch:h3c@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+		<symbol id="net_switch:cisco@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+		<symbol id="net_switch:cisco@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+
+		<symbol id="net_router:cisco@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+		<symbol id="net_router:cisco@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+		<symbol id="net_router:cisco@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+		<symbol id="net_router:cisco@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="switch.png" />
+		</symbol>
+
+		<symbol id="net_firewall:topsec@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="firewall.gif" />
+		</symbol>
+		<symbol id="net_firewall:topsec@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="firewall.gif" />
+		</symbol>
+		<symbol id="net_firewall:venus@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="firewall.gif" />
+		</symbol>
+		<symbol id="net_firewall:venus@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="firewall.gif" />
+		</symbol>
+
+		<symbol id="net_server:linux@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="linux.gif" />
+		</symbol>
+		<symbol id="net_server:linux@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="linux.gif" />
+		</symbol>
+		<symbol id="net_server:windows@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="server.gif" />
+		</symbol>
+		<symbol id="net_server:windows@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="server.gif" />
+		</symbol>
+		<symbol id="net_server:hpunix@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="server.gif" />
+		</symbol>
+		<symbol id="net_server:hpunix@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="server.gif" />
+		</symbol>
+
+		<symbol id="net_server:hpunix@0">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="server.gif" />
+		</symbol>
+		<symbol id="net_server:hpunix@1">
+			<image x="0" y="0" width="32" height="32"
+				xlink:href="server.gif" />
+		</symbol>
+	</defs>
+	<g id="HeadClass">
+		<rect width="1300" x="0" y="0" fill="rgb(255,255,255)"
+			height="768" />
+	</g>
+    <g id="nodesClass">
+        <g id="248">
+            <use width="30" x="77" y="94" height="30" zvalue="15" xlink:href="#State:二次运维@1" transform="rotate(0,77,94) scale(4.46667,2.93333) translate(-59.7612,-61.9545)" />
+        </g>
+    </g>
+</svg>
+

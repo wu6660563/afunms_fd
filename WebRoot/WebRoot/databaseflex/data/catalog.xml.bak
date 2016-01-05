@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+   <product productId="63">
+      <name>ol_svr_custom</name>
+      <description>数据库名称:model&lt;br/&gt;服务名称:ol_svr_custom&lt;br/&gt;创建者:Administrator &lt;br/&gt;创建时间:2010-01-10</description>
+      <price>63</price>
+      <image>../resource/databaseflex/image/topo/informix.gif</image>
+      <isManage>已监视</isManage>
+      <series>model数据库</series>
+      <mysql />
+      <oracle />
+      <sqlserver />
+      <sybase />
+      <db2 />
+      <informix>true</informix>
+      <highlight1>IP 172.18.60.50</highlight1>
+      <highlight2>PORT 9088&lt;br/&gt;数据库类型 Informix&lt;br/&gt;当前状态 正在运行</highlight2>
+      <qty />
+      <ip>172.18.60.50</ip>
+      <showmessage>表空间:ol_svr_c 使用率:1.79%&lt;br/&gt;表空间:rootdbs 使用率:62.46%&lt;br/&gt;表空间:sbspace 使用率:95.71%&lt;br/&gt;</showmessage>
+   </product>
+</catalog>
+

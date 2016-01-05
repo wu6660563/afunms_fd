@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gather-nodes>
+    <gather-node>
+        <id>1</id>
+        <ipaddress>192.168.201.3</ipaddress>
+        <descr>银川运营部主采集器</descr>
+        <default>true</default>
+        <gather>true</gather>
+    </gather-node>
+    <gather-node>
+        <id>2</id>
+        <ipaddress>192.168.1.1.</ipaddress>
+        <descr>宁东运营部分采集器</descr>
+        <default>false</default>
+        <gather>false</gather>
+    </gather-node>
+    <gather-node>
+        <id>3</id>
+        <ipaddress>192.168.1.1</ipaddress>
+        <descr>银北运营部分采集器</descr>
+        <default>false</default>
+        <gather>false</gather>
+    </gather-node>
+</gather-nodes>
+

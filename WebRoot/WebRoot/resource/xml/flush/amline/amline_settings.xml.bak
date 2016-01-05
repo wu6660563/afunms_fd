@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Value between [] brackets, for example [#FFFFFF] shows default value which is used if this parameter is not set -->
+<!-- This means, that if you are happy with this value, you can delete this line at all and reduce file size -->
+<!-- value or explanation between () brackets shows the range or type of values you should use for this parameter -->
+<settings> 
+  <error_messages><enabled>false</enabled></error_messages> 
+  <data_type>xml</data_type>                                     <!-- [xml] (xml / csv) -->
+  <type></type>                                               <!-- [line] (line, stacked, 100% stacked) -->  
+  <csv_separator></csv_separator>                             <!-- [;] (string) csv file data separator (you need it only if you are using csv file for your data) -->
+  <skip_rows></skip_rows>                                     <!-- [0] (Number) if you are using csv data type, you can set the number of rows which should be skipped here -->       
+  <font></font>                                               <!-- [Arial] (font name) use device fonts, such as Arial, Times New Roman, Tahoma, Verdana... -->
+  <text_size></text_size>                                     <!-- [11] (Number) text size of all texts. Every text size can be set individually in the settings below -->
+  <text_color></text_color>                                   <!-- [#000000] (hex color code) main text color. Every text color can be set individually in the settings below-->
+  <decimals_separator>.</decimals_separator>                   <!-- [,] (string) decimal separator. Note, that this is for displaying data only. Decimals in data xml file must be separated with dot -->
+  <thousands_separator>,</thousands_separator>                 <!-- [ ] (string) thousand separator -->
+  <digits_after_decimal></digits_after_decimal>              <!-- [] (Number) if your value has less digits after decimal then is set here, zeroes will be added -->
+  <redraw></redraw>                                           <!-- [false] (true / false) if your chart's width or height is set in percents, and redraw is set to true, the chart will be redrawn then screen size changes -->
+                                                              <!-- Legend, buttons labels will not be repositioned if you set your x and y values for these objects -->  
+  <reload_data_interval></reload_data_interval>               <!-- [0] (Number) how often data should be reloaded (time in seconds) If you are using this feature I strongly recommend to turn off zoom function (set <zoomable>false</zoomable>) -->
+  <preloader_on_reload></preloader_on_reload>                 <!-- [false] (true / false) Whether to show preloaded when data or settings are reloaded -->
+  <add_time_stamp></add_time_stamp>                           <!-- [false] (true / false) if true, a unique number will be added every time flash loads data. Mainly this feature is useful if you set reload _data_interval >0 -->
+  <precision></precision>                                     <!-- [2] (Number) shows how many numbers should be shown after comma for calculated values (percents, used only in stacked charts) -->
+  <connect></connect>                                         <!-- [false] (true / false) whether to connect points if y data is missing -->
+  <hide_bullets_count></hide_bullets_count>                   <!-- [] (Number) if there are more then hideBulletsCount points on the screen, bullets can be hidden, to avoid mess. Leave empty, or 0 to show bullets all the time. This rule doesn't influence if custom bullet is defined near y value, in data file -->
+  <link_target></link_target>                                 <!-- [] (_blank, _top ...) -->
+  <start_on_axis></start_on_axis>                             <!-- [true] (true / false) if set to false, graph is moved 1/2 of one series interval from Y axis -->
+    
+  <plot_area>                                                 <!-- PLOT AREA (the area between axes)区域 -->
+     <margins>                                                 <!-- plot area margins -->
+     <left>45</left>                                         <!-- [60](Number) --> 
+      <top>48</top>                                           <!-- [60](Number) --> 
+      <right>35</right>                                       <!-- [60](Number) -->
+      <bottom>42</bottom>                                    <!-- [80](Number) -->
+    </margins>
+  </plot_area>  
+
+<grid>                                                      <!-- GRID -->
+    <x>                                                       <!-- vertical grid -->             
+      <enabled></enabled>                                     <!-- [true] (true / false) -->                                            
+      <color></color>                                  <!-- [#000000] (hex color code) -->
+      <alpha>5</alpha>                                        <!-- [15] (0 - 100) -->
+      <dashed></dashed>                                       <!-- [false](true / false) -->
+      <dash_length></dash_length>                             <!-- [5] (Number) -->  
+      <approx_count></approx_count>                           <!-- [4] (Number) approximate number of gridlines -->
+    </x>
+    <y_left>                                                  <!-- horizontal grid, Y left axis. Visible only if there is at least one graph assigned to left axis -->
+      <enabled></enabled>                                     <!-- [true] (true / false) -->          
+      <color></color>                                  <!-- [#000000] (hex color code) -->
+      <alpha>5</alpha>                                        <!-- [15] (0 - 100) -->
+      <dashed></dashed>                                       <!-- [false] (true / false) -->
+      <dash_length></dash_length>                             <!-- [5] (Number) -->
+      <approx_count></approx_count>                           <!-- [10] (Number) approximate number of gridlines -->
+    </y_left>
+    <y_right>                                                 <!-- horizontal grid, Y right axis. Visible only if there is at least one graph assigned to right axis -->
+      <enabled></enabled>                                     <!-- [true] (true / false) -->          
+      <color></color>                                         <!-- [#000000] (hex color code) -->
+      <alpha></alpha>                                         <!-- [15] (0 - 100) -->
+      <dashed></dashed>                                       <!-- [false] (true / false) -->
+      <dash_length></dash_length>                             <!-- [5] (Number) -->
+      <approx_count></approx_count>                           <!-- [10] (Number) approximate number of gridlines -->
+    </y_right>        
+  </grid>
+  
+
+  <axes>                                                      <!-- axes -->
+    <x>                                                       <!-- X axis -->
+      <color></color>                                         <!-- [#000000] (hex color code) -->
+      <alpha></alpha>                                         <!-- [100] (0 - 100) -->
+      <width>1</width>                                         <!-- [2] (Number) line width, 0 for hairline -->
+      <tick_length>3</tick_length>                             <!-- [7] (Number) -->
+    </x>
+    <y_left>                                                  <!-- Y left axis, visible only if at least one graph is assigned to this axis -->
+      <color></color>                                         <!-- [#000000] (hex color code) -->
+      <alpha></alpha>                                         <!-- [100] (0 - 100) -->
+      <width>1</width>                                         <!-- [2] (Number) line width, 0 for hairline -->
+      <tick_length>3</tick_length>                             <!-- [7] (Number) -->
+      <logarithmic></logarithmic>                             <!-- [false] (true / false) If set to true, this axis will use logarithmic scale instead of linear -->
+    </y_left>
+    <y_right>                                                 <!-- Y right axis, visible only if at least one graph is assigned to this axis -->
+      <color></color>                                         <!-- [#000000] (hex color code) -->
+      <alpha></alpha>                                         <!-- [100] (0 - 100) -->
+      <width></width>                                         <!-- [2] (Number) line width, 0 for hairline -->
+      <tick_length></tick_length>                             <!-- [7] (Number) -->
+      <logarithmic></logarithmic>                             <!-- [false] (true / false) If set to true, this axis will use logarithmic scale instead of linear -->
+    </y_right>
+  </axes>  
+
+ <legend>                                                    <!-- LEGEND -->
+    <enabled></enabled>                                       <!-- [true] (true / false) -->
+    <x>280</x>                                                   <!-- [] (Number) if empty, will be equal to left margin -->
+    <y>40</y>                                                   <!-- [] (Number) if empty, will be below plot area -->
+    <width>150</width>                                        <!-- [] (Number) if empty, will be equal to plot area width -->
+    <max_columns>1</max_columns>                               <!-- [] (Number) the maximum number of columns in the legend -->    
+    <color></color>                                           <!-- [#FFFFFF] (hex color code) background color -->
+    <alpha></alpha>                                           <!-- [0] (0 - 100) background alpha -->
+    <border_color></border_color>                             <!-- [#000000] (hex color code) border color -->
+    <border_alpha></border_alpha>                             <!-- [0] (0 - 100) border alpha -->
+    <text_color></text_color>                                 <!-- [text_color] (hex color code) -->   
+    <text_size></text_size>                                   <!-- [text_size] (Number) -->
+    <spacing>2</spacing>                                      <!-- [10] (Number) vertical and horizontal gap between legend entries -->
+    <margins>10</margins>                                       <!-- [0] (Number) legend margins (space between legend border and legend entries, recommended to use only if legend border is visible or background color is different from chart area background color) -->
+    <reverse_order></reverse_order>                           <!-- [false] (true / false) whether to sort legend entries in a reverse order -->    
+    <key>                                                     <!-- KEY (the color box near every legend entry) -->
+      <size></size>                                           <!-- [16] (Number) key size-->
+      <border_color></border_color>                           <!-- [] (hex color code) leave empty if you don't want to have border-->
+    </key>
+  </legend>  
+  
+  <labels>                                                    <!-- LABELS -->
+                                                              <!-- you can add as many labels as you want -->
+                                                              <!-- labels can also be added in data xml file, using exactly the same structure like it is here -->
+    <label>
+      <x>50</x>                                               <!-- [0] (Number) -->
+      <y>370</y>                                              <!-- [0] (Number) -->
+      <rotate></rotate>                                       <!-- [false] (true, false) -->
+      <width></width>                                         <!-- [] (Number) if empty, will stretch from left to right untill label fits -->
+      <align>left</align>                                     <!-- [left] (left / center / right) -->  
+      <text_color></text_color>                               <!-- [text_color] (hex color code) button text color -->
+      <text_size></text_size>                                 <!-- [text_size](Number) button text size -->
+      <text>                                                  <!-- [] (text) html tags may be used (supports <b>, <i>, <u>, <font>, <a href="">, <br/>. Enter text between []: <![CDATA[your <b>bold</b> and <i>italic</i> text]]>-->
+        <![CDATA[]]>
+      </text>        
+    </label>    
+  </labels>
+  
+  <graphs>   
+    <graph gid="0">                      <!-- if you are using XML data file, graph "gid" must match graph "gid" in data file -->
+      <axis>left</axis>                                       <!-- [left] (left/ right) indicates which y axis should be used -->
+      <title></title>     
+      <color>#EF689D</color>  
+      <color_hover>#FF1010</color_hover>   
+     </graph>
+    
+    <graph gid="1">                                                            
+      <axis>left</axis>
+      <title>普通事件</title>              
+      <color>#81B5E4</color>
+       <color_hover>#98C3E9</color_hover>   
+     </graph>
+    <graph gid="2">                                                            
+      <axis>left</axis>
+      <title>紧急事件</title>              
+      <color>0xB0DE09</color>
+       <color_hover>#98C3E9</color_hover>   
+     </graph>
+    <graph gid="3">                                                            
+      <axis>left</axis>
+      <title>严重事件</title>              
+      <color>0x0D8ECF</color>
+       <color_hover>#98C3E9</color_hover>   
+     </graph>     
+  </graphs>  
+</settings>
+q

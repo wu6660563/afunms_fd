@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+   <item objectName="网络扫描窃听事件" objectNumber="0"/>
+   <item objectName="拒绝服务攻击事件" objectNumber="71"/>
+   <item objectName="漏洞攻击事件" objectNumber="0"/>
+   <item objectName="蠕虫事件" objectNumber="1398"/>
+</data>

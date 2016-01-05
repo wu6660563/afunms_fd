@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="GB2312"?>
+<root>
+	<interface>
+		<item>
+			<ip>10.10.1.2</ip>
+			<type>net</type>
+			<subtype>h3c</subtype>
+			<category>System</category>
+			<entity>sysDescr</entity>
+			<subentity>sysDescr</subentity>
+			<thevalue>H3C Comware Platform Software, Software Version 3.10, Release 3135 H3C S7506 Copyright(c) 2004-2007 Hangzhou H3C Technologies Co., Ltd. All rights reserved.</thevalue>
+			<chname>描述</chname>
+			<restype>static</restype>
+			<time>2011-06-10 09:16:42</time>
+			<unit />
+			<bak />
+		</item>
+		<item>
+			<ip>10.10.1.2</ip>
+			<type>net</type>
+			<subtype>h3c</subtype>
+			<category>System</category>
+			<entity>sysDescr</entity>
+			<subentity>sysUpTime</subentity>
+			<thevalue>352 days, 23:56:55.00</thevalue>
+			<chname>运行时间</chname>
+			<restype>static</restype>
+			<time>2011-06-10 09:16:42</time>
+			<unit />
+			<bak />
+		</item>
+		<item>
+			<ip>10.10.1.2</ip>
+			<type>net</type>
+			<subtype>h3c</subtype>
+			<category>System</category>
+			<entity>sysDescr</entity>
+			<subentity>sysContact</subentity>
+			<thevalue>Hangzhou H3C Technologies Co., Ltd.</thevalue>
+			<chname>联系人</chname>
+			<restype>static</restype>
+			<time>2011-06-10 09:16:42</time>
+			<unit />
+			<bak />
+		</item>
+		<item>
+			<ip>10.10.1.2</ip>
+			<type>net</type>
+			<subtype>h3c</subtype>
+			<category>System</category>
+			<entity>sysDescr</entity>
+			<subentity>sysName</subentity>
+			<thevalue>HX_7506A</thevalue>
+			<chname>设备名称</chname>
+			<restype>static</restype>
+			<time>2011-06-10 09:16:42</time>
+			<unit />
+			<bak />
+		</item>
+		<item>
+			<ip>10.10.1.2</ip>
+			<type>net</type>
+			<subtype>h3c</subtype>
+			<category>System</category>
+			<entity>sysDescr</entity>
+			<subentity>sysLocation</subentity>
+			<thevalue>14F_jifang</thevalue>
+			<chname>设备位置</chname>
+			<restype>static</restype>
+			<time>2011-06-10 09:16:42</time>
+			<unit />
+			<bak />
+		</item>
+		<item>
+			<ip>10.10.1.2</ip>
+			<type>net</type>
+			<subtype>h3c</subtype>
+			<category>System</category>
+			<entity>sysDescr</entity>
+			<subentity>sysServices</subentity>
+			<thevalue>78</thevalue>
+			<chname>服务类型</chname>
+			<restype>static</restype>
+			<time>2011-06-10 09:16:42</time>
+			<unit />
+			<bak />
+		</item>
+	</interface>
+</root>
+

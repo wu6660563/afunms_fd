@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pie>
+   <slice title="网络设备" pull_out="true">0</slice>
+   <slice title="服务器" pull_out="false">1</slice>
+   <slice title="数据库" pull_out="false">0</slice>
+   <slice title="应用服务" pull_out="false">0</slice>
+   <slice title="中间件" pull_out="false">0</slice>
+   <slice title="安全设备" pull_out="false">0</slice>
+</pie>
+

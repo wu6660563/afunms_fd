@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report version="3.0">
+	<head>
+		<property name="type">0</property>
+		<name><![CDATA[bussinessview]]></name>
+		<dataSets>
+			<dataSet name="ds" type="DB_SQL" >
+				<property name="dataSource">dhcc_newafunms</property>
+				<property name="desc"><![CDATA[]]></property>
+				<property name="query"><![CDATA[="select nodeid,level1,subtype,eventlocation,
+count(*) as cnt from system_eventlist where to_days(recordtime) >= to_days(?) 
+and to_days(recordtime) <= to_days(?) and ("+@query+") group by nodeid,subtype,level1;"]]></property>
+				<property name="beginRow">0</property>
+				<property name="endRow">0</property>
+				<queryParam name="starttime" />
+				<queryParam name="endtime" />
+			</dataSet>
+		</dataSets>
+		<parameters>
+			<parameter name="nodeType" type="262">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">设备类型</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="starttime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">开始时间</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="endtime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">结束时间</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="query" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">查询条件</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="nodeName" type="262">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">设备名称</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="nodeIp" type="262">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">设备IP</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="nodeSubtype" type="262">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">设备子类型</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="nodeId" type="273">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">设备编号</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="busName" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">业务视图名称，如果为空则使用“”而不是null</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+		</parameters>
+		<variables/>
+		<subReports/>
+	</head>
+	<body>
+		<sheet id="sheet1">
+			<page>
+				<property name="pageRowNum">11</property>
+			</page>
+			<grid row="4" col="11">
+				<properties>
+				</properties>
+				<rows>
+					<row id="1">
+						<property name="type">1</property>
+						<property name="height">100</property>
+					</row>
+					<row id="2">
+						<property name="type">1</property>
+						<property name="height">100</property>
+					</row>
+					<row id="3">
+						<property name="height">60</property>
+					</row>
+					<row id="4">
+						<property name="height">99</property>
+					</row>
+				</rows>
+				<columns>
+					<column id="1">
+						<property name="width">57</property>
+					</column>
+					<column id="2">
+						<property name="visible"><![CDATA[1]]></property>
+					</column>
+					<column id="3">
+						<property name="visible"><![CDATA[1]]></property>
+						<property name="width">164</property>
+					</column>
+					<column id="4">
+						<property name="width">121</property>
+					</column>
+					<column id="5">
+						<property name="width">96</property>
+					</column>
+					<column id="6">
+						<property name="width">105</property>
+					</column>
+					<column id="7">
+						<property name="width">80</property>
+					</column>
+					<column id="8">
+						<property name="width">80</property>
+					</column>
+					<column id="9">
+					</column>
+					<column id="10">
+					</column>
+					<column id="11">
+						<property name="width">133</property>
+					</column>
+				</columns>
+				<cells>
+					<cell id="1,1" type="0" colspan="11" >
+						<property name="value"><![CDATA[=@starttime+'至'+@endtime]]></property>
+						<property name="font-size">12</property>
+						<property name="align">2</property>
+						<property name="valign">2</property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+					</cell>
+					<cell id="2,1" type="0" colspan="11" >
+						<property name="value"><![CDATA[=@busName+'告警报表']]></property>
+						<property name="font-size">18</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=179,227,247]]></property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,1" type="0" >
+						<property name="value"><![CDATA[序号]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,2" type="0" >
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,3" type="0" >
+						<property name="value"><![CDATA[设备名称]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,4" type="0" >
+						<property name="value"><![CDATA[设备IP]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,5" type="0" >
+						<property name="value"><![CDATA[设备类型]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,6" type="0" >
+						<property name="value"><![CDATA[设备子类型]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,7" type="0" >
+						<property name="value"><![CDATA[提示]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[0,0,255]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,8" type="0" >
+						<property name="value"><![CDATA[普通]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[255,255,0]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,9" type="0" >
+						<property name="value"><![CDATA[严重]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[255,153,0]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,10" type="0" >
+						<property name="value"><![CDATA[紧急]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[255,0,0]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,11" type="0" >
+						<property name="value"><![CDATA[设备告警饼图]]></property>
+						<property name="font-size">12</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,1" type="0" >
+						<property name="value"><![CDATA[=row()-3]]></property>
+						<property name="ext-left"><![CDATA[b4]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,2" type="0" >
+						<property name="value"><![CDATA[=@nodeId]]></property>
+						<property name="ext-direction">3</property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,3" type="0" >
+						<property name="value"><![CDATA[=@nodeName]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,4" type="0" >
+						<property name="value"><![CDATA[=@nodeIp]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,5" type="0" >
+						<property name="value"><![CDATA[=@nodeType]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,6" type="0" >
+						<property name="value"><![CDATA[=@nodeSubtype]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,7" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,level1=0 and subtype=E4 and nodeid=B4),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,8" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,level1=1 and subtype=E4 and nodeid=B4),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,9" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,level1=2 and subtype=E4 and nodeid=B4),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,10" type="0" >
+						<property name="value"><![CDATA[=nvl(ds.getone(ds.cnt,level1=3 and subtype=E4 and nodeid=B4),0)]]></property>
+						<property name="background"><![CDATA[=if(row()%2 == 0,'255,204,153','255,255,255')]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,11" type="1" >
+						<property name="value"><![CDATA[<chart><param name="seriescount" value="1" /><param name="colorstyle" value="报警等级配色" /><param name="legendon" value="true" /><param name="3ddepth" value="18" /><param name="titlefont" value="宋体,plain,14" /><param name="webtarget_0" value="_blank" /><param name="pielabelson" value="true" /><param name="samplelabels" value="提示,普通,严重,紧急" /><param name="rangedecimalcount" value="auto" /><param name="pointinglabelfont" value="宋体,plain,11" /><param name="percentlabelstyle" value="inside" /><param name="sampleaxislabelfont" value="宋体,plain,11" /><param name="percentdecimalcount" value="0" /><param name="rangelabelfont" value="宋体,plain,11" /><param name="percentlabelson" value="true" /><param name="startangle" value="90" /><param name="3dmodeon" value="true" /><param name="serieslabelson" value="false" /><param name="pielabelfont" value="宋体,plain,11" /><param name="endangle" value="270" /><param name="serieslabels" value=" " /><param name="legendfont" value="宋体,plain,11" /><param name="serieslabels_0" value=" " /><param name="rangelabelson" value="true" /><param name="valuelabelstyle" value="inside" /><param name="rangeaxislabelfont" value="宋体,plain,11" /><param name="insidelabelfont" value="宋体,plain,11" /><param name="outsidelabelfont" value="宋体,plain,11" /><param name="samplevalues_0" value="=[G4,H4,I4,J4]" /><param name="sampledecimalcount" value="0" /><param name="background" value="255,255,255" /><param name="chart" value="pie" /></chart>]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+				</cells>
+			</grid>
+		</sheet>
+	</body>
+	<param-form col="2">
+		<ctrl ver="new" id="nodeType" type="1" label="设备类型">
+		</ctrl>
+		<ctrl ver="new" id="starttime" type="1" label="开始时间">
+		</ctrl>
+		<ctrl ver="new" id="endtime" type="1" label="结束时间">
+		</ctrl>
+		<ctrl ver="new" id="query" type="1" label="查询条件">
+		</ctrl>
+		<ctrl ver="new" id="nodeName" type="1" label="设备名称">
+		</ctrl>
+		<ctrl ver="new" id="nodeIp" type="1" label="设备IP">
+		</ctrl>
+		<ctrl ver="new" id="nodeSubtype" type="1" label="设备子类型">
+		</ctrl>
+		<ctrl ver="new" id="nodeId" type="1" label="设备编号">
+		</ctrl>
+		<ctrl ver="new" id="busName" type="1" label="业务视图名称，如果为空则使用“”而不是null">
+		</ctrl>
+	</param-form>
+</report>

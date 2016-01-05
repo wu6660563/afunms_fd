@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<item>
+   <item id="0" label="全部(95)" >
+       <item id="1" label="系统状态(29)" >
+            <item id="4" label="设备中断事件(9)" />
+            <item id="5" label="未定义的状态事件(9)" />
+            <item id="6" label="用户配置(8)" />
+            <item id="7" label="磁盘利用率越界事件(2)" />
+            <item id="8" label="内存利用率越界事件(1)" />
+       </item>
+       <item id="2" label="认证授权事件(55)" >
+            <item id="9" label="SNMP访问(2)" />
+            <item id="10" label="Windows访问(1)" />
+            <item id="11" label="安全策略变更(8)" />
+            <item id="12" label="认证授权成功(16)" />
+            <item id="13" label="数据库访问(6)" />
+            <item id="14" label="认证授权失败(1)" />
+            <item id="15" label="WEB访问(21)" />
+       </item>
+       <item id="3" label="扫描探测(1)" />
+   </item>
+</item>
+

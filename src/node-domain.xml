@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domains>
+    <domain>
+        <id>1</id>
+        <descr>一区</descr>
+        <default>false</default>
+    </domain>
+    <domain>
+        <id>3</id>
+        <descr>三区</descr>
+        <default>true</default>
+    </domain>
+</domains>

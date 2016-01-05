@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="GB2312"?>
+<disks>
+  <disk>
+    <ip>10.10.10.3</ip>
+	<tag>/oradata</tag>
+	<vg>lsvg -p oravg</vg>
+  </disk>
+  <disk>
+    <ip>192.168.101.31</ip>
+	<tag>S</tag>
+    <vg></vg>
+  </disk>
+  <disk>
+    <ip>192.168.101.3</ip>
+	<tag>/fs/sybaseinst</tag>
+	<vg>lsvg -p sybasevg</vg>	
+  </disk>
+  <disk>
+    <ip>192.168.100.166</ip>
+	<tag>/oradata</tag>
+	<vg></vg>
+  </disk>
+</disks>

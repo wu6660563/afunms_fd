@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<report version="3.0">
+	<head>
+		<property name="type">0</property>
+		<name><![CDATA[cpuReport]]></name>
+		<dataSets>
+			<dataSet name="ds" type="DB_SQL" >
+				<property name="dataSource">dhcc_newafunms</property>
+				<property name="desc"><![CDATA[]]></property>
+				<property name="query"><![CDATA[="select collecttime, thevalue from "+ @tableName +"  
+where to_days(collecttime) >= to_days(?) 
+and to_days(collecttime) <= to_days(?) "]]></property>
+				<property name="beginRow">0</property>
+				<property name="endRow">0</property>
+				<queryParam name="starttime" />
+				<queryParam name="endtime" />
+			</dataSet>
+			<dataSet name="ds1" type="DB_SQL" >
+				<property name="dataSource">dhcc_newafunms</property>
+				<property name="desc"><![CDATA[]]></property>
+				<property name="query"><![CDATA[="select max(thevalue) as maxvalues,avg(thevalue) as avgvalue,min(thevalue) as minvalue from "+ @tableName +"  
+where to_days(collecttime) >= to_days(?) 
+and to_days(collecttime) <= to_days(?) "]]></property>
+				<property name="beginRow">0</property>
+				<property name="endRow">0</property>
+				<queryParam name="starttime" />
+				<queryParam name="endtime" />
+			</dataSet>
+		</dataSets>
+		<parameters>
+			<parameter name="starttime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc"></property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="endtime" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc"></property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="tableName" type="262">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">查询的表名</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+			<parameter name="tableTitle" type="6">
+				<property name="dateFormat"></property>
+				<property name="default"></property>
+				<property name="desc">设备名称（用IP地址标识）</property>
+				<property name="source">0</property>
+				<property name="valueCalc">false</property>
+			</parameter>
+		</parameters>
+		<variables/>
+		<subReports/>
+	</head>
+	<body>
+		<sheet id="sheet1">
+			<page>
+				<property name="paginateType">3</property>
+			</page>
+			<grid row="4" col="6">
+				<properties>
+				</properties>
+				<rows>
+					<row id="1">
+						<property name="height">100</property>
+					</row>
+					<row id="2">
+						<property name="height">100</property>
+					</row>
+					<row id="3">
+						<property name="height">60</property>
+					</row>
+					<row id="4">
+						<property name="height">329</property>
+					</row>
+				</rows>
+				<columns>
+					<column id="1">
+						<property name="width">90</property>
+					</column>
+					<column id="2">
+						<property name="width">100</property>
+					</column>
+					<column id="3">
+						<property name="width">100</property>
+					</column>
+					<column id="4">
+						<property name="width">100</property>
+					</column>
+					<column id="5">
+						<property name="width">100</property>
+					</column>
+					<column id="6">
+						<property name="width">100</property>
+					</column>
+				</columns>
+				<cells>
+					<cell id="1,1" type="0" colspan="6" >
+						<property name="value"><![CDATA[=@starttime+'至'+@endtime]]></property>
+						<property name="font-size">12</property>
+						<property name="align">2</property>
+						<property name="valign">2</property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+					</cell>
+					<cell id="2,1" type="0" colspan="6" >
+						<property name="value"><![CDATA[=设备CPU性能报表]]></property>
+						<property name="font-size">18</property>
+						<property name="bold">0</property>
+						<property name="background"><![CDATA[=179,227,247]]></property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,1" type="0" >
+						<property name="value"><![CDATA[最大使用率]]></property>
+						<property name="font-size">12</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,2" type="0" >
+						<property name="value"><![CDATA[=ds1.select(maxvalues)]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,3" type="0" >
+						<property name="value"><![CDATA[最小使用率]]></property>
+						<property name="font-size">12</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,4" type="0" >
+						<property name="value"><![CDATA[=ds1.select(minvalue)]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,5" type="0" >
+						<property name="value"><![CDATA[平均利用率]]></property>
+						<property name="font-size">12</property>
+						<property name="background"><![CDATA[=255,255,153]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="3,6" type="0" >
+						<property name="value"><![CDATA[=floor(ds1.select(avgvalue),2)]]></property>
+						<border type="1">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+					<cell id="4,1" type="1" colspan="6" >
+						<property name="value"><![CDATA[<chart><param name="webtarget_3" value="_self" /><param name="webtarget_2" value="_self" /><param name="seriescount" value="1" /><param name="legendon" value="true" /><param name="titlefont" value="宋体,plain,14" /><param name="bartype" value="side" /><param name="valuelineson" value="true" /><param name="webtarget_1" value="_self" /><param name="webtarget_0" value="_self" /><param name="samplelabels" value="=ds.select(collecttime)" /><param name="rangedecimalcount" value="auto" /><param name="samplehighlighton" value="true" /><param name="valuelabelfont" value="宋体,plain,11" /><param name="percentlabelstyle" value="inside" /><param name="sampleaxislabel" value="小时" /><param name="sampleaxislabelfont" value="宋体,plain,11" /><param name="weburl_0" value="=&quot;#&quot;" /><param name="percentdecimalcount" value="0" /><param name="rangelabelfont" value="宋体,plain,11" /><param name="startangle" value="90" /><param name="endangle" value="270" /><param name="samplelabelfont" value="宋体,plain,11" /><param name="serieslabels" value="CPU使用率" /><param name="legendfont" value="宋体,plain,11" /><param name="serieslabels_0" value="CPU使用率" /><param name="rangelabelson" value="true" /><param name="valuelabelstyle" value="outside" /><param name="rangeaxislabelfont" value="宋体,plain,11" /><param name="samplelabelson" value="true" /><param name="autolabelspacingon" value="true" /><param name="linewidth" value="1" /><param name="samplehighlightstyle" value="circle_filled" /><param name="samplevalues_0" value="=ds.select(thevalue)" /><param name="charttitle" value="CPU性能折线图" /><param name="baroutlineoff" value="true" /><param name="sampledecimalcount" value="0" /><param name="background" value="204,255,204" /><param name="chart" value="line" /><param name="linestroke" value="1|0" /></chart>]]></property>
+						<border type="1">1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1;1:0,0,0:1</border>
+						<border type="2">1:0,0,0:1</border>
+						<border type="3">1:0,0,0:1</border>
+					</cell>
+				</cells>
+			</grid>
+		</sheet>
+	</body>
+	<param-form col="2">
+		<ctrl ver="new" id="starttime" type="1" label="">
+		</ctrl>
+		<ctrl ver="new" id="endtime" type="1" label="">
+		</ctrl>
+		<ctrl ver="new" id="tableTitle" type="1" label="设备名称（用IP地址标识）">
+		</ctrl>
+		<ctrl ver="new" id="tableName" type="1" label="查询的表名">
+		</ctrl>
+	</param-form>
+</report>

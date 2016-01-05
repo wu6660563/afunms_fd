@@ -1,0 +1,703 @@
+cmdbegin:version
+Linux version 2.6.18-194.el5 (mockbuild@x86-005.build.bos.redhat.com) (gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)) #1 SMP Tue Mar 16 21:52:39 EDT 2010
+cmdbegin:cpuconfig
+processor	: 0
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 1
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 2
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 3
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 4
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 5
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 6
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 7
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 8
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 9
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 10
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 11
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 12
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 13
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 14
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 15
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 16
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 17
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 18
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 19
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 20
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 21
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 22
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+processor	: 23
+model name	:        Intel(R) Xeon(R) CPU E7- 4807  @ 1.87GHz
+cpu MHz		: 1864.693
+cache size	: 18432 KB
+cmdbegin:disk
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/cciss/c0d0p1     59515524   1340244  55103252   3% /
+/dev/cciss/c0d0p5    184554840  43765184 131263516  26% /df8003
+/dev/cciss/c0d0p3     19840924   4570204  14246580  25% /usr
+tmpfs                 16473628         0  16473628   0% /dev/shm
+cmdbegin:diskperf
+Linux 2.6.18-194.el5 (byavc01) 	09/13/13 	_x86_64_	(24 CPU)
+
+16:55:01          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:02     dev104-0     87.13      0.00   1180.20     13.55      1.21     14.26      5.80     50.50
+
+16:55:02          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:03     dev104-0    352.00      0.00  39304.00    111.66     51.36    145.91      1.39     49.00
+
+16:55:03          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+16:55:04     dev104-0      2.00      0.00     72.00     36.00      0.01      7.50      7.50      1.50
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:     dev104-0    146.84      0.00  13477.74     91.78     17.47    119.07      2.30     33.72
+cmdbegin:cpu
+Linux 2.6.18-194.el5 (byavc01) 	09/13/13 	_x86_64_	(24 CPU)
+
+16:55:04        CPU     %user     %nice   %system   %iowait    %steal     %idle
+16:55:05        all      0.21      0.42      0.46      0.00      0.00     98.92
+16:55:06        all      0.04      0.12      2.62      0.00      0.00     97.21
+16:55:07        all      0.04      2.16      2.50      0.25      0.00     95.05
+Average:        all      0.10      0.90      1.86      0.08      0.00     97.06
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:      32947260   32809780     137480          0     493196   14616200
+-/+ buffers/cache:   17700384   15246876
+Swap:     20482864      97916   20384948
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  10348   688 ?        Ss    2012   0:20 init [5]                             
+root         2  0.0  0.0      0     0 ?        S<    2012   0:03 [migration/0]
+root         3  0.0  0.0      0     0 ?        SN    2012   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/0]
+root         5  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/1]
+root         6  0.0  0.0      0     0 ?        SN    2012   0:00 [ksoftirqd/1]
+root         7  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/1]
+root         8  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/2]
+root         9  0.0  0.0      0     0 ?        SN    2012   0:00 [ksoftirqd/2]
+root        10  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/2]
+root        11  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/3]
+root        12  0.0  0.0      0     0 ?        SN    2012   0:00 [ksoftirqd/3]
+root        13  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/3]
+root        14  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/4]
+root        15  0.0  0.0      0     0 ?        SN    2012   0:00 [ksoftirqd/4]
+root        16  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/4]
+root        17  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/5]
+root        18  0.0  0.0      0     0 ?        SN    2012   0:00 [ksoftirqd/5]
+root        19  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/5]
+root        20  0.0  0.0      0     0 ?        S<    2012   0:04 [migration/6]
+root        21  0.0  0.0      0     0 ?        SN    2012   0:01 [ksoftirqd/6]
+root        22  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/6]
+root        23  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/7]
+root        24  0.0  0.0      0     0 ?        SN    2012   0:01 [ksoftirqd/7]
+root        25  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/7]
+root        26  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/8]
+root        27  0.0  0.0      0     0 ?        SN    2012   0:01 [ksoftirqd/8]
+root        28  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/8]
+root        29  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/9]
+root        30  0.0  0.0      0     0 ?        SN    2012   0:01 [ksoftirqd/9]
+root        31  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/9]
+root        32  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/10]
+root        33  0.0  0.0      0     0 ?        SN    2012   0:01 [ksoftirqd/10]
+root        34  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/10]
+root        35  0.0  0.0      0     0 ?        S<    2012   0:00 [migration/11]
+root        36  0.0  0.0      0     0 ?        SN    2012   0:01 [ksoftirqd/11]
+root        37  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/11]
+root        38  0.0  0.0      0     0 ?        S<    2012   1:58 [migration/12]
+root        39  0.0  0.0      0     0 ?        SN    2012   7:19 [ksoftirqd/12]
+root        40  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/12]
+root        41  0.0  0.0      0     0 ?        S<    2012   1:38 [migration/13]
+root        42  0.0  0.0      0     0 ?        SN    2012   3:22 [ksoftirqd/13]
+root        43  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/13]
+root        44  0.0  0.0      0     0 ?        S<    2012   1:25 [migration/14]
+root        45  0.0  0.0      0     0 ?        SN    2012   3:17 [ksoftirqd/14]
+root        46  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/14]
+root        47  0.0  0.0      0     0 ?        S<    2012   1:40 [migration/15]
+root        48  0.0  0.0      0     0 ?        SN    2012   3:47 [ksoftirqd/15]
+root        49  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/15]
+root        50  0.0  0.0      0     0 ?        S<    2012   0:50 [migration/16]
+root        51  0.0  0.0      0     0 ?        SN    2012   2:41 [ksoftirqd/16]
+root        52  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/16]
+root        53  0.0  0.0      0     0 ?        S<    2012   0:41 [migration/17]
+root        54  0.0  0.0      0     0 ?        SN    2012   2:16 [ksoftirqd/17]
+root        55  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/17]
+root        56  0.0  0.0      0     0 ?        S<    2012   4:47 [migration/18]
+root        57  0.0  0.0      0     0 ?        SN    2012  11:58 [ksoftirqd/18]
+root        58  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/18]
+root        59  0.0  0.0      0     0 ?        S<    2012   3:19 [migration/19]
+root        60  0.0  0.0      0     0 ?        SN    2012   7:29 [ksoftirqd/19]
+root        61  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/19]
+root        62  0.0  0.0      0     0 ?        S<    2012   3:21 [migration/20]
+root        63  0.0  0.0      0     0 ?        SN    2012   7:52 [ksoftirqd/20]
+root        64  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/20]
+root        65  0.0  0.0      0     0 ?        S<    2012   4:09 [migration/21]
+root        66  0.0  0.0      0     0 ?        SN    2012   9:47 [ksoftirqd/21]
+root        67  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/21]
+root        68  0.0  0.0      0     0 ?        S<    2012   2:57 [migration/22]
+root        69  0.0  0.0      0     0 ?        SN    2012   6:42 [ksoftirqd/22]
+root        70  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/22]
+root        71  0.0  0.0      0     0 ?        S<    2012   3:14 [migration/23]
+root        72  0.0  0.0      0     0 ?        SN    2012   7:27 [ksoftirqd/23]
+root        73  0.0  0.0      0     0 ?        S<    2012   0:00 [watchdog/23]
+root        74  0.0  0.0      0     0 ?        S<    2012   0:00 [events/0]
+root        75  0.0  0.0      0     0 ?        S<    2012   0:00 [events/1]
+root        76  0.0  0.0      0     0 ?        S<    2012   0:00 [events/2]
+root        77  0.0  0.0      0     0 ?        S<    2012   0:00 [events/3]
+root        78  0.0  0.0      0     0 ?        S<    2012   0:00 [events/4]
+root        79  0.0  0.0      0     0 ?        S<    2012   0:00 [events/5]
+root        80  0.0  0.0      0     0 ?        S<    2012   0:00 [events/6]
+root        81  0.0  0.0      0     0 ?        S<    2012   0:00 [events/7]
+root        82  0.0  0.0      0     0 ?        S<    2012   0:00 [events/8]
+root        83  0.0  0.0      0     0 ?        S<    2012   0:00 [events/9]
+root        84  0.0  0.0      0     0 ?        S<    2012   0:00 [events/10]
+root        85  0.0  0.0      0     0 ?        S<    2012   0:00 [events/11]
+root        86  0.0  0.0      0     0 ?        S<    2012   0:38 [events/12]
+root        87  0.0  0.0      0     0 ?        S<    2012   0:03 [events/13]
+root        88  0.0  0.0      0     0 ?        S<    2012   0:02 [events/14]
+root        89  0.0  0.0      0     0 ?        S<    2012   0:03 [events/15]
+root        90  0.0  0.0      0     0 ?        S<    2012   0:02 [events/16]
+root        91  0.0  0.0      0     0 ?        S<    2012   0:01 [events/17]
+root        92  0.0  0.0      0     0 ?        S<    2012   0:14 [events/18]
+root        93  0.0  0.0      0     0 ?        S<    2012   0:08 [events/19]
+root        94  0.0  0.0      0     0 ?        S<    2012   0:09 [events/20]
+root        95  0.0  0.0      0     0 ?        S<    2012   0:11 [events/21]
+root        96  0.0  0.0      0     0 ?        S<    2012   0:07 [events/22]
+root        97  0.0  0.0      0     0 ?        S<    2012   0:08 [events/23]
+root        98  0.0  0.0      0     0 ?        S<    2012   0:00 [khelper]
+root       363  0.0  0.0      0     0 ?        S<    2012   0:00 [kthread]
+root       391  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/0]
+root       392  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/1]
+root       393  0.0  0.0      0     0 ?        S<    2012   0:15 [kblockd/2]
+root       394  0.0  0.0      0     0 ?        S<    2012   0:25 [kblockd/3]
+root       395  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/4]
+root       396  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/5]
+root       397  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/6]
+root       398  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/7]
+root       399  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/8]
+root       400  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/9]
+root       401  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/10]
+root       402  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/11]
+root       403  0.0  0.0      0     0 ?        S<    2012   0:03 [kblockd/12]
+root       404  0.0  0.0      0     0 ?        S<    2012   0:01 [kblockd/13]
+root       405  0.0  0.0      0     0 ?        S<    2012   0:02 [kblockd/14]
+root       406  0.0  0.0      0     0 ?        S<    2012   0:07 [kblockd/15]
+root       407  0.0  0.0      0     0 ?        S<    2012   0:12 [kblockd/16]
+root       408  0.0  0.0      0     0 ?        S<    2012   0:07 [kblockd/17]
+root       409  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/18]
+root       410  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/19]
+root       411  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/20]
+root       412  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/21]
+root       413  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/22]
+root       414  0.0  0.0      0     0 ?        S<    2012   0:00 [kblockd/23]
+root       415  0.0  0.0      0     0 ?        S<    2012   0:00 [kacpid]
+root       637  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/0]
+root       638  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/1]
+root       639  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/2]
+root       640  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/3]
+root       641  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/4]
+root       642  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/5]
+root       643  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/6]
+root       644  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/7]
+root       645  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/8]
+root       646  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/9]
+root       647  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/10]
+root       648  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/11]
+root       649  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/12]
+root       650  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/13]
+root       651  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/14]
+root       652  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/15]
+root       653  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/16]
+root       654  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/17]
+root       655  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/18]
+root       656  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/19]
+root       657  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/20]
+root       658  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/21]
+root       659  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/22]
+root       660  0.0  0.0      0     0 ?        S<    2012   0:00 [cqueue/23]
+root       663  0.0  0.0      0     0 ?        S<    2012   0:00 [khubd]
+root       665  0.0  0.0      0     0 ?        S<    2012   0:00 [kseriod]
+root       918  0.0  0.0      0     0 ?        S     2012   0:00 [khungtaskd]
+root       919  0.0  0.0      0     0 ?        S     2012   0:00 [pdflush]
+root       920  0.0  0.0      0     0 ?        S     2012 123:27 [pdflush]
+root       921  0.0  0.0      0     0 ?        S<    2012   1:07 [kswapd0]
+root       922  0.0  0.0      0     0 ?        S<    2012   1:07 [kswapd1]
+root       923  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/0]
+root       924  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/1]
+root       925  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/2]
+root       926  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/3]
+root       927  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/4]
+root       928  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/5]
+root       929  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/6]
+root       930  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/7]
+root       931  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/8]
+root       932  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/9]
+root       933  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/10]
+root       934  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/11]
+root       935  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/12]
+root       936  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/13]
+root       937  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/14]
+root       938  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/15]
+root       939  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/16]
+root       940  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/17]
+root       941  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/18]
+root       942  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/19]
+root       943  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/20]
+root       944  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/21]
+root       945  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/22]
+root       946  0.0  0.0      0     0 ?        S<    2012   0:00 [aio/23]
+root      1110  0.0  0.0      0     0 ?        S<    2012   0:00 [kpsmoused]
+root      1416  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/0]
+root      1417  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/1]
+root      1418  0.0  0.0      0     0 ?        S<    2012  14:40 [ata/2]
+root      1419  0.0  0.0      0     0 ?        S<    2012  20:04 [ata/3]
+root      1420  0.0  0.0      0     0 ?        S<    2012   0:07 [ata/4]
+root      1421  0.0  0.0      0     0 ?        S<    2012   0:03 [ata/5]
+root      1422  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/6]
+root      1423  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/7]
+root      1424  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/8]
+root      1425  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/9]
+root      1426  0.0  0.0      0     0 ?        S<    2012   0:02 [ata/10]
+root      1427  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/11]
+root      1428  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/12]
+root      1429  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/13]
+root      1430  0.0  0.0      0     0 ?        S<    2012  13:31 [ata/14]
+root      1431  0.0  0.0      0     0 ?        S<    2012  16:40 [ata/15]
+root      1432  0.0  0.0      0     0 ?        S<    2012   0:06 [ata/16]
+root      1433  0.0  0.0      0     0 ?        S<    2012   0:03 [ata/17]
+root      1434  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/18]
+root      1435  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/19]
+root      1436  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/20]
+root      1437  0.0  0.0      0     0 ?        S<    2012   0:01 [ata/21]
+root      1438  0.0  0.0      0     0 ?        S<    2012   0:02 [ata/22]
+root      1439  0.0  0.0      0     0 ?        S<    2012   0:00 [ata/23]
+root      1440  0.0  0.0      0     0 ?        S<    2012   0:00 [ata_aux]
+root      1466  0.0  0.0      0     0 ?        S<    2012 116:44 [scsi_eh_0]
+root      1467  0.0  0.0      0     0 ?        S<    2012   0:00 [scsi_eh_1]
+ems       1623  0.0  0.0 245280  6324 ?        Ss   Jun21   0:00 /usr/bin/gnome-session
+root      1643  0.0  0.0      0     0 ?        S<    2012   0:00 [kstriped]
+ems       1657  0.0  0.0      0     0 ?        Z    Jun21   0:00 [Xsession] <defunct>
+ems       1660  0.0  0.0  53852   768 ?        Ss   Jun21   0:02 /usr/bin/ssh-agent /bin/sh -c exec -l /bin/bash -c "/usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients"
+ems       1686  0.0  0.0  15176   520 ?        S    Jun21   0:00 /usr/bin/dbus-launch --exit-with-session /etc/X11/xinit/Xclients
+ems       1687  0.0  0.0  21388   992 ?        Ss   Jun21   0:00 /bin/dbus-daemon --fork --print-pid 4 --print-address 6 --session
+ems       1693  0.0  0.0  94744  4512 ?        S    Jun21   0:03 /usr/libexec/gconfd-2 5
+ems       1696  0.0  0.0  12896   568 ?        S    Jun21   0:00 /usr/bin/gnome-keyring-daemon
+ems       1698  0.0  0.0 264600  7596 ?        Sl   Jun21   0:07 /usr/libexec/gnome-settings-daemon
+ems       1702  0.0  0.0 107500 12524 ?        Ss   Jun21   0:00 /usr/lib64/scim-1.0/scim-launcher -d -c simple -e all -f socket --no-stay
+ems       1721  0.0  0.0 181516 11064 ?        Ss   Jun21   0:01 metacity --sm-client-id=default1
+ems       1725  0.0  0.0  84676   632 ?        Ss   Jun21   0:00 /usr/lib64/scim-1.0/scim-helper-manager
+ems       1726  0.0  0.0 198768  7244 ?        Ssl  Jun21   0:33 /usr/lib64/scim-1.0/scim-panel-gtk --display :0.0 -c socket -d --no-stay
+ems       1728  0.0  0.0  90096   976 ?        Ss   Jun21   1:17 /usr/lib64/scim-1.0/scim-launcher -d -c socket -e socket -f x11
+ems       1737  0.0  0.0 185552  4296 ?        Ss   Jun21   0:09 gnome-screensaver
+root      1744  0.0  0.0      0     0 ?        S<    2012  23:52 [kjournald]
+ems       1752  0.0  0.0 305392 16144 ?        Ss   Jun21   0:00 gnome-panel --sm-client-id default2
+ems       1754  0.0  0.0 519084 20168 ?        Ss   Jun21   0:07 nautilus --no-default-window --sm-client-id default3
+ems       1757  0.0  0.0 230356  4488 ?        Ss   Jun21   0:00 gnome-volume-manager --sm-client-id default5
+ems       1759  0.0  0.0 262960  3120 ?        Ssl  Jun21   0:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=15
+ems       1762  0.0  0.0 149496  3416 ?        S    Jun21   0:00 /usr/libexec/gnome-vfs-daemon
+root      1768  0.0  0.0      0     0 ?        S<    2012   0:12 [kauditd]
+ems       1777  0.0  0.0  12916  1164 ?        S    Jun21   0:22 /usr/libexec/gam_server
+ems       1779  0.0  0.0 293744 13640 ?        S    Jun21   0:00 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GNOME_Wncklet_Factory --oaf-ior-fd=19
+ems       1781  0.0  0.0 429348  8400 ?        S    Jun21   0:00 /usr/libexec/trashapplet --oaf-activate-iid=OAFIID:GNOME_Panel_TrashApplet_Factory --oaf-ior-fd=25
+ems       1795  0.0  0.0  12820   852 ?        S    Jun21   0:05 /usr/libexec/mapping-daemon
+root      1799  0.0  0.0  13040  1212 ?        S<s   2012   0:01 /sbin/udevd -d
+ems       1801  0.0  0.0 241216  7012 ?        S    Jun21   0:00 /usr/libexec/notification-area-applet --oaf-activate-iid=OAFIID:GNOME_NotificationAreaApplet_Factory --oaf-ior-fd=23
+ems       1803  0.0  0.0 306516 13796 ?        S    Jun21   0:00 /usr/libexec/mixer_applet2 --oaf-activate-iid=OAFIID:GNOME_MixerApplet_Factory --oaf-ior-fd=29
+ems       1805  0.0  0.0 297636 11876 ?        S    Jun21   1:59 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:GNOME_ClockApplet_Factory --oaf-ior-fd=37
+ems       1830  0.0  0.0 263476  7572 ?        Ss   Jun21   0:01 eggcups --sm-client-id default4
+ems       1837  0.0  0.0 154240  4724 ?        Ss   Jun21   0:00 bt-applet --sm-disable
+ems       1844  0.0  0.0 232892  9900 ?        Ss   Jun21   0:01 nm-applet --sm-disable
+ems       1848  0.0  0.0 360100 31164 ?        Ss   Jun21   0:03 /usr/bin/python -tt /usr/bin/puplet
+ems       1854  0.0  0.0  72368  2656 ?        Sl   Jun21   0:54 ./escd --key_Inserted="/usr/bin/esc" --on_Signal="/usr/bin/esc"
+ems       1860  0.0  0.0 267476  6348 ?        Ss   Jun21   4:04 gnome-power-manager
+ems       1864  0.0  0.0 337452 18648 ?        Sl   Jun21   0:28 gnome-terminal
+ems       1872  0.0  0.0  78584  1024 ?        S    Jun21  28:38 scim-bridge
+ems       1873  0.0  0.0  14864   724 ?        S    Jun21   0:00 gnome-pty-helper
+ems       1874  0.0  0.0  68460  1656 pts/2    Ss+  Jun21   0:00 bash
+ems       1953  0.0  0.0 157212  4484 ?        Ss   Jun21   0:07 pam-panel-icon --sm-client-id default0
+root      1954  0.0  0.0  12184   688 ?        S    Jun21   0:03 /sbin/pam_timestamp_check -d root
+root      2474  0.0  0.0      0     0 ?        S<    2012   0:09 [unm]
+root      4180  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/0]
+root      4181  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/1]
+root      4182  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/2]
+root      4183  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/3]
+root      4184  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/4]
+root      4185  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/5]
+root      4186  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/6]
+root      4187  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/7]
+root      4188  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/8]
+root      4189  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/9]
+root      4190  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/10]
+root      4191  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/11]
+root      4192  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/12]
+root      4193  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/13]
+root      4194  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/14]
+root      4195  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/15]
+root      4196  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/16]
+root      4197  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/17]
+root      4198  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/18]
+root      4199  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/19]
+root      4200  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/20]
+root      4201  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/21]
+root      4202  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/22]
+root      4203  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpathd/23]
+root      4204  0.0  0.0      0     0 ?        S<    2012   0:00 [kmpath_handlerd]
+root      4313  0.0  0.0      0     0 ?        S<    2012 102:52 [kjournald]
+root      4315  0.0  0.0      0     0 ?        S<    2012   3:09 [kjournald]
+root      4760  0.0  0.0      0     0 ?        S<    2012   0:12 [bond0]
+root      5564  0.0  0.0  92860   916 ?        S<sl  2012   1:59 auditd
+root      5566  0.0  0.0 147336   968 ?        S<sl  2012   0:47 /sbin/audispd
+root      5588  0.0  0.0   5908   652 ?        Ss    2012   0:14 syslogd -m 0
+root      5591  0.0  0.0   3804   424 ?        Ss    2012   0:00 klogd -x
+root      5873  0.0  0.0  10760   380 ?        Ss    2012  46:26 irqbalance
+rpc       5884  0.0  0.0   8052   572 ?        Ss    2012   0:00 portmap
+root      5933  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/0]
+root      5934  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/1]
+root      5935  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/2]
+root      5936  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/3]
+root      5937  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/4]
+root      5938  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/5]
+root      5939  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/6]
+root      5940  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/7]
+root      5941  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/8]
+root      5942  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/9]
+root      5943  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/10]
+root      5944  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/11]
+root      5945  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/12]
+root      5946  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/13]
+root      5947  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/14]
+root      5948  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/15]
+root      5949  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/16]
+root      5950  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/17]
+root      5951  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/18]
+root      5952  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/19]
+root      5953  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/20]
+root      5954  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/21]
+root      5955  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/22]
+root      5956  0.0  0.0      0     0 ?        S<    2012   0:00 [rpciod/23]
+root      5985  0.0  0.0  10160   800 ?        Ss    2012   0:00 rpc.statd
+root      6009  0.0  0.0  55180   764 ?        Ss    2012   0:00 rpc.idmapd
+dbus      6024  0.0  0.0  21484  1196 ?        Ss    2012   5:46 dbus-daemon --system
+root      6039  0.0  0.0  10432   816 ?        Ss    2012   0:00 /usr/sbin/hcid
+root      6043  0.0  0.0   5936   540 ?        Ss    2012   0:00 /usr/sbin/sdpd
+root      6133  0.0  0.0      0     0 ?        S<    2012   0:00 [krfcommd]
+root      6170  0.0  0.0  43764  1608 ?        Ssl   2012   1:55 pcscd
+root      6180  0.0  0.0   3800   572 ?        Ss    2012   0:00 /usr/sbin/acpid
+68        6189  0.0  0.0  31504  4564 ?        Ss    2012   1:39 hald
+root      6190  0.0  0.0  21692  1084 ?        S     2012   0:00 hald-runner
+68        6198  0.0  0.0  12324   844 ?        S     2012   0:00 hald-addon-acpi: listening on acpid socket /var/run/acpid.socket
+68        6211  0.0  0.0  12324   848 ?        S     2012   0:00 hald-addon-keyboard: listening on /dev/input/event2
+root      6220  0.0  0.0  10228   680 ?        S     2012 106:09 hald-addon-storage: polling /dev/scd0
+root      6262  0.0  0.0   8516   484 ?        Ss    2012   0:00 /usr/bin/hidd --server
+root      6305  0.0  0.0 121984  1536 ?        Ssl   2012   4:18 automount
+root      6322  0.0  0.0  26324   520 ?        Ss    2012   0:00 ./hpiod
+root      6327  0.0  0.0 165960  6812 ?        S     2012   0:10 python ./hpssd.py
+root      6340  0.0  0.0  62608  1212 ?        Ss    2012   0:00 /usr/sbin/sshd
+root      6349  0.0  0.0 133572  3088 ?        Ss    2012   2:26 cupsd
+root      6363  0.0  0.0  21644   900 ?        Ss    2012   0:02 xinetd -stayalive -pidfile /var/run/xinetd.pid
+root      6399  0.0  0.0  67432  2332 ?        Ss    2012   0:22 sendmail: accepting connections
+smmsp     6409  0.0  0.0  58324  1772 ?        Ss    2012   0:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      6433  0.0  0.0   6452   376 ?        Ss    2012   0:29 gpm -m /dev/input/mice -t exps2
+root      6504  0.0  0.0 128592  7292 ?        Ss    2012   0:46 /opt/hp/hpsmh/sbin/hpsmhd -DSSL -f /opt/hp/hpsmh/conf/smhpd.conf
+root      6506  0.0  0.0  24728   728 ?        S     2012   0:00 /opt/hp/hpsmh/bin/rotatelogs /var/spool/opt/hp/hpsmh/logs/error_log 5M
+root      6507  0.0  0.0  24728   724 ?        S     2012   0:00 /opt/hp/hpsmh/bin/rotatelogs /var/spool/opt/hp/hpsmh/logs/access_log 5M
+root      6515  0.0  0.0  74844  1152 ?        Ss    2012   0:05 crond
+hpsmh     6534  0.0  0.0 128592  4916 ?        S     2012   0:06 /opt/hp/hpsmh/sbin/hpsmhd -DSSL -f /opt/hp/hpsmh/conf/smhpd.conf
+hpsmh     6535  0.0  0.0 128592  4892 ?        S     2012   0:00 /opt/hp/hpsmh/sbin/hpsmhd -DSSL -f /opt/hp/hpsmh/conf/smhpd.conf
+hpsmh     6536  0.0  0.0 128592  4892 ?        S     2012   0:00 /opt/hp/hpsmh/sbin/hpsmhd -DSSL -f /opt/hp/hpsmh/conf/smhpd.conf
+hpsmh     6537  0.0  0.0 128592  4892 ?        S     2012   0:00 /opt/hp/hpsmh/sbin/hpsmhd -DSSL -f /opt/hp/hpsmh/conf/smhpd.conf
+hpsmh     6538  0.0  0.0 128592  4892 ?        S     2012   0:00 /opt/hp/hpsmh/sbin/hpsmhd -DSSL -f /opt/hp/hpsmh/conf/smhpd.conf
+root      6539  0.0  0.0  20800  1784 ?        Ss    2012   0:00 /opt/OV/lbin/xpl/trc/ovtrcd
+xfs       6571  0.0  0.0  21044  1852 ?        Ss    2012   0:00 xfs -droppriv -daemon
+root      6635  0.0  0.0 105136  1392 ?        Ssl   2012   9:01 hpasmlited -f /dev/hpilo
+root      6829  0.0  0.0   3784   468 ?        Ss    2012   0:38 /opt/hp/hp-health/bin/hp-asrd -p 1 -t 600
+root      6849  0.0  0.0  18732   456 ?        Ss    2012   0:00 /usr/sbin/atd
+avahi     6926  0.0  0.0  23280  1372 ?        Ss    2012   0:03 avahi-daemon: running [byavc01.local]
+avahi     6927  0.0  0.0  23148   336 ?        Ss    2012   0:00 avahi-daemon: chroot helper
+root      7020  0.0  0.0   8344   732 ?        Ss    2012   0:00 /opt/perf/bin/ttd
+root      7028  0.0  0.0  18492  6136 ?        Sl    2012   0:00 /opt/hp/vcagent/bin/vcagentd
+root      7036  1.7  0.0  31612  6512 ?        S<s   2012 7604:02 /opt/perf/bin/scopeux
+root      7045  0.0  0.0   7276   952 ?        S<s   2012   0:05 /opt/perf/bin/midaemon
+root      7121  0.0  0.0  95716  9796 ?        Ss    2012  10:45 /opt/perf/bin/perfalarm
+root      7126  0.0  0.0 121372  5944 ?        Ssl   2012   2:21 /opt/OV/bin/ovcd
+root      7134  0.0  0.0 101912  5572 ?        Sl    2012   0:01 /opt/OV/bin/ovbbccb -nodaemon
+root      7153  0.0  0.0 151584 19796 ?        Sl    2012   0:44 /opt/OV/lbin/perf/coda
+root      7167  0.0  0.0 268964 21324 ?        SN    2012   0:17 /usr/bin/python -tt /usr/sbin/yum-updatesd
+root      7169  0.0  0.0  13040  1184 ?        SN    2012   0:12 /usr/libexec/gam_server
+root      7188  0.0  0.0  18416   468 ?        S     2012   0:00 /usr/sbin/smartd -q never
+root      7193  0.0  0.0  52108  1324 ?        Ss    2012   0:00 login -- root     
+root      7194  0.0  0.0   3792   480 tty2     Ss+   2012   0:00 /sbin/mingetty tty2
+root      7195  0.0  0.0   3792   484 tty3     Ss+   2012   0:00 /sbin/mingetty tty3
+root      7196  0.0  0.0   3792   480 tty4     Ss+   2012   0:00 /sbin/mingetty tty4
+root      7197  0.0  0.0   3792   480 tty5     Ss+   2012   0:00 /sbin/mingetty tty5
+root      7198  0.0  0.0   3792   484 tty6     Ss+   2012   0:00 /sbin/mingetty tty6
+ems      11220  0.1  0.2 1039272 74380 ?       SN   Aug12  80:17 BZTServer -mode r -ref
+ems      11222  1.4  0.2 1076368 92272 ?       SN   Aug12 684:04 BZTFresh -mode r
+root     18741  0.0  0.0  57860  3296 ?        S     2012   0:02 /usr/sbin/nm-system-settings --config /etc/NetworkManager/nm-system-settings.conf
+root     19733  0.0  0.0  70384  1596 tty1     Ss+   2012   0:00 -bash
+root     21741  0.0  0.0 169956  2756 ?        Ss    2012   0:00 /usr/sbin/gdm-binary -nodaemon
+root     21771  0.0  0.0 197180  2992 ?        S     2012   0:00 /usr/sbin/gdm-binary -nodaemon
+root     21773  0.0  0.0 189852  4116 ?        Sl    2012   2:14 /usr/libexec/gdm-rh-security-token-helper
+root     21774  0.0  0.0 100048 13988 tty7     Ss+   2012   1:34 /usr/bin/Xorg :0 -br -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+ems      22829  2.2  0.4 838064 150092 ?       SN   06:10  14:42 AVCServer -mode r -ref
+root     24181  0.0  0.0 210244  7924 ?        SN   Jun26   0:00 proc_watchd
+ems      24182  0.0  0.0 286148 13956 ?        SN   Jun26  46:25 almd_server_rep
+ems      24183  0.0  0.0 613708 17104 ?        SN   Jun26  57:57 alm_replica -mode r
+ems      24184  1.7  0.4 607116 156556 ?       SN   Jun26 1988:00 SCADA_Rep -mode r
+ems      24195  0.0  4.8 1832096 1608060 ?     SN   Jun26   1:41 rdbmon
+root     24196  0.2  0.0 213192  8320 ?        SN   Jun26 339:13 netmond -s 3600
+ems      24197  0.1  0.5 717984 178656 ?       SN   Jun26 126:12 ssrd
+root     26334  0.1  0.0 137572  3640 ?        SN    2012 692:09 /df8003/bin/applogd
+root     26335  0.0  0.0 137436  3496 ?        S     2012 157:04 /df8003/bin/netmd
+root     26336  0.0  0.0 142280  8196 ?        SN    2012   1:17 /df8003/bin/dbmd
+root     26337  0.4  0.0 158296 19280 ?        S     2012 1673:28 /df8003/bin/sysmd
+root     26409  0.0  0.0 210740  8128 ?        SN    2012 125:52 /df8003/bin/procmd
+ntp      26987  0.0  0.0  19192  4892 ?        SLs   2012   0:57 ntpd -u ntp:ntp -p /var/run/ntpd.pid
+ems      30269  0.2  0.3 775820 125036 ?       SN   Jul04 238:02 AVC_save 300 300 300
+ems      30270 27.3 31.8 11227612 10493132 ?   RN   Jul04 28037:29 AVC_fresh 300 300 300
+ems      30271  0.7 12.6 5123236 4155540 ?     SN   Jul04 780:41 AVC_adv 300 300 300
+root     31522  0.0  0.0 104276  1556 ?        S    16:55   0:00 crond
+root     31523  0.0  0.0   8700   952 ?        Ss   16:55   0:00 /bin/sh -c /home/nms/collection.sh >/dev/null
+root     31525  0.0  0.0   8704   996 ?        S    16:55   0:00 /bin/sh /home/nms/collection.sh
+root     31536  0.0  0.0  10460   872 ?        R    16:55   0:00 ps aux
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth2: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:26:55:ee:4a:b6 brd ff:ff:ff:ff:ff:ff
+3: eth3: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast qlen 1000
+    link/ether e8:39:35:be:ed:01 brd ff:ff:ff:ff:ff:ff
+4: eth4: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast qlen 1000
+    link/ether e8:39:35:be:ed:02 brd ff:ff:ff:ff:ff:ff
+5: eth5: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast qlen 1000
+    link/ether e8:39:35:be:ed:03 brd ff:ff:ff:ff:ff:ff
+6: eth0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master bond0 qlen 1000
+    link/ether 00:26:55:ee:4a:b6 brd ff:ff:ff:ff:ff:ff
+7: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop qlen 1000
+    link/ether 00:26:55:ee:4a:b7 brd ff:ff:ff:ff:ff:ff
+8: sit0: <NOARP> mtu 1480 qdisc noop 
+    link/sit 0.0.0.0 brd 0.0.0.0
+9: bond0: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 1500 qdisc noqueue 
+    link/ether 00:26:55:ee:4a:b6 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.10.19/24 brd 192.168.10.255 scope global bond0
+    inet6 fe80::226:55ff:feee:4ab6/64 scope link 
+       valid_lft forever preferred_lft forever
+cmdbegin:interface
+Linux 2.6.18-194.el5 (byavc01) 	09/13/13 	_x86_64_	(24 CPU)
+
+16:55:07        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:08           lo     13.00     13.00      8.10      8.10      0.00      0.00      0.00
+16:55:08         eth2     77.00      0.00     36.57      0.00      0.00      0.00      0.00
+16:55:08         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08         eth4      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08         eth5      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08         eth0     68.00     17.00     16.91     20.90      0.00      0.00     19.00
+16:55:08         eth1      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:08        bond0    145.00     17.00     53.49     20.90      0.00      0.00     19.00
+
+16:55:08        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:09           lo     14.00     14.00      2.81      2.81      0.00      0.00      0.00
+16:55:09         eth2    101.00      0.00     68.88      0.00      0.00      0.00      0.00
+16:55:09         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09         eth4      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09         eth5      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09         eth0    111.00      8.00     71.54      2.80      0.00      0.00      0.00
+16:55:09         eth1      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:09        bond0    212.00      8.00    140.42      2.80      0.00      0.00      0.00
+
+16:55:09        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+16:55:10           lo     27.00     27.00      4.42      4.42      0.00      0.00      0.00
+16:55:10         eth2    105.00      0.00     48.85      0.00      0.00      0.00      0.00
+16:55:10         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10         eth4      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10         eth5      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10         eth0    124.00     14.00     51.76      0.64      0.00      0.00     15.00
+16:55:10         eth1      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+16:55:10        bond0    229.00     14.00    100.62      0.64      0.00      0.00     15.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo     18.00     18.00      5.11      5.11      0.00      0.00      0.00
+Average:         eth2     94.33      0.00     51.43      0.00      0.00      0.00      0.00
+Average:         eth3      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         eth4      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         eth5      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         eth0    101.00     13.00     46.74      8.11      0.00      0.00     11.33
+Average:         eth1      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:         sit0      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:        bond0    195.33     13.00     98.17      8.11      0.00      0.00     11.33
+cmdbegin:uname
+Linux byavc01
+cmdbegin:usergroup
+root:x:0:root
+bin:x:1:root,bin,daemon
+daemon:x:2:root,bin,daemon
+sys:x:3:root,bin,adm
+adm:x:4:root,adm,daemon
+tty:x:5:
+disk:x:6:root
+lp:x:7:daemon,lp
+mem:x:8:
+kmem:x:9:
+wheel:x:10:root
+mail:x:12:mail
+news:x:13:news
+uucp:x:14:uucp
+man:x:15:
+games:x:20:
+gopher:x:30:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+nobody:x:99:
+users:x:100:
+nscd:x:28:
+floppy:x:19:
+vcsa:x:69:
+audio:x:63:gdm
+utmp:x:22:
+rpc:x:32:
+mailnull:x:47:
+smmsp:x:51:
+pcap:x:77:
+utempter:x:35:
+slocate:x:21:
+ntp:x:38:
+sshd:x:74:
+rpcuser:x:29:
+nfsnobody:x:4294967294:
+dbus:x:81:
+avahi:x:70:
+haldaemon:x:68:
+avahi-autoipd:x:101:
+distcache:x:94:
+apache:x:48:
+webalizer:x:67:
+squid:x:23:
+oprofile:x:16:
+xfs:x:43:
+gdm:x:42:
+sabayon:x:86:
+stapdev:x:102:
+stapusr:x:103:
+screen:x:84:
+dfdz:x:500:
+dba:x:501:
+hpsmh:x:502:
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/etc/news:
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rpc:x:32:32:Portmapper RPC user:/:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+pcap:x:77:77::/var/arpwatch:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:4294967294:4294967294:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+avahi:x:70:70:Avahi daemon:/:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+avahi-autoipd:x:100:101:avahi-autoipd:/var/lib/avahi-autoipd:/sbin/nologin
+distcache:x:94:94:Distcache:/:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/usage:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbin/nologin
+xfs:x:43:43:X Font Server:/etc/X11/fs:/sbin/nologin
+gdm:x:42:42::/var/gdm:/sbin/nologin
+sabayon:x:86:86:Sabayon user:/home/sabayon:/sbin/nologin
+ems:x:115:500::/df8003/home:/bin/bash
+oracle:x:500:501::/usr/local/oracle:/bin/bash
+hpsmh:x:501:502::/opt/hp/hpsmh:/sbin/nologin
+cmdbegin:date
+Fri Sep 13 16:55:11 CST 2013
+cmdbegin:uptime
+ 16:55:11 up 302 days, 23:01,  3 users,  load average: 0.79, 0.73, 0.62
+cmdbegin:end

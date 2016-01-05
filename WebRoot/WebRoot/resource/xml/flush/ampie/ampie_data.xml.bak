@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="GBK"?>
+<pie>
+   <slice title="普通事件" pull_out="true">0</slice>
+   <slice title="紧急事件" pull_out="false">12</slice>
+   <slice title="严重事件" pull_out="false">0</slice>
+</pie>
+

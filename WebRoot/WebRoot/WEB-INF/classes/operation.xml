@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operations>
+    <operation>
+        <name>添加</name>
+        <code>create</code>
+    </operation>
+    <operation>
+        <name>删除</name>
+        <code>delete</code>
+    </operation>
+    <operation>
+        <name>修改</name>
+        <code>update</code>
+    </operation>
+    <operation>
+        <name>查询</name>
+        <code>retrieve</code>
+    </operation>
+</operations>
+
